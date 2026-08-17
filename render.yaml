@@ -1,0 +1,15 @@
+# Render.com deployment blueprint for the Shubh Enterprise Quotation Generator.
+# Deploy: render.com → New + → Blueprint → connect this repo → set APP_PASSWORD.
+services:
+  - type: web
+    name: shubh-quotation-app
+    runtime: node
+    plan: free
+    branch: main
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: APP_USER
+        value: shubh
+      - key: APP_PASSWORD
+        sync: false   # set your own password in the Render dashboard
