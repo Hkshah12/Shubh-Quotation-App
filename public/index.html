@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shubh Enterprise — Quotation Generator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Figtree:wght@400;500;600;700;800&family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="app">
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo" id="brandLogo">SE</div>
+      <div>
+        <h1 id="brandName">Shubh Enterprise</h1>
+        <p id="brandTagline">Medical Lab Instruments &amp; Equipment</p>
+      </div>
+    </div>
+    <div class="spacer"></div>
+    <button id="btnSaved" title="Load a saved quotation">Saved Quotes</button>
+    <button id="btnSettings" title="Company details, GST, terms">Settings</button>
+    <button id="btnNew" class="primary" title="Start a fresh quotation">+ New Quote</button>
+  </header>
+
+  <div class="main">
+    <!-- CATALOG -->
+    <section class="catalog">
+      <div class="catalog-tools">
+        <div class="search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          <input id="searchInput" type="text" placeholder="Search by name, SKU, brand or category…" />
+        </div>
+        <div class="chips" id="categoryChips"></div>
+      </div>
+      <div class="grid" id="catalogGrid"></div>
+    </section>
+
+    <!-- QUOTATION -->
+    <section class="quote">
+      <div class="quote-scroll">
+        <div class="section-title">Client Details</div>
+        <div class="client-grid">
+          <div class="field"><label>Client / Hospital / Lab name</label><input id="clientName" placeholder="e.g. City Diagnostic Centre"/></div>
+          <div class="field"><label>Contact person</label><input id="clientContact" placeholder="Dr. / Mr. / Ms."/></div>
+          <div class="field"><label>Phone</label><input id="clientPhone" placeholder="Phone"/></div>
+          <div class="field"><label>Email / GSTIN</label><input id="clientEmail" placeholder="Email or GSTIN"/></div>
+          <div class="field full"><label>Address</label><input id="clientAddress" placeholder="Address"/></div>
+        </div>
+
+        <div class="section-title" style="margin-top:14px;">Quotation Items <span id="itemCount" style="color:var(--primary)"></span></div>
+        <div class="lines" id="quoteLines">
+          <div class="empty" id="emptyState">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.3 4.6a1 1 0 0 0 .9 1.4h11"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg>
+            <div>No items yet. Click <b>Add</b> on any equipment to build the quote.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TOTALS -->
+      <div class="totals">
+        <div class="trow muted"><span>Subtotal</span><span class="val" id="tSubtotal">₹0</span></div>
+        <div class="trow muted"><span>Item discounts</span><span class="val" id="tItemDisc">−₹0</span></div>
+        <div class="trow">
+          <span class="overall-disc">Overall discount
+            <input id="overallDiscValue" type="number" min="0" value="0"/>
+            <select id="overallDiscType"><option value="percent">%</option><option value="amount">₹</option></select>
+          </span>
+          <span class="val" id="tOverallDisc">−₹0</span>
+        </div>
+        <div class="trow" id="gstRow">
+          <span class="gst-row">
+            <label class="toggle"><input type="checkbox" id="gstEnabled" checked/> GST</label>
+            <input id="gstPercent" type="number" min="0" step="0.5" value="18" style="width:56px;padding:6px;border:1px solid var(--border);border-radius:6px;text-align:right;"/> %
+          </span>
+          <span class="val" id="tGst">₹0</span>
+        </div>
+        <div class="trow grand"><span>Grand Total</span><span class="val" id="tGrand">₹0</span></div>
+
+        <div class="actions">
+          <button class="btn-clear" id="btnClear" title="Clear all items">Clear</button>
+          <button class="btn-save" id="btnSave" title="Save to Saved Quotes">Save</button>
+          <button class="btn-save" id="btnPrint" title="Open a printable PDF">PDF</button>
+          <button class="btn-print" id="btnWord" title="Save an editable Word document">Word</button>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<!-- SETTINGS MODAL -->
+<div class="modal-backdrop" id="settingsModal">
+  <div class="modal">
+    <header><h2>Company Settings</h2><button class="close" data-close>&times;</button></header>
+    <div class="content">
+      <div class="row2">
+        <div class="field"><label>Company name</label><input id="setCompany"/></div>
+        <div class="field"><label>Tagline</label><input id="setTagline"/></div>
+      </div>
+      <div class="field"><label>Address</label><input id="setAddress"/></div>
+      <div class="row2">
+        <div class="field"><label>Phone</label><input id="setPhone"/></div>
+        <div class="field"><label>Email</label><input id="setEmail"/></div>
+      </div>
+      <div class="row2">
+        <div class="field"><label>GSTIN</label><input id="setGstin"/></div>
+        <div class="field"><label>Logo image (filename in /images or URL)</label><input id="setLogo" placeholder="logo.png"/></div>
+      </div>
+      <div class="row2">
+        <div class="field"><label>Proprietor / Signatory name</label><input id="setProprietor" placeholder="Kinnar Shah"/></div>
+        <div class="field"><label>Designation</label><input id="setProprietorTitle" placeholder="Proprietor"/></div>
+      </div>
+      <div class="field"><label>Signature image (filename in /images or URL)</label><input id="setSignature" placeholder="signature.png"/></div>
+      <div class="row2">
+        <div class="field"><label>Default GST %</label><input id="setGstPercent" type="number" step="0.5"/></div>
+        <div class="field"><label>Quote validity (days)</label><input id="setValidity" type="number"/></div>
+      </div>
+      <div class="field"><label>Opening line</label><input id="setIntro" placeholder="We are pleased to submit our quotation…"/></div>
+      <div class="row2">
+        <label class="toggle"><input type="checkbox" id="setShowGrand"/> Show Grand Total on the PDF</label>
+        <label class="toggle"><input type="checkbox" id="setShowPhotos"/> Show product photos on the PDF</label>
+      </div>
+      <div class="field"><label>Terms &amp; Conditions</label><textarea id="setTerms" rows="5"></textarea></div>
+    </div>
+    <footer>
+      <button class="cancel" data-close>Cancel</button>
+      <button class="save" id="btnSaveSettings">Save Settings</button>
+    </footer>
+  </div>
+</div>
+
+<!-- SAVED QUOTES MODAL -->
+<div class="modal-backdrop" id="savedModal">
+  <div class="modal">
+    <header><h2>Saved Quotations</h2><button class="close" data-close>&times;</button></header>
+    <div class="content" id="savedList"><p style="color:var(--sub)">Loading…</p></div>
+  </div>
+</div>
+
+<!-- PRINTABLE DOCUMENT -->
+<div id="printDoc"></div>
+
+<script src="quotedoc.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

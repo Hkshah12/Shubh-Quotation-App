@@ -1,0 +1,16 @@
+# Generated quotation exports (per-client .doc/.html) and saved quote records.
+# These are produced at runtime; uncomment to exclude them from the repo.
+/Quotations/
+/data/quotations/*.json
+
+# Logs / temp
+*.log
+*.tmp
+
+# OS junk
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Node (this project has zero dependencies, but just in case)
+node_modules/

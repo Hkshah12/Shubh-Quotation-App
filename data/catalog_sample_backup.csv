@@ -1,0 +1,13 @@
+sku,name,brand,category,description,unit,price,hsn,image
+SE-CENT-001,Digital Centrifuge 5000 RPM,LabTech,Centrifuges,8-tube digital centrifuge with timer and speed control,unit,18500,9018,centrifuge.png
+SE-MICRO-002,Binocular Compound Microscope,OptiView,Microscopes,1000x binocular microscope with LED illumination,unit,12750,9011,microscope.jpg
+SE-AUTO-003,Fully Automated Biochemistry Analyzer,BioCore,Analyzers,Random access analyzer 400 tests/hour with touchscreen,unit,485000,9027,analyzer.jpg
+SE-INCU-004,CO2 Incubator 160L,ThermoSafe,Incubators,Water-jacketed CO2 incubator with HEPA filtration,unit,132000,8419,incubator.jpg
+SE-PIPT-005,Micropipette Set (0.5-10ul / 10-100ul / 100-1000ul),AccuPip,Consumables,Variable volume autoclavable micropipette set of 3,set,8900,9018,pipette.jpg
+SE-BALN-006,Analytical Balance 0.1mg,PrecisionWt,Balances,220g capacity analytical balance with draft shield,unit,54000,9016,balance.jpg
+SE-WBTH-007,Digital Water Bath 12L,ThermoSafe,Baths,Stainless steel water bath ambient to 100C with PID control,unit,15600,8419,waterbath.jpg
+SE-ELISA-008,ELISA Microplate Reader,BioCore,Analyzers,96-well microplate reader 405-630nm filters,unit,215000,9027,elisa.jpg
+SE-AUTO-009,Automatic Blood Cell Counter (3-part),HemoLine,Analyzers,3-part differential hematology analyzer 60 samples/hr,unit,178000,9027,cellcounter.jpg
+SE-STER-010,Vertical Autoclave 75L,SteriMax,Sterilizers,Vertical laboratory autoclave with digital controls,unit,68500,8419,autoclave.jpg
+SE-PHMT-011,Benchtop pH Meter,AccuPip,Meters,Digital pH/mV meter with ATC and electrode,unit,9400,9027,phmeter.jpg
+SE-HOTP-012,Magnetic Hot Plate Stirrer,LabTech,Stirrers,Hot plate magnetic stirrer up to 340C 1500 RPM,unit,7250,8419,hotplate.jpg
