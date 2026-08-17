@@ -11,7 +11,7 @@ const url = require('url');
 const PORT = process.env.PORT || 4321;
 const ROOT = __dirname;
 const DATA_DIR = path.join(ROOT, 'data');
-const PUBLIC_DIR = path.join(ROOT, 'public');
+const PUBLIC_DIR = ROOT; // web files now live at the repo root (so GitHub Pages can serve them)
 const IMAGES_DIR = path.join(ROOT, 'images');
 const CATALOG_CSV = path.join(DATA_DIR, 'catalog.csv');
 const SETTINGS_FILE = path.join(DATA_DIR, 'settings.json');
@@ -306,6 +306,10 @@ const server = http.createServer(async (req, res) => {
     // Static: images folder
     if (pathname.startsWith('/images/')) {
       return safeServeStatic(res, IMAGES_DIR, pathname.replace('/images/', ''));
+    }
+    // Static: data folder (catalog.csv / settings.json) — for the client-side app
+    if (pathname.startsWith('/data/')) {
+      return safeServeStatic(res, DATA_DIR, pathname.replace('/data/', ''));
     }
     // Static: public folder (index + assets)
     let rel = pathname === '/' ? 'index.html' : pathname.slice(1);

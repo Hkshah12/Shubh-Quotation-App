@@ -15,7 +15,7 @@ const State = {
 const $ = (id) => document.getElementById(id);
 const fmt = (n) => (State.settings.currency || '₹') + Number(n || 0).toLocaleString('en-IN', { maximumFractionDigits: 2 });
 const esc = (s) => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-const imgURL = (src) => '/api/image?src=' + encodeURIComponent(src || '');
+const imgURL = (src) => CDATA.assetUrl(src);
 
 /* ---------------- Init ---------------- */
 async function init() {
@@ -28,7 +28,7 @@ async function init() {
 
 async function loadSettings() {
   try {
-    const s = await fetch('/api/settings').then(r => r.json());
+    const s = await CDATA.getSettings();
     State.settings = s;
     State.gst.enabled = s.gstEnabled !== false;
     State.gst.percent = s.gstPercent != null ? s.gstPercent : 18;
@@ -56,7 +56,7 @@ function applySettingsToHeader() {
 
 async function loadCatalog() {
   try {
-    const data = await fetch('/api/catalog').then(r => r.json());
+    const data = await CDATA.catalog();
     State.catalog = data.items || [];
     const cats = Array.from(new Set(State.catalog.map(i => i.category).filter(Boolean)));
     State.categories = ['All', ...cats];
@@ -276,6 +276,7 @@ function bindUI() {
 function newQuote() {
   if (State.cart.length && !confirm('Start a new quotation? Current items will be cleared.')) return;
   State.cart = []; State.overall = { value: 0, type: 'percent' };
+  $('printDoc').dataset.quoteNo = '';
   $('overallDiscValue').value = 0; $('overallDiscType').value = 'percent';
   ['clientName', 'clientContact', 'clientPhone', 'clientEmail', 'clientAddress'].forEach(id => $(id).value = '');
   renderCatalog(); renderCart(); recalc();
@@ -305,7 +306,7 @@ async function saveSettingsFromModal() {
     showGrandTotal: $('setShowGrand').checked, showPhotos: $('setShowPhotos').checked,
     quoteValidityDays: Number($('setValidity').value) || 15, termsText: $('setTerms').value,
   };
-  State.settings = await fetch('/api/settings', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) }).then(r => r.json());
+  State.settings = await CDATA.saveSettings(payload);
   State.gst.percent = State.settings.gstPercent; $('gstPercent').value = State.gst.percent;
   applySettingsToHeader(); recalc(); closeModals();
 }
@@ -329,15 +330,15 @@ function collectQuote(quoteNo) {
 
 async function saveQuote() {
   if (!State.cart.length) return alert('Add at least one item before saving.');
-  const { quoteNo } = await fetch('/api/next-quote-no').then(r => r.json());
+  const { quoteNo } = await CDATA.nextQuoteNo();
   const data = collectQuote(quoteNo);
-  await fetch('/api/quotations', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) });
+  CDATA.saveQuotation(data);
   alert('Quotation saved as ' + quoteNo);
 }
 
 async function openSaved() {
   $('savedModal').classList.add('open');
-  const list = await fetch('/api/quotations').then(r => r.json());
+  const list = CDATA.listQuotations();
   const box = $('savedList');
   if (!list.length) { box.innerHTML = `<p style="color:var(--sub)">No saved quotations yet.</p>`; return; }
   box.innerHTML = list.reverse().map(q => `
@@ -349,7 +350,8 @@ async function openSaved() {
 }
 
 async function loadQuote(id) {
-  const q = await fetch('/api/quotations/' + encodeURIComponent(id)).then(r => r.json());
+  const q = CDATA.getQuotation(id);
+  if (!q) return;
   $('clientName').value = q.client?.name || ''; $('clientContact').value = q.client?.contact || '';
   $('clientPhone').value = q.client?.phone || ''; $('clientEmail').value = q.client?.email || '';
   $('clientAddress').value = q.client?.address || '';
@@ -364,78 +366,57 @@ async function loadQuote(id) {
   renderCatalog(); renderCart(); recalc(); closeModals();
 }
 
-/* ---------------- Print (Shubh Enterprise letterhead) ---------------- */
+/* Build the document options with images fetched + embedded as data URIs (self-contained files) */
+async function buildInlineOpts(quoteNo) {
+  const s = State.settings; const t = computeTotals();
+  const c = { name: $('clientName').value, contact: $('clientContact').value, phone: $('clientPhone').value, email: $('clientEmail').value, address: $('clientAddress').value };
+  const today = new Date().toLocaleDateString('en-IN', { year: 'numeric', month: 'long', day: 'numeric' });
+  const map = await CDATA.buildImageMap(s, State.cart);
+  const imgURLd = (src) => src ? (map[CDATA.assetUrl(src)] || '') : '';
+  const descURLd = (src) => src ? (map[CDATA.descUrl(src)] || '') : '';
+  const opts = {
+    settings: s, items: State.cart, client: c, totals: t,
+    overall: State.overall, gst: State.gst, quoteNo, today, validity: s.quoteValidityDays || 15,
+    imgURL: imgURLd, descURL: descURLd,
+  };
+  return { opts, clientName: c.name || 'Unnamed Client' };
+}
+function safeFileBase(quoteNo, clientName) {
+  const q = String(quoteNo || 'Quotation').replace(/[^\w\-]/g, '_');
+  const cn = String(clientName || '').replace(/[^\w\- ]/g, '').trim().slice(0, 40);
+  return cn ? (q + ' - ' + cn) : q;
+}
+
+/* ---------------- Print / PDF (opens a printable copy in a new tab) ---------------- */
 async function printQuote() {
   if (!State.cart.length) return alert('Add at least one item before printing.');
   let quoteNo = $('printDoc').dataset.quoteNo;
-  if (!quoteNo) { quoteNo = (await fetch('/api/next-quote-no').then(r => r.json())).quoteNo; $('printDoc').dataset.quoteNo = quoteNo; }
-  const s = State.settings; const t = computeTotals();
-  const c = { name: $('clientName').value, contact: $('clientContact').value, phone: $('clientPhone').value, email: $('clientEmail').value, address: $('clientAddress').value };
-  const today = new Date().toLocaleDateString('en-IN', { year: 'numeric', month: 'long', day: 'numeric' });
-  const validity = s.quoteValidityDays || 15;
-
-  const opts = {
-    settings: s, items: State.cart, client: c, totals: t,
-    overall: State.overall, gst: State.gst, quoteNo, today, validity, imgURL,
-  };
-  // On-page fallback copy (used only if pop-ups are blocked)
-  $('printDoc').innerHTML = QuoteDoc.buildFallback(opts);
-  const clientName = c.name || 'Unnamed Client';
+  if (!quoteNo) { quoteNo = (await CDATA.nextQuoteNo()).quoteNo; $('printDoc').dataset.quoteNo = quoteNo; }
+  const { opts } = await buildInlineOpts(quoteNo);
   const standalone = QuoteDoc.buildStandalone(opts);
-
-  try {
-    const resp = await fetch('/api/export', {
-      method: 'POST', headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ quoteNo, clientName, html: standalone }),
-    }).then(r => r.json());
-
-    if (resp && resp.ok) {
-      // Also save the structured JSON record so it appears under "Saved Quotes"
-      try { await fetch('/api/quotations', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(collectQuote(quoteNo)) }); } catch (e) {}
-      const win = window.open(resp.urlPath, '_blank');
-      if (!win) {
-        alert('Quotation saved to folder:\n\nQuotations\\' + resp.folderName + '\\' + resp.fileName +
-          '\n\nPop-up was blocked — printing this page instead.');
-        window.print();
-      }
-    } else {
-      window.print();
-    }
-  } catch (e) {
-    console.error('export failed', e);
+  try { CDATA.saveQuotation(collectQuote(quoteNo)); } catch (e) {}
+  const blob = new Blob([standalone], { type: 'text/html' });
+  const url = URL.createObjectURL(blob);
+  const win = window.open(url, '_blank');
+  if (!win) {
+    // pop-up blocked — render on this page and print it
+    $('printDoc').innerHTML = QuoteDoc.buildFallback(opts);
     window.print();
   }
+  setTimeout(() => URL.revokeObjectURL(url), 60000);
 }
 
-/* ---------------- Word (.doc) export ---------------- */
+/* ---------------- Word (.doc) export (downloads an editable file) ---------------- */
 async function saveWord() {
   if (!State.cart.length) return alert('Add at least one item before exporting.');
   let quoteNo = $('printDoc').dataset.quoteNo;
-  if (!quoteNo) { quoteNo = (await fetch('/api/next-quote-no').then(r => r.json())).quoteNo; $('printDoc').dataset.quoteNo = quoteNo; }
-  const s = State.settings; const t = computeTotals();
-  const c = { name: $('clientName').value, contact: $('clientContact').value, phone: $('clientPhone').value, email: $('clientEmail').value, address: $('clientAddress').value };
-  const today = new Date().toLocaleDateString('en-IN', { year: 'numeric', month: 'long', day: 'numeric' });
-  const opts = {
-    settings: s, items: State.cart, client: c, totals: t,
-    overall: State.overall, gst: State.gst, quoteNo, today, validity: s.quoteValidityDays || 15, imgURL,
-  };
-  const html = QuoteDoc.buildWordDoc(opts);
-  const clientName = c.name || 'Unnamed Client';
-  try {
-    const resp = await fetch('/api/export-word', {
-      method: 'POST', headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ quoteNo, clientName, html }),
-    }).then(r => r.json());
-    if (resp && resp.ok) {
-      try { await fetch('/api/quotations', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(collectQuote(quoteNo)) }); } catch (e) {}
-      const a = document.createElement('a');
-      a.href = resp.urlPath; a.download = resp.fileName;
-      document.body.appendChild(a); a.click(); a.remove();
-      alert('Editable Word document saved to:\n\nQuotations\\' + resp.folderName + '\\' + resp.fileName + '\n\n(It is also downloading now — open it in Microsoft Word to edit.)');
-    } else {
-      alert('Could not create the Word document.');
-    }
-  } catch (e) { console.error('word export failed', e); alert('Word export failed: ' + e.message); }
+  if (!quoteNo) { quoteNo = (await CDATA.nextQuoteNo()).quoteNo; $('printDoc').dataset.quoteNo = quoteNo; }
+  const { opts, clientName } = await buildInlineOpts(quoteNo);
+  const html = '﻿' + QuoteDoc.buildWordDoc(opts);
+  try { CDATA.saveQuotation(collectQuote(quoteNo)); } catch (e) {}
+  const fname = safeFileBase(quoteNo, clientName) + '.doc';
+  CDATA.downloadBlob(html, fname, 'application/msword');
+  alert('Editable Word document downloaded:\n\n' + fname + '\n\nOpen it in Microsoft Word to edit before sending.');
 }
 
 // Register the service worker so the app can be installed as a home-screen icon (PWA)

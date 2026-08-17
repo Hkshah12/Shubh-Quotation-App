@@ -84,8 +84,8 @@
     const c = opts.client || {};
     const t = opts.totals || {};
     const cur = s.currency || '₹';
-    const imgURL = opts.imgURL || (src => '/api/image?src=' + encodeURIComponent(src || ''));
-    const noFb = (src) => imgURL(src) + '&fallback=none';
+    const imgURL = opts.imgURL || (src => src || '');
+    const descURL = opts.descURL || imgURL;
     const money = (n) => fmt(n, cur);
 
     const wm = esc(s.company || 'Shubh Enterprise').replace(/\b([A-Za-z])/g, '<span style="font-size:1.16em;">$1</span>');
@@ -95,7 +95,7 @@
     const letterhead = `
       <div class="lh">
         <div class="lh-main">
-          <div class="lh-logo">${s.logo ? `<img src="${noFb(s.logo)}" onerror="this.style.display='none';this.parentElement.textContent='SE'"/>` : 'SE'}</div>
+          <div class="lh-logo">${(s.logo && imgURL(s.logo)) ? `<img src="${imgURL(s.logo)}" onerror="this.style.display='none';this.parentElement.textContent='SE'"/>` : 'SE'}</div>
           <div class="lh-name">${wm}</div>
           <div class="lh-logo lh-spacer"></div>
         </div>
@@ -108,7 +108,7 @@
     const rows = (opts.items || []).map((it, idx) => {
       const gross = it.price * it.qty; const net = gross * (1 - (it.disc || 0) / 100);
       const photoCell = showPhotos
-        ? `<td class="c"><div class="pimg">${it.image ? `<img src="${noFb(it.image)}" onerror="this.style.display='none'"/>` : ''}</div></td>`
+        ? `<td class="c"><div class="pimg">${(it.image && imgURL(it.image)) ? `<img src="${imgURL(it.image)}" onerror="this.style.display='none'"/>` : ''}</div></td>`
         : '';
       return `<tr>
         <td class="c">${idx + 1}</td>
@@ -176,7 +176,7 @@
         <div class="sign">
           <div class="sign-off">Yours Sincerely,</div>
           <div class="sign-for">For ${esc(s.company || 'Shubh Enterprise')}</div>
-          ${s.signature ? `<img class="sign-img" src="${noFb(s.signature)}" onerror="this.style.display='none'"/>` : '<div style="height:40px"></div>'}
+          ${(s.signature && imgURL(s.signature)) ? `<img class="sign-img" src="${imgURL(s.signature)}" onerror="this.style.display='none'"/>` : '<div style="height:40px"></div>'}
           <div class="sign-name">${esc(s.proprietorName || '')}</div>
           <div class="sign-title">${esc(s.proprietorTitle || '')}</div>
           ${s.phone ? `<div class="sign-cx">T: ${esc(s.phone)}</div>` : ''}
@@ -189,12 +189,12 @@
 
   // Appended full-width product-description pages (for items ticked "Desc")
   function descriptionSectionHTML(opts) {
-    const imgURL = opts.imgURL || (src => '/api/image?src=' + encodeURIComponent(src || ''));
-    const items = (opts.items || []).filter(it => it.includeDesc && it.descImage);
+    const descURL = opts.descURL || opts.imgURL || (src => src || '');
+    const items = (opts.items || []).filter(it => it.includeDesc && it.descImage && descURL(it.descImage));
     if (!items.length) return '';
     const figs = items.map(it => `
       <figure class="descfig">
-        <img src="${imgURL(it.descImage)}"/>
+        <img src="${descURL(it.descImage)}"/>
         <figcaption>${esc(it.name)}${it.sku ? ' — ' + esc(it.sku) : ''}</figcaption>
       </figure>`).join('');
     return `<section class="descpages">
@@ -262,8 +262,8 @@
     const t = opts.totals || {};
     const cur = s.currency || '₹';
     const money = (n) => fmt(n, cur);
-    const imgURL = opts.imgURL || (src => '/api/image?src=' + encodeURIComponent(src || ''));
-    const noFb = (src) => imgURL(src) + '&fallback=none';
+    const imgURL = opts.imgURL || (src => src || '');
+    const descURL = opts.descURL || imgURL;
     const gst = opts.gst || {};
     const overall = opts.overall || { value: 0, type: 'percent' };
     const showPhotos = s.showPhotos !== false;
@@ -277,7 +277,7 @@
     const letterhead = `
     <table width="100%" style="border-collapse:collapse;">
       <tr>
-        <td width="80" valign="top">${s.logo ? `<img src="${noFb(s.logo)}" width="66" height="66"/>` : ''}</td>
+        <td width="80" valign="top">${(s.logo && imgURL(s.logo)) ? `<img src="${imgURL(s.logo)}" width="66" height="66"/>` : ''}</td>
         <td align="center" valign="middle" style="${serif}font-size:19pt;font-weight:bold;color:${RED};">${wm}</td>
         <td width="80"></td>
       </tr>
@@ -307,7 +307,7 @@
     const cellStyle = `padding:5pt;border:0.5pt solid ${BD};vertical-align:top;`;
     const rows = (opts.items || []).map((it, i) => {
       const net = it.price * it.qty * (1 - (it.disc || 0) / 100);
-      const photo = showPhotos ? `<td align="center" style="${cellStyle}">${it.image ? `<img src="${noFb(it.image)}" width="42"/>` : ''}</td>` : '';
+      const photo = showPhotos ? `<td align="center" style="${cellStyle}">${(it.image && imgURL(it.image)) ? `<img src="${imgURL(it.image)}" width="42"/>` : ''}</td>` : '';
       return `<tr>
         <td align="center" style="${cellStyle}">${i + 1}</td>
         ${photo}
@@ -341,19 +341,19 @@
     <div style="${serif}font-size:11pt;margin-top:22pt;">
       Yours Sincerely,<br/>
       <b>For ${esc(s.company || 'Shubh Enterprise')}</b><br/>
-      ${s.signature ? `<img src="${noFb(s.signature)}" height="48"/><br/>` : '<br/><br/>'}
+      ${(s.signature && imgURL(s.signature)) ? `<img src="${imgURL(s.signature)}" height="48"/><br/>` : '<br/><br/>'}
       <b style="font-size:12pt;">${esc(s.proprietorName || '')}</b><br/>
       <span style="color:${SUB};">${esc(s.proprietorTitle || '')}</span><br/>
       ${s.phone ? `<span style="color:${SUB};font-size:10pt;">T: ${esc(s.phone)}</span><br/>` : ''}
       ${s.email ? `<span style="color:${SUB};font-size:10pt;">E: ${esc(s.email)}</span>` : ''}
     </div>`;
 
-    const descItems = (opts.items || []).filter(it => it.includeDesc && it.descImage);
+    const descItems = (opts.items || []).filter(it => it.includeDesc && it.descImage && descURL(it.descImage));
     const descWord = descItems.length ? `
     <div style="page-break-before:always;">
       <div style="${serif}font-size:16pt;font-weight:bold;color:${RED};border-bottom:2pt solid ${RED};padding-bottom:4pt;">Product Descriptions</div>
       <p style="${serif}font-size:10pt;font-style:italic;color:${SUB};">The following are the descriptions of the requested products.</p>
-      ${descItems.map(it => `<div style="text-align:center;margin-bottom:14pt;page-break-inside:avoid;"><img src="${noFb(it.descImage)}" width="640"/><br/><span style="${serif}font-weight:bold;">${esc(it.name)}${it.sku ? ' — ' + esc(it.sku) : ''}</span></div>`).join('')}
+      ${descItems.map(it => `<div style="text-align:center;margin-bottom:14pt;page-break-inside:avoid;"><img src="${descURL(it.descImage)}" width="640"/><br/><span style="${serif}font-weight:bold;">${esc(it.name)}${it.sku ? ' — ' + esc(it.sku) : ''}</span></div>`).join('')}
     </div>` : '';
 
     const clientName = c.name || 'Unnamed Client';
