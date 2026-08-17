@@ -29,7 +29,10 @@ Requires **Node.js** to be installed (it already is on this machine: v24).
    - **Per item:** type a % in the small `Disc` box on each line.
    - **Overall:** set an overall discount in `%` or `₹` at the bottom.
 4. **GST** — Toggle on/off and set the % (defaults to 18%).
-5. **Client details** — Fill in name, contact, phone, address at the top of the panel.
+5. **Description photos** — Tick the **Desc** checkbox on any line to append that product's
+   description/spec image on fresh **full-width page(s)** after the quotation (in both Word
+   and PDF). The checkbox is greyed out until you link a description image (see below).
+6. **Client details** — Fill in name, contact, phone, address at the top of the panel.
 6. **Save** — Stores the quote (auto-numbered, e.g. `SE/2026/0001`). Reopen later via **Saved Quotes**.
 7. **Word** *(recommended for editing)* — Saves the quotation as an **editable Microsoft
    Word document** (`.doc`) inside the client's folder and downloads it. Open it in Word to
@@ -124,6 +127,16 @@ above. Notes:
   app open — the images then embed into the saved PDF for emailing.
 - Items without a photo simply show a blank cell (no ugly placeholder in the PDF).
 - You can turn the Photo column off in **Settings → "Show product photos on the PDF"**.
+
+### Description photos (spec-sheet pages)
+For big product/spec images that print on their own page(s) after the quotation:
+1. Put the image in **`images/descriptions/`** (e.g. `centrifuge_desc.jpg`).
+2. In `data/catalog.csv`, write the file name in the **`descimage`** column for that item.
+3. In the app, tick the **Desc** checkbox on that line when building a quote.
+
+The images print **almost the full page width**, one after another on fresh pages, under a
+"Product Descriptions" heading — in both the Word and PDF exports (embedded, so they travel
+with the file).
 
 ### Grand Total on the quotation (off by default)
 Because quotations are often negotiated, the **Grand Total is hidden on the client PDF** by
