@@ -202,8 +202,52 @@ header.topbar {
 ::-webkit-scrollbar-thumb { background:#cbd5e1; border-radius: 10px; }
 ::-webkit-scrollbar-thumb:hover { background:#94a3b8; }
 
-@media (max-width: 900px) {
-  .main { grid-template-columns: 1fr; }
-  .quote { border-top: 3px solid var(--primary); }
+/* Mobile-only elements (hidden on desktop) */
+.mobile-cart-bar { display: none; }
+.quote-mobile-head { display: none; }
+
+/* Tablet: keep two columns, narrower quote panel */
+@media (max-width: 1024px) {
+  .main { grid-template-columns: 1fr 380px; }
+}
+/* Phone: single column, natural page scroll, sticky totals */
+@media (max-width: 768px) {
+  html, body { overflow-x: hidden; }
+  .app { height: auto; min-height: 100vh; min-height: 100dvh; }
+  header.topbar { position: sticky; top: 0; flex-wrap: wrap; gap: 8px; padding: 8px 12px; }
+  .topbar .spacer { display: none; }
+  .brand { flex: 1 1 100%; }
+  .brand h1 { font-size: 19px; }
+  .brand p { display: none; }
+  .brand .logo { width: 38px; height: 38px; }
+  .topbar button { flex: 1 1 0; padding: 8px 6px; font-size: 12.5px; text-align: center; }
+  .main { display: block; }
+  .catalog { border-right: none; }
+  .catalog-tools { padding: 10px 12px 6px; }
+  .grid { height: auto; overflow: visible; padding: 10px 12px 84px;
+    grid-template-columns: repeat(auto-fill, minmax(148px, 1fr)); gap: 10px; }
+  .card .thumb { height: 104px; }
+
+  /* Quotation panel becomes a slide-up full-screen sheet */
+  .quote { position: fixed; inset: 0; z-index: 70; transform: translateY(100%);
+    transition: transform .25s ease; border-top: none; box-shadow: none; }
+  .quote.open { transform: translateY(0); }
+  .quote-mobile-head { display: flex; align-items: center; gap: 12px; padding: 12px 16px;
+    border-bottom: 1px solid var(--border); font-weight: 800; color: var(--primary);
+    background: #fff; font-size: 16px; }
+  .quote-close { background: var(--muted); border: none; color: var(--primary);
+    font-weight: 700; padding: 8px 14px; border-radius: 8px; cursor: pointer; font-size: 14px; }
+  .quote-scroll { overflow-y: auto; }
+  .actions { flex-wrap: wrap; }
+  .actions button { flex: 1 1 40%; }
+  .btn-clear { flex: 1 1 100% !important; order: 5; }
+
+  /* Fixed bottom bar that opens the quotation sheet */
+  .mobile-cart-bar { display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
+    align-items: center; gap: 10px; background: var(--primary); color: #fff; border: none;
+    padding: 12px 16px; box-shadow: 0 -4px 16px rgba(90,20,10,.28); font-family: inherit; cursor: pointer; }
+  .mcb-count { font-size: 13px; opacity: .92; font-weight: 600; }
+  .mcb-total { font-size: 16px; font-weight: 800; margin-left: auto; }
+  .mcb-cta { background: #fff; color: var(--primary); padding: 7px 12px; border-radius: 8px; font-size: 13px; font-weight: 800; }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }

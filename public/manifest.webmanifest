@@ -1,0 +1,15 @@
+{
+  "name": "Shubh Enterprise — Quotation Generator",
+  "short_name": "Shubh Quote",
+  "description": "Build medical lab equipment quotations for Shubh Enterprise.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#FBF7EE",
+  "theme_color": "#C00000",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

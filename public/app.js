@@ -210,6 +210,10 @@ function recalc() {
   $('tGst').textContent = fmt(t.gstAmt);
   $('tGrand').textContent = fmt(t.grandTotal);
   $('gstRow').style.opacity = State.gst.enabled ? '1' : '.5';
+  // mobile bottom bar
+  const n = State.cart.reduce((s, c) => s + c.qty, 0);
+  $('mcbCount').textContent = State.cart.length + (State.cart.length === 1 ? ' item' : ' items') + (n ? ' · ' + n + ' qty' : '');
+  $('mcbTotal').textContent = fmt(t.grandTotal);
 }
 
 /* ---------------- UI bindings ---------------- */
@@ -247,6 +251,10 @@ function bindUI() {
   $('overallDiscType').addEventListener('change', e => { State.overall.type = e.target.value; recalc(); });
   $('gstEnabled').addEventListener('change', e => { State.gst.enabled = e.target.checked; recalc(); });
   $('gstPercent').addEventListener('input', e => { State.gst.percent = Number(e.target.value) || 0; recalc(); });
+
+  // Mobile: open/close the quotation sheet
+  $('mobileCartBar').addEventListener('click', () => $('quotePanel').classList.add('open'));
+  $('quoteClose').addEventListener('click', () => $('quotePanel').classList.remove('open'));
 
   $('btnClear').addEventListener('click', () => { if (State.cart.length && confirm('Clear all items from this quotation?')) { State.cart = []; renderCatalog(); renderCart(); recalc(); } });
   $('btnNew').addEventListener('click', newQuote);
@@ -428,6 +436,11 @@ async function saveWord() {
       alert('Could not create the Word document.');
     }
   } catch (e) { console.error('word export failed', e); alert('Word export failed: ' + e.message); }
+}
+
+// Register the service worker so the app can be installed as a home-screen icon (PWA)
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(() => {}));
 }
 
 init();

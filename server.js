@@ -27,6 +27,7 @@ const MIME = {
   '.gif': 'image/gif', '.svg': 'image/svg+xml', '.webp': 'image/webp',
   '.ico': 'image/x-icon',
   '.doc': 'application/msword',
+  '.webmanifest': 'application/manifest+json',
 };
 
 // ---------- CSV parsing (handles quoted fields, commas, quotes) ----------
@@ -184,8 +185,28 @@ function clientFolderPath(clientName) {
   return { folder, folderName };
 }
 
+// Optional shared-password gate (enabled when APP_PASSWORD env var is set, e.g. on the cloud host).
+// Locally, with no APP_PASSWORD, the app is open as before.
+function checkAuth(req, res) {
+  const pw = process.env.APP_PASSWORD;
+  if (!pw) return true;
+  const user = process.env.APP_USER || 'shubh';
+  const hdr = req.headers['authorization'] || '';
+  const m = hdr.match(/^Basic\s+(.+)$/i);
+  if (m) {
+    const decoded = Buffer.from(m[1], 'base64').toString('utf8');
+    const i = decoded.indexOf(':');
+    const u = decoded.slice(0, i), p = decoded.slice(i + 1);
+    if (u === user && p === pw) return true;
+  }
+  res.writeHead(401, { 'WWW-Authenticate': 'Basic realm="Shubh Enterprise Quotation", charset="UTF-8"', 'Content-Type': 'text/plain' });
+  res.end('Authentication required.');
+  return false;
+}
+
 // ---------- server ----------
 const server = http.createServer(async (req, res) => {
+  if (!checkAuth(req, res)) return;
   const parsed = url.parse(req.url, true);
   const pathname = parsed.pathname;
 
