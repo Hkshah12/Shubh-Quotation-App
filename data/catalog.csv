@@ -153,8 +153,8 @@ DB02-B5,0601-00-0104-0-047_10MM_RB_HTNG_BLK_66MM,Neuation / Accumax,Other,,unit,
 DB02-BB,0602-00-0102-0-015_BEAD_BLOCK_AL,Neuation / Accumax,Other,,unit,9491,,,
 BLOCK LIFTER,0601-00-0000-0-034_BLOCK LIFTER,Neuation / Accumax,Other,,unit,261,,,
 DB01-B - SS METAL BEADS,SS 304 METAL BEADS_3.2MM,Neuation / Accumax,Other,,unit,5100,,,
-ITHERM CH25,ITHERM CH25,Neuation / Accumax,Other,,unit,64181,,,
-IRUPT 24P,IRUPT 24P,Neuation / Accumax,Homogenizers,,unit,324508,,,
+ITHERM CH25,"iTHERM CH25 NXT Cooling-Heating Incubator (45L, Ambient less 15°C to 60°C)",Neuation / Accumax,Other,,unit,64181,,iTHERM CH25 NXT.png,iTHERM CH25 NXT desc.png
+IRUPT 24P,"iRUPT 24P Cell / Tissue Homogenizer (1-24 samples, 490-4550 RPM, Programmable)",Neuation / Accumax,Homogenizers,,unit,324508,,iRUPT 24P.png,iRUPT 24P desc.png
 CH01-TA1,2 ML TUBE CARRIAGE KIT (ASS)_0261-00-0500 (CH01 TA1),Neuation / Accumax,Rotors & Buckets,,unit,9909,,,
 CH01-TA3,7 ML ROTOR KIT_0261-00-0600(FOR I RUPT 24P) - (CH01 TA3),Neuation / Accumax,Rotors & Buckets,,unit,12730,,,
 IRUPT JR.,IRUPT JR.,Neuation / Accumax,Homogenizers,,unit,58092,,,
@@ -936,8 +936,8 @@ IROLL DR 24-3,"iROLL DR24 Digital Disk Tube Rotator with 12x50ml Disk (C50, 10-8
 IROLL PR 35,"iROLL PR35 Digital Plate Tube Rotator with 35x15ml Plate (C15, 10-80 RPM)",Neuation / Accumax,Tube Rollers,,unit,44304,,iROLL PR35.png,iROLL PR35 desc.png
 IROLL PR 35-2,"iROLL PR35 Digital Plate Tube Rotator with 55x2ml Plate (C5, 10-80 RPM)",Neuation / Accumax,Tube Rollers,,unit,44304,,iROLL PR35.png,iROLL PR35 desc.png
 IROLL PR 35-3,"iROLL PR35 Digital Plate Tube Rotator with 16x50ml Plate (C50, 10-80 RPM)",Neuation / Accumax,Tube Rollers,,unit,44304,,iROLL PR35.png,iROLL PR35 desc.png
-IRUPT 24P-2,IRUPT 24P (WITH CH01-TA1),Neuation / Accumax,Homogenizers,,unit,324508,,,
-IRUPT 24P-3,IRUPT 24P (WITH CH01-TA3),Neuation / Accumax,Homogenizers,,unit,324508,,,
+IRUPT 24P-2,iRUPT 24P Cell / Tissue Homogenizer with 24x2ml Tube Holder (CH01-TA1),Neuation / Accumax,Homogenizers,,unit,324508,,iRUPT 24P.png,iRUPT 24P desc.png
+IRUPT 24P-3,iRUPT 24P Cell / Tissue Homogenizer with 12x7ml Tube Holder (CH01-TA3),Neuation / Accumax,Homogenizers,,unit,324508,,iRUPT 24P.png,iRUPT 24P desc.png
 M3-3,ATTACHMENT (ASS)_3D-5(2.0)_M3-3_STACKING PLATFORM,Neuation / Accumax,Rotors & Buckets,,unit,3707,,,
 ATTC-1000-S-F-R,ATTC-1000-S-F-R (96 TIPS X 40 PACKS),Neuation / Accumax,Pipette Tips,,pack,34578,,,
 ATTC-1000-S-R,ATTC-1000-S-R (96 TIPS X 40 PACKS),Neuation / Accumax,Pipette Tips,,pack,30220,,,
