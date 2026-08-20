@@ -132,13 +132,13 @@ RB50,0341-00-0000-0-011_50ML _REACTION_BLOCK (HS10/20 RB50),Neuation / Accumax,O
 RB100,0341-00-0000-0-008_100ML _REACTION_BLOCK (HS10/20 RB100),Neuation / Accumax,Other,,unit,7393,,,
 RB250,0341-00-0000-0-007_250ML_REACTION_BLOCK (HS10/20 RB250),Neuation / Accumax,Other,,unit,7393,,,
 RB500,0341-00-0000-0-006_500ML _REACTION_BLOCK (HS10/20 RB500),Neuation / Accumax,Other,,unit,7393,,,
-HP380A,ISTIR HP 380A,Neuation / Accumax,Other,,unit,31150,,,
+HP380A,"iStir HP380A Hot Plate Magnetic Stirrer (20 Liters, 200-2200 RPM, Ambient to 380°C)",Neuation / Accumax,Other,,unit,31150,,iSTIR HP380A.png,iSTIR HP380A desc.png
 HP450A,ISTIR HP 450A,Neuation / Accumax,Other,,unit,47429,,,
-ISTIR HP550 PRIME,ISTIR HP 550 PRIME,Neuation / Accumax,Other,,unit,47429,,,
+ISTIR HP550 PRIME,"iStir HP 550 Prime Hot Plate Magnetic Stirrer (20 Liters, 200-2200 RPM, Ambient to 550°C, with PT-1000 Probe & Stand)",Neuation / Accumax,Other,,unit,47429,,iSTIR HP550 PRIME.png,iSTIR HP550 PRIME desc.png
 ISTIR HP 350 PRIME,ISTIR HP 350 PRIME,Neuation / Accumax,Other,,unit,47429,,,
-ISTIR HP 5M,ISTIR HP 5M (220 V),Neuation / Accumax,Other,,unit,53737,,,
-ISTIR HP 10M,ISTIR HP 10M (220 V),Neuation / Accumax,Other,,unit,75604,,,
-ISTIR HP 15M,ISTIR HP 15M (220 V),Neuation / Accumax,Other,,unit,107054,,,
+ISTIR HP 5M,"iStir HP 5M 5-Station Heated Magnetic Stirrer (5x400ml, 300-1500 RPM, Ambient to 120°C)",Neuation / Accumax,Other,,unit,53737,,iSTIR HP 5M.png,iSTIR HP 5M desc.png
+ISTIR HP 10M,"iStir HP 10M 10-Station Heated Magnetic Stirrer (10x400ml, 300-1500 RPM, Ambient to 120°C)",Neuation / Accumax,Other,,unit,75604,,iSTIR HP 10M.png,iSTIR HP 5M desc.png
+ISTIR HP 15M,"iStir HP 15M 15-Station Heated Magnetic Stirrer (15x400ml, 300-1500 RPM, Ambient to 120°C)",Neuation / Accumax,Other,,unit,107054,,iSTIR HP 15M.png,iSTIR HP 5M desc.png
 ISTIR OH 20 PRIME,ISTIR OH 20P,Neuation / Accumax,Other,,unit,43036,,,
 ISTIR OH 40 PRIME,ISTIR OH 40P,Neuation / Accumax,Other,,unit,45013,,,
 ISTIR OH 75 ELITE,ISTIR OH 75E,Neuation / Accumax,Other,,unit,74272,,,
