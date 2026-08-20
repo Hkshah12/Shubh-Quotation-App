@@ -1,8 +1,8 @@
 sku,name,brand,category,description,unit,price,hsn,image,descimage
-IFUGE M08,IFUGE M08 MAGNETIC ROTOR,Neuation / Accumax,Rotors & Buckets,,unit,11082,,,
-IFUGE M08VT,IFUGE M08VT MAGNETIC ROTOR,Neuation / Accumax,Rotors & Buckets,,unit,15713,,,
-IFUGE M5K COMBI,IFUGE M5K COMBI,Neuation / Accumax,Centrifuges,,unit,18079,,,
-IFUGE M15K,IFUGE M15K,Neuation / Accumax,Centrifuges,,unit,57743,,,
+IFUGE M08,IFUGE M08 MAGNETIC ROTOR,Neuation / Accumax,Rotors & Buckets,,unit,11082,,iFUGE M08-M08VT.png,iFUGE M08-M08VT desc.png
+IFUGE M08VT,IFUGE M08VT MAGNETIC ROTOR,Neuation / Accumax,Rotors & Buckets,,unit,15713,,iFUGE M08-M08VT.png,iFUGE M08-M08VT desc.png
+IFUGE M5K COMBI,IFUGE M5K COMBI,Neuation / Accumax,Centrifuges,,unit,18079,,iFUGE M5K COMBI.png,iFUGE M5K COMBI desc.png
+IFUGE M15K,IFUGE M15K,Neuation / Accumax,Centrifuges,,unit,57743,,iFUGE M15K.png,iFUGE M15K desc.png
 M12-R2X8,ROTOR (ASS)_M15K_PCR_PL,Neuation / Accumax,Rotors & Buckets,,unit,17498,,,
 M12-R12-03,ROTOR (ASS)_M15K_PLASTIC,Neuation / Accumax,Rotors & Buckets,,unit,10686,,,
 IFUGE M24 NXT,IFUGE M24 (2.0),Neuation / Accumax,Centrifuges,,unit,81510,,,
@@ -679,43 +679,43 @@ MAP12-050,RPM P 5-50 (12) ACCUMAX (MAP 12-050),Neuation / Accumax,Pipettes,,unit
 MAP12-100,RPM P 10-100 (12) ACCUMAX (MAP 12-100),Neuation / Accumax,Pipettes,,unit,19965,,,
 MAP12-200,RPM P 20-200 (12) ACCUMAX (MAP 12-200),Neuation / Accumax,Pipettes,,unit,19965,,,
 MAP12-300,RPM P 30-300 (12) ACCUMAX (MAP 12-300),Neuation / Accumax,Pipettes,,unit,19965,,,
-AFV-2.5,Fab PIPETTE DP 0.1-2.5 ÂµL (AFV-2.5),Neuation / Accumax,Pipettes,,unit,12584,,AFV.png,
-AFV-10,DP 0.5-10 ÂµL (AFV-10),Neuation / Accumax,Pipettes,,unit,12584,,AFV.png,
-AFV-20,DP 2-20 ÂµL (AFV-20),Neuation / Accumax,Pipettes,,unit,12584,,AFV.png,
-AFV-50,DP 5-50 ÂµL (AFV-50),Neuation / Accumax,Pipettes,,unit,12584,,AFV.png,
-AFV-100,DP 10-100 ÂµL (AFV-100),Neuation / Accumax,Pipettes,,unit,12584,,AFV.png,
-AFV-200,DP 20-200 ÂµL (AFV-200),Neuation / Accumax,Pipettes,,unit,12584,,AFV.png,
-AFV-1000,DP 100-1000 ÂµL (AFV-1000),Neuation / Accumax,Pipettes,,unit,12584,,AFV.png,
-AFV-5000,DP 1000-5000 ÂµL (AFV-5000),Neuation / Accumax,Pipettes,,unit,13087,,AFV.png,
-AFV-10000,DP 1000-10000 ÂµL (AFV-10000),Neuation / Accumax,Pipettes,,unit,13590,,AFV.png,
-AFF-2.5,DPF 2.5 ÂµL (AFF-250),Neuation / Accumax,Pipettes,,unit,8468,,AFV.png,
-AFF-250,DPF 250 ÂµL (AFF-250),Neuation / Accumax,Pipettes,,unit,8468,,AFV.png,
-AFF-5,DPF 5 ÂµL (AFF-5),Neuation / Accumax,Pipettes,,unit,8468,,AFV.png,
-AFF-10,DPF 10 ÂµL (AFF-10),Neuation / Accumax,Pipettes,,unit,8468,,AFV.png,
-AFF-20,DPF 20 ÂµL (AFF-20),Neuation / Accumax,Pipettes,,unit,8468,,AFV.png,
-AFF-25,DPF 25 ÂµL (AFF-25),Neuation / Accumax,Pipettes,,unit,8468,,AFV.png,
-AFF-50,DPF 50 ÂµL (AFF-50),Neuation / Accumax,Pipettes,,unit,8468,,AFV.png,
-AFF-100,DPF 100 ÂµL (AFF-100),Neuation / Accumax,Pipettes,,unit,8468,,AFV.png,
-AFF-200,DPF 200 ÂµL (AFF-200),Neuation / Accumax,Pipettes,,unit,8468,,AFV.png,
-AFF-500,DPF 500 ÂµL (AFF-500),Neuation / Accumax,Pipettes,,unit,8468,,AFV.png,
-AFF-1000,DPF 1000 ÂµL (AFF-1000),Neuation / Accumax,Pipettes,,unit,8468,,AFV.png,
-AFF-2000,DPF 2000 ÂµL (AFF-2000),Neuation / Accumax,Pipettes,,unit,8468,,AFV.png,
-AFF-5000,DPF 5000 ÂµL (AFF-5000),Neuation / Accumax,Pipettes,,unit,8807,,AFV.png,
-AFF-10000,DPF 10000 ÂµL (AFF-10000),Neuation / Accumax,Pipettes,,unit,9146,,AFV.png,
-AFM8-010,DPM 0.5-10 (8) (AFM8-010),Neuation / Accumax,Other,,unit,30961,,,
-AFM8-020,DPM 2-20 (8) (AFM8-020),Neuation / Accumax,Other,,unit,30961,,,
-AFM8-050,DPM 5-50 (8) (AFM8-050),Neuation / Accumax,Other,,unit,30961,,,
-AFM8-100,DPM 10-100 (8) (AFM8-100),Neuation / Accumax,Other,,unit,30961,,,
-AFM8-200,DPM 20-200 (8) (AFM8-200),Neuation / Accumax,Other,,unit,30961,,,
-AFM8-300,DPM 30-300 (8) (AFM8-300),Neuation / Accumax,Other,,unit,30961,,,
-AFM8-1200,DPM 120-1200 (8) (AFM8-1200),Neuation / Accumax,Other,,unit,33128,,,
-AFM12-010,DPM 0.5-10 (12) (AFM12-010),Neuation / Accumax,Other,,unit,38854,,,
-AFM12-020,DPM 2-20 (12) (AFM12-020),Neuation / Accumax,Other,,unit,38854,,,
-AFM12-050,DPM 5-50 (12) (AFM12-050),Neuation / Accumax,Other,,unit,38854,,,
-AFM12-100,DPM 10-100 (12) (AFM12-100),Neuation / Accumax,Other,,unit,38854,,,
-AFM12-200,DPM 20-200 (12) (AFM12-200),Neuation / Accumax,Other,,unit,38854,,,
-AFM12-300,DPM 30-300 (12) (AFM12-300),Neuation / Accumax,Other,,unit,38854,,,
-AFM12-1200,DPM 120-1200 (12) (AFM12-1200),Neuation / Accumax,Other,,unit,41574,,,
+AFV-2.5,Fab PIPETTE DP 0.1-2.5 ÂµL (AFV-2.5),Neuation / Accumax,Pipettes,,unit,12584,,AFV.png,FAB PIPETTE desc.png
+AFV-10,Fab PIPETTE DP 0.5-10 ÂµL (AFV-10),Neuation / Accumax,Pipettes,,unit,12584,,AFV.png,FAB PIPETTE desc.png
+AFV-20,Fab PIPETTE DP 2-20 ÂµL (AFV-20),Neuation / Accumax,Pipettes,,unit,12584,,AFV.png,FAB PIPETTE desc.png
+AFV-50,Fab PIPETTE DP 5-50 ÂµL (AFV-50),Neuation / Accumax,Pipettes,,unit,12584,,AFV.png,FAB PIPETTE desc.png
+AFV-100,Fab PIPETTE DP 10-100 ÂµL (AFV-100),Neuation / Accumax,Pipettes,,unit,12584,,AFV.png,FAB PIPETTE desc.png
+AFV-200,Fab PIPETTE DP 20-200 ÂµL (AFV-200),Neuation / Accumax,Pipettes,,unit,12584,,AFV.png,FAB PIPETTE desc.png
+AFV-1000,Fab PIPETTE DP 100-1000 ÂµL (AFV-1000),Neuation / Accumax,Pipettes,,unit,12584,,AFV.png,FAB PIPETTE desc.png
+AFV-5000,Fab PIPETTE DP 1000-5000 ÂµL (AFV-5000),Neuation / Accumax,Pipettes,,unit,13087,,AFV.png,FAB PIPETTE desc.png
+AFV-10000,Fab PIPETTE DP 1000-10000 ÂµL (AFV-10000),Neuation / Accumax,Pipettes,,unit,13590,,AFV.png,FAB PIPETTE desc.png
+AFF-2.5,DPF 2.5 ÂµL (AFF-250),Neuation / Accumax,Pipettes,,unit,8468,,AFV.png,FAB PIPETTE desc.png
+AFF-250,DPF 250 ÂµL (AFF-250),Neuation / Accumax,Pipettes,,unit,8468,,AFV.png,FAB PIPETTE desc.png
+AFF-5,DPF 5 ÂµL (AFF-5),Neuation / Accumax,Pipettes,,unit,8468,,AFV.png,FAB PIPETTE desc.png
+AFF-10,DPF 10 ÂµL (AFF-10),Neuation / Accumax,Pipettes,,unit,8468,,AFV.png,FAB PIPETTE desc.png
+AFF-20,DPF 20 ÂµL (AFF-20),Neuation / Accumax,Pipettes,,unit,8468,,AFV.png,FAB PIPETTE desc.png
+AFF-25,DPF 25 ÂµL (AFF-25),Neuation / Accumax,Pipettes,,unit,8468,,AFV.png,FAB PIPETTE desc.png
+AFF-50,DPF 50 ÂµL (AFF-50),Neuation / Accumax,Pipettes,,unit,8468,,AFV.png,FAB PIPETTE desc.png
+AFF-100,DPF 100 ÂµL (AFF-100),Neuation / Accumax,Pipettes,,unit,8468,,AFV.png,FAB PIPETTE desc.png
+AFF-200,DPF 200 ÂµL (AFF-200),Neuation / Accumax,Pipettes,,unit,8468,,AFV.png,FAB PIPETTE desc.png
+AFF-500,DPF 500 ÂµL (AFF-500),Neuation / Accumax,Pipettes,,unit,8468,,AFV.png,FAB PIPETTE desc.png
+AFF-1000,DPF 1000 ÂµL (AFF-1000),Neuation / Accumax,Pipettes,,unit,8468,,AFV.png,FAB PIPETTE desc.png
+AFF-2000,DPF 2000 ÂµL (AFF-2000),Neuation / Accumax,Pipettes,,unit,8468,,AFV.png,FAB PIPETTE desc.png
+AFF-5000,DPF 5000 ÂµL (AFF-5000),Neuation / Accumax,Pipettes,,unit,8807,,AFV.png,FAB PIPETTE desc.png
+AFF-10000,DPF 10000 ÂµL (AFF-10000),Neuation / Accumax,Pipettes,,unit,9146,,AFV.png,FAB PIPETTE desc.png
+AFM8-010,Accumax Fab Multichannel Pipette DPM 0.5-10 (8) (AFM8-010),Neuation / Accumax,Pipettes,,unit,30961,,AFV.png,FAB PIPETTE desc.png
+AFM8-020,Accumax Fab Multichannel Pipette DPM 2-20 (8) (AFM8-020),Neuation / Accumax,Pipettes,,unit,30961,,AFV.png,FAB PIPETTE desc.png
+AFM8-050,Accumax Fab Multichannel Pipette DPM 5-50 (8) (AFM8-050),Neuation / Accumax,Pipettes,,unit,30961,,AFV.png,FAB PIPETTE desc.png
+AFM8-100,Accumax Fab Multichannel Pipette DPM 10-100 (8) (AFM8-100),Neuation / Accumax,Pipettes,,unit,30961,,AFV.png,FAB PIPETTE desc.png
+AFM8-200,Accumax Fab Multichannel Pipette DPM 20-200 (8) (AFM8-200),Neuation / Accumax,Pipettes,,unit,30961,,AFV.png,FAB PIPETTE desc.png
+AFM8-300,Accumax Fab Multichannel Pipette DPM 30-300 (8) (AFM8-300),Neuation / Accumax,Pipettes,,unit,30961,,AFV.png,FAB PIPETTE desc.png
+AFM8-1200,Accumax Fab Multichannel Pipette DPM 120-1200 (8) (AFM8-1200),Neuation / Accumax,Pipettes,,unit,33128,,AFV.png,FAB PIPETTE desc.png
+AFM12-010,Accumax Fab Multichannel Pipette DPM 0.5-10 (12) (AFM12-010),Neuation / Accumax,Pipettes,,unit,38854,,AFV.png,FAB PIPETTE desc.png
+AFM12-020,Accumax Fab Multichannel Pipette DPM 2-20 (12) (AFM12-020),Neuation / Accumax,Pipettes,,unit,38854,,AFV.png,FAB PIPETTE desc.png
+AFM12-050,Accumax Fab Multichannel Pipette DPM 5-50 (12) (AFM12-050),Neuation / Accumax,Pipettes,,unit,38854,,AFV.png,FAB PIPETTE desc.png
+AFM12-100,Accumax Fab Multichannel Pipette DPM 10-100 (12) (AFM12-100),Neuation / Accumax,Pipettes,,unit,38854,,AFV.png,FAB PIPETTE desc.png
+AFM12-200,Accumax Fab Multichannel Pipette DPM 20-200 (12) (AFM12-200),Neuation / Accumax,Pipettes,,unit,38854,,AFV.png,FAB PIPETTE desc.png
+AFM12-300,Accumax Fab Multichannel Pipette DPM 30-300 (12) (AFM12-300),Neuation / Accumax,Pipettes,,unit,38854,,AFV.png,FAB PIPETTE desc.png
+AFM12-1200,Accumax Fab Multichannel Pipette DPM 120-1200 (12) (AFM12-1200),Neuation / Accumax,Pipettes,,unit,41574,,AFV.png,FAB PIPETTE desc.png
 AE-10,ACCUMAX Electronic Pipette - Single Channel 0.5-10 (AE-10)(PFE-10),Neuation / Accumax,Pipettes,,unit,36828,,Elec pipette.png,Elec pipette desc.png
 AE-100,ACCUMAX Electronic Pipette - Single Channel 5-100 (AE-100)(PEF-100),Neuation / Accumax,Pipettes,,unit,36828,,Elec pipette.png,Elec pipette desc.png
 AE-200,ACCUMAX Electronic Pipette - Single Channel 10-200 (AE-200)(PFE-200),Neuation / Accumax,Pipettes,,unit,36828,,Elec pipette.png,Elec pipette desc.png
@@ -801,36 +801,36 @@ PH01-R,PIPETTE CONTROLLER RED ACCUMAX (PH01-R),Neuation / Accumax,Other,,unit,19
 PH01-O,PIPETTE CONTROLLER ORANGE ACCUMAX (PH01-O),Neuation / Accumax,Other,,unit,19415,,Pipette Controller.png,Pipette Controller desc.png
 PH01-G,PIPETTE CONTROLLER GREEN ACCUMAX (PH01-G),Neuation / Accumax,Other,,unit,19415,,Pipette Controller.png,Pipette Controller desc.png
 PH01-B,PIPETTE CONTROLLER BLUE ACCUMAX (PH01-B),Neuation / Accumax,Other,,unit,19415,,Pipette Controller.png,Pipette Controller desc.png
-8-100-32-9,DP 0.1-2.5 ÂµL (ALFV-2.5),Neuation / Accumax,Other,,unit,13708,,,
-8-101-32-9,DP 0.5-10 ÂµL (ALFV-10),Neuation / Accumax,Other,,unit,13708,,,
-8-102-32-9,DP 2-20 ÂµL (ALFV-20),Neuation / Accumax,Other,,unit,13708,,,
-8-103-32-9,DP 5-50 ÂµL (ALFV-50),Neuation / Accumax,Other,,unit,13708,,,
-8-104-32-9,DP 10-100 ÂµL (ALFV-100),Neuation / Accumax,Other,,unit,13708,,,
-8-105-32-9,DP 20-200 ÂµL (ALFV-200),Neuation / Accumax,Other,,unit,13708,,,
-8-106-32-9,DP 100-1000 ÂµL (ALFV-1000),Neuation / Accumax,Other,,unit,13708,,,
-8-000-32-9,DPF 2.5 ÂµL (ALFF-205),Neuation / Accumax,Other,,unit,8911,,,
-8-001-32-9,DPF 5 ÂµL (ALFF-5),Neuation / Accumax,Other,,unit,8911,,,
-8-002-32-9,DPF 10 ÂµL (ALFF-10),Neuation / Accumax,Other,,unit,8911,,,
-8-003-32-9,DPF 20 ÂµL (ALFF-20),Neuation / Accumax,Other,,unit,8911,,,
-8-004-32-9,DPF 25 ÂµL (ALFF-25),Neuation / Accumax,Other,,unit,8911,,,
-8-007-32-9,DPF 50 ÂµL (ALFF-50),Neuation / Accumax,Other,,unit,8911,,,
-8-008-32-9,DPF 100 ÂµL (ALFF-100),Neuation / Accumax,Other,,unit,8911,,,
-8-009-32-9,DPF 200 ÂµL (ALFF-200),Neuation / Accumax,Other,,unit,8911,,,
-8-010-32-9,DPF 250 ÂµL (ALFF-250),Neuation / Accumax,Other,,unit,8911,,,
-8-011-32-9,DPF 500 ÂµL (ALFF-500),Neuation / Accumax,Other,,unit,8911,,,
-8-012-32-9,DPF 1000 ÂµL (ALFF-1000),Neuation / Accumax,Other,,unit,8911,,,
-8-201-32-9,DPM 0.5-10 (8) (ALFM8-010),Neuation / Accumax,Other,,unit,34690,,,
-8-205-32-9,DPM 2-20 (8) (ALFM8-020),Neuation / Accumax,Other,,unit,34690,,,
-8-202-32-9,DPM 5-50 (8) (ALFM8-050),Neuation / Accumax,Other,,unit,34690,,,
-8-204-32-9,DPM 10-100 (8) (ALFM8-100),Neuation / Accumax,Other,,unit,34690,,,
-8-206-32-9,DPM 20-200 (8) (ALFM8-200),Neuation / Accumax,Other,,unit,34690,,,
-8-203-32-9,DPM 30-300 (8) (ALFM8-300),Neuation / Accumax,Other,,unit,34690,,,
-8-401-32-9,DPM 0.5-10 (12) (ALFM12-010),Neuation / Accumax,Other,,unit,41115,,,
-8-405-32-9,DPM 2-20 (12) (ALFM12-020),Neuation / Accumax,Other,,unit,41115,,,
-8-402-32-9,DPM 5-50 (12) (ALFM12-050),Neuation / Accumax,Other,,unit,41115,,,
-8-404-32-9,DPM 10-100 (12) (ALFM12-100),Neuation / Accumax,Other,,unit,41115,,,
-8-406-32-9,DPM 20-200 (12) (ALFM12-200),Neuation / Accumax,Other,,unit,41115,,,
-8-403-32-9,DPM 30-300 (12) (ALFM12-300),Neuation / Accumax,Other,,unit,41115,,,
+8-100-32-9,AHN myPette® EL³ Single channel Variable Volume Micropipettes DP 0.1-2.5 ÂµL (ALFV-2.5),Accumax,Pipettes,,unit,13708,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-101-32-9,AHN myPette® EL³ Single channel Variable Volume Micropipettes DP 0.5-10 ÂµL (ALFV-10),Accumax,Pipettes,,unit,13708,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-102-32-9,AHN myPette® EL³ Single channel Variable Volume Micropipettes DP 2-20 ÂµL (ALFV-20),Accumax,Pipettes,,unit,13708,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-103-32-9,AHN myPette® EL³ Single channel Variable Volume Micropipettes DP 5-50 ÂµL (ALFV-50),Accumax,Pipettes,,unit,13708,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-104-32-9,AHN myPette® EL³ Single channel Variable Volume Micropipettes DP 10-100 ÂµL (ALFV-100),Accumax,Pipettes,,unit,13708,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-105-32-9,AHN myPette® EL³ Single channel Variable Volume Micropipettes DP 20-200 ÂµL (ALFV-200),Accumax,Pipettes,,unit,13708,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-106-32-9,AHN myPette® EL³ Single channel Variable Volume Micropipettes DP 100-1000 ÂµL (ALFV-1000),Accumax,Pipettes,,unit,13708,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-000-32-9,AHN myPette® EL³ Single Fixed Volume Micropipettes DPF 2.5 ÂµL (ALFF-205),Accumax,Pipettes,,unit,8911,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-001-32-9,AHN myPette® EL³ Single Fixed Volume Micropipettes DPF 5 ÂµL (ALFF-5),Accumax,Pipettes,,unit,8911,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-002-32-9,AHN myPette® EL³ Single Fixed Volume Micropipettes DPF 10 ÂµL (ALFF-10),Accumax,Pipettes,,unit,8911,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-003-32-9,AHN myPette® EL³ Single Fixed Volume Micropipettes DPF 20 ÂµL (ALFF-20),Accumax,Pipettes,,unit,8911,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-004-32-9,AHN myPette® EL³ Single Fixed Volume Micropipettes DPF 25 ÂµL (ALFF-25),Accumax,Pipettes,,unit,8911,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-007-32-9,AHN myPette® EL³ Single Fixed Volume Micropipettes DPF 50 ÂµL (ALFF-50),Accumax,Pipettes,,unit,8911,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-008-32-9,AHN myPette® EL³ Single Fixed Volume Micropipettes DPF 100 ÂµL (ALFF-100),Accumax,Pipettes,,unit,8911,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-009-32-9,AHN myPette® EL³ Single Fixed Volume Micropipettes DPF 200 ÂµL (ALFF-200),Accumax,Pipettes,,unit,8911,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-010-32-9,AHN myPette® EL³ Single Fixed Volume Micropipettes DPF 250 ÂµL (ALFF-250),Accumax,Pipettes,,unit,8911,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-011-32-9,AHN myPette® EL³ Single Fixed Volume Micropipettes DPF 500 ÂµL (ALFF-500),Accumax,Pipettes,,unit,8911,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-012-32-9,AHN myPette® EL³ Single Fixed Volume Micropipettes DPF 1000 ÂµL (ALFF-1000),Accumax,Pipettes,,unit,8911,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-201-32-9,AHN myPette® EL³ Multichannel DPM 0.5-10 (8) (ALFM8-010),Accumax,Pipettes,,unit,34690,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-205-32-9,AHN myPette® EL³ Multichannel DPM 2-20 (8) (ALFM8-020),Accumax,Pipettes,,unit,34690,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-202-32-9,AHN myPette® EL³ Multichannel DPM 5-50 (8) (ALFM8-050),Accumax,Pipettes,,unit,34690,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-204-32-9,AHN myPette® EL³ Multichannel DPM 10-100 (8) (ALFM8-100),Accumax,Pipettes,,unit,34690,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-206-32-9,AHN myPette® EL³ Multichannel DPM 20-200 (8) (ALFM8-200),Accumax,Pipettes,,unit,34690,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-203-32-9,AHN myPette® EL³ Multichannel DPM 30-300 (8) (ALFM8-300),Accumax,Pipettes,,unit,34690,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-401-32-9,AHN myPette® EL³ Multichannel DPM 0.5-10 (12) (ALFM12-010),Accumax,Pipettes,,unit,41115,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-405-32-9,AHN myPette® EL³ Multichannel DPM 2-20 (12) (ALFM12-020),Accumax,Pipettes,,unit,41115,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-402-32-9,AHN myPette® EL³ Multichannel DPM 5-50 (12) (ALFM12-050),Accumax,Pipettes,,unit,41115,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-404-32-9,AHN myPette® EL³ Multichannel DPM 10-100 (12) (ALFM12-100),Accumax,Pipettes,,unit,41115,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-406-32-9,AHN myPette® EL³ Multichannel DPM 20-200 (12) (ALFM12-200),Accumax,Pipettes,,unit,41115,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-403-32-9,AHN myPette® EL³ Multichannel DPM 30-300 (12) (ALFM12-300),Accumax,Pipettes,,unit,41115,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
 AP-1-B,ACCUMAX Transfer Pipette AP-1-B ( 500 X 10 PACKS ),Neuation / Accumax,Pipettes,,pack,8655,,Transfer pipette.png,Transfer pipette desc.png
 AP-1-B-S,ACCUMAX Transfer Pipette AP-1-B-S ( 10 X 50 BAGS X 10 PACKS ),Neuation / Accumax,Pipettes,,pack,10819,,Transfer pipette.png,Transfer pipette desc.png
 AP-1-S-W,ACCUMAX Transfer Pipette AP-1-S-W (300),Neuation / Accumax,Pipettes,,unit,1400,,Transfer pipette.png,Transfer pipette desc.png
@@ -904,10 +904,10 @@ LC01 6B,RADP_163_1X6ML (LC01 6B),Neuation / Accumax,Other,,unit,1045,,,
 A-016,0143-00-0108-0-121-13ML_TUBE_SPCR_DL,Neuation / Accumax,PCR & Plates,,unit,60,,,
 A-75,0143-00-0114-0-083_3&4 ML_TUBE_SPCR_PL_2 (C01 TS),Neuation / Accumax,PCR & Plates,,unit,35,,,
 A-75 + SL6,0143-00-0108-0-114_6ML TUBE SLEEVE_2 (C01 SL6),Neuation / Accumax,Tubes & Vials,,unit,84,,,
-LC01 10A,RADP_164_1X10ML (LC01 10A),Neuation / Accumax,Other,,unit,1027,,,
-LC01 15E,RADP_501_1X15ML (LC01 15E),Neuation / Accumax,Other,,unit,1776,,,
-LC01 30B,RADP_502_1X30ML (LC01 30B),Neuation / Accumax,Other,,unit,1684,,,
-LC01 15D,RADP_501 F_1X15ML (LC01 15D),Neuation / Accumax,Other,,unit,1677,,,
+LC01 10A,Fixed Angle Rotor 6x50 ml Tube Adaptors RADP_164_1X10ML (LC01 10A),Neuation / Accumax,Other,,unit,1027,,,
+LC01 15E,Fixed Angle Rotor 6x50 ml Tube Adaptors RADP_501_1X15ML (LC01 15E),Neuation / Accumax,Other,,unit,1776,,,
+LC01 30B,Fixed Angle Rotor 6x50 ml Tube Adaptors RADP_502_1X30ML (LC01 30B),Neuation / Accumax,Other,,unit,1684,,,
+LC01 15D,Fixed Angle Rotor 6x50 ml Tube Adaptors RADP_501 F_1X15ML (LC01 15D),Neuation / Accumax,Other,,unit,1677,,,
 LC01 50A,RADP_157_1X50ML (LC01 50A),Neuation / Accumax,Other,,unit,2293,,,
 LC01 30A,RADP_158_1X30ML (LC01 30A),Neuation / Accumax,Other,,unit,2167,,,
 LC01 15C,RADP_166_3X15ML (LC01 15C),Neuation / Accumax,Other,,unit,2349,,,
@@ -1355,3 +1355,15 @@ ACB-LD-15-C-S,"Accumax LDPE Carboy with Cap, Sterile (Volume: 15L) (1Pc)",Medha,
 ACB-LD-20-C-S,"Accumax LDPE Carboy with Cap, Sterile (Volume: 20L) (1Pc)",Medha,Bottles & Carboys,,pack,4797,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
 ACB-LD-25-C-S,"Accumax LDPE Carboy with Cap, Sterile (Volume: 25L) (1Pc)",Medha,Bottles & Carboys,,pack,6147,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
 ACB-LD-50-C-S,"Accumax LDPE Carboy with Cap, Sterile (Volume: 50L) (1Pc)",Medha,Bottles & Carboys,,pack,8684,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+AFXM4-300,"Accumax FabFLEX Adjustable Tips Spacing Pipette (20-300 uL, 4 Channel, 9-33mm space range)",Accumax,Pipettes,,unit,130500,,ADJUSTABLE TIPS SPACING PIPETTE.png,ADJUSTABLE TIPS SPACING PIPETTE desc.png
+AFXM4-1200,"Accumax FabFLEX Adjustable Tips Spacing Pipette (100-1200 uL, 4 Channel, 9-33mm space range)",Accumax,Pipettes,,unit,130500,,ADJUSTABLE TIPS SPACING PIPETTE.png,ADJUSTABLE TIPS SPACING PIPETTE desc.png
+AFXM6-300,"Accumax FabFLEX Adjustable Tips Spacing Pipette (20-300 uL, 6 Channel, 9-20mm space range)",Accumax,Pipettes,,unit,135750,,ADJUSTABLE TIPS SPACING PIPETTE.png,ADJUSTABLE TIPS SPACING PIPETTE desc.png
+AFXM6-1200,"Accumax FabFLEX Adjustable Tips Spacing Pipette (100-1200 uL, 6 Channel, 9-20mm space range)",Accumax,Pipettes,,unit,135750,,ADJUSTABLE TIPS SPACING PIPETTE.png,ADJUSTABLE TIPS SPACING PIPETTE desc.png
+AFXM8-300,"Accumax FabFLEX Adjustable Tips Spacing Pipette (20-300 uL, 8 Channel, 9-14mm space range)",Accumax,Pipettes,,unit,140775,,ADJUSTABLE TIPS SPACING PIPETTE.png,ADJUSTABLE TIPS SPACING PIPETTE desc.png
+AFXM8-1200,"Accumax FabFLEX Adjustable Tips Spacing Pipette (100-1200 uL, 8 Channel, 9-14mm space range)",Accumax,Pipettes,,unit,140775,,ADJUSTABLE TIPS SPACING PIPETTE.png,ADJUSTABLE TIPS SPACING PIPETTE desc.png
+AFXM8-50,"Accumax FabFLEX Adjustable Tips Spacing Pipette (5-50 uL, 8 Channel, 4.5-14mm space range)",Accumax,Pipettes,,unit,140775,,ADJUSTABLE TIPS SPACING PIPETTE.png,ADJUSTABLE TIPS SPACING PIPETTE desc.png
+AFXM8-100,"Accumax FabFLEX Adjustable Tips Spacing Pipette (10-100 uL, 8 Channel, 4.5-14mm space range)",Accumax,Pipettes,,unit,140775,,ADJUSTABLE TIPS SPACING PIPETTE.png,ADJUSTABLE TIPS SPACING PIPETTE desc.png
+AFXM8-20,"Accumax FabFLEX Adjustable Tips Spacing Pipette (2-20 uL, 8 Channel, 4.5-14mm space range)",Accumax,Pipettes,,unit,140775,,ADJUSTABLE TIPS SPACING PIPETTE.png,ADJUSTABLE TIPS SPACING PIPETTE desc.png
+AFXM12-20,"Accumax FabFLEX Adjustable Tips Spacing Pipette (2-20 uL, 12 Channel, 4.5-9mm space range)",Accumax,Pipettes,,unit,151500,,ADJUSTABLE TIPS SPACING PIPETTE.png,ADJUSTABLE TIPS SPACING PIPETTE desc.png
+AFXM12-50,"Accumax FabFLEX Adjustable Tips Spacing Pipette (5-50 uL, 12 Channel, 4.5-9mm space range)",Accumax,Pipettes,,unit,151500,,ADJUSTABLE TIPS SPACING PIPETTE.png,ADJUSTABLE TIPS SPACING PIPETTE desc.png
+AFXM12-100,"Accumax FabFLEX Adjustable Tips Spacing Pipette (10-100 uL, 12 Channel, 4.5-9mm space range)",Accumax,Pipettes,,unit,151500,,ADJUSTABLE TIPS SPACING PIPETTE.png,ADJUSTABLE TIPS SPACING PIPETTE desc.png
