@@ -29,11 +29,11 @@ C01-RS02,50ML_2-TUBE_ROTOR_ASS._0146,Neuation,Rotors & Buckets,,unit,7445,,,
 C01-RS03,50ML_3-TUBE_ROTOR_ASS._0146,Neuation,Rotors & Buckets,,unit,19635,,,
 IFUGE CYTO,"iFUGE CYTO Cytoslide Centrifuge (6 Slide, 3x2 position, 2200 RPM)",Neuation,Centrifuges,,unit,71844,,iFUGE CYTO.png,iFUGE CYTO desc.png
 IFUGE GC12,"iFUGE GC12 Universal Gel Card Centrifuge (12 Gel Cards, 2200 RPM)",Neuation,Centrifuges,,unit,75649,,iFUGE GC12.png,iFUGE GC12 desc.png
-IFUGE CS2P,IFUGE CS2P NXT,Neuation,Centrifuges,,unit,64456,,,
+IFUGE CS2P,"iFUGE CS2P NXT Microplate Centrifuge (2 Bucket, 96 & 384 well, 2200 RPM)",Neuation,Centrifuges,,unit,64456,,iFUGE CS2P NXT.png,iFUGE CS2P NXT desc.png
 C01-RS2P,ROTOR (ASS)_CS06_MICRO PLATE ROTOR ASSEMBLY (CS2P ROTOR),Neuation,Rotors & Buckets,,pack,9970,,,
-IFUGE FX2P,IFUGE FX2P,Neuation,Centrifuges,,unit,26354,,,
+IFUGE FX2P,"iFUGE FX2P Fixed Angle Plate Centrifuge (2 Microplate, 96 & 384 PCR plate, 2500 RPM)",Neuation,Centrifuges,,unit,26354,,iFUGE FX2P.png,iFUGE FX2P desc.png
 iFUGE CS04 NXT,"iFUGE CS04 NXT Clinical Swing Out Centrifuge (4x100ml swing or 6x50ml fixed angle, 4000 RPM)",Neuation,Centrifuges,,unit,76649,,iFUGE CS04 NXT.png,iFUGE CS04 NXT desc.png
-IFUGE L400 NXT,IFUGE L400 NXT,Neuation,Centrifuges,,unit,47334,,,
+IFUGE L400 NXT,"iFUGE L400 NXT Centrifuge (Universal Fixed & Swing Rotor, 4x50ml/24x15ml, 4500 RPM)",Neuation,Centrifuges,,unit,47334,,iFUGE L400 NXT.png,iFUGE L400 NXT desc.png
 L400-NXT-FIX-BB,BACK BONE (ASS)_FIX ANGLE ROTOR_L400 NXT_0183,Neuation,Rotors & Buckets,,unit,2979,,,
 Bucket-53-Fix - 16 x 15ml rotor,FIX BUCKET (ASS)_16X15 ML FIX ANGLE ROTOR_0183-00-0501-0-003,Neuation,Rotors & Buckets,,unit,3485,,,
 L400-NXT-SWING-BB,BACK BONE (ASS)_SWING OUT ROTOR_L400 NXT_0183,Neuation,Rotors & Buckets,,unit,2979,,,
@@ -44,7 +44,7 @@ BUCKET-34-SWING - 4 X 50ML,SWING BUCKET (ASS)_4X50 ML TUBE SWING OUT ROTOR_0183-
 Bucket-52-Fix - 24 x 15ml Glass Tube,FIX BUCKET (ASS)_24X15 ML FIX ANGLE ROTOR_0183-00-0500-0-002,Neuation,Rotors & Buckets,,unit,4183,,,
 Bucket-51-Fix - 32 x 6ml rotor,FIX BUCKET (ASS)_32X6 ML FIX ANGLE ROTOR_0183-00-0502-0-004,Neuation,Rotors & Buckets,,unit,3485,,,
 Bucket-54-Fix - 4 x 50ml rotor,FIX BUCKET (ASS)_4X50 ML FIX ANGLE ROTOR_0183-00-0503-0-005,Neuation,Rotors & Buckets,,unit,3485,,,
-IFUGE L400P,IFUGE L400P,Neuation,Centrifuges,,unit,84594,,,
+IFUGE L400P,"iFUGE L400P Centrifuge - The Versatile Lab Genius (up to 4x100ml swing, 4500 RPM, multiple rotor options)",Neuation,Centrifuges,,unit,84594,,iFUGE L400P.png,iFUGE L400P desc.png
 LC01-L400-140,ROTOR (ASS)_32X6 ML SWING OUT ROTOR_0131-00-0140_L30-140 ROTOR,Neuation,Rotors & Buckets,,unit,27460,,,
 LC01-L30-125,ROTOR (ASS)_16X15 ML SWING OUT ROTOR_0131-00-0139_L30 ROTOR,Neuation,Rotors & Buckets,,unit,20942,,,
 LC01-L30-129,ROTOR (ASS)_4X50 ML SWING OUT ROTOR_0131-00-0141_L30 ROTOR,Neuation,Rotors & Buckets,,unit,15924,,,
