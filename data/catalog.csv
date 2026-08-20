@@ -94,16 +94,16 @@ VM-A4,0201-00-0000-0-034_FLASK_HOLD_RB_NI_3 (VM-A4),Neuation / Accumax,Bottles &
 VM-A6,VORTEX ROUND DISK ATTACHMENT (VM-A6),Neuation / Accumax,Lab Equipment,,unit,1921,,,
 VM-A7,0201-00-0000-0-030_STD_ATT_N_PRO_PL_TPE-H_14 (VM-A7),Neuation / Accumax,Other,,unit,1921,,,
 VM-A8,0201-00-0500_CIRCULAR ATTACHEMENT ASLY_RUBBER_R1,Neuation / Accumax,Other,,unit,1921,,,
-ISWIX MV,ISWIX MV,Neuation / Accumax,Other,,unit,112550,,,
+ISWIX MV,"iSWIX MV Digital Multi Tube Vortexer (300-2500 RPM, CW/CCW, 6 tube-rack attachments)",Neuation / Accumax,Other,,unit,112550,,ISWIX MV.png,ISWIX MV desc.png
 VM-M1,0205-00-0000-0-028_50 ML TUBE FOAM (VM-M1),Neuation / Accumax,Tubes & Vials,,unit,5126,,,
 VM-M2,0205-00-0000-0-027_15 ML TUBE FOAM (VM-M2),Neuation / Accumax,Tubes & Vials,,unit,5375,,,
 VM-M3,0205-00-0000-0-022_7 ML TUFE FOAM (VM-M3),Neuation / Accumax,Other,,unit,5375,,,
 VM-M4,0205-00-0000-0-029_250 ML FLASK FOAM (VM-M4),Neuation / Accumax,Bottles & Carboys,,unit,5636,,,
 VM-M6,0205-00-0000-0-050_2-1.5ML TUBE FOAM (VM-M6),Neuation / Accumax,Tubes & Vials,,unit,5636,,,
 VM-M7,0205-00-0000-0-051_50ML HORIZONTAL TUBE FOAM (VM-M7),Neuation / Accumax,Tubes & Vials,,unit,5375,,,
-IROLL RNR4,IROLL RNR4 (220V),Neuation / Accumax,Tube Rollers,,unit,13053,,,
-IROLL RNR6,IROLL RNR6 (2.0),Neuation / Accumax,Tube Rollers,,unit,29462,,,
-IROLL DR24,IROLL DR 24,Neuation / Accumax,Tube Rollers,,unit,40276,,,
+IROLL RNR4,"iROLL RnR4 Four Tube Roller (9x5ml tubes, 30 RPM Fixed Speed)",Neuation / Accumax,Tube Rollers,,unit,13053,,iROLL RnR4.png,iROLL RnR4 desc.png
+IROLL RNR6,"iROLL RnR6 Digital Tube Roller (10-80 RPM, Programmable, Rocking & Rolling)",Neuation / Accumax,Tube Rollers,,unit,29462,,iROLL RnR6.png,iROLL RnR6 desc.png
+IROLL DR24,"iROLL DR24 Digital Disk Tube Rotator (10-80 RPM, supplied with one chosen disk)",Neuation / Accumax,Tube Rollers,,unit,40276,,iROLL DR24.png,iROLL DR24 desc.png
 D1-50,ATTECHMENT(ASS)DR24_12 X 50ML CLAMP (DR01 D1),Neuation / Accumax,Rotors & Buckets,,unit,7260,,,
 D2-50,ACCESSORIES - DR01-D2 = DISK ROTATOR WITH CLAMP SET 24 X 15 ML,Neuation / Accumax,Other,,unit,6538,,,
 D3-05,ATTECHMENT(ASS)DR24_44 X 2ML CLAMP (DR01 D3),Neuation / Accumax,Rotors & Buckets,,unit,7260,,,
@@ -930,9 +930,9 @@ LC02-L1000-161 + A-010,ROTOR (ASS)_4X250 ML SWING OUT ROTOR_0140-00-0161_(L1000-
 LC02-L1000-124,ROTOR (ASS)_2X MICEOPLATE SWING ROTOR_0140-00-0124_(L1000-124),Neuation / Accumax,Rotors & Buckets,,pack,39513,,,
 LC02-L1000-150,ROTOR (ASS)_16X15 ML FIX ANGLE COMMAN ROTOR_0140-00-0150_(L1000-150),Neuation / Accumax,Rotors & Buckets,,unit,13567,,,
 LC02-L1000-148,ROTOR (ASS)_6X50 ML FIX ANGLE COMMAN ROTOR_0140-00-0148_(L1000-148),Neuation / Accumax,Rotors & Buckets,,unit,27237,,,
-IROLL DR 24,IROLL DR 24 (WITH C15),Neuation / Accumax,Tube Rollers,,unit,40276,,,
-IROLL DR 24-2,IROLL DR 24 (WITH C5),Neuation / Accumax,Tube Rollers,,unit,40276,,,
-IROLL DR 24-3,IROLL DR 24 (WITH C50),Neuation / Accumax,Tube Rollers,,unit,40276,,,
+IROLL DR 24,"iROLL DR24 Digital Disk Tube Rotator with 24x15ml Disk (C15, 10-80 RPM)",Neuation / Accumax,Tube Rollers,,unit,40276,,iROLL DR24.png,iROLL DR24 desc.png
+IROLL DR 24-2,"iROLL DR24 Digital Disk Tube Rotator with 44x2ml Disk (C5, 10-80 RPM)",Neuation / Accumax,Tube Rollers,,unit,40276,,iROLL DR24.png,iROLL DR24 desc.png
+IROLL DR 24-3,"iROLL DR24 Digital Disk Tube Rotator with 12x50ml Disk (C50, 10-80 RPM)",Neuation / Accumax,Tube Rollers,,unit,40276,,iROLL DR24.png,iROLL DR24 desc.png
 IROLL PR 35,IROLL PR 35 (WITH C15),Neuation / Accumax,Tube Rollers,,unit,44304,,,
 IROLL PR 35-2,IROLL PR 35 (WITH C5),Neuation / Accumax,Tube Rollers,,unit,44304,,,
 IROLL PR 35-3,IROLL PR 35 (WITH C50),Neuation / Accumax,Tube Rollers,,unit,44304,,,
