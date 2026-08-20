@@ -107,16 +107,16 @@ IROLL DR24,"iROLL DR24 Digital Disk Tube Rotator (10-80 RPM, supplied with one c
 D1-50,ATTECHMENT(ASS)DR24_12 X 50ML CLAMP (DR01 D1),Neuation / Accumax,Rotors & Buckets,,unit,7260,,,
 D2-50,ACCESSORIES - DR01-D2 = DISK ROTATOR WITH CLAMP SET 24 X 15 ML,Neuation / Accumax,Other,,unit,6538,,,
 D3-05,ATTECHMENT(ASS)DR24_44 X 2ML CLAMP (DR01 D3),Neuation / Accumax,Rotors & Buckets,,unit,7260,,,
-IROLL PR35,IROLL PR 35,Neuation / Accumax,Tube Rollers,,unit,44304,,,
+IROLL PR35,"iROLL PR35 Digital Plate Tube Rotator (10-80 RPM, supplied with one chosen plate)",Neuation / Accumax,Tube Rollers,,unit,44304,,iROLL PR35.png,iROLL PR35 desc.png
 P1-50,50 ML TUBE TRAY (ASS)_0245-00-04 (PR01 P1),Neuation / Accumax,Rotors & Buckets,,unit,7260,,,
 P2-15,15 ML TUBE TRAY (ASS)_0245-00-03 (PR01 P2),Neuation / Accumax,Rotors & Buckets,,unit,6538,,,
 P3-05,2_5 ML TUBE TRAY (ASS)_0245-00-05 (PR01 P3),Neuation / Accumax,Rotors & Buckets,,unit,7260,,,
-ISTIR UNO,ISTIR UNO CAPP WHITE,Neuation / Accumax,Other,,unit,14170,,,
-ISTIR QUATTRO,ISTIR QUATTRO,Neuation / Accumax,Other,,unit,30000,,,
-ISTIR 50L,ISTIR 50L(-) (2.0),Neuation / Accumax,Other,,unit,38736,,,
-ISTIR 100L,ISTIR 100L(-) (2.0),Neuation / Accumax,Other,,unit,39158,,,
-ISTIR 200L,ISTIR 200L(-) (2.0),Neuation / Accumax,Other,,unit,41531,,,
-ISTIR MS10,ISTIR MS10 (220 V),Neuation / Accumax,Other,,unit,13838,,,
+ISTIR UNO,"iStir UNO Motorless Ultra-Slim Magnetic Stirrer, Single Position (1x800ml, 1500 RPM)",Neuation / Accumax,Other,,unit,14170,,iSTIR UNO.png,iSTIR UNO desc.png
+ISTIR QUATTRO,"iStir Quattro Motorless Ultra-Slim Magnetic Stirrer, 4-Position (4x400ml, 1200 RPM)",Neuation / Accumax,Other,,unit,30000,,iSTIR QUATTRO.png,iSTIR UNO desc.png
+ISTIR 50L,"iStir 50L High Capacity Magnetic Stirrer (50 Liters, 100-1000 RPM)",Neuation / Accumax,Other,,unit,38736,,iStir 50L.png,iStir 50L desc.png
+ISTIR 100L,"iStir 100L High Capacity Magnetic Stirrer (100 Liters, 100-800 RPM)",Neuation / Accumax,Other,,unit,39158,,iStir 50L.png,iStir 50L desc.png
+ISTIR 200L,"iStir 200L High Capacity Magnetic Stirrer (200 Liters, 100-600 RPM)",Neuation / Accumax,Other,,unit,41531,,iStir 50L.png,iStir 50L desc.png
+ISTIR MS10,"iStir MS10 Magnetic Stirrer (10 Liters, 200-2200 RPM)",Neuation / Accumax,Other,,unit,13838,,iSTIR MS10.png,iSTIR MS10 desc.png
 ISTIR MS10A,ISTIR MS10A (220 V),Neuation / Accumax,Other,,unit,11534,,,
 ISTIR HP320,ISTIR HP 320 (220 V),Neuation / Accumax,Other,,unit,28554,,,
 ISTIR HP320A,ISTIR HP 320A (220 V) DOUBLE KNOB,Neuation / Accumax,Other,,unit,20948,,,
@@ -933,9 +933,9 @@ LC02-L1000-148,ROTOR (ASS)_6X50 ML FIX ANGLE COMMAN ROTOR_0140-00-0148_(L1000-14
 IROLL DR 24,"iROLL DR24 Digital Disk Tube Rotator with 24x15ml Disk (C15, 10-80 RPM)",Neuation / Accumax,Tube Rollers,,unit,40276,,iROLL DR24.png,iROLL DR24 desc.png
 IROLL DR 24-2,"iROLL DR24 Digital Disk Tube Rotator with 44x2ml Disk (C5, 10-80 RPM)",Neuation / Accumax,Tube Rollers,,unit,40276,,iROLL DR24.png,iROLL DR24 desc.png
 IROLL DR 24-3,"iROLL DR24 Digital Disk Tube Rotator with 12x50ml Disk (C50, 10-80 RPM)",Neuation / Accumax,Tube Rollers,,unit,40276,,iROLL DR24.png,iROLL DR24 desc.png
-IROLL PR 35,IROLL PR 35 (WITH C15),Neuation / Accumax,Tube Rollers,,unit,44304,,,
-IROLL PR 35-2,IROLL PR 35 (WITH C5),Neuation / Accumax,Tube Rollers,,unit,44304,,,
-IROLL PR 35-3,IROLL PR 35 (WITH C50),Neuation / Accumax,Tube Rollers,,unit,44304,,,
+IROLL PR 35,"iROLL PR35 Digital Plate Tube Rotator with 35x15ml Plate (C15, 10-80 RPM)",Neuation / Accumax,Tube Rollers,,unit,44304,,iROLL PR35.png,iROLL PR35 desc.png
+IROLL PR 35-2,"iROLL PR35 Digital Plate Tube Rotator with 55x2ml Plate (C5, 10-80 RPM)",Neuation / Accumax,Tube Rollers,,unit,44304,,iROLL PR35.png,iROLL PR35 desc.png
+IROLL PR 35-3,"iROLL PR35 Digital Plate Tube Rotator with 16x50ml Plate (C50, 10-80 RPM)",Neuation / Accumax,Tube Rollers,,unit,44304,,iROLL PR35.png,iROLL PR35 desc.png
 IRUPT 24P-2,IRUPT 24P (WITH CH01-TA1),Neuation / Accumax,Homogenizers,,unit,324508,,,
 IRUPT 24P-3,IRUPT 24P (WITH CH01-TA3),Neuation / Accumax,Homogenizers,,unit,324508,,,
 M3-3,ATTACHMENT (ASS)_3D-5(2.0)_M3-3_STACKING PLATFORM,Neuation / Accumax,Rotors & Buckets,,unit,3707,,,
