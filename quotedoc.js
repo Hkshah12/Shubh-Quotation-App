@@ -222,19 +222,29 @@
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Figtree:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
   ${p.css}
-  @page { size: A4; margin: 12mm; }
+  /* force backgrounds/colours to print (Chrome strips them by default) */
+  * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+  @page { size: A4; margin: 0; }
   html,body { margin:0; }
   body { background:#EDE7D8; padding:24px; }
-  .sheet { max-width:800px; margin:0 auto; background:#fff; padding:22px 22px 10px; box-shadow:0 8px 30px rgba(120,30,20,.16); }
+  .sheet { max-width:800px; margin:0 auto; background:#fff; box-shadow:0 8px 30px rgba(120,30,20,.16); }
+  /* horizontal inset for content; the cream letterhead & footer bands stay full-bleed */
+  table.frame>tbody>tr>td { padding: 6px 22px 0; }
+  .descpages { padding: 4px 22px 0; }
+  .lh-main, .lh-addr, .pf { padding-left:22px; padding-right:22px; }
   .toolbar { max-width:800px; margin:0 auto 16px; display:flex; gap:12px; align-items:center; }
   .toolbar button { background:${RED}; color:#fff; border:none; padding:11px 20px; border-radius:8px; font-weight:700; font-size:14px; cursor:pointer; font-family:'Figtree',sans-serif; }
   .toolbar span { color:#5A4A2E; font-size:13px; font-family:'Figtree',sans-serif; }
   @media print {
     body { background:#fff; padding:0; }
-    .sheet { max-width:none; box-shadow:none; padding:0; }
+    .sheet { max-width:none; box-shadow:none; }
     .toolbar { display:none; }
+    table.frame>tbody>tr>td { padding: 6mm 12mm 0; }
+    .descpages { padding: 0 12mm; }
+    .lh-main, .lh-addr, .pf { padding-left:12mm; padding-right:12mm; }
     table.items thead { display:table-header-group; }
     table.items tr { page-break-inside:avoid; }
+    .descpages { break-before: page; page-break-before: always; break-inside: avoid; }
   }
 </style></head>
 <body>
