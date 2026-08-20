@@ -334,16 +334,22 @@
     const itemTable = `<table width="100%" style="border-collapse:collapse;${serif}font-size:9.5pt;margin-top:6pt;">${header}${rows}</table>`;
 
     const trow = (label, val, opt) => `<tr><td style="${serif}font-size:10.5pt;padding:2pt 6pt;${opt || ''}">${label}</td><td align="right" style="${serif}font-size:10.5pt;padding:2pt 6pt;${opt || ''}">${val}</td></tr>`;
+    // Right-aligned totals WITHOUT floating (float breaks Word's layout) — an outer
+    // full-width table with an empty left cell keeps the totals block on the right, in flow.
     const totals = `
-    <table align="right" style="margin-top:10pt;min-width:250pt;">
-      ${trow('Subtotal', money(t.subtotal))}
-      ${t.itemDisc ? trow('Item discounts', '−' + money(t.itemDisc)) : ''}
-      ${t.overallDisc ? trow('Overall discount' + (overall.type === 'percent' ? ' (' + overall.value + '%)' : ''), '−' + money(t.overallDisc)) : ''}
-      ${trow('Taxable value', money(t.taxable), 'border-top:0.5pt solid ' + BD + ';')}
-      ${gst.enabled ? trow('GST @ ' + gst.percent + '%', money(t.gstAmt)) : ''}
-      ${s.showGrandTotal ? `<tr><td style="${serif}font-size:13pt;font-weight:bold;color:${RED};padding:4pt 6pt;border-top:1.5pt solid ${RED};">Grand Total</td><td align="right" style="${serif}font-size:13pt;font-weight:bold;color:${RED};padding:4pt 6pt;border-top:1.5pt solid ${RED};">${money(t.grandTotal)}</td></tr>` : ''}
-    </table>
-    <div style="clear:both;"></div>`;
+    <table width="100%" style="margin-top:10pt;"><tr>
+      <td style="width:54%;">&nbsp;</td>
+      <td style="width:46%;" valign="top">
+        <table width="100%">
+          ${trow('Subtotal', money(t.subtotal))}
+          ${t.itemDisc ? trow('Item discounts', '−' + money(t.itemDisc)) : ''}
+          ${t.overallDisc ? trow('Overall discount' + (overall.type === 'percent' ? ' (' + overall.value + '%)' : ''), '−' + money(t.overallDisc)) : ''}
+          ${trow('Taxable value', money(t.taxable), 'border-top:0.5pt solid ' + BD + ';')}
+          ${gst.enabled ? trow('GST @ ' + gst.percent + '%', money(t.gstAmt)) : ''}
+          ${s.showGrandTotal ? `<tr><td style="${serif}font-size:13pt;font-weight:bold;color:${RED};padding:4pt 6pt;border-top:1.5pt solid ${RED};">Grand Total</td><td align="right" style="${serif}font-size:13pt;font-weight:bold;color:${RED};padding:4pt 6pt;border-top:1.5pt solid ${RED};">${money(t.grandTotal)}</td></tr>` : ''}
+        </table>
+      </td>
+    </tr></table>`;
 
     const gstNote = (gst.enabled && s.gstExclusiveNote !== false)
       ? `<p style="${serif}font-size:9.5pt;font-style:italic;margin-top:10pt;">The prices quoted above are exclusive of GST. GST @ ${gst.percent}% will be charged additionally as applicable.</p>` : '';
