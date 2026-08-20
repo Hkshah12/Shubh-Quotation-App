@@ -117,9 +117,9 @@ ISTIR 50L,"iStir 50L High Capacity Magnetic Stirrer (50 Liters, 100-1000 RPM)",N
 ISTIR 100L,"iStir 100L High Capacity Magnetic Stirrer (100 Liters, 100-800 RPM)",Neuation / Accumax,Other,,unit,39158,,iStir 50L.png,iStir 50L desc.png
 ISTIR 200L,"iStir 200L High Capacity Magnetic Stirrer (200 Liters, 100-600 RPM)",Neuation / Accumax,Other,,unit,41531,,iStir 50L.png,iStir 50L desc.png
 ISTIR MS10,"iStir MS10 Magnetic Stirrer (10 Liters, 200-2200 RPM)",Neuation / Accumax,Other,,unit,13838,,iSTIR MS10.png,iSTIR MS10 desc.png
-ISTIR MS10A,ISTIR MS10A (220 V),Neuation / Accumax,Other,,unit,11534,,,
-ISTIR HP320,ISTIR HP 320 (220 V),Neuation / Accumax,Other,,unit,28554,,,
-ISTIR HP320A,ISTIR HP 320A (220 V) DOUBLE KNOB,Neuation / Accumax,Other,,unit,20948,,,
+ISTIR MS10A,"iStir MS10A Magnetic Stirrer (10 Liters, 250-2200 RPM, Analog Knob)",Neuation / Accumax,Other,,unit,11534,,iSTIR MS10A.png,iSTIR MS10A desc.png
+ISTIR HP320,"iStir HP320 Hot Plate Magnetic Stirrer (10 Liters, 200-2200 RPM, Ambient to 320°C, with PT-1000 Probe & Stand)",Neuation / Accumax,Other,,unit,28554,,iSTIR HP320.png,iSTIR HP320 desc.png
+ISTIR HP320A,"iStir HP320A Hot Plate Magnetic Stirrer (10 Liters, 300-2200 RPM, Ambient to 320°C, Double Knob Analog)",Neuation / Accumax,Other,,unit,20948,,iSTIR HP320A.png,iSTIR HP320A desc.png
 S1 (FOR HP 550)/PRIME S2 (FOR HP 320),PT 1000 (STAND ASS)_HPS 350/550 (HS10/20 S1),Neuation / Accumax,Rotors & Buckets,,unit,1079,,,
 T1 (FOR HP 550)/PRIME T2 (FOR HP 320),0311-00-0201-0-051_PT1000 SENSOR (HS10/20 T1+T2),Neuation / Accumax,Other,,unit,2432,,,
 QP,0341-00-0000-0-010_CARRYING_PLATE (HS10/20 QP),Neuation / Accumax,Other,,pack,5226,,,
