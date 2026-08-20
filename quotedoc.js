@@ -285,6 +285,7 @@
     const RED = '#C00000', SUB = '#6B6151', BD = '#E1D6BE';
 
     const letterhead = `
+    <div style="padding:5mm 12mm 0;">
     <table width="100%" style="border-collapse:collapse;">
       <tr>
         <td width="80" valign="top">${(s.logo && imgURL(s.logo)) ? `<img src="${imgURL(s.logo)}" width="66" height="66"/>` : ''}</td>
@@ -293,6 +294,7 @@
       </tr>
       <tr><td colspan="3" align="center" style="${serif}font-size:8.5pt;color:${RED};font-weight:bold;padding-bottom:4pt;">${addrBar}</td></tr>
     </table>
+    </div>
     <div style="border-bottom:2.5pt solid ${RED};font-size:1pt;line-height:1pt;">&nbsp;</div>`;
 
     const metaTable = `
@@ -372,13 +374,16 @@
 <title>Quotation ${esc(opts.quoteNo)} — ${esc(clientName)}</title>
 <!--[if gte mso 9]><xml><w:WordDocument><w:View>Print</w:View><w:Zoom>100</w:Zoom></w:WordDocument></xml><![endif]-->
 <style>
-  @page WordSection1 { size:595.3pt 841.9pt; margin:1.2cm 1.4cm 1.2cm 1.4cm; }
+  @page WordSection1 { size:595.3pt 841.9pt; margin:0; }
   div.WordSection1 { page:WordSection1; }
-  body { ${serif} color:#1A1410; }
+  body { ${serif} color:#1A1410; margin:0; }
   table { border-collapse:collapse; }
+  /* full-bleed letterhead; body content inset so text isn't at the paper edge */
+  .doc-inset { padding:6mm 12mm 0; }
 </style></head>
 <body><div class="WordSection1">
-${letterhead}${metaTable}${toBlock}${intro}${itemTable}${totals}${gstNote}${terms}${closing}${descWord}
+${letterhead}
+<div class="doc-inset">${metaTable}${toBlock}${intro}${itemTable}${totals}${gstNote}${terms}${closing}${descWord}</div>
 </div></body></html>`;
   }
 
