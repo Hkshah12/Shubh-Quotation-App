@@ -157,7 +157,7 @@ ITHERM CH25,"iTHERM CH25 NXT Cooling-Heating Incubator (45L, Ambient less 15°C 
 IRUPT 24P,"iRUPT 24P Cell / Tissue Homogenizer (1-24 samples, 490-4550 RPM, Programmable)",Neuation / Accumax,Homogenizers,,unit,324508,,iRUPT 24P.png,iRUPT 24P desc.png
 CH01-TA1,2 ML TUBE CARRIAGE KIT (ASS)_0261-00-0500 (CH01 TA1),Neuation / Accumax,Rotors & Buckets,,unit,9909,,,
 CH01-TA3,7 ML ROTOR KIT_0261-00-0600(FOR I RUPT 24P) - (CH01 TA3),Neuation / Accumax,Rotors & Buckets,,unit,12730,,,
-IRUPT JR.,IRUPT JR.,Neuation / Accumax,Homogenizers,,unit,58092,,,
+IRUPT JR.,"iRUPT JR. Mini Cell Homogenizer (3x2ml, 2800-4000 RPM)",Neuation / Accumax,Homogenizers,,unit,58092,,iRUPT JR.png,iRUPT JR desc.png
 CH01-A01,0261-00-0400-0-057_2 ML TUBE (CH01 A01),Neuation / Accumax,Tubes & Vials,,unit,6041,,,
 CH01-A02,0261-00-0400-0-058_0.4-0.6 MM GLASS BEADS (CH01 A02),Neuation / Accumax,Other,,unit,6873,,,
 CH01-A03,0261-00-0400-0-059_0.8-1.2 MM GLASS BEADS (CH01 A03),Neuation / Accumax,Other,,unit,6873,,,
@@ -167,8 +167,8 @@ CH01-A06,0261-00-0400-0-065_1.4-1.7 MM YTZP(94%) BEADS (CH01 A06),Neuation / Acc
 CH01-A07,0261-00-0400-0-066_2.6-3.3 MM YTZP(94%) BEADS (CH01 A07),Neuation / Accumax,Other,,unit,13674,,,
 CH01-A08,0261-00-0400-0-068_2MM SS BEADS (CH01 A08),Neuation / Accumax,Other,,unit,13674,,,
 CH01-A09,0261-00-0400-0-067_3 MM SS BEADS (CH01 A09),Neuation / Accumax,Other,,unit,54696,,,
-ISHAK BL UNO VT,ISHAK BL UNO VT WITHOUT USB,Neuation / Accumax,Other,,unit,17425,,,
-ISHAK QUATTRO NXT,ISHAK QUATTRO (2.0),Neuation / Accumax,Other,,unit,37050,,,
+ISHAK BL UNO VT,"iShak BL Uno VT Personal Microplate Shaker (1 plate, 300-1800 RPM, 2mm Orbital)",Neuation / Accumax,Other,,unit,17425,,iSHAK BL UNO VT.png,iSHAK BL UNO VT desc.png
+ISHAK QUATTRO NXT,"iShak Quattro NXT 4-Plate Microplate Shaker (4 plates, 200-1200 RPM, 3mm Orbital)",Neuation / Accumax,Other,,unit,37050,,iSHAK QUATTRO NXT.png,iSHAK BL UNO VT desc.png
 ISHAK TS4 NXT,ISHAK TS4 NXT,Neuation / Accumax,Other,,unit,91400,,,
 ISHAK 3D-5 NXT,ISHAK 3D-5 (2.0),Neuation / Accumax,Other,,unit,49000,,,
 STICKY PAD MAT,0225-00-0102-0-060_SILICON STICKY MAT ( SH03 M3-2),Neuation / Accumax,Other,,unit,1673,,,
