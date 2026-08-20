@@ -1,61 +1,61 @@
 sku,name,brand,category,description,unit,price,hsn,image,descimage
-IFUGE M08,IFUGE M08 MAGNETIC ROTOR,Neuation / Accumax,Rotors & Buckets,,unit,11082,,iFUGE M08-M08VT.png,iFUGE M08-M08VT desc.png
-IFUGE M08VT,IFUGE M08VT MAGNETIC ROTOR,Neuation / Accumax,Rotors & Buckets,,unit,15713,,iFUGE M08-M08VT.png,iFUGE M08-M08VT desc.png
-IFUGE M5K COMBI,IFUGE M5K COMBI,Neuation / Accumax,Centrifuges,,unit,18079,,iFUGE M5K COMBI.png,iFUGE M5K COMBI desc.png
-IFUGE M15K,IFUGE M15K,Neuation / Accumax,Centrifuges,,unit,57743,,iFUGE M15K.png,iFUGE M15K desc.png
-M12-R2X8,ROTOR (ASS)_M15K_PCR_PL,Neuation / Accumax,Rotors & Buckets,,unit,17498,,,
-M12-R12-03,ROTOR (ASS)_M15K_PLASTIC,Neuation / Accumax,Rotors & Buckets,,unit,10686,,,
-IFUGE M24 NXT,IFUGE M24 (2.0),Neuation / Accumax,Centrifuges,,unit,81510,,,
-IFUGE M24PR,IFUGE M24PR (2.0),Neuation / Accumax,Centrifuges,,unit,219022,,,
-M24-R24,ROTOR (ASS)_24 SLOT ROTOR_0124-00-0601,Neuation / Accumax,Rotors & Buckets,,unit,29823,,,
-M24-R44,ROTOR (ASS)_44 SLOT ROTOR_0124-00-0701,Neuation / Accumax,Rotors & Buckets,,unit,37437,,,
-M24-R8,ROTOR (ASS)_5 ML ROTOR_0122-00-0900,Neuation / Accumax,Rotors & Buckets,,unit,37054,,,
-M24-R4 X 8,ROTOR (ASS)_8X4 PCR ROTOR_0124-00-0801,Neuation / Accumax,Rotors & Buckets,,unit,41512,,,
-IFUGE D06,IFUGE D06 (WITH 6 TUBE ROTOR),Neuation / Accumax,Rotors & Buckets,,unit,49017,,,
-SEZ-14,IFUGE D06 (WITH 8 TUBE ROTOR),Neuation / Accumax,Rotors & Buckets,,unit,49865,,,
-D06-8A,ROTOR (ASS)_8X15_D06,Neuation / Accumax,Rotors & Buckets,,unit,8845,,,
-D06-6A,ROTOR (ASS)_6X15_D06,Neuation / Accumax,Rotors & Buckets,,unit,7997,,,
-IFUGE D08,IFUGE D08,Neuation / Accumax,Centrifuges,,unit,32462,,,
-IFUGE HCT NXT,IFUGE HCT NXT,Neuation / Accumax,Centrifuges,,unit,64938,,,
-IFUGE C4000 NXT,IFUGE C4000 NXT (WITHOUT ROTOR),Neuation / Accumax,Rotors & Buckets,,unit,60428,,,
-SEZ-20,IFUGE C4000 NXT (WITH 16 X 10 ML ROTOR),Neuation / Accumax,Rotors & Buckets,,unit,68818,,,
-SEZ-21,IFUGE C4000 NXT (WITH 8 X 15 ML ROTOR),Neuation / Accumax,Rotors & Buckets,,unit,66155,,,
-SEZ-22,IFUGE C4000 (WITH 6 X 10 ML ROTOR),Neuation / Accumax,Rotors & Buckets,,unit,66155,,,
-CS01-RA08,ROTOR (ASS)_CS06_8X15ML_FIX_ANGLE_ROTOR (C01 RA08),Neuation / Accumax,Rotors & Buckets,,unit,5726,,,
-CS01-RA16,ROTOR (ASS)_CS06_16X10ML_FIX_ANGLE_ROTOR (C01 RA16),Neuation / Accumax,Rotors & Buckets,,unit,8389,,,
-CS01-RS06,ROTOR (ASS)_CS06_6X10ML SWING ROTOR (C01 RS06),Neuation / Accumax,Rotors & Buckets,,unit,5726,,,
-IFUGE CS03,IFUGE CS03 NXT,Neuation / Accumax,Centrifuges,,unit,61237,,,
-C01-RS02,50ML_2-TUBE_ROTOR_ASS._0146,Neuation / Accumax,Rotors & Buckets,,unit,7445,,,
-C01-RS03,50ML_3-TUBE_ROTOR_ASS._0146,Neuation / Accumax,Rotors & Buckets,,unit,22148,,,
-IFUGE CYTO,IFUGE CYTO CENTRIFUGE,Neuation / Accumax,Centrifuges,,unit,71844,,,
-IFUGE GC12,IFUGE GC12 UNIVERSAL GEL CARD CENTRIFUGE,Neuation / Accumax,Centrifuges,,unit,75649,,,
-IFUGE CS2P,IFUGE CS2P NXT,Neuation / Accumax,Centrifuges,,unit,64456,,,
-C01-RS2P,ROTOR (ASS)_CS06_MICRO PLATE ROTOR ASSEMBLY (CS2P ROTOR),Neuation / Accumax,Rotors & Buckets,,pack,9970,,,
-IFUGE FX2P,IFUGE FX2P,Neuation / Accumax,Centrifuges,,unit,26354,,,
-iFUGE CS04 NXT,iFUGE CS04 NXT,Neuation / Accumax,Centrifuges,,unit,76649,,,
-IFUGE L400 NXT,IFUGE L400 NXT,Neuation / Accumax,Centrifuges,,unit,47334,,,
-L400-NXT-FIX-BB,BACK BONE (ASS)_FIX ANGLE ROTOR_L400 NXT_0183,Neuation / Accumax,Rotors & Buckets,,unit,2979,,,
-Bucket-53-Fix - 16 x 15ml rotor,FIX BUCKET (ASS)_16X15 ML FIX ANGLE ROTOR_0183-00-0501-0-003,Neuation / Accumax,Rotors & Buckets,,unit,3485,,,
-L400-NXT-SWING-BB,BACK BONE (ASS)_SWING OUT ROTOR_L400 NXT_0183,Neuation / Accumax,Rotors & Buckets,,unit,2979,,,
-Bucket-31-Swing - 32 x 6ml rotor,SWING BUCKET (ASS)_32X6 ML TUBE SWING OUT ROTOR_0183-00-0502,Neuation / Accumax,Rotors & Buckets,,unit,13310,,,
-BUCKET-32-SWING - 24 X 15ML,SWING BUCKET (ASS)_24X15 ML GLASS TUBE SWING OUT ROTOR_0183-00-0500,Neuation / Accumax,Rotors & Buckets,,unit,11947,,,
-BUCKET-33-SWING - 16 X 15ML,SWING BUCKET (ASS)_16X15 ML TUBE SWING OUT ROTOR_0183-00-0501,Neuation / Accumax,Rotors & Buckets,,unit,9857,,,
-BUCKET-34-SWING - 4 X 50ML,SWING BUCKET (ASS)_4X50 ML TUBE SWING OUT ROTOR_0183-00-0503,Neuation / Accumax,Rotors & Buckets,,unit,7066,,,
-Bucket-52-Fix - 24 x 15ml Glass Tube,FIX BUCKET (ASS)_24X15 ML FIX ANGLE ROTOR_0183-00-0500-0-002,Neuation / Accumax,Rotors & Buckets,,unit,4183,,,
-Bucket-51-Fix - 32 x 6ml rotor,FIX BUCKET (ASS)_32X6 ML FIX ANGLE ROTOR_0183-00-0502-0-004,Neuation / Accumax,Rotors & Buckets,,unit,3485,,,
-Bucket-54-Fix - 4 x 50ml rotor,FIX BUCKET (ASS)_4X50 ML FIX ANGLE ROTOR_0183-00-0503-0-005,Neuation / Accumax,Rotors & Buckets,,unit,3485,,,
-IFUGE L400P,IFUGE L400P,Neuation / Accumax,Centrifuges,,unit,84594,,,
-LC01-L400-140,ROTOR (ASS)_32X6 ML SWING OUT ROTOR_0131-00-0140_L30-140 ROTOR,Neuation / Accumax,Rotors & Buckets,,unit,27460,,,
-LC01-L30-125,ROTOR (ASS)_16X15 ML SWING OUT ROTOR_0131-00-0139_L30 ROTOR,Neuation / Accumax,Rotors & Buckets,,unit,20942,,,
-LC01-L30-129,ROTOR (ASS)_4X50 ML SWING OUT ROTOR_0131-00-0141_L30 ROTOR,Neuation / Accumax,Rotors & Buckets,,unit,15924,,,
-LC01-L30-130,ROTOR (ASS)_4X100 ML SWING OUT ROTOR_0131-00-0156_L30 ROTOR,Neuation / Accumax,Rotors & Buckets,,unit,18016,,,
-LC01-L400-124,ROTOR (ASS)_2X MICEOPLATE SWING ROTOR_0131-00-0124_L30-124 ROTOR,Neuation / Accumax,Rotors & Buckets,,pack,39505,,,
-LC01-L30-131,ROTOR (ASS)_16X15 ML FIX ANGLE ROTOR_0131-00-0150_L400_MACHINING_ROTOR,Neuation / Accumax,Rotors & Buckets,,unit,13557,,,
-LC01-L30-135,ROTOR (ASS)_4X50 ML FIX ANGLE ROTOR_0131-00-0147_L400_MACHINING_ROTOR,Neuation / Accumax,Rotors & Buckets,,unit,9718,,,
-LC01-L30-136,ROTOR (ASS)_4X100 ML FIX ANGLE ROTOR_0131-00-0146_L400 _MACHINING_ROTOR,Neuation / Accumax,Rotors & Buckets,,unit,18423,,,
-LC01-L30-137,ROTOR (ASS)_24X15 ML FIX ANGLE ROTOR_0131-00-0149_L400_MACHINING_ROTOR,Neuation / Accumax,Rotors & Buckets,,unit,22752,,,
-IFUGE UC02,IFUGE UC02,Neuation / Accumax,Centrifuges,,unit,132784,,,
-IFUGE UC02R,IFUGE UC02R,Neuation / Accumax,Centrifuges,,unit,244008,,,
+IFUGE M08,IFUGE M08 MAGNETIC ROTOR,Neuation,Rotors & Buckets,,unit,11636,,iFUGE M08-M08VT.png,iFUGE M08-M08VT desc.png
+IFUGE M08VT,IFUGE M08VT MAGNETIC ROTOR,Neuation,Rotors & Buckets,,unit,14999,,iFUGE M08-M08VT.png,iFUGE M08-M08VT desc.png
+IFUGE M5K COMBI,IFUGE M5K COMBI,Neuation,Centrifuges,,unit,18079,,iFUGE M5K COMBI.png,iFUGE M5K COMBI desc.png
+IFUGE M15K,IFUGE M15K,Neuation,Centrifuges,,unit,57743,,iFUGE M15K.png,iFUGE M15K desc.png
+M12-R2X8,ROTOR (ASS)_M15K_PCR_PL,Neuation,Rotors & Buckets,,unit,17498,,,
+M12-R12-03,ROTOR (ASS)_M15K_PLASTIC,Neuation,Rotors & Buckets,,unit,10686,,,
+IFUGE M24 NXT,"iFUGE M24 NXT High Speed Micro Centrifuge (24 x 1.5/2ml, 13400 RPM)",Neuation,Centrifuges,,unit,81510,,iFUGE M24 NXT.png,iFUGE M24 NXT desc.png
+IFUGE M24PR,"iFUGE M24PR Refrigerated High Speed Micro Centrifuge (up to 44 x 2ml, 15000 RPM, -20Â°C)",Neuation,Centrifuges,,unit,219022,,iFUGE M24PR.png,iFUGE M24PR desc.png
+M24-R24,ROTOR (ASS)_24 SLOT ROTOR_0124-00-0601,Neuation,Rotors & Buckets,,unit,29823,,,
+M24-R44,ROTOR (ASS)_44 SLOT ROTOR_0124-00-0701,Neuation,Rotors & Buckets,,unit,37437,,,
+M24-R8,ROTOR (ASS)_5 ML ROTOR_0122-00-0900,Neuation,Rotors & Buckets,,unit,37054,,,
+M24-R4 X 8,ROTOR (ASS)_8X4 PCR ROTOR_0124-00-0801,Neuation,Rotors & Buckets,,unit,41512,,,
+IFUGE D06,iFUGE D06 Doctor Centrifuge with 6 x 15ml Rotor (6500 RPM),Neuation,Rotors & Buckets,,unit,49017,,iFUGE D06.png,iFUGE D06 desc.png
+SEZ-14,iFUGE D06 Doctor Centrifuge with 8 x 15ml Rotor (6500 RPM),Neuation,Rotors & Buckets,,unit,49865,,iFUGE D06.png,iFUGE D06 desc.png
+D06-8A,ROTOR (ASS)_8X15_D06,Neuation,Rotors & Buckets,,unit,8845,,,
+D06-6A,ROTOR (ASS)_6X15_D06,Neuation,Rotors & Buckets,,unit,7997,,,
+IFUGE D08,"iFUGE D08 Doctor Centrifuge with Combi Rotor (4x50+4x15ml or 8x15ml, 4500 RPM)",Neuation,Centrifuges,,unit,32462,,iFUGE D08.png,iFUGE D08 desc.png
+IFUGE HCT NXT,"iFUGE HCT NXT Hematocrit Centrifuge (24 x 75mm capillary tubes, 12000 RPM)",Neuation,Centrifuges,,unit,64938,,iFUGE HCT NXT.png,iFUGE HCT NXT desc.png
+IFUGE C4000 NXT,"iFUGE C4000 NXT Centrifuge (without rotor, 4000 RPM)",Neuation,Rotors & Buckets,,unit,64900,,iFUGE C4000 NXT.png,iFUGE C4000 NXT desc.png
+SEZ-20,iFUGE C4000 NXT Centrifuge with 16 x 10ml Fixed Angle Rotor (4000 RPM),Neuation,Rotors & Buckets,,unit,68818,,iFUGE C4000 NXT.png,iFUGE C4000 NXT desc.png
+SEZ-21,iFUGE C4000 NXT Centrifuge with 8 x 15ml Fixed Angle Rotor (4000 RPM),Neuation,Rotors & Buckets,,unit,73290,,iFUGE C4000 NXT.png,iFUGE C4000 NXT desc.png
+SEZ-22,iFUGE C4000 NXT Centrifuge with 6 x 10ml Swing Out Rotor (4000 RPM),Neuation,Rotors & Buckets,,unit,70620,,iFUGE C4000 NXT.png,iFUGE C4000 NXT desc.png
+CS01-RA08,ROTOR (ASS)_CS06_8X15ML_FIX_ANGLE_ROTOR (C01 RA08),Neuation,Rotors & Buckets,,unit,5720,,,
+CS01-RA16,ROTOR (ASS)_CS06_16X10ML_FIX_ANGLE_ROTOR (C01 RA16),Neuation,Rotors & Buckets,,unit,8390,,,
+CS01-RS06,ROTOR (ASS)_CS06_6X10ML SWING ROTOR (C01 RS06),Neuation,Rotors & Buckets,,unit,5720,,,
+IFUGE CS03,"iFUGE CS03 NXT Clinical Swing Out Centrifuge (2x50ml or 3x50ml, 3200 RPM)",Neuation,Centrifuges,,unit,61237,,iFUGE CS03 NXT.png,iFUGE CS03 NXT desc.png
+C01-RS02,50ML_2-TUBE_ROTOR_ASS._0146,Neuation,Rotors & Buckets,,unit,7445,,,
+C01-RS03,50ML_3-TUBE_ROTOR_ASS._0146,Neuation,Rotors & Buckets,,unit,19635,,,
+IFUGE CYTO,"iFUGE CYTO Cytoslide Centrifuge (6 Slide, 3x2 position, 2200 RPM)",Neuation,Centrifuges,,unit,71844,,iFUGE CYTO.png,iFUGE CYTO desc.png
+IFUGE GC12,"iFUGE GC12 Universal Gel Card Centrifuge (12 Gel Cards, 2200 RPM)",Neuation,Centrifuges,,unit,75649,,iFUGE GC12.png,iFUGE GC12 desc.png
+IFUGE CS2P,IFUGE CS2P NXT,Neuation,Centrifuges,,unit,64456,,,
+C01-RS2P,ROTOR (ASS)_CS06_MICRO PLATE ROTOR ASSEMBLY (CS2P ROTOR),Neuation,Rotors & Buckets,,pack,9970,,,
+IFUGE FX2P,IFUGE FX2P,Neuation,Centrifuges,,unit,26354,,,
+iFUGE CS04 NXT,"iFUGE CS04 NXT Clinical Swing Out Centrifuge (4x100ml swing or 6x50ml fixed angle, 4000 RPM)",Neuation,Centrifuges,,unit,76649,,iFUGE CS04 NXT.png,iFUGE CS04 NXT desc.png
+IFUGE L400 NXT,IFUGE L400 NXT,Neuation,Centrifuges,,unit,47334,,,
+L400-NXT-FIX-BB,BACK BONE (ASS)_FIX ANGLE ROTOR_L400 NXT_0183,Neuation,Rotors & Buckets,,unit,2979,,,
+Bucket-53-Fix - 16 x 15ml rotor,FIX BUCKET (ASS)_16X15 ML FIX ANGLE ROTOR_0183-00-0501-0-003,Neuation,Rotors & Buckets,,unit,3485,,,
+L400-NXT-SWING-BB,BACK BONE (ASS)_SWING OUT ROTOR_L400 NXT_0183,Neuation,Rotors & Buckets,,unit,2979,,,
+Bucket-31-Swing - 32 x 6ml rotor,SWING BUCKET (ASS)_32X6 ML TUBE SWING OUT ROTOR_0183-00-0502,Neuation,Rotors & Buckets,,unit,13310,,,
+BUCKET-32-SWING - 24 X 15ML,SWING BUCKET (ASS)_24X15 ML GLASS TUBE SWING OUT ROTOR_0183-00-0500,Neuation,Rotors & Buckets,,unit,11947,,,
+BUCKET-33-SWING - 16 X 15ML,SWING BUCKET (ASS)_16X15 ML TUBE SWING OUT ROTOR_0183-00-0501,Neuation,Rotors & Buckets,,unit,9857,,,
+BUCKET-34-SWING - 4 X 50ML,SWING BUCKET (ASS)_4X50 ML TUBE SWING OUT ROTOR_0183-00-0503,Neuation,Rotors & Buckets,,unit,7066,,,
+Bucket-52-Fix - 24 x 15ml Glass Tube,FIX BUCKET (ASS)_24X15 ML FIX ANGLE ROTOR_0183-00-0500-0-002,Neuation,Rotors & Buckets,,unit,4183,,,
+Bucket-51-Fix - 32 x 6ml rotor,FIX BUCKET (ASS)_32X6 ML FIX ANGLE ROTOR_0183-00-0502-0-004,Neuation,Rotors & Buckets,,unit,3485,,,
+Bucket-54-Fix - 4 x 50ml rotor,FIX BUCKET (ASS)_4X50 ML FIX ANGLE ROTOR_0183-00-0503-0-005,Neuation,Rotors & Buckets,,unit,3485,,,
+IFUGE L400P,IFUGE L400P,Neuation,Centrifuges,,unit,84594,,,
+LC01-L400-140,ROTOR (ASS)_32X6 ML SWING OUT ROTOR_0131-00-0140_L30-140 ROTOR,Neuation,Rotors & Buckets,,unit,27460,,,
+LC01-L30-125,ROTOR (ASS)_16X15 ML SWING OUT ROTOR_0131-00-0139_L30 ROTOR,Neuation,Rotors & Buckets,,unit,20942,,,
+LC01-L30-129,ROTOR (ASS)_4X50 ML SWING OUT ROTOR_0131-00-0141_L30 ROTOR,Neuation,Rotors & Buckets,,unit,15924,,,
+LC01-L30-130,ROTOR (ASS)_4X100 ML SWING OUT ROTOR_0131-00-0156_L30 ROTOR,Neuation,Rotors & Buckets,,unit,18016,,,
+LC01-L400-124,ROTOR (ASS)_2X MICEOPLATE SWING ROTOR_0131-00-0124_L30-124 ROTOR,Neuation,Rotors & Buckets,,pack,39505,,,
+LC01-L30-131,ROTOR (ASS)_16X15 ML FIX ANGLE ROTOR_0131-00-0150_L400_MACHINING_ROTOR,Neuation,Rotors & Buckets,,unit,13557,,,
+LC01-L30-135,ROTOR (ASS)_4X50 ML FIX ANGLE ROTOR_0131-00-0147_L400_MACHINING_ROTOR,Neuation,Rotors & Buckets,,unit,9718,,,
+LC01-L30-136,ROTOR (ASS)_4X100 ML FIX ANGLE ROTOR_0131-00-0146_L400 _MACHINING_ROTOR,Neuation,Rotors & Buckets,,unit,18423,,,
+LC01-L30-137,ROTOR (ASS)_24X15 ML FIX ANGLE ROTOR_0131-00-0149_L400_MACHINING_ROTOR,Neuation,Rotors & Buckets,,unit,22752,,,
+IFUGE UC02,IFUGE UC02,Neuation,Centrifuges,,unit,132784,,,
+IFUGE UC02R,IFUGE UC02R,Neuation,Centrifuges,,unit,244008,,,
 UC-139,ROTOR (ASS)_16X15 ML SWING OUT ROTOR_0134-00-0139_UC02 (UC-139),Neuation / Accumax,Rotors & Buckets,,unit,21079,,,
 UC-146,ROTOR (ASS)_4X100 ML FIX ANGLE ROTOR_0134-00-0146_UC02 _MACHINING(UC-146),Neuation / Accumax,Rotors & Buckets,,unit,18823,,,
 UC-600,ROTOR (ASS)_24 SLOTX2ML FIX ANGLE_0134-00-0601_UC02 (UC-600),Neuation / Accumax,Rotors & Buckets,,unit,30815,,,
@@ -87,20 +87,20 @@ ISWIX JR. VT NXT,ISWIX JR. VT NXT,Neuation / Accumax,Other,,unit,5772,,,
 ISWIX FS,ISWIX FS,Neuation / Accumax,Other,,unit,10892,,,
 ISWIX,ISWIX,Neuation / Accumax,Other,,unit,14097,,,
 ISWIX VT,ISWIX VT,Neuation / Accumax,Other,,unit,18041,,,
-VM-A1,0201-00-0000-0-028_UN_ATTACH_PL_PPGF_3 (VM-A1),Neuation / Accumax,Other,,unit,1343,,,
-VM-A2,0201-00-0000-0-033_FOAM MICRO TUBE_PE FOAM (VM-A2),Neuation / Accumax,Other,,unit,1343,,,
-VM-A3,0201-00-0000-0-031_FOAM_MICRO PLATE_PE FOAM (VM-A3),Neuation / Accumax,Other,,pack,2013,,,
-VM-A4,0201-00-0000-0-034_FLASK_HOLD_RB_NI_3 (VM-A4),Neuation / Accumax,Bottles & Carboys,,unit,2013,,,
+VM-A1,0201-00-0000-0-028_UN_ATTACH_PL_PPGF_3 (VM-A1),Neuation / Accumax,Other,,unit,1282,,,
+VM-A2,0201-00-0000-0-033_FOAM MICRO TUBE_PE FOAM (VM-A2),Neuation / Accumax,Other,,unit,1282,,,
+VM-A3,0201-00-0000-0-031_FOAM_MICRO PLATE_PE FOAM (VM-A3),Neuation / Accumax,Other,,pack,1921,,,
+VM-A4,0201-00-0000-0-034_FLASK_HOLD_RB_NI_3 (VM-A4),Neuation / Accumax,Bottles & Carboys,,unit,1921,,,
 VM-A6,VORTEX ROUND DISK ATTACHMENT (VM-A6),Neuation / Accumax,Lab Equipment,,unit,1921,,,
-VM-A7,0201-00-0000-0-030_STD_ATT_N_PRO_PL_TPE-H_14 (VM-A7),Neuation / Accumax,Other,,unit,2013,,,
-VM-A8,0201-00-0500_CIRCULAR ATTACHEMENT ASLY_RUBBER_R1,Neuation / Accumax,Other,,unit,2013,,,
+VM-A7,0201-00-0000-0-030_STD_ATT_N_PRO_PL_TPE-H_14 (VM-A7),Neuation / Accumax,Other,,unit,1921,,,
+VM-A8,0201-00-0500_CIRCULAR ATTACHEMENT ASLY_RUBBER_R1,Neuation / Accumax,Other,,unit,1921,,,
 ISWIX MV,ISWIX MV,Neuation / Accumax,Other,,unit,112550,,,
-VM-M1,0205-00-0000-0-028_50 ML TUBE FOAM (VM-M1),Neuation / Accumax,Tubes & Vials,,unit,5370,,,
-VM-M2,0205-00-0000-0-027_15 ML TUBE FOAM (VM-M2),Neuation / Accumax,Tubes & Vials,,unit,5630,,,
-VM-M3,0205-00-0000-0-022_7 ML TUFE FOAM (VM-M3),Neuation / Accumax,Other,,unit,5630,,,
-VM-M4,0205-00-0000-0-029_250 ML FLASK FOAM (VM-M4),Neuation / Accumax,Bottles & Carboys,,unit,5904,,,
-VM-M6,0205-00-0000-0-050_2-1.5ML TUBE FOAM (VM-M6),Neuation / Accumax,Tubes & Vials,,unit,5904,,,
-VM-M7,0205-00-0000-0-051_50ML HORIZONTAL TUBE FOAM (VM-M7),Neuation / Accumax,Tubes & Vials,,unit,5630,,,
+VM-M1,0205-00-0000-0-028_50 ML TUBE FOAM (VM-M1),Neuation / Accumax,Tubes & Vials,,unit,5126,,,
+VM-M2,0205-00-0000-0-027_15 ML TUBE FOAM (VM-M2),Neuation / Accumax,Tubes & Vials,,unit,5375,,,
+VM-M3,0205-00-0000-0-022_7 ML TUFE FOAM (VM-M3),Neuation / Accumax,Other,,unit,5375,,,
+VM-M4,0205-00-0000-0-029_250 ML FLASK FOAM (VM-M4),Neuation / Accumax,Bottles & Carboys,,unit,5636,,,
+VM-M6,0205-00-0000-0-050_2-1.5ML TUBE FOAM (VM-M6),Neuation / Accumax,Tubes & Vials,,unit,5636,,,
+VM-M7,0205-00-0000-0-051_50ML HORIZONTAL TUBE FOAM (VM-M7),Neuation / Accumax,Tubes & Vials,,unit,5375,,,
 IROLL RNR4,IROLL RNR4 (220V),Neuation / Accumax,Tube Rollers,,unit,13053,,,
 IROLL RNR6,IROLL RNR6 (2.0),Neuation / Accumax,Tube Rollers,,unit,29462,,,
 IROLL DR24,IROLL DR 24,Neuation / Accumax,Tube Rollers,,unit,40276,,,
@@ -112,71 +112,71 @@ P1-50,50 ML TUBE TRAY (ASS)_0245-00-04 (PR01 P1),Neuation / Accumax,Rotors & Buc
 P2-15,15 ML TUBE TRAY (ASS)_0245-00-03 (PR01 P2),Neuation / Accumax,Rotors & Buckets,,unit,6538,,,
 P3-05,2_5 ML TUBE TRAY (ASS)_0245-00-05 (PR01 P3),Neuation / Accumax,Rotors & Buckets,,unit,7260,,,
 ISTIR UNO,ISTIR UNO CAPP WHITE,Neuation / Accumax,Other,,unit,14170,,,
-ISTIR QUATTRO,ISTIR QUATTRO,Neuation / Accumax,Other,,unit,30189,,,
+ISTIR QUATTRO,ISTIR QUATTRO,Neuation / Accumax,Other,,unit,30000,,,
 ISTIR 50L,ISTIR 50L(-) (2.0),Neuation / Accumax,Other,,unit,38736,,,
 ISTIR 100L,ISTIR 100L(-) (2.0),Neuation / Accumax,Other,,unit,39158,,,
 ISTIR 200L,ISTIR 200L(-) (2.0),Neuation / Accumax,Other,,unit,41531,,,
-ISTIR MS10,ISTIR MS10 (220 V),Neuation / Accumax,Other,,unit,13840,,,
+ISTIR MS10,ISTIR MS10 (220 V),Neuation / Accumax,Other,,unit,13838,,,
 ISTIR MS10A,ISTIR MS10A (220 V),Neuation / Accumax,Other,,unit,11534,,,
 ISTIR HP320,ISTIR HP 320 (220 V),Neuation / Accumax,Other,,unit,28554,,,
 ISTIR HP320A,ISTIR HP 320A (220 V) DOUBLE KNOB,Neuation / Accumax,Other,,unit,20948,,,
-S1 (FOR HP 550)/PRIME S2 (FOR HP 320),PT 1000 (STAND ASS)_HPS 350/550 (HS10/20 S1),Neuation / Accumax,Rotors & Buckets,,unit,1130,,,
-T1 (FOR HP 550)/PRIME T2 (FOR HP 320),0311-00-0201-0-051_PT1000 SENSOR (HS10/20 T1+T2),Neuation / Accumax,Other,,unit,2547,,,
-QP,0341-00-0000-0-010_CARRYING_PLATE (HS10/20 QP),Neuation / Accumax,Other,,pack,5474,,,
-Q20,0341-00-0000-0-002_4X20ML_QUARTER_BLOCK (HS10/20 Q20),Neuation / Accumax,Other,,unit,4303,,,
-Q30,0341-00-0000-0-001_4X30ML_QUARTER_BLOCK (HS10/20 Q30),Neuation / Accumax,Other,,unit,4303,,,
-Q16,0341-00-0000-0-003_7X16ML_QUARTER_BLOCK (HS10/20 Q16),Neuation / Accumax,Other,,unit,4661,,,
-Q8,0341-00-0000-0-004_10X8ML_QUARTER_BLOCK (HS10/20 Q08),Neuation / Accumax,Other,,unit,5164,,,
-Q4,0341-00-0000-0-005_12X4ML_QUARTER_BLOCK (HS10/20 Q04),Neuation / Accumax,Other,,unit,5164,,,
-RB50,0341-00-0000-0-011_50ML _REACTION_BLOCK (HS10/20 RB50),Neuation / Accumax,Other,,unit,7745,,,
-RB100,0341-00-0000-0-008_100ML _REACTION_BLOCK (HS10/20 RB100),Neuation / Accumax,Other,,unit,7745,,,
-RB250,0341-00-0000-0-007_250ML_REACTION_BLOCK (HS10/20 RB250),Neuation / Accumax,Other,,unit,7745,,,
-RB500,0341-00-0000-0-006_500ML _REACTION_BLOCK (HS10/20 RB500),Neuation / Accumax,Other,,unit,7745,,,
-HP380A,ISTIR HP 380A,Neuation / Accumax,Other,,unit,27615,,,
-HP450A,ISTIR HP 450A,Neuation / Accumax,Other,,unit,39139,,,
+S1 (FOR HP 550)/PRIME S2 (FOR HP 320),PT 1000 (STAND ASS)_HPS 350/550 (HS10/20 S1),Neuation / Accumax,Rotors & Buckets,,unit,1079,,,
+T1 (FOR HP 550)/PRIME T2 (FOR HP 320),0311-00-0201-0-051_PT1000 SENSOR (HS10/20 T1+T2),Neuation / Accumax,Other,,unit,2432,,,
+QP,0341-00-0000-0-010_CARRYING_PLATE (HS10/20 QP),Neuation / Accumax,Other,,pack,5226,,,
+Q20,0341-00-0000-0-002_4X20ML_QUARTER_BLOCK (HS10/20 Q20),Neuation / Accumax,Other,,unit,4108,,,
+Q30,0341-00-0000-0-001_4X30ML_QUARTER_BLOCK (HS10/20 Q30),Neuation / Accumax,Other,,unit,4108,,,
+Q16,0341-00-0000-0-003_7X16ML_QUARTER_BLOCK (HS10/20 Q16),Neuation / Accumax,Other,,unit,4450,,,
+Q8,0341-00-0000-0-004_10X8ML_QUARTER_BLOCK (HS10/20 Q08),Neuation / Accumax,Other,,unit,4930,,,
+Q4,0341-00-0000-0-005_12X4ML_QUARTER_BLOCK (HS10/20 Q04),Neuation / Accumax,Other,,unit,4930,,,
+RB50,0341-00-0000-0-011_50ML _REACTION_BLOCK (HS10/20 RB50),Neuation / Accumax,Other,,unit,7393,,,
+RB100,0341-00-0000-0-008_100ML _REACTION_BLOCK (HS10/20 RB100),Neuation / Accumax,Other,,unit,7393,,,
+RB250,0341-00-0000-0-007_250ML_REACTION_BLOCK (HS10/20 RB250),Neuation / Accumax,Other,,unit,7393,,,
+RB500,0341-00-0000-0-006_500ML _REACTION_BLOCK (HS10/20 RB500),Neuation / Accumax,Other,,unit,7393,,,
+HP380A,ISTIR HP 380A,Neuation / Accumax,Other,,unit,31150,,,
+HP450A,ISTIR HP 450A,Neuation / Accumax,Other,,unit,47429,,,
 ISTIR HP550 PRIME,ISTIR HP 550 PRIME,Neuation / Accumax,Other,,unit,47429,,,
 ISTIR HP 350 PRIME,ISTIR HP 350 PRIME,Neuation / Accumax,Other,,unit,47429,,,
-ISTIR HP 5M,ISTIR HP 5M (220 V),Neuation / Accumax,Other,,unit,53736,,,
+ISTIR HP 5M,ISTIR HP 5M (220 V),Neuation / Accumax,Other,,unit,53737,,,
 ISTIR HP 10M,ISTIR HP 10M (220 V),Neuation / Accumax,Other,,unit,75604,,,
 ISTIR HP 15M,ISTIR HP 15M (220 V),Neuation / Accumax,Other,,unit,107054,,,
 ISTIR OH 20 PRIME,ISTIR OH 20P,Neuation / Accumax,Other,,unit,43036,,,
 ISTIR OH 40 PRIME,ISTIR OH 40P,Neuation / Accumax,Other,,unit,45013,,,
 ISTIR OH 75 ELITE,ISTIR OH 75E,Neuation / Accumax,Other,,unit,74272,,,
 ISTIR OH 15 PRIME,ISTIR OH 15P,Neuation / Accumax,Other,,unit,29051,,,
-ITHERM D150-1,ITHERM D150-1 (2.0) SINGLE BLOCK,Neuation / Accumax,Other,,unit,18769,,,
-ITHERM D150-4,ITHERM D150-4,Neuation / Accumax,Other,,unit,50986,,,
-DB02-B1,0601-00-0104-0-021_HEATING_BLOCK (DB01 B1),Neuation / Accumax,Other,,unit,9490,,,
-DB02-B2,0601-00-0104-0-010_1.5ML HEATING BLOCK (DB01 B2),Neuation / Accumax,Other,,unit,9490,,,
-DB02-B3,15 ML HEATING BLOCK (DB01 B3),Neuation / Accumax,Other,,unit,9490,,,
-DB02-B4,50 ML HEATING BLOCK (DB01 B4),Neuation / Accumax,Other,,unit,9490,,,
+ITHERM D150-1,ITHERM D150-1 (2.0) SINGLE BLOCK,Neuation / Accumax,Other,,unit,15660,,,
+ITHERM D150-4,ITHERM D150-4,Neuation / Accumax,Other,,unit,55200,,,
+DB02-B1,0601-00-0104-0-021_HEATING_BLOCK (DB01 B1),Neuation / Accumax,Other,,unit,9491,,,
+DB02-B2,0601-00-0104-0-010_1.5ML HEATING BLOCK (DB01 B2),Neuation / Accumax,Other,,unit,9491,,,
+DB02-B3,15 ML HEATING BLOCK (DB01 B3),Neuation / Accumax,Other,,unit,9491,,,
+DB02-B4,50 ML HEATING BLOCK (DB01 B4),Neuation / Accumax,Other,,unit,9491,,,
 DB02-B5,0601-00-0104-0-047_10MM_RB_HTNG_BLK_66MM,Neuation / Accumax,Other,,unit,8785,,,
-DB02-BB,0602-00-0102-0-015_BEAD_BLOCK_AL,Neuation / Accumax,Other,,unit,9490,,,
-BLOCK LIFTER,0601-00-0000-0-034_BLOCK LIFTER,Neuation / Accumax,Other,,unit,260,,,
-DB01-B - SS METAL BEADS,SS 304 METAL BEADS_3.2MM,Neuation / Accumax,Other,,unit,5342,,,
+DB02-BB,0602-00-0102-0-015_BEAD_BLOCK_AL,Neuation / Accumax,Other,,unit,9491,,,
+BLOCK LIFTER,0601-00-0000-0-034_BLOCK LIFTER,Neuation / Accumax,Other,,unit,261,,,
+DB01-B - SS METAL BEADS,SS 304 METAL BEADS_3.2MM,Neuation / Accumax,Other,,unit,5100,,,
 ITHERM CH25,ITHERM CH25,Neuation / Accumax,Other,,unit,64181,,,
 IRUPT 24P,IRUPT 24P,Neuation / Accumax,Homogenizers,,unit,324508,,,
-CH01-TA1,2 ML TUBE CARRIAGE KIT (ASS)_0261-00-0500 (CH01 TA1),Neuation / Accumax,Rotors & Buckets,,unit,9908,,,
+CH01-TA1,2 ML TUBE CARRIAGE KIT (ASS)_0261-00-0500 (CH01 TA1),Neuation / Accumax,Rotors & Buckets,,unit,9909,,,
 CH01-TA3,7 ML ROTOR KIT_0261-00-0600(FOR I RUPT 24P) - (CH01 TA3),Neuation / Accumax,Rotors & Buckets,,unit,12730,,,
 IRUPT JR.,IRUPT JR.,Neuation / Accumax,Homogenizers,,unit,58092,,,
-CH01-A01,0261-00-0400-0-057_2 ML TUBE (CH01 A01),Neuation / Accumax,Tubes & Vials,,unit,27,,,
-CH01-A02,0261-00-0400-0-058_0.4-0.6 MM GLASS BEADS (CH01 A02),Neuation / Accumax,Other,,unit,27491,,,
-CH01-A03,0261-00-0400-0-059_0.8-1.2 MM GLASS BEADS (CH01 A03),Neuation / Accumax,Other,,unit,27491,,,
-CH01-A04,0261-00-0400-0-060_2.5-3.0 MM GLASS BEADS (CH01 A04),Neuation / Accumax,Other,,unit,27491,,,
-CH01-A05,0261-00-0400-0-064_1.0-1.2 MM YTZP(94%) BEADS (CH01 A05),Neuation / Accumax,Other,,unit,54696,,,
-CH01-A06,0261-00-0400-0-065_1.4-1.7 MM YTZP(94%) BEADS (CH01 A06),Neuation / Accumax,Other,,unit,54696,,,
-CH01-A07,0261-00-0400-0-066_2.6-3.3 MM YTZP(94%) BEADS (CH01 A07),Neuation / Accumax,Other,,unit,54696,,,
-CH01-A08,0261-00-0400-0-068_2MM SS BEADS (CH01 A08),Neuation / Accumax,Other,,unit,54696,,,
+CH01-A01,0261-00-0400-0-057_2 ML TUBE (CH01 A01),Neuation / Accumax,Tubes & Vials,,unit,6041,,,
+CH01-A02,0261-00-0400-0-058_0.4-0.6 MM GLASS BEADS (CH01 A02),Neuation / Accumax,Other,,unit,6873,,,
+CH01-A03,0261-00-0400-0-059_0.8-1.2 MM GLASS BEADS (CH01 A03),Neuation / Accumax,Other,,unit,6873,,,
+CH01-A04,0261-00-0400-0-060_2.5-3.0 MM GLASS BEADS (CH01 A04),Neuation / Accumax,Other,,unit,6873,,,
+CH01-A05,0261-00-0400-0-064_1.0-1.2 MM YTZP(94%) BEADS (CH01 A05),Neuation / Accumax,Other,,unit,13674,,,
+CH01-A06,0261-00-0400-0-065_1.4-1.7 MM YTZP(94%) BEADS (CH01 A06),Neuation / Accumax,Other,,unit,13674,,,
+CH01-A07,0261-00-0400-0-066_2.6-3.3 MM YTZP(94%) BEADS (CH01 A07),Neuation / Accumax,Other,,unit,13674,,,
+CH01-A08,0261-00-0400-0-068_2MM SS BEADS (CH01 A08),Neuation / Accumax,Other,,unit,13674,,,
 CH01-A09,0261-00-0400-0-067_3 MM SS BEADS (CH01 A09),Neuation / Accumax,Other,,unit,54696,,,
-ISHAK BL UNO VT,ISHAK BL UNO VT WITHOUT USB,Neuation / Accumax,Other,,unit,14258,,,
-ISHAK QUATTRO NXT,ISHAK QUATTRO (2.0),Neuation / Accumax,Other,,unit,30310,,,
-ISHAK TS4 NXT,ISHAK TS4 NXT,Neuation / Accumax,Other,,unit,74784,,,
-ISHAK 3D-5 NXT,ISHAK 3D-5 (2.0),Neuation / Accumax,Other,,unit,40097,,,
+ISHAK BL UNO VT,ISHAK BL UNO VT WITHOUT USB,Neuation / Accumax,Other,,unit,17425,,,
+ISHAK QUATTRO NXT,ISHAK QUATTRO (2.0),Neuation / Accumax,Other,,unit,37050,,,
+ISHAK TS4 NXT,ISHAK TS4 NXT,Neuation / Accumax,Other,,unit,91400,,,
+ISHAK 3D-5 NXT,ISHAK 3D-5 (2.0),Neuation / Accumax,Other,,unit,49000,,,
 STICKY PAD MAT,0225-00-0102-0-060_SILICON STICKY MAT ( SH03 M3-2),Neuation / Accumax,Other,,unit,1673,,,
-ISHAK PS 10 NXT,ISHAK PS 10 NXT,Neuation / Accumax,Other,,unit,65908,,,
+ISHAK PS 10 NXT,ISHAK PS 10 NXT,Neuation / Accumax,Other,,unit,80550,,,
 DA-01,ATTECHMENT(ASS)7.5_DISK ATTECHMENT (SH01 DA-01),Neuation / Accumax,Rotors & Buckets,,unit,6974,,,
-ISHAK PS 20 NXT,ISHAK PS 20 NXT,Neuation / Accumax,Other,,unit,65908,,,
+ISHAK PS 20 NXT,ISHAK PS 20 NXT,Neuation / Accumax,Other,,unit,80550,,,
 UA-01,UNIVERSAL ATTACHMENT_7.5 (SH01 UA-01),Neuation / Accumax,Other,,unit,8055,,,
-ISHAK US15,ISHAK US 15,Neuation / Accumax,Other,,unit,148293,,,
+ISHAK US15,ISHAK US 15 (W/O attachments),Neuation,Other,,unit,181250,,iSHAK US15.png,iSHAK US15 desc.png
 UA-15,UNIVERSAL ATTACHMENT_15 KGS (SH02 UA-15),Neuation / Accumax,Other,,unit,43633,,,
 SSP-250,0251-00-0113-0-109_SS_TRAY_250ML (SH02 SSP-250),Neuation / Accumax,Other,,unit,23494,,,
 SC-100,0231-00-0131-0-111_100ML SS CLAMP WITH SPRING (SH01//SH02 SC-100),Neuation / Accumax,Other,,unit,870,,,
@@ -187,17 +187,17 @@ SC-500,0231-00-0134-0-114_500ML SS CLAMP WITH SPRING (SH01//SH02 SC-500),Neuatio
 SH01-SSP- 250,0231-00-0117-0-70_SS CLAMP TRAY (SH01 SSP-250),Neuation / Accumax,Other,,unit,5930,,,
 SH02-SSP- 500,0251-00-0114-0-110_SS_TRAY_500ML (SH02 SSP-500),Neuation / Accumax,Other,,unit,23557,,,
 SSP-500,0231-00-0118-0-72_SS CLAP TRAY (SH01 SSP-500),Neuation / Accumax,Other,,unit,5930,,,
-PCM-035,MAG_BAR-CYLINDRICAL TYPE_SIZE:3*5MM,Neuation / Accumax,Other,,unit,70,,,
-PCM-1070,MAG_BAR-CYLINDRICAL TYPE_SIZE:10*70MM,Neuation / Accumax,Other,,unit,577,,,
-PCM-310,MAG_BAR-CYLINDRICAL TYPE_SIZE:3*10MM,Neuation / Accumax,Other,,unit,74,,,
-PCM-610,MAG_BAR-CYLINDRICAL TYPE_SIZE:6*10MM,Neuation / Accumax,Other,,unit,84,,,
-PCM-620,MAG_BAR-CYLINDRICAL TYPE_SIZE:6*20MM,Neuation / Accumax,Other,,unit,117,,,
-PCM-630,MAG_BAR-CYLINDRICAL TYPE_SIZE:6*30MM,Neuation / Accumax,Other,,unit,151,,,
-PCM-815,MAG_BAR-CYLINDRICAL TYPE_SIZE:8*15MM,Neuation / Accumax,Other,,unit,132,,,
-PCM-825,MAG_BAR-CYLINDRICAL TYPE_SIZE:8*25MM,Neuation / Accumax,Other,,unit,201,,,
-PCM-840,MAG_BAR-CYLINDRICAL TYPE_SIZE:8*40MM,Neuation / Accumax,Other,,unit,293,,,
-PCM-850,MAG_BAR-CYLINDRICAL TYPE_SIZE:8*50MM,Neuation / Accumax,Other,,unit,347,,,
-POB-1025,MAG_BAR-OVAL TYPE_SIZE:10*25MM,Neuation / Accumax,Other,,unit,173,,,
+PCM-035,MAG_BAR-CYLINDRICAL TYPE_SIZE:3*5MM,Neuation / Accumax,Other,,unit,676,,,
+PCM-1070,MAG_BAR-CYLINDRICAL TYPE_SIZE:10*70MM,Neuation / Accumax,Other,,unit,2152,,,
+PCM-310,MAG_BAR-CYLINDRICAL TYPE_SIZE:3*10MM,Neuation / Accumax,Other,,unit,712,,,
+PCM-610,MAG_BAR-CYLINDRICAL TYPE_SIZE:6*10MM,Neuation / Accumax,Other,,unit,806,,,
+PCM-620,MAG_BAR-CYLINDRICAL TYPE_SIZE:6*20MM,Neuation / Accumax,Other,,unit,1127,,,
+PCM-630,MAG_BAR-CYLINDRICAL TYPE_SIZE:6*30MM,Neuation / Accumax,Other,,unit,1448,,,
+PCM-815,MAG_BAR-CYLINDRICAL TYPE_SIZE:8*15MM,Neuation / Accumax,Other,,unit,1258,,,
+PCM-825,MAG_BAR-CYLINDRICAL TYPE_SIZE:8*25MM,Neuation / Accumax,Other,,unit,1921,,,
+PCM-840,MAG_BAR-CYLINDRICAL TYPE_SIZE:8*40MM,Neuation / Accumax,Other,,unit,1401,,,
+PCM-850,MAG_BAR-CYLINDRICAL TYPE_SIZE:8*50MM,Neuation / Accumax,Other,,unit,1661,,,
+POB-1025,MAG_BAR-OVAL TYPE_SIZE:10*25MM,Neuation / Accumax,Other,,unit,1661,,,
 POB-1030,MAG_BAR-OVAL TYPE_SIZE:10*30MM,Neuation / Accumax,Other,,unit,203,,,
 POB-1535,MAG_BAR-OVAL TYPE_SIZE:15*35MM,Neuation / Accumax,Other,,unit,293,,,
 POB-1750,MAG_BAR-OVAL TYPE_SIZE:17*50MM,Neuation / Accumax,Other,,unit,466,,,
@@ -733,13 +733,13 @@ AE-12-100,ACCUMAX Electronic pipette 5-100 (12) (AE-12-100)(PFE-12-100),Neuation
 AE-12-200,ACCUMAX Electronic pipette 10-200 (12) (AE-12-200)(PFE-12-200),Neuation / Accumax,Pipettes,,unit,60588,,Elec pipette.png,Elec pipette desc.png
 AE-12-300,ACCUMAX Electronic pipette 15-300 (12) (AE-12-300)(PFE-12-300),Neuation / Accumax,Pipettes,,unit,60588,,Elec pipette.png,Elec pipette desc.png
 AE-12-1200,ACCUMAX Electronic pipette 50-1200 (12) (AE-12-1200)(PFE-12-1200),Neuation / Accumax,Pipettes,,unit,81790,,Elec pipette.png,Elec pipette desc.png
-AJ-5,JR Pipette 5 ACCUMAX (AJ-005),Neuation / Accumax,Other,,unit,715,,JR pipette.png,JR pipette desc.png
-AJ-10,JR Pipette 10 ACCUMAX (AJ-010),Neuation / Accumax,Other,,unit,715,,JR pipette.png,JR pipette desc.png
-AJ-20,JR Pipette 20 ACCUMAX (AJ-020),Neuation / Accumax,Other,,unit,715,,JR pipette.png,JR pipette desc.png
-AJ-25,JR Pipette 25 ACCUMAX (AJ-025),Neuation / Accumax,Other,,unit,715,,JR pipette.png,JR pipette desc.png
-AJ-50,JR Pipette 50 ACCUMAX (AJ-050),Neuation / Accumax,Other,,unit,715,,JR pipette.png,JR pipette desc.png
-AJ-100,JR Pipette 100 ACCUMAX (AJ-100),Neuation / Accumax,Other,,unit,715,,JR pipette.png,JR pipette desc.png
-AJ-200,JR Pipette 200 ACCUMAX (AJ-200),Neuation / Accumax,Other,,unit,935,,JR pipette.png,JR pipette desc.png
+AJ-5,JR Pipette 5 ACCUMAX (AJ-005),Neuation / Accumax,Pipettes,,unit,715,,JR pipette.png,JR pipette desc.png
+AJ-10,JR Pipette 10 ACCUMAX (AJ-010),Neuation / Accumax,Pipettes,,unit,715,,JR pipette.png,JR pipette desc.png
+AJ-20,JR Pipette 20 ACCUMAX (AJ-020),Neuation / Accumax,Pipettes,,unit,715,,JR pipette.png,JR pipette desc.png
+AJ-25,JR Pipette 25 ACCUMAX (AJ-025),Neuation / Accumax,Pipettes,,unit,715,,JR pipette.png,JR pipette desc.png
+AJ-50,JR Pipette 50 ACCUMAX (AJ-050),Neuation / Accumax,Pipettes,,unit,715,,JR pipette.png,JR pipette desc.png
+AJ-100,JR Pipette 100 ACCUMAX (AJ-100),Neuation / Accumax,Pipettes,,unit,715,,JR pipette.png,JR pipette desc.png
+AJ-200,JR Pipette 200 ACCUMAX (AJ-200),Neuation / Accumax,Pipettes,,unit,935,,JR pipette.png,JR pipette desc.png
 VA-100,VA-FA Mechanical Pipette 0.5-10 ACCUMAX (VA-100),Neuation / Accumax,Pipettes,,unit,1815,,VA-FA Mech pipette.png,VA-FA mech pipette.png
 VA-125,VA-FA Mechanical Pipette 0.1-2.5 ACCUMAX (VA-125),Neuation / Accumax,Pipettes,,unit,1815,,VA-FA Mech pipette.png,VA-FA mech pipette.png
 VA-200,VA-FA Mechanical Pipette 5-50 ACCUMAX (VA-200),Neuation / Accumax,Pipettes,,unit,1815,,VA-FA Mech pipette.png,VA-FA mech pipette.png
@@ -777,95 +777,99 @@ MA12-050,ACCUMAX  Multi channel pipettes 5-50 (12)  (MA 12-050),Neuation / Accum
 MA12-100, ACCUMAX  Multi channel pipettes 10-100 (12)  (MA 12-100),Neuation / Accumax,Pipettes,,unit,19085,,VA-FA Mech pipette.png,VA-FA mech pipette.png
 MA12-200, ACCUMAX  Multi channel pipettes 20-200 (12)  (MA 12-200),Neuation / Accumax,Pipettes,,unit,19085,,VA-FA Mech pipette.png,VA-FA mech pipette.png
 MA12-300, ACCUMAX  Multi channel pipettes 30-300 (12)  (MA 12-300),Neuation / Accumax,Pipettes,,unit,19085,,VA-FA Mech pipette.png,VA-FA mech pipette.png
-ADR â€“ 2.5,ACCUMAX BOTTLE TOP DISPENSER W/ Re-circulation 0.25-2.5 ML (ADR-2.5)(PDR-2.5),Neuation / Accumax,Other,,unit,14440,,bottle top dispenser.png,bottle top dispenser desc.png
-ADR â€“ 05,ACCUMAX BOTTLE TOP DISPENSER W/ Re-circulation 0.5-5 ML (ADR-05)(PDR-05),Neuation / Accumax,Other,,unit,14440,,bottle top dispenser.png,bottle top dispenser desc.png
-ADR â€“ 10,ACCUMAX BOTTLE TOP DISPENSER W/ Re-circulation 1-10 ML (ADR-10)(PDR-10),Neuation / Accumax,Other,,unit,14440,,bottle top dispenser.png,bottle top dispenser desc.png
-ADR â€“ 25,ACCUMAX BOTTLE TOP DISPENSER W/ Re-circulation 2.5-25 ML (ADR-25)(PDR-25),Neuation / Accumax,Other,,unit,17325,,bottle top dispenser.png,bottle top dispenser desc.png
-ADR â€“ 30,ACCUMAX BOTTLE TOP DISPENSER W/ Re-circulation 2.5-30 ML (ADR-30)(PDR-30),Neuation / Accumax,Other,,unit,17325,,bottle top dispenser.png,bottle top dispenser desc.png
-ADR â€“ 50,ACCUMAX BOTTLE TOP DISPENSER W/ Re-circulation 5-50 ML (ADR-50)(PDR-50),Neuation / Accumax,Other,,unit,17325,,bottle top dispenser.png,bottle top dispenser desc.png
-ADR â€“ 60,ACCUMAX BOTTLE TOP DISPENSER W/ Re-circulation 5-60 ML (ADR-60)(PDR-60),Neuation / Accumax,Other,,unit,17325,,bottle top dispenser.png,bottle top dispenser desc.png
-ADR â€“ 100,ACCUMAX BOTTLE TOP DISPENSER W/ Re-circulation 10-100 ML (ADR-100)(PDR-100),Neuation / Accumax,Other,,unit,19050,,bottle top dispenser.png,bottle top dispenser desc.png
-AD â€“ 2.5,ACCUMAX BOTTLE TOP DISPENSER W/O Re-circulation 0.25-2.5 ML (AD-2.5)(PD-2.5),Neuation / Accumax,Other,,unit,12500,,bottle top dispenser.png,bottle top dispenser desc.png
-AD â€“ 05,ACCUMAX BOTTLE TOP DISPENSER W/O Re-circulation 0.5-5 ML (AD-05)(PD-05),Neuation / Accumax,Other,,unit,12500,,bottle top dispenser.png,bottle top dispenser desc.png
-AD â€“ 10,ACCUMAX BOTTLE TOP DISPENSER W/O Re-circulation 1-10 ML (AD-10)(PD-10),Neuation / Accumax,Other,,unit,12500,,bottle top dispenser.png,bottle top dispenser desc.png
-AD â€“ 25,ACCUMAX BOTTLE TOP DISPENSER W/O Re-circulation 2.5-25 ML (AD-25)(PD-25),Neuation / Accumax,Other,,unit,13755,,bottle top dispenser.png,bottle top dispenser desc.png
-AD â€“ 30,ACCUMAX BOTTLE TOP DISPENSER W/O Re-circulation 2.5-30 ML (AD-30)(PD-30),Neuation / Accumax,Other,,unit,13755,,bottle top dispenser.png,bottle top dispenser desc.png
-AD â€“ 50,ACCUMAX BOTTLE TOP DISPENSER W/O Re-circulation 5-50 ML (AD-50)(PD-50),Neuation / Accumax,Other,,unit,13755,,bottle top dispenser.png,bottle top dispenser desc.png
-AD â€“ 60,ACCUMAX BOTTLE TOP DISPENSER W/O Re-circulation 5-60 ML (AD-60)(PD-60),Neuation / Accumax,Other,,unit,13755,,bottle top dispenser.png,bottle top dispenser desc.png
-AD â€“ 100,ACCUMAX BOTTLE TOP DISPENSER W/O Re-circulation 10-100 ML (AD-100)(PD-100),Neuation / Accumax,Other,,unit,15840,,bottle top dispenser.png,bottle top dispenser desc.png
-ADA-01,AD00_PIN_0089_03A_P_0_THREAD CAP (28MM),Neuation / Accumax,Other,,unit,308,,,
-ADA-02,AD00_PIN_0090_03A_P_0_THREAD CAP (38MM),Neuation / Accumax,Other,,unit,737,,,
-ADA-03,AD00_PIN_0091_03A_P_0_THREAD CAP (40MM),Neuation / Accumax,Other,,unit,616,,,
-ADA-04,AD00_PIN_0092_03A_P_0_THREAD CAP (45MM),Neuation / Accumax,Other,,unit,715,,,
-PH01-R,PIPETTE CONTROLLER RED ACCUMAX (PH01-R),Neuation / Accumax,Other,,unit,19415,,Pipette Controller.png,Pipette Controller desc.png
-PH01-O,PIPETTE CONTROLLER ORANGE ACCUMAX (PH01-O),Neuation / Accumax,Other,,unit,19415,,Pipette Controller.png,Pipette Controller desc.png
-PH01-G,PIPETTE CONTROLLER GREEN ACCUMAX (PH01-G),Neuation / Accumax,Other,,unit,19415,,Pipette Controller.png,Pipette Controller desc.png
-PH01-B,PIPETTE CONTROLLER BLUE ACCUMAX (PH01-B),Neuation / Accumax,Other,,unit,19415,,Pipette Controller.png,Pipette Controller desc.png
-8-100-32-9,AHN myPette® EL³ Single channel Variable Volume Micropipettes DP 0.1-2.5 ÂµL (ALFV-2.5),Accumax,Pipettes,,unit,13708,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
-8-101-32-9,AHN myPette® EL³ Single channel Variable Volume Micropipettes DP 0.5-10 ÂµL (ALFV-10),Accumax,Pipettes,,unit,13708,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
-8-102-32-9,AHN myPette® EL³ Single channel Variable Volume Micropipettes DP 2-20 ÂµL (ALFV-20),Accumax,Pipettes,,unit,13708,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
-8-103-32-9,AHN myPette® EL³ Single channel Variable Volume Micropipettes DP 5-50 ÂµL (ALFV-50),Accumax,Pipettes,,unit,13708,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
-8-104-32-9,AHN myPette® EL³ Single channel Variable Volume Micropipettes DP 10-100 ÂµL (ALFV-100),Accumax,Pipettes,,unit,13708,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
-8-105-32-9,AHN myPette® EL³ Single channel Variable Volume Micropipettes DP 20-200 ÂµL (ALFV-200),Accumax,Pipettes,,unit,13708,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
-8-106-32-9,AHN myPette® EL³ Single channel Variable Volume Micropipettes DP 100-1000 ÂµL (ALFV-1000),Accumax,Pipettes,,unit,13708,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
-8-000-32-9,AHN myPette® EL³ Single Fixed Volume Micropipettes DPF 2.5 ÂµL (ALFF-205),Accumax,Pipettes,,unit,8911,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
-8-001-32-9,AHN myPette® EL³ Single Fixed Volume Micropipettes DPF 5 ÂµL (ALFF-5),Accumax,Pipettes,,unit,8911,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
-8-002-32-9,AHN myPette® EL³ Single Fixed Volume Micropipettes DPF 10 ÂµL (ALFF-10),Accumax,Pipettes,,unit,8911,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
-8-003-32-9,AHN myPette® EL³ Single Fixed Volume Micropipettes DPF 20 ÂµL (ALFF-20),Accumax,Pipettes,,unit,8911,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
-8-004-32-9,AHN myPette® EL³ Single Fixed Volume Micropipettes DPF 25 ÂµL (ALFF-25),Accumax,Pipettes,,unit,8911,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
-8-007-32-9,AHN myPette® EL³ Single Fixed Volume Micropipettes DPF 50 ÂµL (ALFF-50),Accumax,Pipettes,,unit,8911,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
-8-008-32-9,AHN myPette® EL³ Single Fixed Volume Micropipettes DPF 100 ÂµL (ALFF-100),Accumax,Pipettes,,unit,8911,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
-8-009-32-9,AHN myPette® EL³ Single Fixed Volume Micropipettes DPF 200 ÂµL (ALFF-200),Accumax,Pipettes,,unit,8911,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
-8-010-32-9,AHN myPette® EL³ Single Fixed Volume Micropipettes DPF 250 ÂµL (ALFF-250),Accumax,Pipettes,,unit,8911,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
-8-011-32-9,AHN myPette® EL³ Single Fixed Volume Micropipettes DPF 500 ÂµL (ALFF-500),Accumax,Pipettes,,unit,8911,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
-8-012-32-9,AHN myPette® EL³ Single Fixed Volume Micropipettes DPF 1000 ÂµL (ALFF-1000),Accumax,Pipettes,,unit,8911,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
-8-201-32-9,AHN myPette® EL³ Multichannel DPM 0.5-10 (8) (ALFM8-010),Accumax,Pipettes,,unit,34690,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
-8-205-32-9,AHN myPette® EL³ Multichannel DPM 2-20 (8) (ALFM8-020),Accumax,Pipettes,,unit,34690,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
-8-202-32-9,AHN myPette® EL³ Multichannel DPM 5-50 (8) (ALFM8-050),Accumax,Pipettes,,unit,34690,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
-8-204-32-9,AHN myPette® EL³ Multichannel DPM 10-100 (8) (ALFM8-100),Accumax,Pipettes,,unit,34690,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
-8-206-32-9,AHN myPette® EL³ Multichannel DPM 20-200 (8) (ALFM8-200),Accumax,Pipettes,,unit,34690,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
-8-203-32-9,AHN myPette® EL³ Multichannel DPM 30-300 (8) (ALFM8-300),Accumax,Pipettes,,unit,34690,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
-8-401-32-9,AHN myPette® EL³ Multichannel DPM 0.5-10 (12) (ALFM12-010),Accumax,Pipettes,,unit,41115,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
-8-405-32-9,AHN myPette® EL³ Multichannel DPM 2-20 (12) (ALFM12-020),Accumax,Pipettes,,unit,41115,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
-8-402-32-9,AHN myPette® EL³ Multichannel DPM 5-50 (12) (ALFM12-050),Accumax,Pipettes,,unit,41115,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
-8-404-32-9,AHN myPette® EL³ Multichannel DPM 10-100 (12) (ALFM12-100),Accumax,Pipettes,,unit,41115,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
-8-406-32-9,AHN myPette® EL³ Multichannel DPM 20-200 (12) (ALFM12-200),Accumax,Pipettes,,unit,41115,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
-8-403-32-9,AHN myPette® EL³ Multichannel DPM 30-300 (12) (ALFM12-300),Accumax,Pipettes,,unit,41115,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
-AP-1-B,ACCUMAX Transfer Pipette AP-1-B ( 500 X 10 PACKS ),Neuation / Accumax,Pipettes,,pack,8655,,Transfer pipette.png,Transfer pipette desc.png
-AP-1-B-S,ACCUMAX Transfer Pipette AP-1-B-S ( 10 X 50 BAGS X 10 PACKS ),Neuation / Accumax,Pipettes,,pack,10819,,Transfer pipette.png,Transfer pipette desc.png
-AP-1-S-W,ACCUMAX Transfer Pipette AP-1-S-W (300),Neuation / Accumax,Pipettes,,unit,1400,,Transfer pipette.png,Transfer pipette desc.png
-AP-3-B,ACCUMAX Transfer Pipette AP-3-B ( 500 X 10 PACKS ),Neuation / Accumax,Pipettes,,pack,9080,,Transfer pipette.png,Transfer pipette desc.png
-AP-3-B-S,ACCUMAX Transfer Pipette AP-3-B-S ( 50 X 10 BAGS X 10 PACKS ),Neuation / Accumax,Pipettes,,pack,11350,,Transfer pipette.png,Transfer pipette desc.png
-AP-3-S-W,ACCUMAX Transfer Pipette AP-3-S-W (300),Neuation / Accumax,Pipettes,,unit,1500,,Transfer pipette.png,Transfer pipette desc.png
-AST-005-T-C,Accumax 0.5ml Self Standing Screw Cap Tube with Cap,Neuation / Accumax,Other,,pack,6041,,ACCUMAX SCREW CAP TUBES.png,ACCUMAX SCREW CAP TUBES desc.png
-AST-005-T-S-C,"Accumax 0.5ml Self Standing Screw Cap Tube, Sterile with Cap",Neuation / Accumax,Other,,pack,6725,,ACCUMAX SCREW CAP TUBES.png,ACCUMAX SCREW CAP TUBES desc.png
-AST-005-L-T-S-C,"Accumax 0.5ml Self Standing Low Retention Screw Cap Tube, Sterile with Cap",Neuation / Accumax,Other,,pack,47305,,ACCUMAX SCREW CAP TUBES.png,ACCUMAX SCREW CAP TUBES desc.png
-ASCT-015-T-C,ASCT-015-T-C (100 + 100) SET X 10 BAGS X 5 PACKS,Neuation / Accumax,Other,,pack,30206,,,
-AST-015-T-C,Accumax 1.5ml Self Standing Screw Cap Tube with Cap,Neuation / Accumax,Other,,pack,30206,,ACCUMAX SCREW CAP TUBES.png,ACCUMAX SCREW CAP TUBES desc.png
-ASCT-015-T-S-C,ASCT-015-T-S-C (100 + 100) SET X 10 BAGS X 5 PACKS,Neuation / Accumax,Other,,pack,33626,,,
-AST-015-T-S-C,"Accumax 1.5ml Self Standing Screw Cap Tube, Sterile with Cap",Neuation / Accumax,Other,,pack,33626,,ACCUMAX SCREW CAP TUBES.png,ACCUMAX SCREW CAP TUBES desc.png
-ASCT-015-L-T-S-C,ASCT-015-L-T-S-C (100 + 100) SET X 10 BAGS X 5 PACKS,Neuation / Accumax,Other,,pack,47305,,,
-AST-015-L-T-S-C,"Accumax 1.5ml Self Standing Low Retention Screw Cap Tube, Sterile with Cap",Neuation / Accumax,Other,,pack,47305,,ACCUMAX SCREW CAP TUBES.png,ACCUMAX SCREW CAP TUBES desc.png
-ASCT-020-T-C,ASCT-020-T-C (100 + 100) SET X 10 BAGS X 5 PACKS,Neuation / Accumax,Other,,pack,30206,,,
-AST-020-T-C,Accumax 2ml Self Standing Screw Cap Tube with Cap,Neuation / Accumax,Other,,pack,30206,,ACCUMAX SCREW CAP TUBES.png,ACCUMAX SCREW CAP TUBES desc.png
-ASCT-020-T-S-C,ASCT-020-T-S-C (100 + 100) SET X 10 BAGS X 5 PACKS,Neuation / Accumax,Other,,pack,33626,,,
-AST-020-T-S-C,"Accumax 2ml Self Standing Screw Cap Tube, Sterile with Cap",Neuation / Accumax,Other,,pack,33626,,ACCUMAX SCREW CAP TUBES.png,ACCUMAX SCREW CAP TUBES desc.png
-ASCT-020-L-T-S-C,ASCT-020-L-T-S-C (100 + 100) SET X 10 BAGS X 5 PACKS,Neuation / Accumax,Other,,pack,47305,,,
-AST-020-L-T-S-C,"Accumax 2ml Self Standing Low Retention Screw Cap Tube, Sterile with Cap",Neuation / Accumax,Other,,pack,47305,,ACCUMAX SCREW CAP TUBES.png,ACCUMAX SCREW CAP TUBES desc.png
-AST-015-A-T-C,Accumax 1.5ml Amber Self Standing Screw Cap Tube with Cap,Neuation / Accumax,Other,,pack,33799,,ACCUMAX SCREW CAP TUBES.png,ACCUMAX SCREW CAP TUBES desc.png
-AST-015-A-T-S-C,"Accumax 1.5ml Amber Self Standing Screw Cap Tube, Sterile with Cap",Neuation / Accumax,Other,,pack,37616,,ACCUMAX SCREW CAP TUBES.png,ACCUMAX SCREW CAP TUBES desc.png
-AST-015-L-A-T-S-C,"Accumax 1.5ml Amber Self Standing Low Retention Screw Cap Tube, Sterile with Cap",Neuation / Accumax,Other,,pack,47305,,ACCUMAX SCREW CAP TUBES.png,ACCUMAX SCREW CAP TUBES desc.png
+ADR â€“ 2.5,ACCUMAX BOTTLE TOP DISPENSER W/ Re-circulation 0.25-2.5 ML (ADR-2.5)(PDR-2.5),Accumax,Other,,unit,14440,,bottle top dispenser.png,bottle top dispenser desc.png
+ADR â€“ 05,ACCUMAX BOTTLE TOP DISPENSER W/ Re-circulation 0.5-5 ML (ADR-05)(PDR-05),Accumax,Other,,unit,14440,,bottle top dispenser.png,bottle top dispenser desc.png
+ADR â€“ 10,ACCUMAX BOTTLE TOP DISPENSER W/ Re-circulation 1-10 ML (ADR-10)(PDR-10),Accumax,Other,,unit,14440,,bottle top dispenser.png,bottle top dispenser desc.png
+ADR â€“ 25,ACCUMAX BOTTLE TOP DISPENSER W/ Re-circulation 2.5-25 ML (ADR-25)(PDR-25),Accumax,Other,,unit,17325,,bottle top dispenser.png,bottle top dispenser desc.png
+ADR â€“ 30,ACCUMAX BOTTLE TOP DISPENSER W/ Re-circulation 2.5-30 ML (ADR-30)(PDR-30),Accumax,Other,,unit,17325,,bottle top dispenser.png,bottle top dispenser desc.png
+ADR â€“ 50,ACCUMAX BOTTLE TOP DISPENSER W/ Re-circulation 5-50 ML (ADR-50)(PDR-50),Accumax,Other,,unit,17325,,bottle top dispenser.png,bottle top dispenser desc.png
+ADR â€“ 60,ACCUMAX BOTTLE TOP DISPENSER W/ Re-circulation 5-60 ML (ADR-60)(PDR-60),Accumax,Other,,unit,17325,,bottle top dispenser.png,bottle top dispenser desc.png
+ADR â€“ 100,ACCUMAX BOTTLE TOP DISPENSER W/ Re-circulation 10-100 ML (ADR-100)(PDR-100),Accumax,Other,,unit,19050,,bottle top dispenser.png,bottle top dispenser desc.png
+AD â€“ 2.5,ACCUMAX BOTTLE TOP DISPENSER W/O Re-circulation 0.25-2.5 ML (AD-2.5)(PD-2.5),Accumax,Other,,unit,12500,,bottle top dispenser.png,bottle top dispenser desc.png
+AD â€“ 05,ACCUMAX BOTTLE TOP DISPENSER W/O Re-circulation 0.5-5 ML (AD-05)(PD-05),Accumax,Other,,unit,12500,,bottle top dispenser.png,bottle top dispenser desc.png
+AD â€“ 10,ACCUMAX BOTTLE TOP DISPENSER W/O Re-circulation 1-10 ML (AD-10)(PD-10),Accumax,Other,,unit,12500,,bottle top dispenser.png,bottle top dispenser desc.png
+AD â€“ 25,ACCUMAX BOTTLE TOP DISPENSER W/O Re-circulation 2.5-25 ML (AD-25)(PD-25),Accumax,Other,,unit,13755,,bottle top dispenser.png,bottle top dispenser desc.png
+AD â€“ 30,ACCUMAX BOTTLE TOP DISPENSER W/O Re-circulation 2.5-30 ML (AD-30)(PD-30),Accumax,Other,,unit,13755,,bottle top dispenser.png,bottle top dispenser desc.png
+AD â€“ 50,ACCUMAX BOTTLE TOP DISPENSER W/O Re-circulation 5-50 ML (AD-50)(PD-50),Accumax,Other,,unit,13755,,bottle top dispenser.png,bottle top dispenser desc.png
+AD â€“ 60,ACCUMAX BOTTLE TOP DISPENSER W/O Re-circulation 5-60 ML (AD-60)(PD-60),Accumax,Other,,unit,13755,,bottle top dispenser.png,bottle top dispenser desc.png
+AD â€“ 100,ACCUMAX BOTTLE TOP DISPENSER W/O Re-circulation 10-100 ML (AD-100)(PD-100),Accumax,Other,,unit,15840,,bottle top dispenser.png,bottle top dispenser desc.png
+ADA-01,AD00_PIN_0089_03A_P_0_THREAD CAP (28MM),Accumax,Other,,unit,308,,,
+ADA-02,AD00_PIN_0090_03A_P_0_THREAD CAP (38MM),Accumax,Other,,unit,705,,,
+ADA-03,AD00_PIN_0091_03A_P_0_THREAD CAP (40MM),Accumax,Other,,unit,705,,,
+ADA-04,AD00_PIN_0092_03A_P_0_THREAD CAP (45MM),Accumax,Other,,unit,705,,,
+ADA-05,Calibration Tool - Accessories,Accumax,Other,,unit,275,,,
+ADA-06,Recirculation Tube - Accessories,Accumax,Other,,unit,1056,,,
+ADA-07,Telescopic Fill Tube 2.5-60ml,Accumax,Other,,unit,495,,,
+ADA-08,AD00_PIN_0092_03A_P_0_THREAD CAP (32MM),Accumax,Other,,unit,705,,,
+PH01-R,PIPETTE CONTROLLER RED ACCUMAX (PH01-R),Accumax,Other,,unit,18550,,Pipette Controller.png,Pipette Controller desc.png
+PH01-O,PIPETTE CONTROLLER ORANGE ACCUMAX (PH01-O),Accumax,Other,,unit,18550,,Pipette Controller.png,Pipette Controller desc.png
+PH01-G,PIPETTE CONTROLLER GREEN ACCUMAX (PH01-G),Accumax,Other,,unit,18550,,Pipette Controller.png,Pipette Controller desc.png
+PH01-B,PIPETTE CONTROLLER BLUE ACCUMAX (PH01-B),Accumax,Other,,unit,18550,,Pipette Controller.png,Pipette Controller desc.png
+8-100-32-9,AHN myPetteï¿½ ELï¿½ Single channel Variable Volume Micropipettes DP 0.1-2.5 ÂµL (ALFV-2.5),Accumax,Pipettes,,unit,13708,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-101-32-9,AHN myPetteï¿½ ELï¿½ Single channel Variable Volume Micropipettes DP 0.5-10 ÂµL (ALFV-10),Accumax,Pipettes,,unit,13708,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-102-32-9,AHN myPetteï¿½ ELï¿½ Single channel Variable Volume Micropipettes DP 2-20 ÂµL (ALFV-20),Accumax,Pipettes,,unit,13708,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-103-32-9,AHN myPetteï¿½ ELï¿½ Single channel Variable Volume Micropipettes DP 5-50 ÂµL (ALFV-50),Accumax,Pipettes,,unit,13708,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-104-32-9,AHN myPetteï¿½ ELï¿½ Single channel Variable Volume Micropipettes DP 10-100 ÂµL (ALFV-100),Accumax,Pipettes,,unit,13708,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-105-32-9,AHN myPetteï¿½ ELï¿½ Single channel Variable Volume Micropipettes DP 20-200 ÂµL (ALFV-200),Accumax,Pipettes,,unit,13708,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-106-32-9,AHN myPetteï¿½ ELï¿½ Single channel Variable Volume Micropipettes DP 100-1000 ÂµL (ALFV-1000),Accumax,Pipettes,,unit,13708,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-000-32-9,AHN myPetteï¿½ ELï¿½ Single Fixed Volume Micropipettes DPF 2.5 ÂµL (ALFF-205),Accumax,Pipettes,,unit,8911,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-001-32-9,AHN myPetteï¿½ ELï¿½ Single Fixed Volume Micropipettes DPF 5 ÂµL (ALFF-5),Accumax,Pipettes,,unit,8911,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-002-32-9,AHN myPetteï¿½ ELï¿½ Single Fixed Volume Micropipettes DPF 10 ÂµL (ALFF-10),Accumax,Pipettes,,unit,8911,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-003-32-9,AHN myPetteï¿½ ELï¿½ Single Fixed Volume Micropipettes DPF 20 ÂµL (ALFF-20),Accumax,Pipettes,,unit,8911,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-004-32-9,AHN myPetteï¿½ ELï¿½ Single Fixed Volume Micropipettes DPF 25 ÂµL (ALFF-25),Accumax,Pipettes,,unit,8911,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-007-32-9,AHN myPetteï¿½ ELï¿½ Single Fixed Volume Micropipettes DPF 50 ÂµL (ALFF-50),Accumax,Pipettes,,unit,8911,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-008-32-9,AHN myPetteï¿½ ELï¿½ Single Fixed Volume Micropipettes DPF 100 ÂµL (ALFF-100),Accumax,Pipettes,,unit,8911,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-009-32-9,AHN myPetteï¿½ ELï¿½ Single Fixed Volume Micropipettes DPF 200 ÂµL (ALFF-200),Accumax,Pipettes,,unit,8911,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-010-32-9,AHN myPetteï¿½ ELï¿½ Single Fixed Volume Micropipettes DPF 250 ÂµL (ALFF-250),Accumax,Pipettes,,unit,8911,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-011-32-9,AHN myPetteï¿½ ELï¿½ Single Fixed Volume Micropipettes DPF 500 ÂµL (ALFF-500),Accumax,Pipettes,,unit,8911,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-012-32-9,AHN myPetteï¿½ ELï¿½ Single Fixed Volume Micropipettes DPF 1000 ÂµL (ALFF-1000),Accumax,Pipettes,,unit,8911,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-201-32-9,AHN myPetteï¿½ ELï¿½ Multichannel DPM 0.5-10 (8) (ALFM8-010),Accumax,Pipettes,,unit,34690,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-205-32-9,AHN myPetteï¿½ ELï¿½ Multichannel DPM 2-20 (8) (ALFM8-020),Accumax,Pipettes,,unit,34690,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-202-32-9,AHN myPetteï¿½ ELï¿½ Multichannel DPM 5-50 (8) (ALFM8-050),Accumax,Pipettes,,unit,34690,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-204-32-9,AHN myPetteï¿½ ELï¿½ Multichannel DPM 10-100 (8) (ALFM8-100),Accumax,Pipettes,,unit,34690,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-206-32-9,AHN myPetteï¿½ ELï¿½ Multichannel DPM 20-200 (8) (ALFM8-200),Accumax,Pipettes,,unit,34690,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-203-32-9,AHN myPetteï¿½ ELï¿½ Multichannel DPM 30-300 (8) (ALFM8-300),Accumax,Pipettes,,unit,34690,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-401-32-9,AHN myPetteï¿½ ELï¿½ Multichannel DPM 0.5-10 (12) (ALFM12-010),Accumax,Pipettes,,unit,41115,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-405-32-9,AHN myPetteï¿½ ELï¿½ Multichannel DPM 2-20 (12) (ALFM12-020),Accumax,Pipettes,,unit,41115,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-402-32-9,AHN myPetteï¿½ ELï¿½ Multichannel DPM 5-50 (12) (ALFM12-050),Accumax,Pipettes,,unit,41115,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-404-32-9,AHN myPetteï¿½ ELï¿½ Multichannel DPM 10-100 (12) (ALFM12-100),Accumax,Pipettes,,unit,41115,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-406-32-9,AHN myPetteï¿½ ELï¿½ Multichannel DPM 20-200 (12) (ALFM12-200),Accumax,Pipettes,,unit,41115,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+8-403-32-9,AHN myPetteï¿½ ELï¿½ Multichannel DPM 30-300 (12) (ALFM12-300),Accumax,Pipettes,,unit,41115,,AHN myPette EL PIPETTE.png,AHN myPette EL PIPETTE desc.png
+AP-1-B,ACCUMAX Transfer Pipette AP-1-B ( 500 X 10 PACKS ),Accumax,Pipettes,,pack,8655,,Transfer pipette.png,Transfer pipette desc.png
+AP-1-B-S,ACCUMAX Transfer Pipette AP-1-B-S ( 10 X 50 BAGS X 10 PACKS ),Accumax,Pipettes,,pack,10819,,Transfer pipette.png,Transfer pipette desc.png
+AP-1-S-W,ACCUMAX Transfer Pipette AP-1-S-W (300),Accumax,Pipettes,,unit,1400,,Transfer pipette.png,Transfer pipette desc.png
+AP-3-B,ACCUMAX Transfer Pipette AP-3-B ( 500 X 10 PACKS ),Accumax,Pipettes,,pack,9080,,Transfer pipette.png,Transfer pipette desc.png
+AP-3-B-S,ACCUMAX Transfer Pipette AP-3-B-S ( 50 X 10 BAGS X 10 PACKS ),Accumax,Pipettes,,pack,11350,,Transfer pipette.png,Transfer pipette desc.png
+AP-3-S-W,ACCUMAX Transfer Pipette AP-3-S-W (300),Accumax,Pipettes,,unit,1500,,Transfer pipette.png,Transfer pipette desc.png
+AST-005-T-C,Accumax 0.5ml Self Standing Screw Cap Tube with Cap,Accumax,Other,,pack,6041,,ACCUMAX SCREW CAP TUBES.png,ACCUMAX SCREW CAP TUBES desc.png
+AST-005-T-S-C,"Accumax 0.5ml Self Standing Screw Cap Tube, Sterile with Cap",Accumax,Other,,pack,6725,,ACCUMAX SCREW CAP TUBES.png,ACCUMAX SCREW CAP TUBES desc.png
+AST-005-L-T-S-C,"Accumax 0.5ml Self Standing Low Retention Screw Cap Tube, Sterile with Cap",Accumax,Other,,pack,9461,,ACCUMAX SCREW CAP TUBES.png,ACCUMAX SCREW CAP TUBES desc.png
+ASCT-015-T-C,ASCT-015-T-C (100 + 100) SET X 10 BAGS X 5 PACKS,Accumax,Other,,pack,6041,,ACCUMAX SCREW CAP TUBES.png,ACCUMAX SCREW CAP TUBES desc.png
+AST-015-T-C,Accumax 1.5ml Self Standing Screw Cap Tube with Cap,Accumax,Other,,pack,6041,,ACCUMAX SCREW CAP TUBES.png,ACCUMAX SCREW CAP TUBES desc.png
+ASCT-015-T-S-C,ASCT-015-T-S-C (100 + 100) SET X 10 BAGS X 5 PACKS,Accumax,Other,,pack,6725,,ACCUMAX SCREW CAP TUBES.png,ACCUMAX SCREW CAP TUBES desc.png
+AST-015-T-S-C,"Accumax 1.5ml Self Standing Screw Cap Tube, Sterile with Cap",Accumax,Other,,pack,6725,,ACCUMAX SCREW CAP TUBES.png,ACCUMAX SCREW CAP TUBES desc.png
+ASCT-015-L-T-S-C,ASCT-015-L-T-S-C (100 + 100) SET X 10 BAGS X 5 PACKS,Accumax,Other,,pack,9461,,ACCUMAX SCREW CAP TUBES.png,ACCUMAX SCREW CAP TUBES desc.png
+AST-015-L-T-S-C,"Accumax 1.5ml Self Standing Low Retention Screw Cap Tube, Sterile with Cap",Accumax,Other,,pack,9461,,ACCUMAX SCREW CAP TUBES.png,ACCUMAX SCREW CAP TUBES desc.png
+ASCT-020-T-C,ASCT-020-T-C (100 + 100) SET X 10 BAGS X 5 PACKS,Accumax,Other,,pack,6041,,ACCUMAX SCREW CAP TUBES.png,ACCUMAX SCREW CAP TUBES desc.png
+AST-020-T-C,Accumax 2ml Self Standing Screw Cap Tube with Cap,Accumax,Other,,pack,6041,,ACCUMAX SCREW CAP TUBES.png,ACCUMAX SCREW CAP TUBES desc.png
+ASCT-020-T-S-C,ASCT-020-T-S-C (100 + 100) SET X 10 BAGS X 5 PACKS,Accumax,Other,,pack,6725,,ACCUMAX SCREW CAP TUBES.png,ACCUMAX SCREW CAP TUBES desc.png
+AST-020-T-S-C,"Accumax 2ml Self Standing Screw Cap Tube, Sterile with Cap",Accumax,Other,,pack,6725,,ACCUMAX SCREW CAP TUBES.png,ACCUMAX SCREW CAP TUBES desc.png
+ASCT-020-L-T-S-C,ASCT-020-L-T-S-C (100 + 100) SET X 10 BAGS X 5 PACKS,Accumax,Other,,pack,9461,,ACCUMAX SCREW CAP TUBES.png,ACCUMAX SCREW CAP TUBES desc.png
+AST-020-L-T-S-C,"Accumax 2ml Self Standing Low Retention Screw Cap Tube, Sterile with Cap",Accumax,Other,,pack,9461,,ACCUMAX SCREW CAP TUBES.png,ACCUMAX SCREW CAP TUBES desc.png
+AST-015-A-T-C,Accumax 1.5ml Amber Self Standing Screw Cap Tube with Cap,Accumax,Other,,pack,6760,,ACCUMAX SCREW CAP TUBES.png,ACCUMAX SCREW CAP TUBES desc.png
+AST-015-A-T-S-C,"Accumax 1.5ml Amber Self Standing Screw Cap Tube, Sterile with Cap",Accumax,Other,,pack,7523,,ACCUMAX SCREW CAP TUBES.png,ACCUMAX SCREW CAP TUBES desc.png
+AST-015-L-A-T-S-C,"Accumax 1.5ml Amber Self Standing Low Retention Screw Cap Tube, Sterile with Cap",Accumax,Other,,pack,9461,,ACCUMAX SCREW CAP TUBES.png,ACCUMAX SCREW CAP TUBES desc.png
 SCPF-01,"Accumax HPLC Safety Cap, 1 Port & 1 Filter (GL45)",Neuation / Accumax,Other,,unit,13570,,ACCUMAX HPLC SAFETY CAPS.png,ACCUMAX HPLC SAFETY CAPS desc.png
 SCPF-02,"Accumax HPLC Safety Cap, 2 Ports & 1 Filter (GL45)",Neuation / Accumax,Other,,unit,13570,,ACCUMAX HPLC SAFETY CAPS.png,ACCUMAX HPLC SAFETY CAPS desc.png
 SCPF-03,"Accumax HPLC Safety Cap, 3 Ports & 1 Filter (GL45)",Neuation / Accumax,Other,,unit,13570,,ACCUMAX HPLC SAFETY CAPS.png,ACCUMAX HPLC SAFETY CAPS desc.png
 SCPF-04,"Accumax HPLC Safety Cap, 4 Ports & 1 Filter (GL45)",Neuation / Accumax,Other,,unit,13570,,ACCUMAX HPLC SAFETY CAPS.png,ACCUMAX HPLC SAFETY CAPS desc.png
 SCPF-05,"Accumax HPLC Safety Cap, 5 Ports & 1 Filter (GL45)",Neuation / Accumax,Other,,unit,13570,,ACCUMAX HPLC SAFETY CAPS.png,ACCUMAX HPLC SAFETY CAPS desc.png
 SCPF-A,"Accumax HPLC Safety Cap Filter Valve with 1 Filter, 4 Fittings & 4 Plugs",Neuation / Accumax,Other,,unit,5500,,ACCUMAX HPLC SAFETY CAPS.png,ACCUMAX HPLC SAFETY CAPS desc.png
-AJ-06,STAND ASS_329_JP_6 PLACE (JP-23),Neuation / Accumax,Other,,unit,605,,,
-SA-100,STAND ASS_340_RP_4 PLACE WHITE (REG),Neuation / Accumax,Other,,unit,2178,,,
-SA-200,STAND ASS_341_RP_6 PLACE WHITE (REG),Neuation / Accumax,Other,,unit,2541,,,
-FS-01,STAND ASS_346_DP_CAROUSEL-6 (FS-01),Neuation / Accumax,Other,,unit,4114,,,
-FS-02,DP01_PIN_0018_01A_P_0_STAND,Neuation / Accumax,Other,,unit,4114,,,
+AJ-06,Accumax Pipette Stand JP_6 PLACE (JP-23),Neuation / Accumax,Other,,unit,605,,,
+SA-100,Accumax Pipette Stand ASS_340_RP_4 PLACE WHITE (REG),Neuation / Accumax,Other,,unit,2178,,,
+SA-200,Accumax Pipette Stand ASS_341_RP_6 PLACE WHITE (REG),Neuation / Accumax,Other,,unit,2541,,,
+FS-01,Accumax Pipette Carousel Stand ASS_346_DP_CAROUSEL-6 (FS-01),Neuation / Accumax,Other,,unit,4114,,,
+FS-02,Accumax Shelf mounting Pipette Stand DP01_PIN_0018_01A_P_0_STAND,Neuation / Accumax,Other,,unit,4114,,,
 AE-CS-01,STAND ASS_330_AE_AUTO CHRGNG STND (AE-CS-01),Neuation / Accumax,Other,,unit,6344,,,
 AE-S-01,STAND ASS_328_AE_1 PLACE STND,Neuation / Accumax,Other,,unit,2832,,,
 MLX05N,"AHN maxxLine Cryo Box, Neutral, 32mm (130x130x32mm), 10x10 grid for 0.5mL cryovials",Neuation / Accumax,Other,,unit,21240,,AHN MAXXLINE CRYO BOXES.png,AHN MAXXLINE CRYO BOXES desc.png
@@ -1047,14 +1051,14 @@ ACB-PP-25-SPC,"Accumax Polypropylene Carboy with Spigot & Cap, Autoclavable (Vol
 ACB-PP-50-C,"Accumax Polypropylene Carboy with Cap, Autoclavable (Volume: 50L) (1Pc)",Medha,Bottles & Carboys,,pack,8826,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
 ACB-PP-50-C-S,"Accumax Polypropylene Carboy with Cap, Sterile, Autoclavable (Volume: 50L) (1Pc)",Medha,Bottles & Carboys,,pack,9947,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
 ACB-PP-50-SPC,"Accumax Polypropylene Carboy with Spigot & Cap, Autoclavable (Volume: 50L) (1Pc)",Medha,Bottles & Carboys,,pack,10863,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
-ACT-15-B,ACCUMAX CENTRIFUGE TUBES-15-B (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,pack,4367,,ACT.png,ACT desc.png
+ACT-15-B,ACCUMAX CENTRIFUGE TUBES-15-B (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,Bulk,4367,,ACT.png,ACT desc.png
 ACT-15-B-A,ACCUMAX CENTRIFUGE TUBES-15-B-A (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,pack,6658,,ACT.png,ACT desc.png
-ACT-15-B-S,ACCUMAX CENTRIFUGE TUBES-15-B-S (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,pack,5553,,ACT.png,ACT desc.png
+ACT-15-B-S,ACCUMAX CENTRIFUGE TUBES-15-B-S (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,Bulk,5553,,ACT.png,ACT desc.png
 ACT-15-B-S-T,HEAVY METAL FREE CENTRIFUGE TUBES-15-B-S-T (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,pack,6109,,Heavy ACT.png,Heavy ACT desc.png
 ACT-15-B-T,HEAVY METAL FREE CENTRIFUGE TUBES-15-B-T (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,pack,5247,,Heavy ACT.png,Heavy ACT desc.png
-ACT-15-R,ACCUMAX CENTRIFUGE TUBES-15-R (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,pack,6085,,ACT.png,ACT desc.png
-ACT-15-R-S,ACT-15-R-S (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,pack,6730,,ACT.png,ACT desc.png
-ACT-15-S-W,ACT-15-S-W (25 TUBES x 20 PACKS),Medha,Tubes & Vials,,pack,6510,,ACT.png,ACT desc.png
+ACT-15-R,ACCUMAX CENTRIFUGE TUBES-15-R (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,Rack,6085,,ACT.png,ACT desc.png
+ACT-15-R-S,ACT-15-R-S (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,Rack,6730,,ACT.png,ACT desc.png
+ACT-15-S-W,ACT-15-S-W (25 TUBES x 20 PACKS),Medha,Tubes & Vials,,Individually Wrapped,6510,,ACT.png,ACT desc.png
 ACT-250-S,Large volume Centrifuge tube ACT-250-S (6 TUBES X 8 PACKS),Medha,Tubes & Vials,,pack,4780,,large vol centrifuge.png,large vol centrifuge desc.png
 ACT-500-S,Large volume Centrifuge tube ACT-500-S (6 TUBES X 6 PACKS),Medha,Tubes & Vials,,pack,7132,,large vol centrifuge.png,large vol centrifuge desc.png
 ACT-50-B,ACT-50-B (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,pack,6596,,ACT.png,ACT desc.png
@@ -1066,11 +1070,11 @@ ACT-50-K-B,ACT-50-K-B (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,pack,7978,,ACT.
 ACT-50-K-B-S,ACT-50-K-B-S (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,pack,9847,,ACT.png,ACT desc.png
 ACT-50-K-B-S-T,HEAVY METAL FREE CENTRIFUGE TUBES-50-K-B-S-T (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,pack,9588,,Heavy ACT.png,Heavy ACT desc.png
 ACT-50-K-B-T,HEAVY METAL FREE CENTRIFUGE TUBES-50-K-B-T (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,pack,7762,,Heavy ACT.png,Heavy ACT desc.png
-ACT-50-K-S-W,ACT-50-K-S-W (25 TUBES x 20 PACKS),Medha,Tubes & Vials,,pack,11656,,ACT.png,ACT desc.png
+ACT-50-K-S-W,ACT-50-K-S-W (25 TUBES x 20 PACKS),Medha,Tubes & Vials,,Individually Wrapped,11656,,ACT.png,ACT desc.png
 ACT-50-K-S-W-T,HEAVY METAL FREE CENTRIFUGE TUBES-50-K-S-W-T (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,pack,11026,,Heavy ACT.png,Heavy ACT desc.png
 ACT-50-R,ACT-50-R (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,pack,9589,,ACT.png,ACT desc.png
 ACT-50-R-S,ACT-50-R-S (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,pack,11313,,ACT.png,ACT desc.png
-ACT-50-S-W,ACT-50-S-W (25 TUBES x 20 PACKS),Medha,Tubes & Vials,,pack,12824,,ACT.png,ACT desc.png
+ACT-50-S-W,ACT-50-S-W (25 TUBES x 20 PACKS),Medha,Tubes & Vials,,Individually Wrapped,12824,,ACT.png,ACT desc.png
 ADV-05-PG-S,"Accumax PETG Diagnostic Vial with Grey Cap, Sterile (Volume: 5ml) (100Pcs)",Medha,Tubes & Vials,,pack,3296,,ACCUMAX DIAGNOSTIC VIALS.png,ACCUMAX DIAGNOSTIC VIALS desc.png
 ADV-10-PG-S,"Accumax PETG Diagnostic Vial with Grey Cap, Sterile (Volume: 10ml) (100Pcs)",Medha,Tubes & Vials,,pack,3532,,ACCUMAX DIAGNOSTIC VIALS.png,ACCUMAX DIAGNOSTIC VIALS desc.png
 ADV-20-PG-S,"Accumax PETG Diagnostic Vial with Grey Cap, Sterile (Volume: 20ml) (100Pcs)",Medha,Tubes & Vials,,pack,4003,,ACCUMAX DIAGNOSTIC VIALS.png,ACCUMAX DIAGNOSTIC VIALS desc.png
@@ -1287,8 +1291,8 @@ ABEF-1000-V-PC-S,"Accumax Polycarbonate Erlenmeyer Flask, Baffled Bottom with PP
 ABEF-2000-V-PC-S,"Accumax Polycarbonate Erlenmeyer Flask, Baffled Bottom with PP Cap, Vented, Sterile (Volume: 2L) (4Pcs)",Medha,Bottles & Carboys,,pack,4187,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
 ARB-PT-2L-IW-S,"Accumax Roller Bottle, 2L PET with PP Cap, Non-Treated, Sterile, Individually Wrapped (Volume: 2L) (18Pcs)",Medha,Bottles & Carboys,,pack,11151,,ACCUMAX ROLLER BOTTLES.png,ACCUMAX ROLLER BOTTLES desc.png
 AWB-HD-4000,"Accumax Wide Mouth Reagent Bottle, HDPE (Volume: 4000ml) (6Pcs)",Medha,Bottles & Carboys,,pack,5808,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
-ACT-50-K-B-A,ACT-50-K-B-A (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,pack,10338,,,
-ACT-50-K-B-S-A,ACT-50-K-B-S-A (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,pack,10338,,,
+ACT-50-K-B-A,Centrifuge Tubes ACT-50-K-B-A (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,pack,10338,,ACT.png,ACT desc.png
+ACT-50-K-B-S-A,Centrifuge Tubes ACT-50-K-B-S-A (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,pack,11872,,ACT.png,ACT desc.png
 ANB-PP-2000,"Accumax Narrow Mouth Reagent Bottle, Polypropylene (Volume: 2000ml) (6Pcs)",Medha,Bottles & Carboys,,pack,3064,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
 ANB-PP-4000,"Accumax Narrow Mouth Reagent Bottle, Polypropylene (Volume: 4000ml) (6Pcs)",Medha,Bottles & Carboys,,pack,5964,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
 ANB-PP-8-S,"Accumax Narrow Mouth Reagent Bottle, Polypropylene, Sterile (Volume: 8ml) (72Pcs)",Medha,Bottles & Carboys,,pack,1340,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
