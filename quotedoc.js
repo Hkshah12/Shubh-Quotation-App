@@ -281,20 +281,24 @@
     const addrBar = [esc(s.address || ''), s.phone && 'T: ' + esc(s.phone), s.email && 'E: ' + esc(s.email), s.gstin && 'GSTIN: ' + esc(s.gstin)]
       .filter(Boolean).join(' &nbsp;|&nbsp; ');
     const serif = "font-family:Georgia,'Times New Roman',serif;";
-    const RED = '#C00000', SUB = '#6B6151', BD = '#E1D6BE';
+    const RED = '#C00000', SUB = '#6B6151', BD = '#E1D6BE', CREAM = '#FFFCF0', CREAMROW = '#FBF7EA';
 
+    // Word ignores CSS background on <div>; it honours the bgcolor ATTRIBUTE on table cells,
+    // so the cream letterhead band and the red rule are built as bgcolor cells.
     const letterhead = `
-    <div style="padding:5mm 12mm 0;">
-    <table width="100%" style="border-collapse:collapse;">
-      <tr>
-        <td width="80" valign="top">${(s.logo && imgURL(s.logo)) ? `<img src="${imgURL(s.logo)}" width="66" height="66"/>` : ''}</td>
-        <td align="center" valign="middle" style="${serif}font-size:19pt;font-weight:bold;color:${RED};">${wm}</td>
-        <td width="80"></td>
-      </tr>
-      <tr><td colspan="3" align="center" style="${serif}font-size:8.5pt;color:${RED};font-weight:bold;padding-bottom:4pt;">${addrBar}</td></tr>
-    </table>
-    </div>
-    <div style="border-bottom:2.5pt solid ${RED};font-size:1pt;line-height:1pt;">&nbsp;</div>`;
+    <table width="100%" cellspacing="0" cellpadding="0" bgcolor="${CREAM}" style="background:${CREAM};background-color:${CREAM};border-collapse:collapse;">
+      <tr><td bgcolor="${CREAM}" style="background:${CREAM};background-color:${CREAM};padding:5mm 12mm 2mm;">
+        <table width="100%" style="border-collapse:collapse;">
+          <tr>
+            <td width="80" valign="top">${(s.logo && imgURL(s.logo)) ? `<img src="${imgURL(s.logo)}" width="66" height="66"/>` : ''}</td>
+            <td align="center" valign="middle" style="${serif}font-size:19pt;font-weight:bold;color:${RED};">${wm}</td>
+            <td width="80"></td>
+          </tr>
+          <tr><td colspan="3" align="center" style="${serif}font-size:8.5pt;color:${RED};font-weight:bold;padding-bottom:2mm;">${addrBar}</td></tr>
+        </table>
+      </td></tr>
+      <tr><td bgcolor="${RED}" style="background:${RED};background-color:${RED};font-size:2pt;line-height:2pt;height:3pt;">&nbsp;</td></tr>
+    </table>`;
 
     const metaTable = `
     <table width="100%" style="margin-top:10pt;${serif}font-size:10pt;"><tr>
@@ -315,19 +319,21 @@
 
     const th = (txt, align, w) => `<td bgcolor="${RED}" align="${align}" style="background:${RED};background-color:${RED};color:#ffffff;font-weight:bold;padding:5pt;border:0.5pt solid ${RED};${w ? 'width:' + w + ';' : ''}">${txt}</td>`;
     const header = `<tr>${th('Sr.', 'center', '28pt')}${showPhotos ? th('Photo', 'center', '52pt') : ''}${th('Description of Product', 'left')}${th('Pack', 'center', '44pt')}${th('Qty', 'center', '32pt')}${th('Rate', 'right', '68pt')}${th('Disc.', 'center', '38pt')}${th('Amount', 'right', '76pt')}</tr>`;
-    const cellStyle = `padding:5pt;border:0.5pt solid ${BD};vertical-align:top;`;
     const rows = (opts.items || []).map((it, i) => {
       const net = it.price * it.qty * (1 - (it.disc || 0) / 100);
-      const photo = showPhotos ? `<td align="center" style="${cellStyle}">${(it.image && imgURL(it.image)) ? `<img src="${imgURL(it.image)}" width="42"/>` : ''}</td>` : '';
+      const bgAttr = (i % 2 === 1) ? ` bgcolor="${CREAMROW}"` : '';                 // Word: alternating rows via bgcolor
+      const bgCss = (i % 2 === 1) ? `background:${CREAMROW};background-color:${CREAMROW};` : '';
+      const cs = `${bgCss}padding:5pt;border:0.5pt solid ${BD};vertical-align:top;`;
+      const photo = showPhotos ? `<td${bgAttr} align="center" style="${cs}">${(it.image && imgURL(it.image)) ? `<img src="${imgURL(it.image)}" width="42"/>` : ''}</td>` : '';
       return `<tr>
-        <td align="center" style="${cellStyle}">${i + 1}</td>
+        <td${bgAttr} align="center" style="${cs}">${i + 1}</td>
         ${photo}
-        <td style="${cellStyle}"><b>${esc(it.name)}</b><br/><span style="font-size:8pt;color:${SUB};">${esc(it.sku)}${it.brand ? ' · ' + esc(it.brand) : ''}${it.hsn ? ' · HSN ' + esc(it.hsn) : ''}</span></td>
-        <td align="center" style="${cellStyle}">${esc(it.unit || 'unit')}</td>
-        <td align="center" style="${cellStyle}">${it.qty}</td>
-        <td align="right" style="${cellStyle}">${money(it.price)}</td>
-        <td align="center" style="${cellStyle}">${it.disc ? it.disc + '%' : '—'}</td>
-        <td align="right" style="${cellStyle}"><b>${money(net)}</b></td>
+        <td${bgAttr} style="${cs}"><b>${esc(it.name)}</b><br/><span style="font-size:8pt;color:${SUB};">${esc(it.sku)}${it.brand ? ' · ' + esc(it.brand) : ''}${it.hsn ? ' · HSN ' + esc(it.hsn) : ''}</span></td>
+        <td${bgAttr} align="center" style="${cs}">${esc(it.unit || 'unit')}</td>
+        <td${bgAttr} align="center" style="${cs}">${it.qty}</td>
+        <td${bgAttr} align="right" style="${cs}">${money(it.price)}</td>
+        <td${bgAttr} align="center" style="${cs}">${it.disc ? it.disc + '%' : '—'}</td>
+        <td${bgAttr} align="right" style="${cs}"><b>${money(net)}</b></td>
       </tr>`;
     }).join('');
     const itemTable = `<table width="100%" style="border-collapse:collapse;${serif}font-size:9.5pt;margin-top:6pt;">${header}${rows}</table>`;
