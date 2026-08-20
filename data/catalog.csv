@@ -250,9 +250,9 @@ OHS-T08,IMPELLERS_0352-00-2000_PADDLE BLADE IMPELLER_70X70X550MM (OHS T08),Neuat
 OHS-T09,IMPELLERS_0354-00-2100_PADDLE BLADE IMPELLER_70X70X800MM (OHS T09),Neuation / Accumax,Other,,unit,6228,,,
 OHS-T10,IMPELLERS_0352-00-2200_PADDLE BLADE IMPELLER_70X80X550MM (OHS T10),Neuation / Accumax,Other,,unit,5307,,,
 OHS-T11,IMPELLERS_0354-00-2300_PADDLE BLADE IMPELLER_70X80X800MM (OHS T11),Neuation / Accumax,Other,,unit,6228,,,
-AT-10-B,"Accumax 10µl Universal Grad Tip, Bulk",Neuation / Accumax,Pipette Tips,,pack,25622,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
-AT-10-S-B,"Accumax 10µl Universal Grad Tip, Sterile, Bulk",Neuation / Accumax,Pipette Tips,,pack,31173,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
-AT-10-F-B,"Accumax 10µl Universal Grad Tip, Filter, Bulk",Neuation / Accumax,Pipette Tips,,pack,103719,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
+AT-10-B,"Accumax 10µl Universal Grad Tip, Bulk (1000Pc)",Neuation / Accumax,Pipette Tips,,pack,641,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
+AT-10-S-B,"Accumax 10µl Universal Grad Tip, Sterile, Bulk (1000Pc)",Neuation / Accumax,Pipette Tips,,pack,779,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
+AT-10-F-B,"Accumax 10µl Universal Grad Tip, Filter, Bulk (1000Pc)",Neuation / Accumax,Pipette Tips,,pack,2593,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
 AT-10-S-L-B,"Accumax 10µl Universal Grad Tip, Sterile, Low Retention, Bulk",Neuation / Accumax,Pipette Tips,,pack,52384,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
 AT-10-S-F-B,"Accumax 10µl Universal Grad Tip, Sterile, Filter, Bulk",Neuation / Accumax,Pipette Tips,,pack,124098,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
 AT-10-S-L-F-B,"Accumax 10µl Universal Grad Tip, Sterile, Low Retention, Filter, Bulk",Neuation / Accumax,Pipette Tips,,pack,138371,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
@@ -268,7 +268,7 @@ AT-10-S-L-K,"Accumax 10µl Universal Grad Tip, Sterile, Low Retention, Reloading
 AT-10-F-K,"Accumax 10µl Universal Grad Tip, Filter, Reloading Stack",Neuation / Accumax,Pipette Tips,,pack,33932,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
 AT-10-S-F-K,"Accumax 10µl Universal Grad Tip, Sterile, Filter, Reloading Stack",Neuation / Accumax,Pipette Tips,,pack,36302,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
 AT-10-S-L-F-K,"Accumax 10µl Universal Grad Tip, Sterile, Low Retention, Filter, Reloading Stack",Neuation / Accumax,Pipette Tips,,pack,39933,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
-AT-10XL-B,"Accumax 10µl Long (20µl Capacity) Universal Grad Tip, Bulk",Neuation / Accumax,Pipette Tips,,pack,25572,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
+AT-10XL-B,"Accumax 10µl Long (20µl Capacity) Universal Grad Tip, Bulk (1000Pc)",Neuation / Accumax,Pipette Tips,,pack,640,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
 AT-10XL-S-B,"Accumax 10µl Long (20µl Capacity) Universal Grad Tip, Sterile, Bulk",Neuation / Accumax,Pipette Tips,,pack,31173,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
 AT-10XL-F-B,"Accumax 10µl Long (20µl Capacity) Universal Grad Tip, Filter, Bulk",Neuation / Accumax,Pipette Tips,,pack,103719,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
 AT-10XL-S-L-B,"Accumax 10µl Long (20µl Capacity) Universal Grad Tip, Sterile, Low Retention, Bulk",Neuation / Accumax,Pipette Tips,,pack,52384,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
@@ -286,7 +286,7 @@ AT-10XL-S-L-K,"Accumax 10µl Long (20µl Capacity) Universal Grad Tip, Sterile, 
 AT-10XL-F-K,"Accumax 10µl Long (20µl Capacity) Universal Grad Tip, Filter, Reloading Stack",Neuation / Accumax,Pipette Tips,,pack,33932,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
 AT-10XL-S-F-K,"Accumax 10µl Long (20µl Capacity) Universal Grad Tip, Sterile, Filter, Reloading Stack",Neuation / Accumax,Pipette Tips,,pack,36302,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
 AT-10XL-S-L-F-K,"Accumax 10µl Long (20µl Capacity) Universal Grad Tip, Sterile, Low Retention, Filter, Reloading Stack",Neuation / Accumax,Pipette Tips,,pack,39933,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
-AT-10XN-B,"Accumax 10µl Narrow (20µl Capacity) Universal Grad Tip, Bulk",Neuation / Accumax,Pipette Tips,,pack,25572,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
+AT-10XN-B,"Accumax 10µl Narrow (20µl Capacity) Universal Grad Tip, Bulk",Neuation / Accumax,Pipette Tips,,pack,640,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
 AT-10XN-S-B,"Accumax 10µl Narrow (20µl Capacity) Universal Grad Tip, Sterile, Bulk",Neuation / Accumax,Pipette Tips,,pack,31173,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
 AT-10XN-F-B,"Accumax 10µl Narrow (20µl Capacity) Universal Grad Tip, Filter, Bulk",Neuation / Accumax,Pipette Tips,,pack,103719,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
 AT-10XN-S-L-B,"Accumax 10µl Narrow (20µl Capacity) Universal Grad Tip, Sterile, Low Retention, Bulk",Neuation / Accumax,Pipette Tips,,pack,52384,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
@@ -332,7 +332,7 @@ AT-100-S-L-F-R,"Accumax 100µl Universal Grad Tip, Sterile, Low Retention, Filte
 AT-100-F-K,"Accumax 100µl Universal Grad Tip, Filter, Reloading Stack",Neuation / Accumax,Pipette Tips,,pack,33932,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
 AT-100-S-F-K,"Accumax 100µl Universal Grad Tip, Sterile, Filter, Reloading Stack",Neuation / Accumax,Pipette Tips,,pack,40305,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
 AT-100-S-L-F-K,"Accumax 100µl Universal Grad Tip, Sterile, Low Retention, Filter, Reloading Stack",Neuation / Accumax,Pipette Tips,,pack,44331,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
-AT-200-B,"Accumax 200µl Universal Grad Tip, Bulk",Neuation / Accumax,Pipette Tips,,pack,11040,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
+AT-200-B,"Accumax 200µl Universal Grad Tip, Bulk",Neuation / Accumax,Pipette Tips,,pack,552,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
 AT-200-S-B,"Accumax 200µl Universal Grad Tip, Sterile, Bulk",Neuation / Accumax,Pipette Tips,,pack,13876,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
 AT-200-F-B,"Accumax 200µl Universal Grad Tip, Filter, Bulk",Neuation / Accumax,Pipette Tips,,pack,61355,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
 AT-200-S-L-B,"Accumax 200µl Universal Grad Tip, Sterile, Low Retention, Bulk",Neuation / Accumax,Pipette Tips,,pack,26192,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
@@ -350,7 +350,7 @@ AT-200-F-K,"Accumax 200µl Universal Grad Tip, Filter, Reloading Stack",Neuation
 AT-200-S-F-K,"Accumax 200µl Universal Grad Tip, Sterile, Filter, Reloading Stack",Neuation / Accumax,Pipette Tips,,pack,40305,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
 AT-200-S-L-F-K,"Accumax 200µl Universal Grad Tip, Sterile, Low Retention, Filter, Reloading Stack",Neuation / Accumax,Pipette Tips,,pack,44331,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
 AT-200-S-L-K,"Accumax 200µl Universal Grad Tip, Sterile, Low Retention, Reloading Stack",Neuation / Accumax,Pipette Tips,,pack,24705,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
-AT-1000-B,"Accumax 1000µl Universal Grad Tip, Bulk",Neuation / Accumax,Pipette Tips,,pack,8162,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
+AT-1000-B,"Accumax 1000µl Universal Grad Tip, Bulk",Neuation / Accumax,Pipette Tips,,pack,816,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
 AT-1000-S-B,"Accumax 1000µl Universal Grad Tip, Sterile, Bulk",Neuation / Accumax,Pipette Tips,,pack,12378,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
 AT-1000-F-B,"Accumax 1000µl Universal Grad Tip, Filter, Bulk",Neuation / Accumax,Pipette Tips,,pack,36538,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
 AT-1000-S-L-B,"Accumax 1000µl Universal Grad Tip, Sterile, Low Retention, Bulk",Neuation / Accumax,Pipette Tips,,pack,18424,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
@@ -368,7 +368,7 @@ AT-1000-F-K,"Accumax 1000µl Universal Grad Tip, Filter, Reloading Stack",Neuati
 AT-1000-S-F-K,"Accumax 1000µl Universal Grad Tip, Sterile, Filter, Reloading Stack",Neuation / Accumax,Pipette Tips,,pack,31644,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
 AT-1000-S-L-F-K,"Accumax 1000µl Universal Grad Tip, Sterile, Low Retention, Filter, Reloading Stack",Neuation / Accumax,Pipette Tips,,pack,46462,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
 AT-1000-S-W,"Accumax 1000µl Universal Grad Tip, Sterile, Individually Wrapped",Neuation / Accumax,Pipette Tips,,pack,7514,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
-AT-200XL-B,"Accumax 200µl Long (300µl Capacity) Universal Grad Tip, Bulk",Neuation / Accumax,Pipette Tips,,pack,13782,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
+AT-200XL-B,"Accumax 200µl Long (300µl Capacity) Universal Grad Tip, Bulk",Neuation / Accumax,Pipette Tips,,pack,689,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
 AT-200XL-S-B,"Accumax 200µl Long (300µl Capacity) Universal Grad Tip, Sterile, Bulk",Neuation / Accumax,Pipette Tips,,pack,17346,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
 AT-200XL-F-B,"Accumax 200µl Long (300µl Capacity) Universal Grad Tip, Filter, Bulk",Neuation / Accumax,Pipette Tips,,pack,62272,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
 AT-200XL-S-L-B,"Accumax 200µl Long (300µl Capacity) Universal Grad Tip, Sterile, Low Retention, Bulk",Neuation / Accumax,Pipette Tips,,pack,27258,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
@@ -386,7 +386,7 @@ AT-200XL-S-L-K,"Accumax 200µl Long (300µl Capacity) Universal Grad Tip, Steril
 AT-200XL-F-K,"Accumax 200µl Long (300µl Capacity) Universal Grad Tip, Filter, Reloading Stack",Neuation / Accumax,Pipette Tips,,pack,37690,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
 AT-200XL-S-F-K,"Accumax 200µl Long (300µl Capacity) Universal Grad Tip, Sterile, Filter, Reloading Stack",Neuation / Accumax,Pipette Tips,,pack,33932,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
 AT-200XL-S-L-F-K,"Accumax 200µl Long (300µl Capacity) Universal Grad Tip, Sterile, Low Retention, Filter, Reloading Stack",Neuation / Accumax,Pipette Tips,,pack,44347,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
-AT-1000XL-B,"Accumax 1250µl Universal Grad Tip, Bulk",Neuation / Accumax,Pipette Tips,,pack,10052,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
+AT-1000XL-B,"Accumax 1250µl Universal Grad Tip, Bulk (500Pc)",Neuation / Accumax,Pipette Tips,,pack,503,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
 AT-1000XL-S-B,"Accumax 1250µl Universal Grad Tip, Sterile, Bulk",Neuation / Accumax,Pipette Tips,,pack,15140,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
 AT-1000XL-F-B,"Accumax 1250µl Universal Grad Tip, Filter, Bulk",Neuation / Accumax,Pipette Tips,,pack,39325,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
 AT-1000XL-S-L-B,"Accumax 1250µl Universal Grad Tip, Sterile, Low Retention, Bulk",Neuation / Accumax,Pipette Tips,,pack,36600,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
@@ -536,9 +536,9 @@ APC-033,Accumax Aluminium Sealing Membrane,Neuation / Accumax,Other,,pack,14084,
 4-802-C4-R,"AHN myPette EL³ 1000µL Tip for Low Force Pipettes, Sterile, Low Retention, Reloading Stack (ALF-1000-S-L-K)",Neuation / Accumax,Pipette Tips,,pack,15388,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
 1-802-E10-0,"AHN myPette EL³ 1000µL Tip for Low Force Pipettes, Racked (AGLF-1000-R)",Neuation / Accumax,Pipette Tips,,pack,28843,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
 4-803-E10-0,"AHN myPette EL³ 1000µL Tip for Low Force Pipettes, Sterile, Low Retention, Racked (AGLF-1000-S-L-R)",Neuation / Accumax,Pipette Tips,,pack,32461,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
-ADTT-300-R,"Accumax Dynex-type Robotic Sample Tip, 300µl, Blue",Neuation / Accumax,Pipette Tips,,pack,35724,,ACCUMAX ROBOTIC TIPS DYNEX.png,ACCUMAX ROBOTIC TIPS DYNEX desc.png
-ADTT-1300-R,"Accumax Dynex-type Robotic Sample Tip, 1300µl, White",Neuation / Accumax,Pipette Tips,,pack,39294,,ACCUMAX ROBOTIC TIPS DYNEX.png,ACCUMAX ROBOTIC TIPS DYNEX desc.png
-ADTD-2,"Accumax Dynex-type Deep Well Dilution Strip, 2ml (8-Well)",Neuation / Accumax,Other,,pack,5310,,ACCUMAX ROBOTIC TIPS DYNEX.png,ACCUMAX ROBOTIC TIPS DYNEX desc.png
+ADTT-300-R,"Accumax Dynex-type Robotic Sample Tip, 300µl, Blue (4320 Tips)",Neuation / Accumax,Pipette Tips,,pack,35724,,ACCUMAX ROBOTIC TIPS DYNEX.png,ACCUMAX ROBOTIC TIPS DYNEX desc.png
+ADTT-1300-R,"Accumax Dynex-type Robotic Sample Tip, 1300µl, White (4320 Tips)",Neuation / Accumax,Pipette Tips,,pack,39294,,ACCUMAX ROBOTIC TIPS DYNEX.png,ACCUMAX ROBOTIC TIPS DYNEX desc.png
+ADTD-2,"Accumax Dynex-type Deep Well Dilution Strip, 2ml (8-Well) (250 Pcs)",Neuation / Accumax,Other,,pack,5310,,ACCUMAX ROBOTIC TIPS DYNEX.png,ACCUMAX ROBOTIC TIPS DYNEX desc.png
 ATTB-10-FL,ATTB-10-FL (192 TIPS X 5 FLIP BOX X 10 PACKS),Neuation / Accumax,Pipette Tips,,pack,32503,,,
 ATTB-10-F-FL,ATTB-10-F-FL (192 TIPS X 5 FLIP BOX X 10 PACKS),Neuation / Accumax,Pipette Tips,,pack,42310,,,
 ATTB-200-FL,ATTB-200-FL (192 TIPS X 5 FLIP BOX X 10 PACKS),Neuation / Accumax,Pipette Tips,,pack,39768,,,
@@ -595,18 +595,18 @@ ACB-18-100,ACB-18-100 CD 10X10 GREY ( 2 X 4 PACKS),Neuation / Accumax,Other,,pac
 3-053-00-0,APC-026-PLUS,Neuation / Accumax,Other,,unit,22715,,,
 3-053-00-9,APC-027-PLUS,Neuation / Accumax,Other,,unit,22715,,,
 3-049-03-0,APC-028-PLUS,Neuation / Accumax,Other,,unit,23305,,,
-ASP-1-S,ASP-1-S (100 PCS X 6 PACKS),Neuation / Accumax,Other,,pack,6499,,,
-ASP-1-S-B,ASP-1-S-B (25 PCS X 4 BAGS X 6 PACKS),Neuation / Accumax,Other,,pack,6655,,,
-ASP-1-S-B-WB,ASP-1-S-B-WB (25 PCS X 4 BAGS X 6 PACKS),Neuation / Accumax,Other,,pack,5920,,,
-ASP-2-S,ASP-2-S (100 PCS X 6 PACKS),Neuation / Accumax,Other,,pack,7168,,,
-ASP-2-S-B,ASP-2-S-B (25 PCS X 4 BAGS X 6 PACKS),Neuation / Accumax,Other,,pack,7292,,,
-ASP-2-S-B-WB,ASP-2-S-B-WB (25 PCS X 4 BAGS X 6 PACKS),Neuation / Accumax,Other,,pack,6459,,,
-ASP-5-S,ASP-5-S (100 PCS X 6 PACKS),Neuation / Accumax,Other,,pack,11151,,,
-ASP-5-S-B,ASP-5-S-B (25 PCS X 4 BAGS X 6 PACKS),Neuation / Accumax,Other,,pack,11328,,,
-ASP-5-S-B-WB,ASP-5-S-B-WB (25 PCS X 4 BAGS X 6 PACKS),Neuation / Accumax,Other,,pack,10224,,,
-ASP-10-S,ASP-10-S (100 PCS X 6 PACKS),Neuation / Accumax,Other,,pack,11788,,,
-ASP-10-S-B,ASP-10-S-B (25 PCS X 4 BAGS X 6 PACKS),Neuation / Accumax,Other,,pack,12036,,,
-ASP-10-S-B-WB,ASP-10-S-B-WB (25 PCS X 4 BAGS X 6 PACKS),Neuation / Accumax,Other,,pack,10762,,,
+ASP-1-S,"Accumax Serological Pipette, Individually Wrapped, Sterile, Yellow Colour Code (Volume: 1ml) (600Pcs)",Neuation / Accumax,Other,,pack,6499,,ACCUMAX SEROLOGICAL PIPETTE.png,ACCUMAX SEROLOGICAL PIPETTE desc.png
+ASP-1-S-B,"Accumax Serological Pipette, Individually Wrapped in Sealed Lockable Bag, Sterile, Yellow Colour Code (Volume: 1ml) (600Pcs)",Neuation / Accumax,Other,,pack,6655,,ACCUMAX SEROLOGICAL PIPETTE.png,ACCUMAX SEROLOGICAL PIPETTE desc.png
+ASP-1-S-B-WB,"Accumax Serological Pipette, Without Blister, in Sealed Lockable Bag, Sterile, Yellow Colour Code (Volume: 1ml) (600Pcs)",Neuation / Accumax,Other,,pack,5920,,ACCUMAX SEROLOGICAL PIPETTE.png,ACCUMAX SEROLOGICAL PIPETTE desc.png
+ASP-2-S,"Accumax Serological Pipette, Individually Wrapped, Sterile, Green Colour Code (Volume: 2ml) (600Pcs)",Neuation / Accumax,Other,,pack,7168,,ACCUMAX SEROLOGICAL PIPETTE.png,ACCUMAX SEROLOGICAL PIPETTE desc.png
+ASP-2-S-B,"Accumax Serological Pipette, Individually Wrapped in Sealed Lockable Bag, Sterile, Green Colour Code (Volume: 2ml) (600Pcs)",Neuation / Accumax,Other,,pack,7292,,ACCUMAX SEROLOGICAL PIPETTE.png,ACCUMAX SEROLOGICAL PIPETTE desc.png
+ASP-2-S-B-WB,"Accumax Serological Pipette, Without Blister, in Sealed Lockable Bag, Sterile, Green Colour Code (Volume: 2ml) (600Pcs)",Neuation / Accumax,Other,,pack,6459,,ACCUMAX SEROLOGICAL PIPETTE.png,ACCUMAX SEROLOGICAL PIPETTE desc.png
+ASP-5-S,"Accumax Serological Pipette, Individually Wrapped, Sterile, Blue Colour Code (Volume: 5ml) (600Pcs)",Neuation / Accumax,Other,,pack,11151,,ACCUMAX SEROLOGICAL PIPETTE.png,ACCUMAX SEROLOGICAL PIPETTE desc.png
+ASP-5-S-B,"Accumax Serological Pipette, Individually Wrapped in Sealed Lockable Bag, Sterile, Blue Colour Code (Volume: 5ml) (600Pcs)",Neuation / Accumax,Other,,pack,11328,,ACCUMAX SEROLOGICAL PIPETTE.png,ACCUMAX SEROLOGICAL PIPETTE desc.png
+ASP-5-S-B-WB,"Accumax Serological Pipette, Without Blister, in Sealed Lockable Bag, Sterile, Blue Colour Code (Volume: 5ml) (600Pcs)",Neuation / Accumax,Other,,pack,10224,,ACCUMAX SEROLOGICAL PIPETTE.png,ACCUMAX SEROLOGICAL PIPETTE desc.png
+ASP-10-S,"Accumax Serological Pipette, Individually Wrapped, Sterile, Orange Colour Code (Volume: 10ml) (600Pcs)",Neuation / Accumax,Other,,pack,11788,,ACCUMAX SEROLOGICAL PIPETTE.png,ACCUMAX SEROLOGICAL PIPETTE desc.png
+ASP-10-S-B,"Accumax Serological Pipette, Individually Wrapped in Sealed Lockable Bag, Sterile, Orange Colour Code (Volume: 10ml) (600Pcs)",Neuation / Accumax,Other,,pack,12036,,ACCUMAX SEROLOGICAL PIPETTE.png,ACCUMAX SEROLOGICAL PIPETTE desc.png
+ASP-10-S-B-WB,"Accumax Serological Pipette, Without Blister, in Sealed Lockable Bag, Sterile, Orange Colour Code (Volume: 10ml) (600Pcs)",Neuation / Accumax,Other,,pack,10762,,ACCUMAX SEROLOGICAL PIPETTE.png,ACCUMAX SEROLOGICAL PIPETTE desc.png
 AV-100,RP A Mechanical Pipette 0.5-10 ACCUMAX (AV-100),Neuation / Accumax,Pipettes,,unit,3080,,av.png,A mech pipette.png
 AV-125,RP A Mechanical Pipette 0.1-2.5 ACCUMAX (AV-125),Neuation / Accumax,Pipettes,,unit,3080,,av.png,A mech pipette.png
 AV-200,RP A Mechanical Pipette 5-50 ACCUMAX (AV-200),Neuation / Accumax,Pipettes,,unit,3080,,av.png,A mech pipette.png
@@ -990,18 +990,18 @@ ALFV-10000,DP 1000-10000 µL (ALFV-10000),Neuation / Accumax,Other,,unit,15400,,
 4-506-C10-E,"AHN myPette EL³ 200µL Tip for Low Force Pipettes, Racked (ALF-200-E-R)",Neuation / Accumax,Other,,pack,14750,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
 4-507-C10-E,"AHN myPette EL³ 1000µL Tip for Low Force Pipettes, Racked (ALF-1000-E-R)",Neuation / Accumax,Other,,pack,15340,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
 3-340-10-0,"AHN myTube Spin Column, 0.8ml Filter Tube (PE 20-60µm) with 2.0ml Receiver Tube (ASC-PE-60)",Neuation / Accumax,Tubes & Vials,,pack,6277,,AHN MYTUBE SPIN COLUMN FILTER PLATE.png,AHN MYTUBE SPIN COLUMN FILTER PLATE desc.png
-ABEF-1000-NV-PG-S,ABEF-1000-NV-PG-S (1 FLASK WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,4112,,,
-ABEF-1000-V-PG-S,ABEF-1000-V-PG-S (1 FLASK WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,4486,,,
-ABEF-125-NV-PG-S,ABEF-125-NV-PG-S (1 FLASK WITH CAP X 24 PACK),Medha,Bottles & Carboys,,pack,8100,,,
-ABEF-125-V-PG-S,ABEF-125-V-PG-S (1 FLASK WITH CAP X 24 PACK),Medha,Bottles & Carboys,,pack,9346,,,
-ABEF-2000-NV-PG-S,ABEF-2000-NV-PG-S (1 FLASK WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,3489,,,
-ABEF-2000-V-PG-S,ABEF-2000-V-PG-S (1 FLASK WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,3738,,,
-ABEF-250-NV-PG-S,ABEF-250-NV-PG-S (1 FLASK WITH CAP X 12 PACK),Medha,Bottles & Carboys,,pack,4798,,,
-ABEF-250-V-PG-S,ABEF-250-V-PG-S (1 FLASK WITH CAP X 12 PACK),Medha,Bottles & Carboys,,pack,5421,,,
-ABEF-3000-NV-PG-S,ABEF-3000-NV-PG-S (1 FLASK WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,5607,,,
-ABEF-3000-V-PG-S,ABEF-3000-V-PG-S (1 FLASK WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,5981,,,
-ABEF-500-NV-PG-S,ABEF-500-NV-PG-S (1 FLASK WITH CAP X 12 PACK),Medha,Bottles & Carboys,,pack,6044,,,
-ABEF-500-V-PG-S,ABEF-500-V-PG-S (1 FLASK WITH CAP X 12 PACK),Medha,Bottles & Carboys,,pack,6791,,,
+ABEF-1000-NV-PG-S,"Accumax PETG Erlenmeyer Flask, Baffled Bottom with HDPE Cap, Non-Vented, Sterile (Volume: 1L) (6Pcs)",Medha,Bottles & Carboys,,pack,4112,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+ABEF-1000-V-PG-S,"Accumax PETG Erlenmeyer Flask, Baffled Bottom with HDPE Cap, Vented, Sterile (Volume: 1L) (6Pcs)",Medha,Bottles & Carboys,,pack,4486,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+ABEF-125-NV-PG-S,"Accumax PETG Erlenmeyer Flask, Baffled Bottom with HDPE Cap, Non-Vented, Sterile (Volume: 125ml) (24Pcs)",Medha,Bottles & Carboys,,pack,8100,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+ABEF-125-V-PG-S,"Accumax PETG Erlenmeyer Flask, Baffled Bottom with HDPE Cap, Vented, Sterile (Volume: 125ml) (24Pcs)",Medha,Bottles & Carboys,,pack,9346,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+ABEF-2000-NV-PG-S,"Accumax PETG Erlenmeyer Flask, Baffled Bottom with HDPE Cap, Non-Vented, Sterile (Volume: 2L) (4Pcs)",Medha,Bottles & Carboys,,pack,3489,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+ABEF-2000-V-PG-S,"Accumax PETG Erlenmeyer Flask, Baffled Bottom with HDPE Cap, Vented, Sterile (Volume: 2L) (4Pcs)",Medha,Bottles & Carboys,,pack,3738,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+ABEF-250-NV-PG-S,"Accumax PETG Erlenmeyer Flask, Baffled Bottom with HDPE Cap, Non-Vented, Sterile (Volume: 250ml) (12Pcs)",Medha,Bottles & Carboys,,pack,4798,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+ABEF-250-V-PG-S,"Accumax PETG Erlenmeyer Flask, Baffled Bottom with HDPE Cap, Vented, Sterile (Volume: 250ml) (12Pcs)",Medha,Bottles & Carboys,,pack,5421,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+ABEF-3000-NV-PG-S,"Accumax PETG Erlenmeyer Flask, Baffled Bottom with HDPE Cap, Non-Vented, Sterile (Volume: 3L) (4Pcs)",Medha,Bottles & Carboys,,pack,5607,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+ABEF-3000-V-PG-S,"Accumax PETG Erlenmeyer Flask, Baffled Bottom with HDPE Cap, Vented, Sterile (Volume: 3L) (4Pcs)",Medha,Bottles & Carboys,,pack,5981,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+ABEF-500-NV-PG-S,"Accumax PETG Erlenmeyer Flask, Baffled Bottom with HDPE Cap, Non-Vented, Sterile (Volume: 500ml) (12Pcs)",Medha,Bottles & Carboys,,pack,6044,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+ABEF-500-V-PG-S,"Accumax PETG Erlenmeyer Flask, Baffled Bottom with HDPE Cap, Vented, Sterile (Volume: 500ml) (12Pcs)",Medha,Bottles & Carboys,,pack,6791,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
 ACB-HD-10-C,ACB-HD-10-C (1 CARBOY WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,3073,,,
 ACB-HD-10-C-S,ACB-HD-10-C-S (1 CARBOY WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,4017,,,
 ACB-HD-10-SPC,ACB-HD-10-SPC (1 CARBOY WITH SPIGOT WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,4359,,,
@@ -1074,29 +1074,29 @@ ACT-50-S-W,ACT-50-S-W (25 TUBES x 20 PACKS),Medha,Tubes & Vials,,pack,12824,,ACT
 ADV-05-PG-S,ADV-05-PG-S (20 VIAL WITH CAP X 5 PACK),Medha,Tubes & Vials,,pack,3296,,,
 ADV-10-PG-S,ADV-10-PG-S (20 VIAL WITH CAP X 5 PACK),Medha,Tubes & Vials,,pack,3532,,,
 ADV-20-PG-S,ADV-20-PG-S (20 VIAL WITH CAP X 5 PACK),Medha,Tubes & Vials,,pack,4003,,,
-AEF-1000-NV-PC-S,AEF-1000-NV-PC-S (1 FLASK WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,4606,,,
-AEF-1000-NV-PG-S,AEF-1000-NV-PG-S (1 FLASK WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,4112,,,
-AEF-1000-V-PC-S,AEF-1000-V-PC-S (1 FLASK WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,5024,,,
-AEF-1000-V-PG-S,AEF-1000-V-PG-S (1 FLASK WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,4486,,,
-AEF-125-NV-PC-S,AEF-125-NV-PC-S (1 FLASK WITH CAP X 24 PACK),Medha,Bottles & Carboys,,pack,9072,,,
-AEF-125-NV-PG-S,AEF-125-NV-PG-S (1 FLASK WITH CAP X 24 PACK),Medha,Bottles & Carboys,,pack,8100,,,
-AEF-125-V-PC-S,AEF-125-V-PC-S (1 FLASK WITH CAP X 24 PACK),Medha,Bottles & Carboys,,pack,10467,,,
-AEF-125-V-PG-S,AEF-125-V-PG-S (1 FLASK WITH CAP X 24 PACK),Medha,Bottles & Carboys,,pack,9346,,,
-AEF-2000-NV-PC-S,AEF-2000-NV-PC-S (1 FLASK WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,3908,,,
-AEF-2000-NV-PG-S,AEF-2000-NV-PG-S (1 FLASK WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,3489,,,
-AEF-2000-V-PC-S,AEF-2000-V-PC-S (1 FLASK WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,4187,,,
-AEF-2000-V-PG-S,AEF-2000-V-PG-S (1 FLASK WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,3738,,,
-AEF-250-NV-PC-S,AEF-250-NV-PC-S (1 FLASK WITH CAP X 12 PACK),Medha,Bottles & Carboys,,pack,5373,,,
-AEF-250-NV-PG-S,AEF-250-NV-PG-S (1 FLASK WITH CAP X 12 PACK),Medha,Bottles & Carboys,,pack,4798,,,
-AEF-250-V-PC-S,AEF-250-V-PC-S (1 FLASK WITH CAP X 12 PACK),Medha,Bottles & Carboys,,pack,6071,,,
-AEF-250-V-PG-S,AEF-250-V-PG-S (1 FLASK WITH CAP X 12 PACK),Medha,Bottles & Carboys,,pack,5421,,,
-AEF-3000-NV-PC-S,AEF-3000-NV-PC-S (1 FLASK WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,6280,,,
-AEF-3000-NV-PG-S,AEF-3000-NV-PG-S (1 FLASK WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,5607,,,
-AEF-3000-V-PG-S,AEF-3000-V-PG-S (1 FLASK WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,5981,,,
-AEF-500-NV-PC-S,AEF-500-NV-PC-S (1 FLASK WITH CAP X 12 PACK),Medha,Bottles & Carboys,,pack,6768,,,
-AEF-500-NV-PG-S,AEF-500-NV-PG-S (1 FLASK WITH CAP X 12 PACK),Medha,Bottles & Carboys,,pack,6044,,,
-AEF-500-V-PC-S,AEF-500-V-PC-S (1 FLASK WITH CAP X 12 PACK),Medha,Bottles & Carboys,,pack,7606,,,
-AEF-500-V-PG-S,AEF-500-V-PG-S (1 FLASK WITH CAP X 12 PACK),Medha,Bottles & Carboys,,pack,6791,,,
+AEF-1000-NV-PC-S,"Accumax Polycarbonate Erlenmeyer Flask, Flat Bottom with PP Cap, Non-Vented, Sterile (Volume: 1L) (6Pcs)",Medha,Bottles & Carboys,,pack,4606,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+AEF-1000-NV-PG-S,"Accumax PETG Erlenmeyer Flask, Flat Bottom with HDPE Cap, Non-Vented, Sterile (Volume: 1L) (6Pcs)",Medha,Bottles & Carboys,,pack,4112,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+AEF-1000-V-PC-S,"Accumax Polycarbonate Erlenmeyer Flask, Flat Bottom with PP Cap, Vented, Sterile (Volume: 1L) (6Pcs)",Medha,Bottles & Carboys,,pack,5024,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+AEF-1000-V-PG-S,"Accumax PETG Erlenmeyer Flask, Flat Bottom with HDPE Cap, Vented, Sterile (Volume: 1L) (6Pcs)",Medha,Bottles & Carboys,,pack,4486,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+AEF-125-NV-PC-S,"Accumax Polycarbonate Erlenmeyer Flask, Flat Bottom with PP Cap, Non-Vented, Sterile (Volume: 125ml) (24Pcs)",Medha,Bottles & Carboys,,pack,9072,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+AEF-125-NV-PG-S,"Accumax PETG Erlenmeyer Flask, Flat Bottom with HDPE Cap, Non-Vented, Sterile (Volume: 125ml) (24Pcs)",Medha,Bottles & Carboys,,pack,8100,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+AEF-125-V-PC-S,"Accumax Polycarbonate Erlenmeyer Flask, Flat Bottom with PP Cap, Vented, Sterile (Volume: 125ml) (24Pcs)",Medha,Bottles & Carboys,,pack,10467,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+AEF-125-V-PG-S,"Accumax PETG Erlenmeyer Flask, Flat Bottom with HDPE Cap, Vented, Sterile (Volume: 125ml) (24Pcs)",Medha,Bottles & Carboys,,pack,9346,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+AEF-2000-NV-PC-S,"Accumax Polycarbonate Erlenmeyer Flask, Flat Bottom with PP Cap, Non-Vented, Sterile (Volume: 2L) (4Pcs)",Medha,Bottles & Carboys,,pack,3908,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+AEF-2000-NV-PG-S,"Accumax PETG Erlenmeyer Flask, Flat Bottom with HDPE Cap, Non-Vented, Sterile (Volume: 2L) (4Pcs)",Medha,Bottles & Carboys,,pack,3489,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+AEF-2000-V-PC-S,"Accumax Polycarbonate Erlenmeyer Flask, Flat Bottom with PP Cap, Vented, Sterile (Volume: 2L) (4Pcs)",Medha,Bottles & Carboys,,pack,4187,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+AEF-2000-V-PG-S,"Accumax PETG Erlenmeyer Flask, Flat Bottom with HDPE Cap, Vented, Sterile (Volume: 2L) (4Pcs)",Medha,Bottles & Carboys,,pack,3738,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+AEF-250-NV-PC-S,"Accumax Polycarbonate Erlenmeyer Flask, Flat Bottom with PP Cap, Non-Vented, Sterile (Volume: 250ml) (12Pcs)",Medha,Bottles & Carboys,,pack,5373,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+AEF-250-NV-PG-S,"Accumax PETG Erlenmeyer Flask, Flat Bottom with HDPE Cap, Non-Vented, Sterile (Volume: 250ml) (12Pcs)",Medha,Bottles & Carboys,,pack,4798,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+AEF-250-V-PC-S,"Accumax Polycarbonate Erlenmeyer Flask, Flat Bottom with PP Cap, Vented, Sterile (Volume: 250ml) (12Pcs)",Medha,Bottles & Carboys,,pack,6071,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+AEF-250-V-PG-S,"Accumax PETG Erlenmeyer Flask, Flat Bottom with HDPE Cap, Vented, Sterile (Volume: 250ml) (12Pcs)",Medha,Bottles & Carboys,,pack,5421,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+AEF-3000-NV-PC-S,"Accumax Polycarbonate Erlenmeyer Flask, Flat Bottom with PP Cap, Non-Vented, Sterile (Volume: 3L) (4Pcs)",Medha,Bottles & Carboys,,pack,6280,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+AEF-3000-NV-PG-S,"Accumax PETG Erlenmeyer Flask, Flat Bottom with HDPE Cap, Non-Vented, Sterile (Volume: 3L) (4Pcs)",Medha,Bottles & Carboys,,pack,5607,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+AEF-3000-V-PG-S,"Accumax PETG Erlenmeyer Flask, Flat Bottom with HDPE Cap, Vented, Sterile (Volume: 3L) (4Pcs)",Medha,Bottles & Carboys,,pack,5981,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+AEF-500-NV-PC-S,"Accumax Polycarbonate Erlenmeyer Flask, Flat Bottom with PP Cap, Non-Vented, Sterile (Volume: 500ml) (12Pcs)",Medha,Bottles & Carboys,,pack,6768,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+AEF-500-NV-PG-S,"Accumax PETG Erlenmeyer Flask, Flat Bottom with HDPE Cap, Non-Vented, Sterile (Volume: 500ml) (12Pcs)",Medha,Bottles & Carboys,,pack,6044,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+AEF-500-V-PC-S,"Accumax Polycarbonate Erlenmeyer Flask, Flat Bottom with PP Cap, Vented, Sterile (Volume: 500ml) (12Pcs)",Medha,Bottles & Carboys,,pack,7606,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+AEF-500-V-PG-S,"Accumax PETG Erlenmeyer Flask, Flat Bottom with HDPE Cap, Vented, Sterile (Volume: 500ml) (12Pcs)",Medha,Bottles & Carboys,,pack,6791,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
 AHD-PP-1000,AHD-PP-1000 (6 BOTTLE X 1 PACK),Medha,Bottles & Carboys,,pack,4072,,,
 AHD-PP-2000,AHD-PP-2000 (6 BOTTLE X 1 PACK),Medha,Bottles & Carboys,,pack,6171,,,
 AHD-PP-4000,AHD-PP-4000 (6 BOTTLE X 1 PACK),Medha,Bottles & Carboys,,pack,11316,,,
@@ -1126,42 +1126,42 @@ AMB-500-PT-IW-S,AMB-500-PT-IW-S (1 BOTTLE WITH CAP X 70 PACK),Medha,Bottles & Ca
 AMB-500-PT-S,AMB-500-PT-S (24 BOTTLE WITH CAP X 2 PACK),Medha,Bottles & Carboys,,pack,10919,,,
 UAMB-60-PC-IW-S,UAMB-60-PC-IW-S,Medha,Other,,unit,8382,,,
 UAMB-60-PC-S,UAMB-60-PC-S (24 BOTTLE WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,18288,,,
-ANB-HD-1000,ANB-HD-1000 (12 BOTTLE WITH CAP X 2 PACK),Medha,Bottles & Carboys,,pack,3900,,,
-ANB-HD-1000-A,ANB-HD-1000-A (12 BOTTLE WITH CAP X 2PACK),Medha,Bottles & Carboys,,pack,5996,,,
-ANB-HD-125,ANB-HD-125 (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,2982,,,
-ANB-HD-125-A,ANB-HD-125-A (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,3785,,,
-ANB-HD-15,ANB-HD-15 (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,1166,,,
-ANB-HD-15-A,ANB-HD-15-A (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,1453,,,
-ANB-HD-250,ANB-HD-250 (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,4779,,,
-ANB-HD-250-A,ANB-HD-250-A (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,5945,,,
-ANB-HD-30,ANB-HD-30 (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,1606,,,
-ANB-HD-30-A,ANB-HD-30-A (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,2179,,,
-ANB-HD-4,ANB-HD-4 (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,802,,,
-ANB-HD-4-A,ANB-HD-4-A (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,1014,,,
-ANB-HD-500,ANB-HD-500 (12 BOTTLE WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,3964,,,
-ANB-HD-500-A,ANB-HD-500-A (12 BOTTLE WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,5340,,,
-ANB-HD-60,ANB-HD-60 (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,2179,,,
-ANB-HD-60-A,ANB-HD-60-A (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,2791,,,
-ANB-HD-8-A,ANB-HD-8-A (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,1280,,,
-ANB-HD-8,ANB-HD-8 (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,994,,,
-ANB-LD-1000,ANB-LD-1000 (12 BOTTLE WITH CAP X 2 PACK),Medha,Bottles & Carboys,,pack,3536,,,
-ANB-LD-125,ANB-LD-125 (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,2695,,,
-ANB-LD-15,ANB-LD-15 (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,1089,,,
-ANB-LD-250,ANB-LD-250 (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,4320,,,
-ANB-LD-30,ANB-LD-30 (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,1529,,,
-ANB-LD-4,ANB-LD-4 (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,894,,,
-ANB-LD-500,ANB-LD-500 (12 BOTTLE WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,3542,,,
-ANB-LD-60,ANB-LD-60 (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,1988,,,
-ANB-LD-8,ANB-LD-8 (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,918,,,
-ANB-PP-15,ANB-PP-15 (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,1357,,,
-ANB-PP-1000,ANB-PP-1000 (12 BOTTLE WITH CAP X 2 PACK),Medha,Bottles & Carboys,,pack,4741,,,
-ANB-PP-125,ANB-PP-125 (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,3345,,,
-ANB-PP-250,ANB-PP-250 (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,5410,,,
-ANB-PP-30,ANB-PP-30 (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,1816,,,
-ANB-PP-4,ANB-PP-4 (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,918,,,
-ANB-PP-500,ANB-PP-500 (12 BOTTLE WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,4805,,,
-ANB-PP-60,ANB-PP-60 (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,2447,,,
-ANB-PP-8,ANB-PP-8 (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,1166,,,
+ANB-HD-1000,"Accumax Narrow Mouth Reagent Bottle, HDPE (Volume: 1000ml) (24Pcs)",Medha,Bottles & Carboys,,pack,3900,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-HD-1000-A,"Accumax Narrow Mouth Reagent Bottle, HDPE, Amber (Volume: 1000ml) (24Pcs)",Medha,Bottles & Carboys,,pack,5996,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-HD-125,"Accumax Narrow Mouth Reagent Bottle, HDPE (Volume: 125ml) (72Pcs)",Medha,Bottles & Carboys,,pack,2982,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-HD-125-A,"Accumax Narrow Mouth Reagent Bottle, HDPE, Amber (Volume: 125ml) (72Pcs)",Medha,Bottles & Carboys,,pack,3785,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-HD-15,"Accumax Narrow Mouth Reagent Bottle, HDPE (Volume: 15ml) (72Pcs)",Medha,Bottles & Carboys,,pack,1166,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-HD-15-A,"Accumax Narrow Mouth Reagent Bottle, HDPE, Amber (Volume: 15ml) (72Pcs)",Medha,Bottles & Carboys,,pack,1453,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-HD-250,"Accumax Narrow Mouth Reagent Bottle, HDPE (Volume: 250ml) (72Pcs)",Medha,Bottles & Carboys,,pack,4779,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-HD-250-A,"Accumax Narrow Mouth Reagent Bottle, HDPE, Amber (Volume: 250ml) (72Pcs)",Medha,Bottles & Carboys,,pack,5945,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-HD-30,"Accumax Narrow Mouth Reagent Bottle, HDPE (Volume: 30ml) (72Pcs)",Medha,Bottles & Carboys,,pack,1606,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-HD-30-A,"Accumax Narrow Mouth Reagent Bottle, HDPE, Amber (Volume: 30ml) (72Pcs)",Medha,Bottles & Carboys,,pack,2179,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-HD-4,"Accumax Narrow Mouth Reagent Bottle, HDPE (Volume: 4ml) (72Pcs)",Medha,Bottles & Carboys,,pack,802,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-HD-4-A,"Accumax Narrow Mouth Reagent Bottle, HDPE, Amber (Volume: 4ml) (72Pcs)",Medha,Bottles & Carboys,,pack,1014,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-HD-500,"Accumax Narrow Mouth Reagent Bottle, HDPE (Volume: 500ml) (48Pcs)",Medha,Bottles & Carboys,,pack,3964,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-HD-500-A,"Accumax Narrow Mouth Reagent Bottle, HDPE, Amber (Volume: 500ml) (48Pcs)",Medha,Bottles & Carboys,,pack,5340,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-HD-60,"Accumax Narrow Mouth Reagent Bottle, HDPE (Volume: 60ml) (72Pcs)",Medha,Bottles & Carboys,,pack,2179,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-HD-60-A,"Accumax Narrow Mouth Reagent Bottle, HDPE, Amber (Volume: 60ml) (72Pcs)",Medha,Bottles & Carboys,,pack,2791,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-HD-8-A,"Accumax Narrow Mouth Reagent Bottle, HDPE, Amber (Volume: 8ml) (72Pcs)",Medha,Bottles & Carboys,,pack,1280,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-HD-8,"Accumax Narrow Mouth Reagent Bottle, HDPE (Volume: 8ml) (72Pcs)",Medha,Bottles & Carboys,,pack,994,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-LD-1000,"Accumax Narrow Mouth Reagent Bottle, LDPE (Volume: 1000ml) (24Pcs)",Medha,Bottles & Carboys,,pack,3536,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-LD-125,"Accumax Narrow Mouth Reagent Bottle, LDPE (Volume: 125ml) (72Pcs)",Medha,Bottles & Carboys,,pack,2695,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-LD-15,"Accumax Narrow Mouth Reagent Bottle, LDPE (Volume: 15ml) (72Pcs)",Medha,Bottles & Carboys,,pack,1089,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-LD-250,"Accumax Narrow Mouth Reagent Bottle, LDPE (Volume: 250ml) (72Pcs)",Medha,Bottles & Carboys,,pack,4320,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-LD-30,"Accumax Narrow Mouth Reagent Bottle, LDPE (Volume: 30ml) (72Pcs)",Medha,Bottles & Carboys,,pack,1529,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-LD-4,"Accumax Narrow Mouth Reagent Bottle, LDPE (Volume: 4ml) (72Pcs)",Medha,Bottles & Carboys,,pack,894,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-LD-500,"Accumax Narrow Mouth Reagent Bottle, LDPE (Volume: 500ml) (48Pcs)",Medha,Bottles & Carboys,,pack,3542,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-LD-60,"Accumax Narrow Mouth Reagent Bottle, LDPE (Volume: 60ml) (72Pcs)",Medha,Bottles & Carboys,,pack,1988,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-LD-8,"Accumax Narrow Mouth Reagent Bottle, LDPE (Volume: 8ml) (72Pcs)",Medha,Bottles & Carboys,,pack,918,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-PP-15,"Accumax Narrow Mouth Reagent Bottle, Polypropylene (Volume: 15ml) (72Pcs)",Medha,Bottles & Carboys,,pack,1357,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-PP-1000,"Accumax Narrow Mouth Reagent Bottle, Polypropylene (Volume: 1000ml) (48Pcs)",Medha,Bottles & Carboys,,pack,4741,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-PP-125,"Accumax Narrow Mouth Reagent Bottle, Polypropylene (Volume: 125ml) (72Pcs)",Medha,Bottles & Carboys,,pack,3345,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-PP-250,"Accumax Narrow Mouth Reagent Bottle, Polypropylene (Volume: 250ml) (72Pcs)",Medha,Bottles & Carboys,,pack,5410,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-PP-30,"Accumax Narrow Mouth Reagent Bottle, Polypropylene (Volume: 30ml) (72Pcs)",Medha,Bottles & Carboys,,pack,1816,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-PP-4,"Accumax Narrow Mouth Reagent Bottle, Polypropylene (Volume: 4ml) (72Pcs)",Medha,Bottles & Carboys,,pack,918,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-PP-500,"Accumax Narrow Mouth Reagent Bottle, Polypropylene (Volume: 500ml) (48Pcs)",Medha,Bottles & Carboys,,pack,4805,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-PP-60,"Accumax Narrow Mouth Reagent Bottle, Polypropylene (Volume: 60ml) (72Pcs)",Medha,Bottles & Carboys,,pack,2447,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-PP-8,"Accumax Narrow Mouth Reagent Bottle, Polypropylene (Volume: 8ml) (72Pcs)",Medha,Bottles & Carboys,,pack,1166,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
 AP-90NV-10,"Accumax Petri Plate, 90mm Non-Vented, Aseptic, Raised Ridge, Semi-Stackable, Bulk (Pack of 10)",Medha,PCR & Plates,,pack,4130,,ACCUMAX PETRI PLATES.png,ACCUMAX PETRI PLATES desc.png
 AP-90NV-10-S,"Accumax Petri Plate, 90mm Non-Vented, Sterile, Raised Ridge, Semi-Stackable, Bulk (Pack of 10)",Medha,PCR & Plates,,pack,4708,,ACCUMAX PETRI PLATES.png,ACCUMAX PETRI PLATES desc.png
 AP-90NV-20,"Accumax Petri Plate, 90mm Non-Vented, Aseptic, Raised Ridge, Semi-Stackable, Bulk (Pack of 20)",Medha,PCR & Plates,,pack,4012,,ACCUMAX PETRI PLATES.png,ACCUMAX PETRI PLATES desc.png
@@ -1246,10 +1246,10 @@ AHD-HD-2000,AHD-HD-2000 (6 BOTTLE X 1 PACK),Medha,Bottles & Carboys,,pack,6171,,
 AHD-HD-4000,AHD-HD-4000 (6 BOTTLE X 1 PACK),Medha,Bottles & Carboys,,pack,11316,,,
 AHD-PP-2000-S,AHD-PP-2000-S (6 BOTTLE X 1 PACK),Medha,Bottles & Carboys,,pack,7097,,,
 AHD-HD-4000-S,AHD-HD-4000-S (6 BOTTLE X 1 PACK),Medha,Bottles & Carboys,,pack,13014,,,
-ANB-PP-125-IW-G-S,ANB-PP-125-IW-G-S (12 IW BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,15289,,,
-ANB-PP-250-IW-G-S,ANB-PP-250-IW-G-S (12 IW BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,24727,,,
-ANB-PP-500-IW-G-S,ANB-PP-500-IW-G-S (12 IW BOTTLE WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,21960,,,
-ANB-PP-1000-IW-G-S,ANB-PP-1000-IW-G-S (12 IW BOTTLE WITH CAP X 2 PACK),Medha,Bottles & Carboys,,pack,27159,,,
+ANB-PP-125-IW-G-S,"Accumax Narrow Mouth Reagent Bottle, Polypropylene, Individually Wrapped, Gamma Sterilized (Volume: 125ml) (72Pcs)",Medha,Bottles & Carboys,,pack,15289,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-PP-250-IW-G-S,"Accumax Narrow Mouth Reagent Bottle, Polypropylene, Individually Wrapped, Gamma Sterilized (Volume: 250ml) (72Pcs)",Medha,Bottles & Carboys,,pack,24727,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-PP-500-IW-G-S,"Accumax Narrow Mouth Reagent Bottle, Polypropylene, Individually Wrapped, Gamma Sterilized (Volume: 500ml) (48Pcs)",Medha,Bottles & Carboys,,pack,21960,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-PP-1000-IW-G-S,"Accumax Narrow Mouth Reagent Bottle, Polypropylene, Individually Wrapped, Gamma Sterilized (Volume: 1000ml) (24Pcs)",Medha,Bottles & Carboys,,pack,27159,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
 AWB-PP-125-IW-G-S,AWB-PP-125-IW-G-S (12 IW BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,18082,,,
 AWB-PP-250-IW-G-S,AWB-PP-250-IW-G-S (12 IW BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,28394,,,
 AWB-PP-500-IW-G-S,AWB-PP-500-IW-G-S (12 IW BOTTLE WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,25509,,,
@@ -1274,48 +1274,48 @@ AP-90V-20-TW-M,"Accumax Petri Plate, 90mm Vented, Aseptic, Raised Ridge, Semi-St
 AP-90NV-20-TW-M,"Accumax Petri Plate, 90mm Non-Vented, Aseptic, Raised Ridge, Semi-Stackable, Triple Wrapped (Pack of 20)",Medha,PCR & Plates,,pack,6938,,ACCUMAX PETRI PLATES.png,ACCUMAX PETRI PLATES desc.png
 AP-90V-20-S-TW-M,"Accumax Petri Plate, 90mm Vented, Sterile, Raised Ridge, Semi-Stackable, Triple Wrapped (Pack of 20)",Medha,PCR & Plates,,pack,7611,,ACCUMAX PETRI PLATES.png,ACCUMAX PETRI PLATES desc.png
 AP-90NV-20-S-TW-M,"Accumax Petri Plate, 90mm Non-Vented, Sterile, Raised Ridge, Semi-Stackable, Triple Wrapped (Pack of 20)",Medha,PCR & Plates,,pack,7611,,ACCUMAX PETRI PLATES.png,ACCUMAX PETRI PLATES desc.png
-ABEF-125-NV-PC-S,ABEF-125-NV-PC-S (1 FLASK WITH CAP X 24 PACK),Medha,Bottles & Carboys,,pack,9072,,,
-ABEF-250-NV-PC-S,ABEF-250-NV-PC-S (1 FLASK WITH CAP X 12 PACK),Medha,Bottles & Carboys,,pack,5349,,,
-ABEF-500-NV-PC-S,ABEF-500-NV-PC-S (1 FLASK WITH CAP X 12 PACK),Medha,Bottles & Carboys,,pack,6344,,,
-ABEF-1000-NV-PC-S,ABEF-1000-NV-PC-S (1 FLASK WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,4606,,,
-ABEF-2000-NV-PC-S,ABEF-2000-NV-PC-S (1 FLASK WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,3908,,,
-ABEF-3000-NV-PC-S,ABEF-3000-NV-PC-S (1 FLASK WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,6280,,,
-ABEF-125-V-PC-S,ABEF-125-V-PC-S (1 FLASK WITH CAP X 24 PACK),Medha,Bottles & Carboys,,pack,10467,,,
-ABEF-250-V-PC-S,ABEF-250-V-PC-S (1 FLASK WITH CAP X 12 PACK),Medha,Bottles & Carboys,,pack,6071,,,
-ABEF-500-V-PC-S,ABEF-500-V-PC-S (1 FLASK WITH CAP X 12 PACK),Medha,Bottles & Carboys,,pack,7606,,,
-ABEF-1000-V-PC-S,ABEF-1000-V-PC-S (1 FLASK WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,5024,,,
-ABEF-2000-V-PC-S,ABEF-2000-V-PC-S (1 FLASK WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,4187,,,
-ARB-PT-2L-IW-S,ARB-PT-2L-IW-S (1 X 18 BOTTLES),Medha,Bottles & Carboys,,pack,11151,,,
+ABEF-125-NV-PC-S,"Accumax Polycarbonate Erlenmeyer Flask, Baffled Bottom with PP Cap, Non-Vented, Sterile (Volume: 125ml) (24Pcs)",Medha,Bottles & Carboys,,pack,9072,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+ABEF-250-NV-PC-S,"Accumax Polycarbonate Erlenmeyer Flask, Baffled Bottom with PP Cap, Non-Vented, Sterile (Volume: 250ml) (12Pcs)",Medha,Bottles & Carboys,,pack,5349,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+ABEF-500-NV-PC-S,"Accumax Polycarbonate Erlenmeyer Flask, Baffled Bottom with PP Cap, Non-Vented, Sterile (Volume: 500ml) (12Pcs)",Medha,Bottles & Carboys,,pack,6344,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+ABEF-1000-NV-PC-S,"Accumax Polycarbonate Erlenmeyer Flask, Baffled Bottom with PP Cap, Non-Vented, Sterile (Volume: 1L) (6Pcs)",Medha,Bottles & Carboys,,pack,4606,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+ABEF-2000-NV-PC-S,"Accumax Polycarbonate Erlenmeyer Flask, Baffled Bottom with PP Cap, Non-Vented, Sterile (Volume: 2L) (4Pcs)",Medha,Bottles & Carboys,,pack,3908,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+ABEF-3000-NV-PC-S,"Accumax Polycarbonate Erlenmeyer Flask, Baffled Bottom with PP Cap, Non-Vented, Sterile (Volume: 3L) (4Pcs)",Medha,Bottles & Carboys,,pack,6280,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+ABEF-125-V-PC-S,"Accumax Polycarbonate Erlenmeyer Flask, Baffled Bottom with PP Cap, Vented, Sterile (Volume: 125ml) (24Pcs)",Medha,Bottles & Carboys,,pack,10467,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+ABEF-250-V-PC-S,"Accumax Polycarbonate Erlenmeyer Flask, Baffled Bottom with PP Cap, Vented, Sterile (Volume: 250ml) (12Pcs)",Medha,Bottles & Carboys,,pack,6071,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+ABEF-500-V-PC-S,"Accumax Polycarbonate Erlenmeyer Flask, Baffled Bottom with PP Cap, Vented, Sterile (Volume: 500ml) (12Pcs)",Medha,Bottles & Carboys,,pack,7606,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+ABEF-1000-V-PC-S,"Accumax Polycarbonate Erlenmeyer Flask, Baffled Bottom with PP Cap, Vented, Sterile (Volume: 1L) (6Pcs)",Medha,Bottles & Carboys,,pack,5024,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+ABEF-2000-V-PC-S,"Accumax Polycarbonate Erlenmeyer Flask, Baffled Bottom with PP Cap, Vented, Sterile (Volume: 2L) (4Pcs)",Medha,Bottles & Carboys,,pack,4187,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
+ARB-PT-2L-IW-S,"Accumax Roller Bottle, 2L PET with PP Cap, Non-Treated, Sterile, Individually Wrapped (Volume: 2L) (18Pcs)",Medha,Bottles & Carboys,,pack,11151,,ACCUMAX ROLLER BOTTLES.png,ACCUMAX ROLLER BOTTLES desc.png
 AWB-HD-4000,AWB-HD-4000 (6 BOTTLE WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,5808,,,
 ACT-50-K-B-A,ACT-50-K-B-A (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,pack,10338,,,
 ACT-50-K-B-S-A,ACT-50-K-B-S-A (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,pack,10338,,,
-ANB-PP-2000,ANB-PP-2000 (6 BOTTLE X 1 PACK),Medha,Bottles & Carboys,,pack,3064,,,
-ANB-PP-4000,ANB-PP-4000 (6 BOTTLE X 1 PACK),Medha,Bottles & Carboys,,pack,5964,,,
-ANB-PP-8-S,ANB-PP-8-S (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,1340,,,
-ANB-PP-15-S,ANB-PP-15-S (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,1561,,,
-ANB-PP-60-S,ANB-PP-60-S (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,2814,,,
-ANB-PP-500-S,ANB-PP-500-S (12 BOTTLE WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,5525,,,
-ANB-PP-1000-S,ANB-PP-1000-S (12 BOTTLE WITH CAP X 2 PACK),Medha,Bottles & Carboys,,pack,5452,,,
-ANB-HD-2000,ANB-HD-2000 (6 BOTTLE X 1 PACK),Medha,Bottles & Carboys,,pack,2738,,,
-ANB-HD-4000,ANB-HD-4000 (6 BOTTLE X 1 PACK),Medha,Bottles & Carboys,,pack,5983,,,
-ANB-HD-4-S,ANB-HD-4-S (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,923,,,
-ANB-HD-8-S,ANB-HD-8-S (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,1143,,,
-ANB-HD-15-S,ANB-HD-15-S (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,1340,,,
-ANB-HD-30-S,ANB-HD-30-S (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,1847,,,
-ANB-HD-60-S,ANB-HD-60-S (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,2506,,,
-ANB-HD-125-S,ANB-HD-125-S (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,3429,,,
-ANB-HD-250-S,ANB-HD-250-S (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,5496,,,
-ANB-HD-500-S,ANB-HD-500-S (12 BOTTLE WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,4558,,,
-ANB-HD-2000-S,ANB-HD-2000-S (6 BOTTLE X 1 PACK),Medha,Bottles & Carboys,,pack,3148,,,
-ANB-HD-4-A-S,ANB-HD-4-A-S (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,1165,,,
-ANB-HD-8-A-S,ANB-HD-8-A-S (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,1473,,,
-ANB-HD-15-A-S,ANB-HD-15-A-S (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,1671,,,
-ANB-HD-30-A-S,ANB-HD-30-A-S (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,2506,,,
-ANB-HD-60-A-S,ANB-HD-60-A-S (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,3210,,,
-ANB-HD-125-A-S,ANB-HD-125-A-S (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,4353,,,
-ANB-HD-250-A-S,ANB-HD-250-A-S (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,6837,,,
-ANB-HD-500-A-S,ANB-HD-500-A-S (12 BOTTLE WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,6141,,,
-ANB-LD-1000-S,ANB-LD-1000-S (12 BOTTLE WITH CAP X 2 PACK),Medha,Bottles & Carboys,,pack,4067,,,
+ANB-PP-2000,"Accumax Narrow Mouth Reagent Bottle, Polypropylene (Volume: 2000ml) (6Pcs)",Medha,Bottles & Carboys,,pack,3064,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-PP-4000,"Accumax Narrow Mouth Reagent Bottle, Polypropylene (Volume: 4000ml) (6Pcs)",Medha,Bottles & Carboys,,pack,5964,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-PP-8-S,"Accumax Narrow Mouth Reagent Bottle, Polypropylene, Sterile (Volume: 8ml) (72Pcs)",Medha,Bottles & Carboys,,pack,1340,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-PP-15-S,"Accumax Narrow Mouth Reagent Bottle, Polypropylene, Sterile (Volume: 15ml) (72Pcs)",Medha,Bottles & Carboys,,pack,1561,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-PP-60-S,"Accumax Narrow Mouth Reagent Bottle, Polypropylene, Sterile (Volume: 60ml) (72Pcs)",Medha,Bottles & Carboys,,pack,2814,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-PP-500-S,"Accumax Narrow Mouth Reagent Bottle, Polypropylene, Sterile (Volume: 500ml) (48Pcs)",Medha,Bottles & Carboys,,pack,5525,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-PP-1000-S,"Accumax Narrow Mouth Reagent Bottle, Polypropylene, Sterile (Volume: 1000ml) (24Pcs)",Medha,Bottles & Carboys,,pack,5452,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-HD-2000,"Accumax Narrow Mouth Reagent Bottle, HDPE (Volume: 2000ml) (6Pcs)",Medha,Bottles & Carboys,,pack,2738,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-HD-4000,"Accumax Narrow Mouth Reagent Bottle, HDPE (Volume: 4000ml) (6Pcs)",Medha,Bottles & Carboys,,pack,5983,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-HD-4-S,"Accumax Narrow Mouth Reagent Bottle, HDPE, Sterile (Volume: 4ml) (72Pcs)",Medha,Bottles & Carboys,,pack,923,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-HD-8-S,"Accumax Narrow Mouth Reagent Bottle, HDPE, Sterile (Volume: 8ml) (72Pcs)",Medha,Bottles & Carboys,,pack,1143,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-HD-15-S,"Accumax Narrow Mouth Reagent Bottle, HDPE, Sterile (Volume: 15ml) (72Pcs)",Medha,Bottles & Carboys,,pack,1340,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-HD-30-S,"Accumax Narrow Mouth Reagent Bottle, HDPE, Sterile (Volume: 30ml) (72Pcs)",Medha,Bottles & Carboys,,pack,1847,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-HD-60-S,"Accumax Narrow Mouth Reagent Bottle, HDPE, Sterile (Volume: 60ml) (72Pcs)",Medha,Bottles & Carboys,,pack,2506,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-HD-125-S,"Accumax Narrow Mouth Reagent Bottle, HDPE, Sterile (Volume: 125ml) (72Pcs)",Medha,Bottles & Carboys,,pack,3429,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-HD-250-S,"Accumax Narrow Mouth Reagent Bottle, HDPE, Sterile (Volume: 250ml) (72Pcs)",Medha,Bottles & Carboys,,pack,5496,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-HD-500-S,"Accumax Narrow Mouth Reagent Bottle, HDPE, Sterile (Volume: 500ml) (48Pcs)",Medha,Bottles & Carboys,,pack,4558,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-HD-2000-S,"Accumax Narrow Mouth Reagent Bottle, HDPE, Sterile (Volume: 2000ml) (6Pcs)",Medha,Bottles & Carboys,,pack,3148,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-HD-4-A-S,"Accumax Narrow Mouth Reagent Bottle, HDPE, Amber, Sterile (Volume: 4ml) (72Pcs)",Medha,Bottles & Carboys,,pack,1165,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-HD-8-A-S,"Accumax Narrow Mouth Reagent Bottle, HDPE, Amber, Sterile (Volume: 8ml) (72Pcs)",Medha,Bottles & Carboys,,pack,1473,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-HD-15-A-S,"Accumax Narrow Mouth Reagent Bottle, HDPE, Amber, Sterile (Volume: 15ml) (72Pcs)",Medha,Bottles & Carboys,,pack,1671,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-HD-30-A-S,"Accumax Narrow Mouth Reagent Bottle, HDPE, Amber, Sterile (Volume: 30ml) (72Pcs)",Medha,Bottles & Carboys,,pack,2506,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-HD-60-A-S,"Accumax Narrow Mouth Reagent Bottle, HDPE, Amber, Sterile (Volume: 60ml) (72Pcs)",Medha,Bottles & Carboys,,pack,3210,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-HD-125-A-S,"Accumax Narrow Mouth Reagent Bottle, HDPE, Amber, Sterile (Volume: 125ml) (72Pcs)",Medha,Bottles & Carboys,,pack,4353,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-HD-250-A-S,"Accumax Narrow Mouth Reagent Bottle, HDPE, Amber, Sterile (Volume: 250ml) (72Pcs)",Medha,Bottles & Carboys,,pack,6837,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-HD-500-A-S,"Accumax Narrow Mouth Reagent Bottle, HDPE, Amber, Sterile (Volume: 500ml) (48Pcs)",Medha,Bottles & Carboys,,pack,6141,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ANB-LD-1000-S,"Accumax Narrow Mouth Reagent Bottle, LDPE, Sterile (Volume: 1000ml) (24Pcs)",Medha,Bottles & Carboys,,pack,4067,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
 AWB-PP-500-S,AWB-PP-500-S (12 BOTTLE WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,6419,,,
 AWB-PP-250-IW-S,AWB-PP-250-IW-S (1 BOTTLE WITH CAP X 72 PACK),Medha,Bottles & Carboys,,pack,8930,,,
 AWB-HD-30-S,AWB-HD-30-S (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,2287,,,
