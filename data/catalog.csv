@@ -585,8 +585,8 @@ AFSK - 2,AFSK-5P-KITS (10 100 200 1000 5000),Neuation / Accumax,Other,,unit,5093
 AFSK - 3P,AFSK-3P-KITS (2.5 10 100),Neuation / Accumax,Other,,unit,36349,,,
 AT-5000B-S-W,"Accumax 5000µl (5ml) Macro Tip, Type B, Sterile, Individually Wrapped",Neuation / Accumax,Pipette Tips,,pack,5693,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
 AT-5000A-S-W,"Accumax 5000µl (5ml) Macro Tip, Type A, Sterile, Individually Wrapped",Neuation / Accumax,Pipette Tips,,pack,5693,,ACCUMAX TIPS.png,ACCUMAX TIPS desc.png
-ACB-18-81,ACB-18-81 CD 9X9 WHITE ( 2 X 4 PACKS),Neuation / Accumax,Other,,pack,6560,,,
-ACB-18-100,ACB-18-100 CD 10X10 GREY ( 2 X 4 PACKS),Neuation / Accumax,Other,,pack,6785,,,
+ACB-18-81,"Accumax Cardboard Freezer/Cryo Box, 9×9 Grid, White (8Pcs)",Neuation / Accumax,Other,,pack,6560,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-18-100,"Accumax Cardboard Freezer/Cryo Box, 10×10 Grid, Grey (8Pcs)",Neuation / Accumax,Other,,pack,6785,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
 3-051-00-0,APC-021-PLUS,Neuation / Accumax,Other,,unit,23305,,,
 3-051-02-0,APC-022-PLUS,Neuation / Accumax,Other,,unit,23305,,,
 3-049-02-0,APC-023-PLUS,Neuation / Accumax,Other,,unit,22420,,,
@@ -1002,51 +1002,51 @@ ABEF-3000-NV-PG-S,"Accumax PETG Erlenmeyer Flask, Baffled Bottom with HDPE Cap, 
 ABEF-3000-V-PG-S,"Accumax PETG Erlenmeyer Flask, Baffled Bottom with HDPE Cap, Vented, Sterile (Volume: 3L) (4Pcs)",Medha,Bottles & Carboys,,pack,5981,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
 ABEF-500-NV-PG-S,"Accumax PETG Erlenmeyer Flask, Baffled Bottom with HDPE Cap, Non-Vented, Sterile (Volume: 500ml) (12Pcs)",Medha,Bottles & Carboys,,pack,6044,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
 ABEF-500-V-PG-S,"Accumax PETG Erlenmeyer Flask, Baffled Bottom with HDPE Cap, Vented, Sterile (Volume: 500ml) (12Pcs)",Medha,Bottles & Carboys,,pack,6791,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
-ACB-HD-10-C,ACB-HD-10-C (1 CARBOY WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,3073,,,
-ACB-HD-10-C-S,ACB-HD-10-C-S (1 CARBOY WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,4017,,,
-ACB-HD-10-SPC,ACB-HD-10-SPC (1 CARBOY WITH SPIGOT WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,4359,,,
-ACB-HD-15-C,ACB-HD-15-C (1 CARBOY WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,3725,,,
-ACB-HD-15-C-S,ACB-HD-15-C-S (1 CARBOY WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,4669,,,
-ACB-HD-15-SPC,ACB-HD-15-SPC (1 CARBOY WITH SPIGOT WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,4843,,,
-ACB-HD-20-C,ACB-HD-20-C (1 CARBOY WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,4359,,,
-ACB-HD-20-C-S,ACB-HD-20-C-S (1 CARBOY WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,5421,,,
-ACB-HD-20-SPC,ACB-HD-20-SPC (1 CARBOY WITH SPIGOT WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,6000,,,
-ACB-HD-25-C,ACB-HD-25-C (1 CARBOY WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,5827,,,
-ACB-HD-25-C-S,ACB-HD-25-C-S (1 CARBOY WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,6771,,,
-ACB-HD-25-SPC,ACB-HD-25-SPC (1 CARBOY WITH SPIGOT WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,7469,,,
-ACB-HD-50-C,ACB-HD-50-C (1 CARBOY WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,8826,,,
-ACB-HD-50-C-S,ACB-HD-50-C-S (1 CARBOY WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,9947,,,
-ACB-HD-50-SPC,ACB-HD-50-SPC (1 CARBOY WITH SPIGOT WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,10863,,,
-ACB-LD-10,ACB-LD-10 (1 CARBOY X 1 PACK),Medha,Bottles & Carboys,,pack,2635,,,
-ACB-LD-10-S,ACB-LD-10-S (1 CARBOY X 1 PACK),Medha,Bottles & Carboys,,pack,3579,,,
-ACB-LD-10-SPC,ACB-LD-10-SPC (1 CARBOY WITH SPIGOT WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,1998,,,
-ACB-LD-15,ACB-LD-15 (1 CARBOY X 1 PACK),Medha,Bottles & Carboys,,pack,3446,,,
-ACB-LD-15-S,ACB-LD-15-S (1 CARBOY X 1 PACK),Medha,Bottles & Carboys,,pack,4390,,,
-ACB-LD-15-SPC,ACB-LD-15-SPC (1 CARBOY WITH SPIGOT WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,3735,,,
-ACB-LD-20,ACB-LD-20 (1 CARBOY X 1 PACK),Medha,Bottles & Carboys,,pack,3735,,,
-ACB-LD-20-S,ACB-LD-20-S (1 CARBOY X 1 PACK),Medha,Bottles & Carboys,,pack,4797,,,
-ACB-LD-20-SPC,ACB-LD-20-SPC (1 CARBOY WITH SPIGOT WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,5142,,,
-ACB-LD-25,ACB-LD-25 (1 CARBOY X 1 PACK),Medha,Bottles & Carboys,,pack,5203,,,
-ACB-LD-25-S,ACB-LD-25-S (1 CARBOY X 1 PACK),Medha,Bottles & Carboys,,pack,6147,,,
-ACB-LD-25-SPC,ACB-LD-25-SPC (1 CARBOY WITH SPIGOT WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,6940,,,
-ACB-LD-50,ACB-LD-50 (1 CARBOY X 1 PACK),Medha,Bottles & Carboys,,pack,7563,,,
-ACB-LD-50-S,ACB-LD-50-S (1 CARBOY X 1 PACK),Medha,Bottles & Carboys,,pack,8684,,,
-ACB-LD-50-SPC,ACB-LD-50-SPC (1 CARBOY WITH SPIGOT WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,9317,,,
-ACB-PP-10-C,ACB-PP-10-C (1 CARBOY WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,3073,,,
-ACB-PP-10-C-S,ACB-PP-10-C-S (1 CARBOY WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,4017,,,
-ACB-PP-10-SPC,ACB-PP-10-SPC (1 CARBOY WITH SPIGOT WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,4359,,,
-ACB-PP-15-C,ACB-PP-15-C (1 CARBOY WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,3725,,,
-ACB-PP-15-C-S,ACB-PP-15-C-S (1 CARBOY WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,4669,,,
-ACB-PP-15-SPC,ACB-PP-15-SPC (1 CARBOY WITH SPIGOT WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,4843,,,
-ACB-PP-20-C,ACB-PP-20-C (1 CARBOY WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,4359,,,
-ACB-PP-20-C-S,ACB-PP-20-C-S (1 CARBOY WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,5421,,,
-ACB-PP-20-SPC,ACB-PP-20-SPC (1 CARBOY WITH SPIGOT WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,6000,,,
-ACB-PP-25-C,ACB-PP-25-C (1 CARBOY WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,5827,,,
-ACB-PP-25-C-S,ACB-PP-25-C-S (1 CARBOY WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,6771,,,
-ACB-PP-25-SPC,ACB-PP-25-SPC (1 CARBOY WITH SPIGOT WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,7469,,,
-ACB-PP-50-C,ACB-PP-50-C (1 CARBOY WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,8826,,,
-ACB-PP-50-C-S,ACB-PP-50-C-S (1 CARBOY WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,9947,,,
-ACB-PP-50-SPC,ACB-PP-50-SPC (1 CARBOY WITH SPIGOT WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,10863,,,
+ACB-HD-10-C,Accumax HDPE Carboy with Cap (Volume: 10L) (1Pc),Medha,Bottles & Carboys,,pack,3073,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-HD-10-C-S,"Accumax HDPE Carboy with Cap, Sterile (Volume: 10L) (1Pc)",Medha,Bottles & Carboys,,pack,4017,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-HD-10-SPC,Accumax HDPE Carboy with Spigot & Cap (Volume: 10L) (1Pc),Medha,Bottles & Carboys,,pack,4359,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-HD-15-C,Accumax HDPE Carboy with Cap (Volume: 15L) (1Pc),Medha,Bottles & Carboys,,pack,3725,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-HD-15-C-S,"Accumax HDPE Carboy with Cap, Sterile (Volume: 15L) (1Pc)",Medha,Bottles & Carboys,,pack,4669,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-HD-15-SPC,Accumax HDPE Carboy with Spigot & Cap (Volume: 15L) (1Pc),Medha,Bottles & Carboys,,pack,4843,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-HD-20-C,Accumax HDPE Carboy with Cap (Volume: 20L) (1Pc),Medha,Bottles & Carboys,,pack,4359,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-HD-20-C-S,"Accumax HDPE Carboy with Cap, Sterile (Volume: 20L) (1Pc)",Medha,Bottles & Carboys,,pack,5421,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-HD-20-SPC,Accumax HDPE Carboy with Spigot & Cap (Volume: 20L) (1Pc),Medha,Bottles & Carboys,,pack,6000,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-HD-25-C,Accumax HDPE Carboy with Cap (Volume: 25L) (1Pc),Medha,Bottles & Carboys,,pack,5827,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-HD-25-C-S,"Accumax HDPE Carboy with Cap, Sterile (Volume: 25L) (1Pc)",Medha,Bottles & Carboys,,pack,6771,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-HD-25-SPC,Accumax HDPE Carboy with Spigot & Cap (Volume: 25L) (1Pc),Medha,Bottles & Carboys,,pack,7469,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-HD-50-C,Accumax HDPE Carboy with Cap (Volume: 50L) (1Pc),Medha,Bottles & Carboys,,pack,8826,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-HD-50-C-S,"Accumax HDPE Carboy with Cap, Sterile (Volume: 50L) (1Pc)",Medha,Bottles & Carboys,,pack,9947,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-HD-50-SPC,Accumax HDPE Carboy with Spigot & Cap (Volume: 50L) (1Pc),Medha,Bottles & Carboys,,pack,10863,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-LD-10,Accumax LDPE Carboy (Volume: 10L) (1Pc),Medha,Bottles & Carboys,,pack,2635,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-LD-10-S,"Accumax LDPE Carboy, Sterile (Volume: 10L) (1Pc)",Medha,Bottles & Carboys,,pack,3579,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-LD-10-SPC,Accumax LDPE Carboy with Spigot & Cap (Volume: 10L) (1Pc),Medha,Bottles & Carboys,,pack,1998,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-LD-15,Accumax LDPE Carboy (Volume: 15L) (1Pc),Medha,Bottles & Carboys,,pack,3446,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-LD-15-S,"Accumax LDPE Carboy, Sterile (Volume: 15L) (1Pc)",Medha,Bottles & Carboys,,pack,4390,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-LD-15-SPC,Accumax LDPE Carboy with Spigot & Cap (Volume: 15L) (1Pc),Medha,Bottles & Carboys,,pack,3735,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-LD-20,Accumax LDPE Carboy (Volume: 20L) (1Pc),Medha,Bottles & Carboys,,pack,3735,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-LD-20-S,"Accumax LDPE Carboy, Sterile (Volume: 20L) (1Pc)",Medha,Bottles & Carboys,,pack,4797,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-LD-20-SPC,Accumax LDPE Carboy with Spigot & Cap (Volume: 20L) (1Pc),Medha,Bottles & Carboys,,pack,5142,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-LD-25,Accumax LDPE Carboy (Volume: 25L) (1Pc),Medha,Bottles & Carboys,,pack,5203,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-LD-25-S,"Accumax LDPE Carboy, Sterile (Volume: 25L) (1Pc)",Medha,Bottles & Carboys,,pack,6147,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-LD-25-SPC,Accumax LDPE Carboy with Spigot & Cap (Volume: 25L) (1Pc),Medha,Bottles & Carboys,,pack,6940,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-LD-50,Accumax LDPE Carboy (Volume: 50L) (1Pc),Medha,Bottles & Carboys,,pack,7563,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-LD-50-S,"Accumax LDPE Carboy, Sterile (Volume: 50L) (1Pc)",Medha,Bottles & Carboys,,pack,8684,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-LD-50-SPC,Accumax LDPE Carboy with Spigot & Cap (Volume: 50L) (1Pc),Medha,Bottles & Carboys,,pack,9317,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-PP-10-C,"Accumax Polypropylene Carboy with Cap, Autoclavable (Volume: 10L) (1Pc)",Medha,Bottles & Carboys,,pack,3073,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-PP-10-C-S,"Accumax Polypropylene Carboy with Cap, Sterile, Autoclavable (Volume: 10L) (1Pc)",Medha,Bottles & Carboys,,pack,4017,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-PP-10-SPC,"Accumax Polypropylene Carboy with Spigot & Cap, Autoclavable (Volume: 10L) (1Pc)",Medha,Bottles & Carboys,,pack,4359,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-PP-15-C,"Accumax Polypropylene Carboy with Cap, Autoclavable (Volume: 15L) (1Pc)",Medha,Bottles & Carboys,,pack,3725,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-PP-15-C-S,"Accumax Polypropylene Carboy with Cap, Sterile, Autoclavable (Volume: 15L) (1Pc)",Medha,Bottles & Carboys,,pack,4669,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-PP-15-SPC,"Accumax Polypropylene Carboy with Spigot & Cap, Autoclavable (Volume: 15L) (1Pc)",Medha,Bottles & Carboys,,pack,4843,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-PP-20-C,"Accumax Polypropylene Carboy with Cap, Autoclavable (Volume: 20L) (1Pc)",Medha,Bottles & Carboys,,pack,4359,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-PP-20-C-S,"Accumax Polypropylene Carboy with Cap, Sterile, Autoclavable (Volume: 20L) (1Pc)",Medha,Bottles & Carboys,,pack,5421,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-PP-20-SPC,"Accumax Polypropylene Carboy with Spigot & Cap, Autoclavable (Volume: 20L) (1Pc)",Medha,Bottles & Carboys,,pack,6000,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-PP-25-C,"Accumax Polypropylene Carboy with Cap, Autoclavable (Volume: 25L) (1Pc)",Medha,Bottles & Carboys,,pack,5827,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-PP-25-C-S,"Accumax Polypropylene Carboy with Cap, Sterile, Autoclavable (Volume: 25L) (1Pc)",Medha,Bottles & Carboys,,pack,6771,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-PP-25-SPC,"Accumax Polypropylene Carboy with Spigot & Cap, Autoclavable (Volume: 25L) (1Pc)",Medha,Bottles & Carboys,,pack,7469,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-PP-50-C,"Accumax Polypropylene Carboy with Cap, Autoclavable (Volume: 50L) (1Pc)",Medha,Bottles & Carboys,,pack,8826,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-PP-50-C-S,"Accumax Polypropylene Carboy with Cap, Sterile, Autoclavable (Volume: 50L) (1Pc)",Medha,Bottles & Carboys,,pack,9947,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-PP-50-SPC,"Accumax Polypropylene Carboy with Spigot & Cap, Autoclavable (Volume: 50L) (1Pc)",Medha,Bottles & Carboys,,pack,10863,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
 ACT-15-B,ACCUMAX CENTRIFUGE TUBES-15-B (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,pack,4367,,ACT.png,ACT desc.png
 ACT-15-B-A,ACCUMAX CENTRIFUGE TUBES-15-B-A (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,pack,6658,,ACT.png,ACT desc.png
 ACT-15-B-S,ACCUMAX CENTRIFUGE TUBES-15-B-S (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,pack,5553,,ACT.png,ACT desc.png
@@ -1100,10 +1100,10 @@ AEF-500-V-PG-S,"Accumax PETG Erlenmeyer Flask, Flat Bottom with HDPE Cap, Vented
 AHD-PP-1000,"Accumax Heavy Duty Reagent Bottle, Polypropylene (Volume: 1000ml) (6Pcs)",Medha,Bottles & Carboys,,pack,4072,,ACCUMAX HEAVY DUTY BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
 AHD-PP-2000,"Accumax Heavy Duty Reagent Bottle, Polypropylene (Volume: 2000ml) (6Pcs)",Medha,Bottles & Carboys,,pack,6171,,ACCUMAX HEAVY DUTY BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
 AHD-PP-4000,"Accumax Heavy Duty Reagent Bottle, Polypropylene (Volume: 4000ml) (6Pcs)",Medha,Bottles & Carboys,,pack,11316,,ACCUMAX HEAVY DUTY BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
-AJB-HD-10,AJB-HD-10 (1 JERRICAN X 1 PACK),Medha,Bottles & Carboys,,pack,1585,,,
-AJB-HD-10-AW,AJB-HD-10-AW (1 JERRICAN X 1 PACK),Medha,Bottles & Carboys,,pack,1822,,,
-AJB-HD-20,AJB-HD-20 (1 JERRICAN X 1 PACK),Medha,Bottles & Carboys,,pack,2289,,,
-AJB-HD-20-AW,AJB-HD-20-AW (1 JERRICAN X 1 PACK),Medha,Bottles & Carboys,,pack,2631,,,
+AJB-HD-10,Accumax HDPE Jerrican with Cap (Volume: 10L) (1Pc),Medha,Bottles & Carboys,,pack,1585,,ACCUMAX JERRICAN.png,ACCUMAX CARBOYS desc.png
+AJB-HD-10-AW,"Accumax HDPE Jerrican with Cap, Anti-Wobbling Mouth (Volume: 10L) (1Pc)",Medha,Bottles & Carboys,,pack,1822,,ACCUMAX JERRICAN.png,ACCUMAX CARBOYS desc.png
+AJB-HD-20,Accumax HDPE Jerrican with Cap (Volume: 20L) (1Pc),Medha,Bottles & Carboys,,pack,2289,,ACCUMAX JERRICAN.png,ACCUMAX CARBOYS desc.png
+AJB-HD-20-AW,"Accumax HDPE Jerrican with Cap, Anti-Wobbling Mouth (Volume: 20L) (1Pc)",Medha,Bottles & Carboys,,pack,2631,,ACCUMAX JERRICAN.png,ACCUMAX CARBOYS desc.png
 UAMB-1000-PC-IW-S,"Accumax Polycarbonate Media Bottle with Cap, Autoclavable, Sterile, Individually Wrapped (Volume: 1L) (50Pcs)",Medha,Bottles & Carboys,,pack,35579,,ACCUMAX MEDIA BOTTLES.png,ACCUMAX MEDIA BOTTLES desc.png
 UAMB-1000-PC-S,"Accumax Polycarbonate Media Bottle with Cap, Autoclavable, Sterile (Volume: 1L) (24Pcs)",Medha,Bottles & Carboys,,pack,15525,,ACCUMAX MEDIA BOTTLES.png,ACCUMAX MEDIA BOTTLES desc.png
 AMB-1000-PT-IW-S,"Accumax PET Media Bottle with Cap, Sterile, Individually Wrapped (Volume: 1L) (50Pcs)",Medha,Bottles & Carboys,,pack,16638,,ACCUMAX MEDIA BOTTLES.png,ACCUMAX MEDIA BOTTLES desc.png
@@ -1345,13 +1345,13 @@ ARH-HD-4000,"Accumax Round Wide Mouth Bottle with Handle, HDPE (Volume: 4000ml) 
 ASH-PP-2000,"Accumax Square Wide Mouth Bottle with Handle, Polypropylene (Volume: 2000ml) (6Pcs)",Medha,Bottles & Carboys,,pack,7085,,ACCUMAX BOTTLE WITH HANDLE.png,ACCUMAX REAGENT BOTTLES desc.png
 ASH-HD-2000,"Accumax Square Wide Mouth Bottle with Handle, HDPE (Volume: 2000ml) (6Pcs)",Medha,Bottles & Carboys,,pack,6646,,ACCUMAX BOTTLE WITH HANDLE.png,ACCUMAX REAGENT BOTTLES desc.png
 ASH-HD-4000,"Accumax Square Wide Mouth Bottle with Handle, HDPE (Volume: 4000ml) (6Pcs)",Medha,Bottles & Carboys,,pack,7819,,ACCUMAX BOTTLE WITH HANDLE.png,ACCUMAX REAGENT BOTTLES desc.png
-ACB-LD-10-C,ACB-LD-10-C (1 CARBOY WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,2635,,,
-ACB-LD-15-C,ACB-LD-15-C (1 CARBOY WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,3446,,,
-ACB-LD-20-C,ACB-LD-20-C (1 CARBOY WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,3735,,,
-ACB-LD-25-C,ACB-LD-25-C (1 CARBOY WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,5203,,,
-ACB-LD-50-C,ACB-LD-50-C (1 CARBOY WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,7563,,,
-ACB-LD-10-C-S,ACB-LD-10-C-S (1 CARBOY WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,3898,,,
-ACB-LD-15-C-S,ACB-LD-15-C-S (1 CARBOY WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,4390,,,
-ACB-LD-20-C-S,ACB-LD-20-C-S (1 CARBOY WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,4797,,,
-ACB-LD-25-C-S,ACB-LD-25-C-S (1 CARBOY WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,6147,,,
-ACB-LD-50-C-S,ACB-LD-50-C-S (1 CARBOY WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,8684,,,
+ACB-LD-10-C,Accumax LDPE Carboy with Cap (Volume: 10L) (1Pc),Medha,Bottles & Carboys,,pack,2635,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-LD-15-C,Accumax LDPE Carboy with Cap (Volume: 15L) (1Pc),Medha,Bottles & Carboys,,pack,3446,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-LD-20-C,Accumax LDPE Carboy with Cap (Volume: 20L) (1Pc),Medha,Bottles & Carboys,,pack,3735,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-LD-25-C,Accumax LDPE Carboy with Cap (Volume: 25L) (1Pc),Medha,Bottles & Carboys,,pack,5203,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-LD-50-C,Accumax LDPE Carboy with Cap (Volume: 50L) (1Pc),Medha,Bottles & Carboys,,pack,7563,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-LD-10-C-S,"Accumax LDPE Carboy with Cap, Sterile (Volume: 10L) (1Pc)",Medha,Bottles & Carboys,,pack,3898,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-LD-15-C-S,"Accumax LDPE Carboy with Cap, Sterile (Volume: 15L) (1Pc)",Medha,Bottles & Carboys,,pack,4390,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-LD-20-C-S,"Accumax LDPE Carboy with Cap, Sterile (Volume: 20L) (1Pc)",Medha,Bottles & Carboys,,pack,4797,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-LD-25-C-S,"Accumax LDPE Carboy with Cap, Sterile (Volume: 25L) (1Pc)",Medha,Bottles & Carboys,,pack,6147,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
+ACB-LD-50-C-S,"Accumax LDPE Carboy with Cap, Sterile (Volume: 50L) (1Pc)",Medha,Bottles & Carboys,,pack,8684,,ACCUMAX CARBOYS.png,ACCUMAX CARBOYS desc.png
