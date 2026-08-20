@@ -27,6 +27,7 @@
       </div>
     </div>
     <div class="spacer"></div>
+    <span class="app-ver" id="appVer" title="App version — tells you if you're on the latest"></span>
     <button id="btnSaved" title="Load a saved quotation">Saved Quotes</button>
     <button id="btnSettings" title="Company details, GST, terms">Settings</button>
     <button id="btnNew" class="primary" title="Start a fresh quotation">+ New Quote</button>
@@ -89,6 +90,10 @@
           <span class="val" id="tGst">₹0</span>
         </div>
         <div class="trow grand"><span>Grand Total</span><span class="val" id="tGrand">₹0</span></div>
+
+        <label class="toggle totals-toggle" title="Uncheck for quotes that should list items only, with no totals or GST on the document">
+          <input type="checkbox" id="showTotals" checked/> Include totals &amp; GST on the document
+        </label>
 
         <div class="actions">
           <button class="btn-clear" id="btnClear" title="Clear all items">Clear</button>

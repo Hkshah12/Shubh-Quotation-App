@@ -159,7 +159,7 @@
           <tbody>${rows}</tbody>
         </table>
 
-        <div class="tot-wrap">
+        ${opts.showTotals !== false ? `<div class="tot-wrap">
           <table class="tot">
             <tr><td>Subtotal</td><td class="r">${money(t.subtotal)}</td></tr>
             ${t.itemDisc ? `<tr><td>Item discounts</td><td class="r">−${money(t.itemDisc)}</td></tr>` : ''}
@@ -169,8 +169,7 @@
             ${s.showGrandTotal ? `<tr class="grand"><td>Grand Total</td><td class="r">${money(t.grandTotal)}</td></tr>` : ''}
           </table>
         </div>
-
-        ${gstNote}
+        ${gstNote}` : ''}
         ${s.termsText ? `<div class="terms"><b>Terms &amp; Conditions</b>${esc(s.termsText)}</div>` : ''}
 
         <div class="sign">
@@ -224,7 +223,7 @@
   ${p.css}
   /* force backgrounds/colours to print (Chrome strips them by default) */
   * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
-  @page { size: A4; margin: 0; }
+  @page { size: A4; margin: 12mm 0; }  /* top/bottom margins for a normal-page look; full-bleed sides */
   html,body { margin:0; }
   body { background:#EDE7D8; padding:24px; }
   .sheet { max-width:800px; margin:0 auto; background:#fff; box-shadow:0 8px 30px rgba(120,30,20,.16); }
@@ -314,7 +313,7 @@
 
     const intro = s.introLine ? `<p style="${serif}font-size:11pt;">${esc(s.introLine)}</p>` : '';
 
-    const th = (txt, align, w) => `<td bgcolor="${RED}" align="${align}" style="color:#ffffff;font-weight:bold;padding:5pt;border:0.5pt solid ${RED};${w ? 'width:' + w + ';' : ''}">${txt}</td>`;
+    const th = (txt, align, w) => `<td bgcolor="${RED}" align="${align}" style="background:${RED};background-color:${RED};color:#ffffff;font-weight:bold;padding:5pt;border:0.5pt solid ${RED};${w ? 'width:' + w + ';' : ''}">${txt}</td>`;
     const header = `<tr>${th('Sr.', 'center', '28pt')}${showPhotos ? th('Photo', 'center', '52pt') : ''}${th('Description of Product', 'left')}${th('Pack', 'center', '44pt')}${th('Qty', 'center', '32pt')}${th('Rate', 'right', '68pt')}${th('Disc.', 'center', '38pt')}${th('Amount', 'right', '76pt')}</tr>`;
     const cellStyle = `padding:5pt;border:0.5pt solid ${BD};vertical-align:top;`;
     const rows = (opts.items || []).map((it, i) => {
@@ -380,7 +379,7 @@
 <title>Quotation ${esc(opts.quoteNo)} — ${esc(clientName)}</title>
 <!--[if gte mso 9]><xml><w:WordDocument><w:View>Print</w:View><w:Zoom>100</w:Zoom></w:WordDocument></xml><![endif]-->
 <style>
-  @page WordSection1 { size:595.3pt 841.9pt; margin:0; }
+  @page WordSection1 { size:595.3pt 841.9pt; margin:12mm 0; }
   div.WordSection1 { page:WordSection1; }
   body { ${serif} color:#1A1410; margin:0; }
   table { border-collapse:collapse; }
@@ -389,7 +388,7 @@
 </style></head>
 <body><div class="WordSection1">
 ${letterhead}
-<div class="doc-inset">${metaTable}${toBlock}${intro}${itemTable}${totals}${gstNote}${terms}${closing}${descWord}</div>
+<div class="doc-inset">${metaTable}${toBlock}${intro}${itemTable}${opts.showTotals !== false ? totals + gstNote : ''}${terms}${closing}${descWord}</div>
 </div></body></html>`;
   }
 

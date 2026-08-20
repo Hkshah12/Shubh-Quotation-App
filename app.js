@@ -1,6 +1,8 @@
 /* Shubh Enterprise — Quotation Generator (frontend) */
 'use strict';
 
+const APP_VERSION = 'v7'; // bump on every deploy so you can confirm you're on the latest
+
 const State = {
   catalog: [],
   categories: [],
@@ -10,6 +12,7 @@ const State = {
   cart: [],          // {sku,name,brand,price,unit,hsn,image,description, qty, disc}
   overall: { value: 0, type: 'percent' },
   gst: { enabled: true, percent: 18 },
+  showTotals: true,  // include the totals & GST block on the generated document
 };
 
 const $ = (id) => document.getElementById(id);
@@ -19,6 +22,7 @@ const imgURL = (src) => CDATA.assetUrl(src);
 
 /* ---------------- Init ---------------- */
 async function init() {
+  const v = $('appVer'); if (v) v.textContent = APP_VERSION;
   await loadSettings();
   await loadCatalog();
   bindUI();
@@ -210,6 +214,8 @@ function recalc() {
   $('tGst').textContent = fmt(t.gstAmt);
   $('tGrand').textContent = fmt(t.grandTotal);
   $('gstRow').style.opacity = State.gst.enabled ? '1' : '.5';
+  const totBox = document.querySelector('.totals');
+  if (totBox) totBox.classList.toggle('no-totals', !State.showTotals);
   // mobile bottom bar
   const n = State.cart.reduce((s, c) => s + c.qty, 0);
   $('mcbCount').textContent = State.cart.length + (State.cart.length === 1 ? ' item' : ' items') + (n ? ' · ' + n + ' qty' : '');
@@ -251,6 +257,7 @@ function bindUI() {
   $('overallDiscType').addEventListener('change', e => { State.overall.type = e.target.value; recalc(); });
   $('gstEnabled').addEventListener('change', e => { State.gst.enabled = e.target.checked; recalc(); });
   $('gstPercent').addEventListener('input', e => { State.gst.percent = Number(e.target.value) || 0; recalc(); });
+  $('showTotals').addEventListener('change', e => { State.showTotals = e.target.checked; recalc(); });
 
   // Mobile: open/close the quotation sheet
   $('mobileCartBar').addEventListener('click', () => $('quotePanel').classList.add('open'));
@@ -275,8 +282,9 @@ function bindUI() {
 
 function newQuote() {
   if (State.cart.length && !confirm('Start a new quotation? Current items will be cleared.')) return;
-  State.cart = []; State.overall = { value: 0, type: 'percent' };
+  State.cart = []; State.overall = { value: 0, type: 'percent' }; State.showTotals = true;
   $('printDoc').dataset.quoteNo = '';
+  $('showTotals').checked = true;
   $('overallDiscValue').value = 0; $('overallDiscType').value = 'percent';
   ['clientName', 'clientContact', 'clientPhone', 'clientEmail', 'clientAddress'].forEach(id => $(id).value = '');
   renderCatalog(); renderCart(); recalc();
@@ -323,7 +331,7 @@ function collectQuote(quoteNo) {
       email: $('clientEmail').value, address: $('clientAddress').value,
     },
     items: State.cart.map(c => ({ sku: c.sku, name: c.name, brand: c.brand, hsn: c.hsn, unit: c.unit, price: c.price, qty: c.qty, disc: c.disc, description: c.description, descImage: c.descImage, includeDesc: c.includeDesc })),
-    overall: State.overall, gst: State.gst,
+    overall: State.overall, gst: State.gst, showTotals: State.showTotals !== false,
     totals: { subtotal: t.subtotal, itemDisc: t.itemDisc, overallDisc: t.overallDisc, taxable: t.taxable, gstAmt: t.gstAmt, grandTotal: t.grandTotal },
   };
 }
@@ -361,8 +369,10 @@ async function loadQuote(id) {
   });
   State.overall = q.overall || { value: 0, type: 'percent' };
   State.gst = q.gst || State.gst;
+  State.showTotals = q.showTotals !== false;
   $('overallDiscValue').value = State.overall.value; $('overallDiscType').value = State.overall.type;
   $('gstEnabled').checked = State.gst.enabled; $('gstPercent').value = State.gst.percent;
+  $('showTotals').checked = State.showTotals;
   renderCatalog(); renderCart(); recalc(); closeModals();
 }
 
@@ -377,6 +387,7 @@ async function buildInlineOpts(quoteNo) {
   const opts = {
     settings: s, items: State.cart, client: c, totals: t,
     overall: State.overall, gst: State.gst, quoteNo, today, validity: s.quoteValidityDays || 15,
+    showTotals: State.showTotals !== false,
     imgURL: imgURLd, descURL: descURLd,
   };
   return { opts, clientName: c.name || 'Unnamed Client' };
