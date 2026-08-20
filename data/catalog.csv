@@ -430,27 +430,27 @@ ARV-25-S-W,ARV-25-SW ( INDIVIDUALLY WRAPPED X 50 RESERVOIR ),Neuation / Accumax,
 ARV-50-B,ARV-50-B ( 100 RESERVOIR X 5 PACKS ),Neuation / Accumax,PCR & Plates,,pack,7274,,,
 ARV-50-S,ARV-50-S ( 5 RESERVOIR X 40 PACKS ),Neuation / Accumax,PCR & Plates,,pack,3345,,,
 ARV-50-S-W,ARV-50-SW ( INDIVIDUALLY WRAPPED X 50 RESERVOIR ),Neuation / Accumax,PCR & Plates,,unit,1129,,,
-ACT-005-B,ACT-005-B (1000 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,7446,,,
-ACT-005-B-S,ACT-005-B-S (1000 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,11163,,,
-ACT-005-L-B-S,ACT-005-L-B-S (1000 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,29736,,,
-ACT-005-B-C,ACT-005-B-C (500 TUBES X 20 PACKS),Neuation / Accumax,Tubes & Vials,,pack,13629,,,
-ACT-005-B-S-C,ACT-005-B-S-C (1000 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,17346,,,
-ACT-005-B-A,ACT-005-B-A (1000 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,11510,,,
-ACT-005-B-S-A,ACT-005-B-S-A (1000 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,14868,,,
-ACT-017-B,ACT-017-B (1000 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,9837,,,
-ACT-017-B-S,ACT-017-B-S (1000 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,13171,,,
-ACT-017-L-B-S,ACT-017-L-B-S (1000 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,35931,,,
-ACT-017-B-C,ACT-017-B-C(1000 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,14633,,,
-ACT-017-B-S-C,ACT-017-B-S-C (1000 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,18585,,,
-ACT-017-B-A,ACT-017-B-A (1000 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,16615,,,
-ACT-017-B-S-A,ACT-017-B-S-A (1000 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,18585,,,
-ACT-020-B,ACT-020-B (500 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,5588,,,
-ACT-020-B-S,ACT-020-B-S (500 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,7706,,,
-ACT-020-L-B-S,ACT-020-L-B-S (500 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,21558,,,
-ACT-020-B-C,ACT-020-B-C (500 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,10618,,,
-ACT-020-B-S-C,ACT-020-B-S-C (500 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,12203,,,
-ACT-020-B-A,ACT-020-B-A (500 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,9080,,,
-ACT-020-B-S-A,ACT-020-B-S-A (500 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,14421,,,
+ACT-005-B,Micro Centrifuge Tubes ACT-005-B (1000 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,7446,,Microcentrifuge tube.png,Microcentrifuge tube desc.png
+ACT-005-B-S,Micro Centrifuge Tubes ACT-005-B-S (1000 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,11163,,Microcentrifuge tube.png,Microcentrifuge tube desc.png
+ACT-005-L-B-S,Micro Centrifuge Tubes ACT-005-L-B-S (1000 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,29736,,Microcentrifuge tube.png,Microcentrifuge tube desc.png
+ACT-005-B-C,Micro Centrifuge Tubes ACT-005-B-C (500 TUBES X 20 PACKS),Neuation / Accumax,Tubes & Vials,,pack,13629,,Microcentrifuge tube.png,Microcentrifuge tube desc.png
+ACT-005-B-S-C,Micro Centrifuge Tubes ACT-005-B-S-C (1000 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,17346,,Microcentrifuge tube.png,Microcentrifuge tube desc.png
+ACT-005-B-A,Micro Centrifuge Tubes ACT-005-B-A (1000 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,11510,,Microcentrifuge tube.png,Microcentrifuge tube desc.png
+ACT-005-B-S-A,Micro Centrifuge Tubes ACT-005-B-S-A (1000 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,14868,,Microcentrifuge tube.png,Microcentrifuge tube desc.png
+ACT-017-B,Micro Centrifuge Tubes ACT-017-B (1000 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,9837,,Microcentrifuge tube.png,Microcentrifuge tube desc.png
+ACT-017-B-S,Micro Centrifuge Tubes ACT-017-B-S (1000 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,13171,,Microcentrifuge tube.png,Microcentrifuge tube desc.png
+ACT-017-L-B-S,Micro Centrifuge Tubes ACT-017-L-B-S (1000 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,35931,,Microcentrifuge tube.png,Microcentrifuge tube desc.png
+ACT-017-B-C,Micro Centrifuge Tubes ACT-017-B-C(1000 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,14633,,Microcentrifuge tube.png,Microcentrifuge tube desc.png
+ACT-017-B-S-C,Micro Centrifuge Tubes ACT-017-B-S-C (1000 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,18585,,Microcentrifuge tube.png,Microcentrifuge tube desc.png
+ACT-017-B-A,Micro Centrifuge Tubes ACT-017-B-A (1000 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,16615,,Microcentrifuge tube.png,Microcentrifuge tube desc.png
+ACT-017-B-S-A,Micro Centrifuge Tubes ACT-017-B-S-A (1000 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,18585,,Microcentrifuge tube.png,Microcentrifuge tube desc.png
+ACT-020-B,Micro Centrifuge Tubes ACT-020-B (500 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,5588,,Microcentrifuge tube.png,Microcentrifuge tube desc.png
+ACT-020-B-S,Micro Centrifuge Tubes ACT-020-B-S (500 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,7706,,Microcentrifuge tube.png,Microcentrifuge tube desc.png
+ACT-020-L-B-S,Micro Centrifuge Tubes ACT-020-L-B-S (500 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,21558,,Microcentrifuge tube.png,Microcentrifuge tube desc.png
+ACT-020-B-C,Micro Centrifuge Tubes ACT-020-B-C (500 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,10618,,Microcentrifuge tube.png,Microcentrifuge tube desc.png
+ACT-020-B-S-C,Micro Centrifuge Tubes ACT-020-B-S-C (500 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,12203,,Microcentrifuge tube.png,Microcentrifuge tube desc.png
+ACT-020-B-A,Micro Centrifuge Tubes ACT-020-B-A (500 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,9080,,Microcentrifuge tube.png,Microcentrifuge tube desc.png
+ACT-020-B-S-A,Micro Centrifuge Tubes ACT-020-B-S-A (500 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,14421,,Microcentrifuge tube.png,Microcentrifuge tube desc.png
 ADW-2V,ADW-2V ( 12 X 4 PACKS ),Neuation / Accumax,Other,,pack,8779,,,
 ADW-1R,ADW-1R ( 24 X 4 PACKS ),Neuation / Accumax,Other,,pack,15859,,,
 ADW-2V-S,ADW-2V-S ( 12 X 4 PACKS ),Neuation / Accumax,Other,,pack,9912,,,
@@ -837,24 +837,24 @@ AP-1-S-W,ACCUMAX Transfer Pipette AP-1-S-W (300),Neuation / Accumax,Pipettes,,un
 AP-3-B,ACCUMAX Transfer Pipette AP-3-B ( 500 X 10 PACKS ),Neuation / Accumax,Pipettes,,pack,9080,,Transfer pipette.png,Transfer pipette desc.png
 AP-3-B-S,ACCUMAX Transfer Pipette AP-3-B-S ( 50 X 10 BAGS X 10 PACKS ),Neuation / Accumax,Pipettes,,pack,11350,,Transfer pipette.png,Transfer pipette desc.png
 AP-3-S-W,ACCUMAX Transfer Pipette AP-3-S-W (300),Neuation / Accumax,Pipettes,,unit,1500,,Transfer pipette.png,Transfer pipette desc.png
-AST-005-T-C,AST-005-T-C (100 + 100) SET X 10 BAGS X 5 PACKS,Neuation / Accumax,Other,,pack,30206,,,
-AST-005-T-S-C,AST-005-T-S-C (100 + 100) SET X 10 BAGS X 5 PACKS,Neuation / Accumax,Other,,pack,33626,,,
-AST-005-L-T-S-C,AST-005-L-T-S-C (100 + 100) SET X 10 BAGS X 5 PACKS,Neuation / Accumax,Other,,pack,47305,,,
+AST-005-T-C,Accumax 0.5ml Self Standing Screw Cap Tube with Cap,Neuation / Accumax,Other,,pack,6041,,ACCUMAX SCREW CAP TUBES.png,ACCUMAX SCREW CAP TUBES desc.png
+AST-005-T-S-C,"Accumax 0.5ml Self Standing Screw Cap Tube, Sterile with Cap",Neuation / Accumax,Other,,pack,6725,,ACCUMAX SCREW CAP TUBES.png,ACCUMAX SCREW CAP TUBES desc.png
+AST-005-L-T-S-C,"Accumax 0.5ml Self Standing Low Retention Screw Cap Tube, Sterile with Cap",Neuation / Accumax,Other,,pack,47305,,ACCUMAX SCREW CAP TUBES.png,ACCUMAX SCREW CAP TUBES desc.png
 ASCT-015-T-C,ASCT-015-T-C (100 + 100) SET X 10 BAGS X 5 PACKS,Neuation / Accumax,Other,,pack,30206,,,
-AST-015-T-C,AST-015-T-C (100 + 100) SET X 10 BAGS X 5 PACKS,Neuation / Accumax,Other,,pack,30206,,,
+AST-015-T-C,Accumax 1.5ml Self Standing Screw Cap Tube with Cap,Neuation / Accumax,Other,,pack,30206,,ACCUMAX SCREW CAP TUBES.png,ACCUMAX SCREW CAP TUBES desc.png
 ASCT-015-T-S-C,ASCT-015-T-S-C (100 + 100) SET X 10 BAGS X 5 PACKS,Neuation / Accumax,Other,,pack,33626,,,
-AST-015-T-S-C,AST-015-T-S-C (100 + 100) SET X 10 BAGS X 5 PACKS,Neuation / Accumax,Other,,pack,33626,,,
+AST-015-T-S-C,"Accumax 1.5ml Self Standing Screw Cap Tube, Sterile with Cap",Neuation / Accumax,Other,,pack,33626,,ACCUMAX SCREW CAP TUBES.png,ACCUMAX SCREW CAP TUBES desc.png
 ASCT-015-L-T-S-C,ASCT-015-L-T-S-C (100 + 100) SET X 10 BAGS X 5 PACKS,Neuation / Accumax,Other,,pack,47305,,,
-AST-015-L-T-S-C,AST-015-L-T-S-C (100 + 100) SET X 10 BAGS X 5 PACKS,Neuation / Accumax,Other,,pack,47305,,,
+AST-015-L-T-S-C,"Accumax 1.5ml Self Standing Low Retention Screw Cap Tube, Sterile with Cap",Neuation / Accumax,Other,,pack,47305,,ACCUMAX SCREW CAP TUBES.png,ACCUMAX SCREW CAP TUBES desc.png
 ASCT-020-T-C,ASCT-020-T-C (100 + 100) SET X 10 BAGS X 5 PACKS,Neuation / Accumax,Other,,pack,30206,,,
-AST-020-T-C,AST-020-T-C (100 + 100) SET X 10 BAGS X 5 PACKS,Neuation / Accumax,Other,,pack,30206,,,
+AST-020-T-C,Accumax 2ml Self Standing Screw Cap Tube with Cap,Neuation / Accumax,Other,,pack,30206,,ACCUMAX SCREW CAP TUBES.png,ACCUMAX SCREW CAP TUBES desc.png
 ASCT-020-T-S-C,ASCT-020-T-S-C (100 + 100) SET X 10 BAGS X 5 PACKS,Neuation / Accumax,Other,,pack,33626,,,
-AST-020-T-S-C,AST-020-T-S-C (100 + 100) SET X 10 BAGS X 5 PACKS,Neuation / Accumax,Other,,pack,33626,,,
+AST-020-T-S-C,"Accumax 2ml Self Standing Screw Cap Tube, Sterile with Cap",Neuation / Accumax,Other,,pack,33626,,ACCUMAX SCREW CAP TUBES.png,ACCUMAX SCREW CAP TUBES desc.png
 ASCT-020-L-T-S-C,ASCT-020-L-T-S-C (100 + 100) SET X 10 BAGS X 5 PACKS,Neuation / Accumax,Other,,pack,47305,,,
-AST-020-L-T-S-C,AST-020-L-T-S-C (100 + 100) SET X 10 BAGS X 5 PACKS,Neuation / Accumax,Other,,pack,47305,,,
-AST-015-A-T-C,AST-015-A-T-C (100 + 100) SET X 10 BAGS X 5 PACKS,Neuation / Accumax,Other,,pack,33799,,,
-AST-015-A-T-S-C,AST-015-A-T-S-C (100 + 100) SET X 10 BAGS X 5 PACKS,Neuation / Accumax,Other,,pack,37616,,,
-AST-015-L-A-T-S-C,AST-015-L-A-T-S-C (100 + 100) SET X 10 BAGS X 5 PACKS,Neuation / Accumax,Other,,pack,47305,,,
+AST-020-L-T-S-C,"Accumax 2ml Self Standing Low Retention Screw Cap Tube, Sterile with Cap",Neuation / Accumax,Other,,pack,47305,,ACCUMAX SCREW CAP TUBES.png,ACCUMAX SCREW CAP TUBES desc.png
+AST-015-A-T-C,Accumax 1.5ml Amber Self Standing Screw Cap Tube with Cap,Neuation / Accumax,Other,,pack,33799,,ACCUMAX SCREW CAP TUBES.png,ACCUMAX SCREW CAP TUBES desc.png
+AST-015-A-T-S-C,"Accumax 1.5ml Amber Self Standing Screw Cap Tube, Sterile with Cap",Neuation / Accumax,Other,,pack,37616,,ACCUMAX SCREW CAP TUBES.png,ACCUMAX SCREW CAP TUBES desc.png
+AST-015-L-A-T-S-C,"Accumax 1.5ml Amber Self Standing Low Retention Screw Cap Tube, Sterile with Cap",Neuation / Accumax,Other,,pack,47305,,ACCUMAX SCREW CAP TUBES.png,ACCUMAX SCREW CAP TUBES desc.png
 SCPF-01,SC WFV 1PORT_1FILTER (4),Neuation / Accumax,Other,,unit,13570,,,
 SCPF-02,SC WFV 2PORT_1FILTER (4),Neuation / Accumax,Other,,unit,13570,,,
 SCPF-03,SC WFV 3PORT_1FILTER (4),Neuation / Accumax,Other,,unit,13570,,,
@@ -1055,8 +1055,8 @@ ACT-15-B-T,HEAVY METAL FREE CENTRIFUGE TUBES-15-B-T (25 TUBES X 20 PACKS),Medha,
 ACT-15-R,ACCUMAX CENTRIFUGE TUBES-15-R (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,pack,6085,,ACT.png,ACT desc.png
 ACT-15-R-S,ACT-15-R-S (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,pack,6730,,ACT.png,ACT desc.png
 ACT-15-S-W,ACT-15-S-W (25 TUBES x 20 PACKS),Medha,Tubes & Vials,,pack,6510,,ACT.png,ACT desc.png
-ACT-250-S,ACT-250-S (6 TUBES X 8 PACKS),Medha,Tubes & Vials,,pack,4780,,ACT.png,ACT desc.png
-ACT-500-S,ACT-500-S (6 TUBES X 6 PACKS),Medha,Tubes & Vials,,pack,7132,,ACT.png,ACT desc.png
+ACT-250-S,Large volume Centrifuge tube ACT-250-S (6 TUBES X 8 PACKS),Medha,Tubes & Vials,,pack,4780,,large vol centrifuge.png,large vol centrifuge desc.png
+ACT-500-S,Large volume Centrifuge tube ACT-500-S (6 TUBES X 6 PACKS),Medha,Tubes & Vials,,pack,7132,,large vol centrifuge.png,large vol centrifuge desc.png
 ACT-50-B,ACT-50-B (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,pack,6596,,ACT.png,ACT desc.png
 ACT-50-B-A,ACT-50-B-A (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,pack,8547,,ACT.png,ACT desc.png
 ACT-50-B-S,ACT-50-B-S (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,pack,8146,,ACT.png,ACT desc.png
