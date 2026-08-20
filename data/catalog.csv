@@ -80,13 +80,13 @@ LC02-L1000-139,ROTOR (ASS)_16X15 ML SWING OUT ROTOR_0134-00-0139_L1000 (L1000-13
 LC02-L1000-141,ROTOR (ASS)_4X50 ML SWING OUT ROTOR_0140-00-0141_(L1000-141),Neuation / Accumax,Rotors & Buckets,,unit,10792,,,
 LC02-L1000-156,ROTOR (ASS)_4X100 ML SWING OUT ROTOR_0140-00-0156_(L1000-156),Neuation / Accumax,Rotors & Buckets,,unit,33166,,,
 LC02-L1000-142,ROTOR (ASS)_4X100 ML SWING OUT ROTOR_0140-00-0142_(L1000-142),Neuation / Accumax,Rotors & Buckets,,unit,18074,,,
-ISWIX JR.,ISWIX JR.,Neuation / Accumax,Other,,unit,10122,,,
-ISWIX JR. VT,ISWIX JR. VT,Neuation / Accumax,Other,,unit,12816,,,
-ISWIX JR. NXT,ISWIX JR. NXT,Neuation / Accumax,Other,,unit,5647,,,
-ISWIX JR. VT NXT,ISWIX JR. VT NXT,Neuation / Accumax,Other,,unit,5772,,,
-ISWIX FS,ISWIX FS,Neuation / Accumax,Other,,unit,10892,,,
-ISWIX,ISWIX,Neuation / Accumax,Other,,unit,14097,,,
-ISWIX VT,ISWIX VT,Neuation / Accumax,Other,,unit,18041,,,
+ISWIX JR.,"iSWIX JR. Mini Vortex Mixer, Fixed Speed (4500 RPM)",Neuation / Accumax,Other,,unit,10122,,ISWIX JR.png,ISWIX JR desc.png
+ISWIX JR. VT,"iSWIX JR. VT Mini Vortex Mixer, Variable Speed (2000-4500 RPM)",Neuation / Accumax,Other,,unit,12816,,ISWIX JR VT.png,ISWIX JR desc.png
+ISWIX JR. NXT,"iSWIX JR. NXT Mini Vortex Mixer, Fixed Speed (4200 RPM)",Neuation / Accumax,Other,,unit,5647,,ISWIX JR NXT.png,ISWIX JR NXT desc.png
+ISWIX JR. VT NXT,"iSWIX JR. VT NXT Mini Vortex Mixer, Variable Speed (2000-4200 RPM)",Neuation / Accumax,Other,,unit,5772,,ISWIX JR VT NXT.png,ISWIX JR NXT desc.png
+ISWIX FS,"iSWIX FS Vortex Mixer, Fixed Speed (2800 RPM)",Neuation / Accumax,Other,,unit,10892,,ISWIX FS.png,ISWIX FS desc.png
+ISWIX,"iSWIX Vortex Mixer, Variable Speed (2800 RPM)",Neuation / Accumax,Other,,unit,14097,,ISWIX.png,ISWIX FS desc.png
+ISWIX VT,"iSWIX VT Vortex Mixer, Variable Speed with Timer & Pulse Mode (4200 RPM)",Neuation / Accumax,Other,,unit,18041,,ISWIX VT.png,ISWIX FS desc.png
 VM-A1,0201-00-0000-0-028_UN_ATTACH_PL_PPGF_3 (VM-A1),Neuation / Accumax,Other,,unit,1282,,,
 VM-A2,0201-00-0000-0-033_FOAM MICRO TUBE_PE FOAM (VM-A2),Neuation / Accumax,Other,,unit,1282,,,
 VM-A3,0201-00-0000-0-031_FOAM_MICRO PLATE_PE FOAM (VM-A3),Neuation / Accumax,Other,,pack,1921,,,
