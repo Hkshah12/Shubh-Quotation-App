@@ -1097,9 +1097,9 @@ AEF-500-NV-PC-S,"Accumax Polycarbonate Erlenmeyer Flask, Flat Bottom with PP Cap
 AEF-500-NV-PG-S,"Accumax PETG Erlenmeyer Flask, Flat Bottom with HDPE Cap, Non-Vented, Sterile (Volume: 500ml) (12Pcs)",Medha,Bottles & Carboys,,pack,6044,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
 AEF-500-V-PC-S,"Accumax Polycarbonate Erlenmeyer Flask, Flat Bottom with PP Cap, Vented, Sterile (Volume: 500ml) (12Pcs)",Medha,Bottles & Carboys,,pack,7606,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
 AEF-500-V-PG-S,"Accumax PETG Erlenmeyer Flask, Flat Bottom with HDPE Cap, Vented, Sterile (Volume: 500ml) (12Pcs)",Medha,Bottles & Carboys,,pack,6791,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
-AHD-PP-1000,AHD-PP-1000 (6 BOTTLE X 1 PACK),Medha,Bottles & Carboys,,pack,4072,,,
-AHD-PP-2000,AHD-PP-2000 (6 BOTTLE X 1 PACK),Medha,Bottles & Carboys,,pack,6171,,,
-AHD-PP-4000,AHD-PP-4000 (6 BOTTLE X 1 PACK),Medha,Bottles & Carboys,,pack,11316,,,
+AHD-PP-1000,"Accumax Heavy Duty Reagent Bottle, Polypropylene (Volume: 1000ml) (6Pcs)",Medha,Bottles & Carboys,,pack,4072,,ACCUMAX HEAVY DUTY BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AHD-PP-2000,"Accumax Heavy Duty Reagent Bottle, Polypropylene (Volume: 2000ml) (6Pcs)",Medha,Bottles & Carboys,,pack,6171,,ACCUMAX HEAVY DUTY BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AHD-PP-4000,"Accumax Heavy Duty Reagent Bottle, Polypropylene (Volume: 4000ml) (6Pcs)",Medha,Bottles & Carboys,,pack,11316,,ACCUMAX HEAVY DUTY BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
 AJB-HD-10,AJB-HD-10 (1 JERRICAN X 1 PACK),Medha,Bottles & Carboys,,pack,1585,,,
 AJB-HD-10-AW,AJB-HD-10-AW (1 JERRICAN X 1 PACK),Medha,Bottles & Carboys,,pack,1822,,,
 AJB-HD-20,AJB-HD-20 (1 JERRICAN X 1 PACK),Medha,Bottles & Carboys,,pack,2289,,,
@@ -1170,54 +1170,54 @@ AP-90V-10,"Accumax Petri Plate, 90mm Vented, Aseptic, Raised Ridge, Semi-Stackab
 AP-90V-10-S,"Accumax Petri Plate, 90mm Vented, Sterile, Raised Ridge, Semi-Stackable, Bulk (Pack of 10)",Medha,PCR & Plates,,pack,4708,,ACCUMAX PETRI PLATES.png,ACCUMAX PETRI PLATES desc.png
 AP-90V-20,"Accumax Petri Plate, 90mm Vented, Aseptic, Raised Ridge, Semi-Stackable, Bulk (Pack of 20)",Medha,PCR & Plates,,pack,4012,,ACCUMAX PETRI PLATES.png,ACCUMAX PETRI PLATES desc.png
 AP-90V-20-S,"Accumax Petri Plate, 90mm Vented, Sterile, Raised Ridge, Semi-Stackable, Bulk (Pack of 20)",Medha,PCR & Plates,,pack,4573,,ACCUMAX PETRI PLATES.png,ACCUMAX PETRI PLATES desc.png
-ASB-HD-1000,ASB-HD-1000 (12 BOTTLE WITH CAP X 2 PACK),Medha,Bottles & Carboys,,pack,1434,,,
-ASB-HD-1000-A,ASB-HD-1000-A (12 BOTTLE WITH CAP X 2 PACK),Medha,Bottles & Carboys,,pack,2007,,,
-ASB-HD-175,ASB-HD-175 (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,809,,,
-ASB-HD-175-A,ASB-HD-175-A (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,1023,,,
-ASB-HD-250,ASB-HD-250 (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,1080,,,
-ASB-HD-250-A,ASB-HD-250-A (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,1323,,,
-ASB-HD-500,ASB-HD-500 (12 BOTTLE WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,1335,,,
-ASB-HD-500-A,ASB-HD-500-A (12 BOTTLE WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,1801,,,
-ASB-HD-60,ASB-HD-60 (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,497,,,
-ASB-HD-60-A,ASB-HD-60-A (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,631,,,
-ASB-PP-1000,ASB-PP-1000 (12 BOTTLE WITH CAP X 2 PACK),Medha,Bottles & Carboys,,pack,1651,,,
-ASB-PP-175,ASB-PP-175 (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,930,,,
-ASB-PP-250,ASB-PP-250 (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,1246,,,
-ASB-PP-500,ASB-PP-500 (12 BOTTLE WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,1529,,,
-ASB-PP-60,ASB-PP-60 (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,573,,,
-ASB-HD-60-S,ASB-HD-60-S (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,571,,,
-ASB-HD-175-S,ASB-HD-175-S (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,931,,,
-ASB-HD-250-S,ASB-HD-250-S (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,1243,,,
-ASB-HD-500-S,ASB-HD-500-S (12 BOTTLE WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,1535,,,
-ASB-HD-1000-S,ASB-HD-1000-S (12 BOTTLE WITH CAP X 2 PACK),Medha,Bottles & Carboys,,pack,1648,,,
-ASH-PP-4000,ASH-PP-4000 (1 X 6 BOTTLE),Medha,Bottles & Carboys,,pack,8334,,,
-AWB-HD-1000,AWB-HD-1000 (12 BOTTLE WITH CAP X 2 PACK),Medha,Bottles & Carboys,,pack,4919,,,
-AWB-HD-1000-A,AWB-HD-1000-A (12 BOTTLE WITH CAP X 2 PACK),Medha,Bottles & Carboys,,pack,6895,,,
-AWB-HD-125,AWB-HD-125 (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,3594,,,
-AWB-HD-125-A,AWB-HD-125-A (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,4416,,,
-AWB-HD-2000,AWB-HD-2000 (6 BOTTLE WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,2654,,,
-AWB-HD-2000-A,AWB-HD-2000-A (6 BOTTLE WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,3295,,,
-AWB-HD-250,AWB-HD-250 (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,5581,,,
-AWB-HD-250-A,AWB-HD-250-A (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,6748,,,
-AWB-HD-30,AWB-HD-30 (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,1988,,,
-AWB-HD-30-A,AWB-HD-30-A (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,2543,,,
-AWB-HD-500,AWB-HD-500 (12 BOTTLE WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,5047,,,
-AWB-HD-500-A,AWB-HD-500-A (12 BOTTLE WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,6117,,,
-AWB-HD-60,AWB-HD-60 (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,2618,,,
-AWB-HD-60-A,AWB-HD-60-A (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,3154,,,
-AWB-LD-1000,AWB-LD-1000 (12 BOTTLE WITH CAP X 2 PACK),Medha,Bottles & Carboys,,pack,4473,,,
-AWB-LD-125,AWB-LD-125 (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,3269,,,
-AWB-LD-250,AWB-LD-250 (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,5047,,,
-AWB-LD-30,AWB-LD-30 (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,1816,,,
-AWB-LD-500,AWB-LD-500 (12 BOTTLE WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,4626,,,
-AWB-LD-60,AWB-LD-60 (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,2352,,,
-AWB-PP-1000,AWB-PP-1000 (12 BOTTLE WITH CAP X 2 PACK),Medha,Bottles & Carboys,,pack,5461,,,
-AWB-PP-125,AWB-PP-125 (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,3957,,,
-AWB-PP-2000,AWB-PP-2000 (6 BOTTLE X 1 PACK),Medha,Bottles & Carboys,,pack,2925,,,
-AWB-PP-250,AWB-PP-250 (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,6213,,,
-AWB-PP-30,AWB-PP-30 (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,2179,,,
-AWB-PP-500,AWB-PP-500 (12 BOTTLE WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,5581,,,
-AWB-PP-60,AWB-PP-60 (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,2905,,,
+ASB-HD-1000,"Accumax Square Wide Mouth Bottle, HDPE (Volume: 1000ml) (24Pcs)",Medha,Bottles & Carboys,,pack,1434,,ACCUMAX SQUARE BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ASB-HD-1000-A,"Accumax Square Wide Mouth Bottle, HDPE, Amber (Volume: 1000ml) (24Pcs)",Medha,Bottles & Carboys,,pack,2007,,ACCUMAX SQUARE BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ASB-HD-175,"Accumax Square Wide Mouth Bottle, HDPE (Volume: 175ml) (72Pcs)",Medha,Bottles & Carboys,,pack,809,,ACCUMAX SQUARE BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ASB-HD-175-A,"Accumax Square Wide Mouth Bottle, HDPE, Amber (Volume: 175ml) (72Pcs)",Medha,Bottles & Carboys,,pack,1023,,ACCUMAX SQUARE BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ASB-HD-250,"Accumax Square Wide Mouth Bottle, HDPE (Volume: 250ml) (72Pcs)",Medha,Bottles & Carboys,,pack,1080,,ACCUMAX SQUARE BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ASB-HD-250-A,"Accumax Square Wide Mouth Bottle, HDPE, Amber (Volume: 250ml) (72Pcs)",Medha,Bottles & Carboys,,pack,1323,,ACCUMAX SQUARE BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ASB-HD-500,"Accumax Square Wide Mouth Bottle, HDPE (Volume: 500ml) (48Pcs)",Medha,Bottles & Carboys,,pack,1335,,ACCUMAX SQUARE BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ASB-HD-500-A,"Accumax Square Wide Mouth Bottle, HDPE, Amber (Volume: 500ml) (48Pcs)",Medha,Bottles & Carboys,,pack,1801,,ACCUMAX SQUARE BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ASB-HD-60,"Accumax Square Wide Mouth Bottle, HDPE (Volume: 60ml) (72Pcs)",Medha,Bottles & Carboys,,pack,497,,ACCUMAX SQUARE BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ASB-HD-60-A,"Accumax Square Wide Mouth Bottle, HDPE, Amber (Volume: 60ml) (72Pcs)",Medha,Bottles & Carboys,,pack,631,,ACCUMAX SQUARE BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ASB-PP-1000,"Accumax Square Wide Mouth Bottle, Polypropylene (Volume: 1000ml) (24Pcs)",Medha,Bottles & Carboys,,pack,1651,,ACCUMAX SQUARE BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ASB-PP-175,"Accumax Square Wide Mouth Bottle, Polypropylene (Volume: 175ml) (72Pcs)",Medha,Bottles & Carboys,,pack,930,,ACCUMAX SQUARE BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ASB-PP-250,"Accumax Square Wide Mouth Bottle, Polypropylene (Volume: 250ml) (72Pcs)",Medha,Bottles & Carboys,,pack,1246,,ACCUMAX SQUARE BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ASB-PP-500,"Accumax Square Wide Mouth Bottle, Polypropylene (Volume: 500ml) (48Pcs)",Medha,Bottles & Carboys,,pack,1529,,ACCUMAX SQUARE BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ASB-PP-60,"Accumax Square Wide Mouth Bottle, Polypropylene (Volume: 60ml) (72Pcs)",Medha,Bottles & Carboys,,pack,573,,ACCUMAX SQUARE BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ASB-HD-60-S,"Accumax Square Wide Mouth Bottle, HDPE, Sterile (Volume: 60ml) (72Pcs)",Medha,Bottles & Carboys,,pack,571,,ACCUMAX SQUARE BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ASB-HD-175-S,"Accumax Square Wide Mouth Bottle, HDPE, Sterile (Volume: 175ml) (72Pcs)",Medha,Bottles & Carboys,,pack,931,,ACCUMAX SQUARE BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ASB-HD-250-S,"Accumax Square Wide Mouth Bottle, HDPE, Sterile (Volume: 250ml) (72Pcs)",Medha,Bottles & Carboys,,pack,1243,,ACCUMAX SQUARE BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ASB-HD-500-S,"Accumax Square Wide Mouth Bottle, HDPE, Sterile (Volume: 500ml) (48Pcs)",Medha,Bottles & Carboys,,pack,1535,,ACCUMAX SQUARE BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ASB-HD-1000-S,"Accumax Square Wide Mouth Bottle, HDPE, Sterile (Volume: 1000ml) (24Pcs)",Medha,Bottles & Carboys,,pack,1648,,ACCUMAX SQUARE BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ASH-PP-4000,"Accumax Square Wide Mouth Bottle with Handle, Polypropylene (Volume: 4000ml) (6Pcs)",Medha,Bottles & Carboys,,pack,8334,,ACCUMAX BOTTLE WITH HANDLE.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-HD-1000,"Accumax Wide Mouth Reagent Bottle, HDPE (Volume: 1000ml) (24Pcs)",Medha,Bottles & Carboys,,pack,4919,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-HD-1000-A,"Accumax Wide Mouth Reagent Bottle, HDPE, Amber (Volume: 1000ml) (24Pcs)",Medha,Bottles & Carboys,,pack,6895,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-HD-125,"Accumax Wide Mouth Reagent Bottle, HDPE (Volume: 125ml) (72Pcs)",Medha,Bottles & Carboys,,pack,3594,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-HD-125-A,"Accumax Wide Mouth Reagent Bottle, HDPE, Amber (Volume: 125ml) (72Pcs)",Medha,Bottles & Carboys,,pack,4416,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-HD-2000,"Accumax Wide Mouth Reagent Bottle, HDPE (Volume: 2000ml) (6Pcs)",Medha,Bottles & Carboys,,pack,2654,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-HD-2000-A,"Accumax Wide Mouth Reagent Bottle, HDPE, Amber (Volume: 2000ml) (6Pcs)",Medha,Bottles & Carboys,,pack,3295,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-HD-250,"Accumax Wide Mouth Reagent Bottle, HDPE (Volume: 250ml) (72Pcs)",Medha,Bottles & Carboys,,pack,5581,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-HD-250-A,"Accumax Wide Mouth Reagent Bottle, HDPE, Amber (Volume: 250ml) (72Pcs)",Medha,Bottles & Carboys,,pack,6748,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-HD-30,"Accumax Wide Mouth Reagent Bottle, HDPE (Volume: 30ml) (72Pcs)",Medha,Bottles & Carboys,,pack,1988,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-HD-30-A,"Accumax Wide Mouth Reagent Bottle, HDPE, Amber (Volume: 30ml) (72Pcs)",Medha,Bottles & Carboys,,pack,2543,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-HD-500,"Accumax Wide Mouth Reagent Bottle, HDPE (Volume: 500ml) (48Pcs)",Medha,Bottles & Carboys,,pack,5047,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-HD-500-A,"Accumax Wide Mouth Reagent Bottle, HDPE, Amber (Volume: 500ml) (48Pcs)",Medha,Bottles & Carboys,,pack,6117,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-HD-60,"Accumax Wide Mouth Reagent Bottle, HDPE (Volume: 60ml) (72Pcs)",Medha,Bottles & Carboys,,pack,2618,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-HD-60-A,"Accumax Wide Mouth Reagent Bottle, HDPE, Amber (Volume: 60ml) (72Pcs)",Medha,Bottles & Carboys,,pack,3154,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-LD-1000,"Accumax Wide Mouth Reagent Bottle, LDPE (Volume: 1000ml) (24Pcs)",Medha,Bottles & Carboys,,pack,4473,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-LD-125,"Accumax Wide Mouth Reagent Bottle, LDPE (Volume: 125ml) (72Pcs)",Medha,Bottles & Carboys,,pack,3269,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-LD-250,"Accumax Wide Mouth Reagent Bottle, LDPE (Volume: 250ml) (72Pcs)",Medha,Bottles & Carboys,,pack,5047,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-LD-30,"Accumax Wide Mouth Reagent Bottle, LDPE (Volume: 30ml) (72Pcs)",Medha,Bottles & Carboys,,pack,1816,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-LD-500,"Accumax Wide Mouth Reagent Bottle, LDPE (Volume: 500ml) (48Pcs)",Medha,Bottles & Carboys,,pack,4626,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-LD-60,"Accumax Wide Mouth Reagent Bottle, LDPE (Volume: 60ml) (72Pcs)",Medha,Bottles & Carboys,,pack,2352,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-PP-1000,"Accumax Wide Mouth Reagent Bottle, Polypropylene (Volume: 1000ml) (24Pcs)",Medha,Bottles & Carboys,,pack,5461,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-PP-125,"Accumax Wide Mouth Reagent Bottle, Polypropylene (Volume: 125ml) (72Pcs)",Medha,Bottles & Carboys,,pack,3957,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-PP-2000,"Accumax Wide Mouth Reagent Bottle, Polypropylene (Volume: 2000ml) (6Pcs)",Medha,Bottles & Carboys,,pack,2925,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-PP-250,"Accumax Wide Mouth Reagent Bottle, Polypropylene (Volume: 250ml) (72Pcs)",Medha,Bottles & Carboys,,pack,6213,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-PP-30,"Accumax Wide Mouth Reagent Bottle, Polypropylene (Volume: 30ml) (72Pcs)",Medha,Bottles & Carboys,,pack,2179,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-PP-500,"Accumax Wide Mouth Reagent Bottle, Polypropylene (Volume: 500ml) (48Pcs)",Medha,Bottles & Carboys,,pack,5581,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-PP-60,"Accumax Wide Mouth Reagent Bottle, Polypropylene (Volume: 60ml) (72Pcs)",Medha,Bottles & Carboys,,pack,2905,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
 UAMB-1000-PG-IW-S,UAMB-1000-PG-IW-S (1 BOTTLE WITH CAP X 50 PACK),Medha,Bottles & Carboys,,pack,28438,,,
 UAMB-1000-PG-S,UAMB-1000-PG-S (12 BOTTLE WITH CAP X 2 PACK),Medha,Bottles & Carboys,,pack,12432,,,
 UAMB-125-PG-IW-S,UAMB-125-PG-IW-S (1 BOTTLE WITH CAP X 60 PACK),Medha,Bottles & Carboys,,pack,13027,,,
@@ -1232,28 +1232,28 @@ UAMB-500-PG-IW-S,UAMB-500-PG-IW-S (1 BOTTLE WITH CAP X 70 PACK),Medha,Bottles & 
 UAMB-500-PG-S,UAMB-500-PG-S (12 BOTTLE WITH CAP X 2 PACK),Medha,Bottles & Carboys,,pack,16992,,,
 UAMB-60-PG-IW-S,UAMB-60-PG-IW-S (1 BOTTLE WITH CAP X 40 PACK),Medha,Bottles & Carboys,,pack,7552,,,
 UAMB-60-PG-S,UAMB-60-PG-S (24 BOTTLE WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,14613,,,
-AWB-PP-30-S,AWB-PP-30-S (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,2506,,,
-AWB-PP-60-S,AWB-PP-60-S (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,3342,,,
-AWB-PP-125-S,AWB-PP-125-S (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,4550,,,
-AWB-PP-250-S,AWB-PP-250-S (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,7145,,,
-AWB-PP-1000-S,AWB-PP-1000-S (12 BOTTLE WITH CAP X 2 PACK),Medha,Bottles & Carboys,,pack,6280,,,
-AWB-PP-30-S-W,AWB-PP-30-S-W (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,3133,,,
-AWB-PP-60-S-W,AWB-PP-60-S-W (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,4177,,,
-AWB-PP-125-S-W,AWB-PP-125-S-W (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,5689,,,
-AWB-PP-500-S-W,AWB-PP-500-S-W (12 BOTTLE WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,8024,,,
-AHD-HD-1000,AHD-HD-1000 (6 BOTTLE X 1 PACK),Medha,Bottles & Carboys,,pack,4072,,,
-AHD-HD-2000,AHD-HD-2000 (6 BOTTLE X 1 PACK),Medha,Bottles & Carboys,,pack,6171,,,
-AHD-HD-4000,AHD-HD-4000 (6 BOTTLE X 1 PACK),Medha,Bottles & Carboys,,pack,11316,,,
-AHD-PP-2000-S,AHD-PP-2000-S (6 BOTTLE X 1 PACK),Medha,Bottles & Carboys,,pack,7097,,,
-AHD-HD-4000-S,AHD-HD-4000-S (6 BOTTLE X 1 PACK),Medha,Bottles & Carboys,,pack,13014,,,
+AWB-PP-30-S,"Accumax Wide Mouth Reagent Bottle, Polypropylene, Sterile (Volume: 30ml) (72Pcs)",Medha,Bottles & Carboys,,pack,2506,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-PP-60-S,"Accumax Wide Mouth Reagent Bottle, Polypropylene, Sterile (Volume: 60ml) (72Pcs)",Medha,Bottles & Carboys,,pack,3342,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-PP-125-S,"Accumax Wide Mouth Reagent Bottle, Polypropylene, Sterile (Volume: 125ml) (72Pcs)",Medha,Bottles & Carboys,,pack,4550,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-PP-250-S,"Accumax Wide Mouth Reagent Bottle, Polypropylene, Sterile (Volume: 250ml) (72Pcs)",Medha,Bottles & Carboys,,pack,7145,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-PP-1000-S,"Accumax Wide Mouth Reagent Bottle, Polypropylene, Sterile (Volume: 1000ml) (24Pcs)",Medha,Bottles & Carboys,,pack,6280,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-PP-30-S-W,"Accumax Wide Mouth Reagent Bottle, Polypropylene, Sterile, Individually Wrapped (Volume: 30ml) (72Pcs)",Medha,Bottles & Carboys,,pack,3133,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-PP-60-S-W,"Accumax Wide Mouth Reagent Bottle, Polypropylene, Sterile, Individually Wrapped (Volume: 60ml) (72Pcs)",Medha,Bottles & Carboys,,pack,4177,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-PP-125-S-W,"Accumax Wide Mouth Reagent Bottle, Polypropylene, Sterile, Individually Wrapped (Volume: 125ml) (72Pcs)",Medha,Bottles & Carboys,,pack,5689,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-PP-500-S-W,"Accumax Wide Mouth Reagent Bottle, Polypropylene, Sterile, Individually Wrapped (Volume: 500ml) (48Pcs)",Medha,Bottles & Carboys,,pack,8024,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AHD-HD-1000,"Accumax Heavy Duty Reagent Bottle, HDPE (Volume: 1000ml) (6Pcs)",Medha,Bottles & Carboys,,pack,4072,,ACCUMAX HEAVY DUTY BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AHD-HD-2000,"Accumax Heavy Duty Reagent Bottle, HDPE (Volume: 2000ml) (6Pcs)",Medha,Bottles & Carboys,,pack,6171,,ACCUMAX HEAVY DUTY BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AHD-HD-4000,"Accumax Heavy Duty Reagent Bottle, HDPE (Volume: 4000ml) (6Pcs)",Medha,Bottles & Carboys,,pack,11316,,ACCUMAX HEAVY DUTY BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AHD-PP-2000-S,"Accumax Heavy Duty Reagent Bottle, Polypropylene, Sterile (Volume: 2000ml) (6Pcs)",Medha,Bottles & Carboys,,pack,7097,,ACCUMAX HEAVY DUTY BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AHD-HD-4000-S,"Accumax Heavy Duty Reagent Bottle, HDPE, Sterile (Volume: 4000ml) (6Pcs)",Medha,Bottles & Carboys,,pack,13014,,ACCUMAX HEAVY DUTY BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
 ANB-PP-125-IW-G-S,"Accumax Narrow Mouth Reagent Bottle, Polypropylene, Individually Wrapped, Gamma Sterilized (Volume: 125ml) (72Pcs)",Medha,Bottles & Carboys,,pack,15289,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
 ANB-PP-250-IW-G-S,"Accumax Narrow Mouth Reagent Bottle, Polypropylene, Individually Wrapped, Gamma Sterilized (Volume: 250ml) (72Pcs)",Medha,Bottles & Carboys,,pack,24727,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
 ANB-PP-500-IW-G-S,"Accumax Narrow Mouth Reagent Bottle, Polypropylene, Individually Wrapped, Gamma Sterilized (Volume: 500ml) (48Pcs)",Medha,Bottles & Carboys,,pack,21960,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
 ANB-PP-1000-IW-G-S,"Accumax Narrow Mouth Reagent Bottle, Polypropylene, Individually Wrapped, Gamma Sterilized (Volume: 1000ml) (24Pcs)",Medha,Bottles & Carboys,,pack,27159,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
-AWB-PP-125-IW-G-S,AWB-PP-125-IW-G-S (12 IW BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,18082,,,
-AWB-PP-250-IW-G-S,AWB-PP-250-IW-G-S (12 IW BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,28394,,,
-AWB-PP-500-IW-G-S,AWB-PP-500-IW-G-S (12 IW BOTTLE WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,25509,,,
-AWB-PP-1000-IW-G-S,AWB-PP-1000-IW-G-S (12 IW BOTTLE WITH CAP X 2 PACK),Medha,Bottles & Carboys,,pack,31282,,,
+AWB-PP-125-IW-G-S,"Accumax Wide Mouth Reagent Bottle, Polypropylene, Gamma Sterilized, Individually Wrapped (Volume: 125ml) (72Pcs)",Medha,Bottles & Carboys,,pack,18082,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-PP-250-IW-G-S,"Accumax Wide Mouth Reagent Bottle, Polypropylene, Gamma Sterilized, Individually Wrapped (Volume: 250ml) (72Pcs)",Medha,Bottles & Carboys,,pack,28394,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-PP-500-IW-G-S,"Accumax Wide Mouth Reagent Bottle, Polypropylene, Gamma Sterilized, Individually Wrapped (Volume: 500ml) (48Pcs)",Medha,Bottles & Carboys,,pack,25509,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-PP-1000-IW-G-S,"Accumax Wide Mouth Reagent Bottle, Polypropylene, Gamma Sterilized, Individually Wrapped (Volume: 1000ml) (24Pcs)",Medha,Bottles & Carboys,,pack,31282,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
 AP-90V-IW,"Accumax Petri Plate, 90mm Vented, Aseptic, Raised Ridge, Semi-Stackable, Individually Wrapped",Medha,PCR & Plates,,pack,4720,,ACCUMAX PETRI PLATES.png,ACCUMAX PETRI PLATES desc.png
 AP-90NV-IW,"Accumax Petri Plate, 90mm Non-Vented, Aseptic, Raised Ridge, Semi-Stackable, Individually Wrapped",Medha,PCR & Plates,,pack,4720,,ACCUMAX PETRI PLATES.png,ACCUMAX PETRI PLATES desc.png
 AP-90V-S-IW,"Accumax Petri Plate, 90mm Vented, Sterile, Raised Ridge, Semi-Stackable, Individually Wrapped",Medha,PCR & Plates,,pack,5310,,ACCUMAX PETRI PLATES.png,ACCUMAX PETRI PLATES desc.png
@@ -1286,7 +1286,7 @@ ABEF-500-V-PC-S,"Accumax Polycarbonate Erlenmeyer Flask, Baffled Bottom with PP 
 ABEF-1000-V-PC-S,"Accumax Polycarbonate Erlenmeyer Flask, Baffled Bottom with PP Cap, Vented, Sterile (Volume: 1L) (6Pcs)",Medha,Bottles & Carboys,,pack,5024,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
 ABEF-2000-V-PC-S,"Accumax Polycarbonate Erlenmeyer Flask, Baffled Bottom with PP Cap, Vented, Sterile (Volume: 2L) (4Pcs)",Medha,Bottles & Carboys,,pack,4187,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
 ARB-PT-2L-IW-S,"Accumax Roller Bottle, 2L PET with PP Cap, Non-Treated, Sterile, Individually Wrapped (Volume: 2L) (18Pcs)",Medha,Bottles & Carboys,,pack,11151,,ACCUMAX ROLLER BOTTLES.png,ACCUMAX ROLLER BOTTLES desc.png
-AWB-HD-4000,AWB-HD-4000 (6 BOTTLE WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,5808,,,
+AWB-HD-4000,"Accumax Wide Mouth Reagent Bottle, HDPE (Volume: 4000ml) (6Pcs)",Medha,Bottles & Carboys,,pack,5808,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
 ACT-50-K-B-A,ACT-50-K-B-A (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,pack,10338,,,
 ACT-50-K-B-S-A,ACT-50-K-B-S-A (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,pack,10338,,,
 ANB-PP-2000,"Accumax Narrow Mouth Reagent Bottle, Polypropylene (Volume: 2000ml) (6Pcs)",Medha,Bottles & Carboys,,pack,3064,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
@@ -1316,35 +1316,35 @@ ANB-HD-125-A-S,"Accumax Narrow Mouth Reagent Bottle, HDPE, Amber, Sterile (Volum
 ANB-HD-250-A-S,"Accumax Narrow Mouth Reagent Bottle, HDPE, Amber, Sterile (Volume: 250ml) (72Pcs)",Medha,Bottles & Carboys,,pack,6837,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
 ANB-HD-500-A-S,"Accumax Narrow Mouth Reagent Bottle, HDPE, Amber, Sterile (Volume: 500ml) (48Pcs)",Medha,Bottles & Carboys,,pack,6141,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
 ANB-LD-1000-S,"Accumax Narrow Mouth Reagent Bottle, LDPE, Sterile (Volume: 1000ml) (24Pcs)",Medha,Bottles & Carboys,,pack,4067,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
-AWB-PP-500-S,AWB-PP-500-S (12 BOTTLE WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,6419,,,
-AWB-PP-250-IW-S,AWB-PP-250-IW-S (1 BOTTLE WITH CAP X 72 PACK),Medha,Bottles & Carboys,,pack,8930,,,
-AWB-HD-30-S,AWB-HD-30-S (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,2287,,,
-AWB-HD-60-S,AWB-HD-60-S (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,3011,,,
-AWB-HD-125-S,AWB-HD-125-S (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,4132,,,
-AWB-HD-250-S,AWB-HD-250-S (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,6419,,,
-AWB-HD-500-S,AWB-HD-500-S (12 BOTTLE WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,5803,,,
-AWB-HD-1000-S,AWB-HD-1000-S (12 BOTTLE WITH CAP X 2 PACK),Medha,Bottles & Carboys,,pack,5657,,,
-AWB-HD-S-W-30,AWB-HD-S-W-30 (1 BOTTLE WITH CAP X 72 PACK),Medha,Bottles & Carboys,,pack,2629,,,
-AWB-HD-S-W-60,AWB-HD-S-W-60 (1 BOTTLE WITH CAP X 72 PACK),Medha,Bottles & Carboys,,pack,3463,,,
-AWB-HD-S-W-125,AWB-HD-S-W-125 (1 BOTTLE WITH CAP X 72 PACK),Medha,Bottles & Carboys,,pack,4753,,,
-AWB-HD-S-W-250,AWB-HD-S-W-250 (1 BOTTLE WITH CAP X 72 PACK),Medha,Bottles & Carboys,,pack,7382,,,
-AWB-HD-S-W-500,AWB-HD-S-W-500 (1 BOTTLE WITH CAP X 48 PACK),Medha,Bottles & Carboys,,pack,6674,,,
-AWB-HD-S-W-1000,AWB-HD-S-W-1000 (1 BOTTLE WITH CAP X 24 PACK),Medha,Bottles & Carboys,,pack,6505,,,
-AWB-HD-30-WH,AWB-HD-30-WH (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,2485,,,
-AWB-HD-60-WH,AWB-HD-60-WH (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,3273,,,
-AWB-HD-125-WH,AWB-HD-125-WH (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,4492,,,
-AWB-HD-250-WH,AWB-HD-250-WH (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,6977,,,
-AWB-HD-500-WH,AWB-HD-500-WH (12 BOTTLE WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,6308,,,
-AWB-HD-1000-WH,AWB-HD-1000-WH (12 BOTTLE WITH CAP X 2 PACK),Medha,Bottles & Carboys,,pack,6149,,,
-AWB-HD-30-A-S,AWB-HD-30-A-S (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,2543,,,
-AWB-HD-125-A-2,AWB-HD-125-A (12 BOTTLE WITH CAP X 6 PACK),Medha,Bottles & Carboys,,pack,4416,,,
-AHD-PP-5000,AHD-PP-5000 (4 BOTTLE X 1 PACK),Medha,Bottles & Carboys,,pack,9053,,,
-AHD-PP-5000-S,AHD-PP-5000-S (4 BOTTLE WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,10411,,,
-ARH-PP-4000,ARH-PP-4000 (6 BOTTLE WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,8334,,,
-ARH-HD-4000,ARH-HD-4000 (6 BOTTLE WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,7819,,,
-ASH-PP-2000,ASH-PP-2000 (6 BOTTLE X 1 PACK),Medha,Bottles & Carboys,,pack,7085,,,
-ASH-HD-2000,ASH-HD-2000 (6 BOTTLE X 1 PACK),Medha,Bottles & Carboys,,pack,6646,,,
-ASH-HD-4000,ASH-HD-4000 (1 X 6 BOTTLE),Medha,Bottles & Carboys,,pack,7819,,,
+AWB-PP-500-S,"Accumax Wide Mouth Reagent Bottle, Polypropylene, Sterile (Volume: 500ml) (48Pcs)",Medha,Bottles & Carboys,,pack,6419,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-PP-250-IW-S,"Accumax Wide Mouth Reagent Bottle, Polypropylene, Sterile, Individually Wrapped (Volume: 250ml) (72Pcs)",Medha,Bottles & Carboys,,pack,8930,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-HD-30-S,"Accumax Wide Mouth Reagent Bottle, HDPE, Sterile (Volume: 30ml) (72Pcs)",Medha,Bottles & Carboys,,pack,2287,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-HD-60-S,"Accumax Wide Mouth Reagent Bottle, HDPE, Sterile (Volume: 60ml) (72Pcs)",Medha,Bottles & Carboys,,pack,3011,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-HD-125-S,"Accumax Wide Mouth Reagent Bottle, HDPE, Sterile (Volume: 125ml) (72Pcs)",Medha,Bottles & Carboys,,pack,4132,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-HD-250-S,"Accumax Wide Mouth Reagent Bottle, HDPE, Sterile (Volume: 250ml) (72Pcs)",Medha,Bottles & Carboys,,pack,6419,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-HD-500-S,"Accumax Wide Mouth Reagent Bottle, HDPE, Sterile (Volume: 500ml) (48Pcs)",Medha,Bottles & Carboys,,pack,5803,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-HD-1000-S,"Accumax Wide Mouth Reagent Bottle, HDPE, Sterile (Volume: 1000ml) (24Pcs)",Medha,Bottles & Carboys,,pack,5657,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-HD-S-W-30,"Accumax Wide Mouth Reagent Bottle, HDPE, Sterile, Individually Wrapped (Volume: 30ml) (72Pcs)",Medha,Bottles & Carboys,,pack,2629,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-HD-S-W-60,"Accumax Wide Mouth Reagent Bottle, HDPE, Sterile, Individually Wrapped (Volume: 60ml) (72Pcs)",Medha,Bottles & Carboys,,pack,3463,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-HD-S-W-125,"Accumax Wide Mouth Reagent Bottle, HDPE, Sterile, Individually Wrapped (Volume: 125ml) (72Pcs)",Medha,Bottles & Carboys,,pack,4753,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-HD-S-W-250,"Accumax Wide Mouth Reagent Bottle, HDPE, Sterile, Individually Wrapped (Volume: 250ml) (72Pcs)",Medha,Bottles & Carboys,,pack,7382,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-HD-S-W-500,"Accumax Wide Mouth Reagent Bottle, HDPE, Sterile, Individually Wrapped (Volume: 500ml) (48Pcs)",Medha,Bottles & Carboys,,pack,6674,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-HD-S-W-1000,"Accumax Wide Mouth Reagent Bottle, HDPE, Sterile, Individually Wrapped (Volume: 1000ml) (24Pcs)",Medha,Bottles & Carboys,,pack,6505,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-HD-30-WH,"Accumax Wide Mouth Reagent Bottle, HDPE, White (Volume: 30ml) (72Pcs)",Medha,Bottles & Carboys,,pack,2485,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-HD-60-WH,"Accumax Wide Mouth Reagent Bottle, HDPE, White (Volume: 60ml) (72Pcs)",Medha,Bottles & Carboys,,pack,3273,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-HD-125-WH,"Accumax Wide Mouth Reagent Bottle, HDPE, White (Volume: 125ml) (72Pcs)",Medha,Bottles & Carboys,,pack,4492,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-HD-250-WH,"Accumax Wide Mouth Reagent Bottle, HDPE, White (Volume: 250ml) (72Pcs)",Medha,Bottles & Carboys,,pack,6977,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-HD-500-WH,"Accumax Wide Mouth Reagent Bottle, HDPE, White (Volume: 500ml) (48Pcs)",Medha,Bottles & Carboys,,pack,6308,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-HD-1000-WH,"Accumax Wide Mouth Reagent Bottle, HDPE, White (Volume: 1000ml) (24Pcs)",Medha,Bottles & Carboys,,pack,6149,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-HD-30-A-S,"Accumax Wide Mouth Reagent Bottle, HDPE, Amber, Sterile (Volume: 30ml) (72Pcs)",Medha,Bottles & Carboys,,pack,2543,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AWB-HD-125-A-2,"Accumax Wide Mouth Reagent Bottle, HDPE, Amber (Volume: 125ml) (72Pcs)",Medha,Bottles & Carboys,,pack,4416,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AHD-PP-5000,"Accumax Heavy Duty Reagent Bottle, Polypropylene (Volume: 5000ml) (4Pcs)",Medha,Bottles & Carboys,,pack,9053,,ACCUMAX HEAVY DUTY BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+AHD-PP-5000-S,"Accumax Heavy Duty Reagent Bottle, Polypropylene, Sterile (Volume: 5000ml) (4Pcs)",Medha,Bottles & Carboys,,pack,10411,,ACCUMAX HEAVY DUTY BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
+ARH-PP-4000,"Accumax Round Wide Mouth Bottle with Handle, Polypropylene (Volume: 4000ml) (6Pcs)",Medha,Bottles & Carboys,,pack,8334,,ACCUMAX BOTTLE WITH HANDLE.png,ACCUMAX REAGENT BOTTLES desc.png
+ARH-HD-4000,"Accumax Round Wide Mouth Bottle with Handle, HDPE (Volume: 4000ml) (6Pcs)",Medha,Bottles & Carboys,,pack,7819,,ACCUMAX BOTTLE WITH HANDLE.png,ACCUMAX REAGENT BOTTLES desc.png
+ASH-PP-2000,"Accumax Square Wide Mouth Bottle with Handle, Polypropylene (Volume: 2000ml) (6Pcs)",Medha,Bottles & Carboys,,pack,7085,,ACCUMAX BOTTLE WITH HANDLE.png,ACCUMAX REAGENT BOTTLES desc.png
+ASH-HD-2000,"Accumax Square Wide Mouth Bottle with Handle, HDPE (Volume: 2000ml) (6Pcs)",Medha,Bottles & Carboys,,pack,6646,,ACCUMAX BOTTLE WITH HANDLE.png,ACCUMAX REAGENT BOTTLES desc.png
+ASH-HD-4000,"Accumax Square Wide Mouth Bottle with Handle, HDPE (Volume: 4000ml) (6Pcs)",Medha,Bottles & Carboys,,pack,7819,,ACCUMAX BOTTLE WITH HANDLE.png,ACCUMAX REAGENT BOTTLES desc.png
 ACB-LD-10-C,ACB-LD-10-C (1 CARBOY WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,2635,,,
 ACB-LD-15-C,ACB-LD-15-C (1 CARBOY WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,3446,,,
 ACB-LD-20-C,ACB-LD-20-C (1 CARBOY WITH CAP X 1 PACK),Medha,Bottles & Carboys,,pack,3735,,,
