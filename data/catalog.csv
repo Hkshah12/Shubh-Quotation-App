@@ -1071,9 +1071,9 @@ ACT-50-K-S-W-T,HEAVY METAL FREE CENTRIFUGE TUBES-50-K-S-W-T (25 TUBES X 20 PACKS
 ACT-50-R,ACT-50-R (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,pack,9589,,ACT.png,ACT desc.png
 ACT-50-R-S,ACT-50-R-S (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,pack,11313,,ACT.png,ACT desc.png
 ACT-50-S-W,ACT-50-S-W (25 TUBES x 20 PACKS),Medha,Tubes & Vials,,pack,12824,,ACT.png,ACT desc.png
-ADV-05-PG-S,ADV-05-PG-S (20 VIAL WITH CAP X 5 PACK),Medha,Tubes & Vials,,pack,3296,,,
-ADV-10-PG-S,ADV-10-PG-S (20 VIAL WITH CAP X 5 PACK),Medha,Tubes & Vials,,pack,3532,,,
-ADV-20-PG-S,ADV-20-PG-S (20 VIAL WITH CAP X 5 PACK),Medha,Tubes & Vials,,pack,4003,,,
+ADV-05-PG-S,"Accumax PETG Diagnostic Vial with Grey Cap, Sterile (Volume: 5ml) (100Pcs)",Medha,Tubes & Vials,,pack,3296,,ACCUMAX DIAGNOSTIC VIALS.png,ACCUMAX DIAGNOSTIC VIALS desc.png
+ADV-10-PG-S,"Accumax PETG Diagnostic Vial with Grey Cap, Sterile (Volume: 10ml) (100Pcs)",Medha,Tubes & Vials,,pack,3532,,ACCUMAX DIAGNOSTIC VIALS.png,ACCUMAX DIAGNOSTIC VIALS desc.png
+ADV-20-PG-S,"Accumax PETG Diagnostic Vial with Grey Cap, Sterile (Volume: 20ml) (100Pcs)",Medha,Tubes & Vials,,pack,4003,,ACCUMAX DIAGNOSTIC VIALS.png,ACCUMAX DIAGNOSTIC VIALS desc.png
 AEF-1000-NV-PC-S,"Accumax Polycarbonate Erlenmeyer Flask, Flat Bottom with PP Cap, Non-Vented, Sterile (Volume: 1L) (6Pcs)",Medha,Bottles & Carboys,,pack,4606,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
 AEF-1000-NV-PG-S,"Accumax PETG Erlenmeyer Flask, Flat Bottom with HDPE Cap, Non-Vented, Sterile (Volume: 1L) (6Pcs)",Medha,Bottles & Carboys,,pack,4112,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
 AEF-1000-V-PC-S,"Accumax Polycarbonate Erlenmeyer Flask, Flat Bottom with PP Cap, Vented, Sterile (Volume: 1L) (6Pcs)",Medha,Bottles & Carboys,,pack,5024,,ACCUMAX ERLENMEYER FLASK.png,ACCUMAX ERLENMEYER FLASK desc.png
@@ -1104,28 +1104,28 @@ AJB-HD-10,AJB-HD-10 (1 JERRICAN X 1 PACK),Medha,Bottles & Carboys,,pack,1585,,,
 AJB-HD-10-AW,AJB-HD-10-AW (1 JERRICAN X 1 PACK),Medha,Bottles & Carboys,,pack,1822,,,
 AJB-HD-20,AJB-HD-20 (1 JERRICAN X 1 PACK),Medha,Bottles & Carboys,,pack,2289,,,
 AJB-HD-20-AW,AJB-HD-20-AW (1 JERRICAN X 1 PACK),Medha,Bottles & Carboys,,pack,2631,,,
-UAMB-1000-PC-IW-S,UAMB-1000-PC-IW-S (1 BOTTLE WITH CAP X 50 PACK),Medha,Bottles & Carboys,,pack,35579,,,
-UAMB-1000-PC-S,UAMB-1000-PC-S (12 BOTTLE WITH CAP X 2 PACK),Medha,Bottles & Carboys,,pack,15525,,,
-AMB-1000-PT-IW-S,AMB-1000-PT-IW-S (1 BOTTLE WITH CAP X 50 PACK),Medha,Bottles & Carboys,,pack,16638,,,
-AMB-1000-PT-S,AMB-1000-PT-S (12 BOTTLE WITH CAP X 2 PACK),Medha,Bottles & Carboys,,pack,7099,,,
-UAMB-125-PC-IW-S,UAMB-125-PC-IW-S,Medha,Other,,unit,18266,,,
-UAMB-125-PC-S,UAMB-125-PC-S (24 BOTTLE WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,26508,,,
-AMB-125-PT-IW-S,AMB-125-PT-IW-S (1 BOTTLE WITH CAP X 60 PACK),Medha,Bottles & Carboys,,pack,8567,,,
-AMB-125-PT-S,AMB-125-PT-S (24 BOTTLE WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,12129,,,
-UAMB-2000-PC-IW-S,UAMB-2000-PC-IW-S,Medha,Other,,unit,24466,,,
-UAMB-2000-PC-S,UAMB-2000-PC-S (6 BOTTLE WITH CAP X 2 PACK),Medha,Bottles & Carboys,,pack,13346,,,
-UAMB-250-PC-IW-S,UAMB-250-PC-IW-S,Medha,Other,,unit,20318,,,
-UAMB-250-PC-S,UAMB-250-PC-S (24 BOTTLE WITH CAP X 2 PACK),Medha,Bottles & Carboys,,pack,16419,,,
-AMB-250-PT-IW-S,AMB-250-PT-IW-S (1 BOTTLE WITH CAP X 54 PACK),Medha,Bottles & Carboys,,pack,9511,,,
-AMB-250-PT-S,AMB-250-PT-S (30 BOTTLE WITH CAP X 2 PACK),Medha,Bottles & Carboys,,pack,9379,,,
-UAMB-30-PC-IW-S,UAMB-30-PC-IW-S,Medha,Other,,unit,7484,,,
-UAMB-30-PC-S,UAMB-30-PC-S (24 BOTTLE WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,14198,,,
-UAMB-500-PC-IW-S,UAMB-500-PC-IW-S,Medha,Other,,unit,37236,,,
-UAMB-500-PC-S,UAMB-500-PC-S (24 BOTTLE WITH CAP X 2 PACK),Medha,Bottles & Carboys,,pack,23222,,,
-AMB-500-PT-IW-S,AMB-500-PT-IW-S (1 BOTTLE WITH CAP X 70 PACK),Medha,Bottles & Carboys,,pack,17429,,,
-AMB-500-PT-S,AMB-500-PT-S (24 BOTTLE WITH CAP X 2 PACK),Medha,Bottles & Carboys,,pack,10919,,,
-UAMB-60-PC-IW-S,UAMB-60-PC-IW-S,Medha,Other,,unit,8382,,,
-UAMB-60-PC-S,UAMB-60-PC-S (24 BOTTLE WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,18288,,,
+UAMB-1000-PC-IW-S,"Accumax Polycarbonate Media Bottle with Cap, Autoclavable, Sterile, Individually Wrapped (Volume: 1L) (50Pcs)",Medha,Bottles & Carboys,,pack,35579,,ACCUMAX MEDIA BOTTLES.png,ACCUMAX MEDIA BOTTLES desc.png
+UAMB-1000-PC-S,"Accumax Polycarbonate Media Bottle with Cap, Autoclavable, Sterile (Volume: 1L) (24Pcs)",Medha,Bottles & Carboys,,pack,15525,,ACCUMAX MEDIA BOTTLES.png,ACCUMAX MEDIA BOTTLES desc.png
+AMB-1000-PT-IW-S,"Accumax PET Media Bottle with Cap, Sterile, Individually Wrapped (Volume: 1L) (50Pcs)",Medha,Bottles & Carboys,,pack,16638,,ACCUMAX MEDIA BOTTLES.png,ACCUMAX MEDIA BOTTLES desc.png
+AMB-1000-PT-S,"Accumax PET Media Bottle with Cap, Sterile (Volume: 1L) (24Pcs)",Medha,Bottles & Carboys,,pack,7099,,ACCUMAX MEDIA BOTTLES.png,ACCUMAX MEDIA BOTTLES desc.png
+UAMB-125-PC-IW-S,"Accumax Polycarbonate Media Bottle with Cap, Autoclavable, Sterile, Individually Wrapped (Volume: 125ml) (60Pcs)",Medha,Other,,unit,18266,,ACCUMAX MEDIA BOTTLES.png,ACCUMAX MEDIA BOTTLES desc.png
+UAMB-125-PC-S,"Accumax Polycarbonate Media Bottle with Cap, Autoclavable, Sterile (Volume: 125ml) (96Pcs)",Medha,Bottles & Carboys,,pack,26508,,ACCUMAX MEDIA BOTTLES.png,ACCUMAX MEDIA BOTTLES desc.png
+AMB-125-PT-IW-S,"Accumax PET Media Bottle with Cap, Sterile, Individually Wrapped (Volume: 125ml) (60Pcs)",Medha,Bottles & Carboys,,pack,8567,,ACCUMAX MEDIA BOTTLES.png,ACCUMAX MEDIA BOTTLES desc.png
+AMB-125-PT-S,"Accumax PET Media Bottle with Cap, Sterile (Volume: 125ml) (96Pcs)",Medha,Bottles & Carboys,,pack,12129,,ACCUMAX MEDIA BOTTLES.png,ACCUMAX MEDIA BOTTLES desc.png
+UAMB-2000-PC-IW-S,"Accumax Polycarbonate Media Bottle with Cap, Autoclavable, Sterile, Individually Wrapped (Volume: 2L) (20Pcs)",Medha,Other,,unit,24466,,ACCUMAX MEDIA BOTTLES.png,ACCUMAX MEDIA BOTTLES desc.png
+UAMB-2000-PC-S,"Accumax Polycarbonate Media Bottle with Cap, Autoclavable, Sterile (Volume: 2L) (12Pcs)",Medha,Bottles & Carboys,,pack,13346,,ACCUMAX MEDIA BOTTLES.png,ACCUMAX MEDIA BOTTLES desc.png
+UAMB-250-PC-IW-S,"Accumax Polycarbonate Media Bottle with Cap, Autoclavable, Sterile, Individually Wrapped (Volume: 250ml) (54Pcs)",Medha,Other,,unit,20318,,ACCUMAX MEDIA BOTTLES.png,ACCUMAX MEDIA BOTTLES desc.png
+UAMB-250-PC-S,"Accumax Polycarbonate Media Bottle with Cap, Autoclavable, Sterile (Volume: 250ml) (48Pcs)",Medha,Bottles & Carboys,,pack,16419,,ACCUMAX MEDIA BOTTLES.png,ACCUMAX MEDIA BOTTLES desc.png
+AMB-250-PT-IW-S,"Accumax PET Media Bottle with Cap, Sterile, Individually Wrapped (Volume: 250ml) (54Pcs)",Medha,Bottles & Carboys,,pack,9511,,ACCUMAX MEDIA BOTTLES.png,ACCUMAX MEDIA BOTTLES desc.png
+AMB-250-PT-S,"Accumax PET Media Bottle with Cap, Sterile (Volume: 250ml) (60Pcs)",Medha,Bottles & Carboys,,pack,9379,,ACCUMAX MEDIA BOTTLES.png,ACCUMAX MEDIA BOTTLES desc.png
+UAMB-30-PC-IW-S,"Accumax Polycarbonate Media Bottle with Cap, Autoclavable, Sterile, Individually Wrapped (Volume: 30ml) (46Pcs)",Medha,Other,,unit,7484,,ACCUMAX MEDIA BOTTLES.png,ACCUMAX MEDIA BOTTLES desc.png
+UAMB-30-PC-S,"Accumax Polycarbonate Media Bottle with Cap, Autoclavable, Sterile (Volume: 30ml) (96Pcs)",Medha,Bottles & Carboys,,pack,14198,,ACCUMAX MEDIA BOTTLES.png,ACCUMAX MEDIA BOTTLES desc.png
+UAMB-500-PC-IW-S,"Accumax Polycarbonate Media Bottle with Cap, Autoclavable, Sterile, Individually Wrapped (Volume: 500ml) (70Pcs)",Medha,Other,,unit,37236,,ACCUMAX MEDIA BOTTLES.png,ACCUMAX MEDIA BOTTLES desc.png
+UAMB-500-PC-S,"Accumax Polycarbonate Media Bottle with Cap, Autoclavable, Sterile (Volume: 500ml) (48Pcs)",Medha,Bottles & Carboys,,pack,23222,,ACCUMAX MEDIA BOTTLES.png,ACCUMAX MEDIA BOTTLES desc.png
+AMB-500-PT-IW-S,"Accumax PET Media Bottle with Cap, Sterile, Individually Wrapped (Volume: 500ml) (70Pcs)",Medha,Bottles & Carboys,,pack,17429,,ACCUMAX MEDIA BOTTLES.png,ACCUMAX MEDIA BOTTLES desc.png
+AMB-500-PT-S,"Accumax PET Media Bottle with Cap, Sterile (Volume: 500ml) (48Pcs)",Medha,Bottles & Carboys,,pack,10919,,ACCUMAX MEDIA BOTTLES.png,ACCUMAX MEDIA BOTTLES desc.png
+UAMB-60-PC-IW-S,"Accumax Polycarbonate Media Bottle with Cap, Autoclavable, Sterile, Individually Wrapped (Volume: 60ml) (40Pcs)",Medha,Other,,unit,8382,,ACCUMAX MEDIA BOTTLES.png,ACCUMAX MEDIA BOTTLES desc.png
+UAMB-60-PC-S,"Accumax Polycarbonate Media Bottle with Cap, Autoclavable, Sterile (Volume: 60ml) (96Pcs)",Medha,Bottles & Carboys,,pack,18288,,ACCUMAX MEDIA BOTTLES.png,ACCUMAX MEDIA BOTTLES desc.png
 ANB-HD-1000,"Accumax Narrow Mouth Reagent Bottle, HDPE (Volume: 1000ml) (24Pcs)",Medha,Bottles & Carboys,,pack,3900,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
 ANB-HD-1000-A,"Accumax Narrow Mouth Reagent Bottle, HDPE, Amber (Volume: 1000ml) (24Pcs)",Medha,Bottles & Carboys,,pack,5996,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
 ANB-HD-125,"Accumax Narrow Mouth Reagent Bottle, HDPE (Volume: 125ml) (72Pcs)",Medha,Bottles & Carboys,,pack,2982,,ACCUMAX REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
@@ -1218,20 +1218,20 @@ AWB-PP-250,"Accumax Wide Mouth Reagent Bottle, Polypropylene (Volume: 250ml) (72
 AWB-PP-30,"Accumax Wide Mouth Reagent Bottle, Polypropylene (Volume: 30ml) (72Pcs)",Medha,Bottles & Carboys,,pack,2179,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
 AWB-PP-500,"Accumax Wide Mouth Reagent Bottle, Polypropylene (Volume: 500ml) (48Pcs)",Medha,Bottles & Carboys,,pack,5581,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
 AWB-PP-60,"Accumax Wide Mouth Reagent Bottle, Polypropylene (Volume: 60ml) (72Pcs)",Medha,Bottles & Carboys,,pack,2905,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
-UAMB-1000-PG-IW-S,UAMB-1000-PG-IW-S (1 BOTTLE WITH CAP X 50 PACK),Medha,Bottles & Carboys,,pack,28438,,,
-UAMB-1000-PG-S,UAMB-1000-PG-S (12 BOTTLE WITH CAP X 2 PACK),Medha,Bottles & Carboys,,pack,12432,,,
-UAMB-125-PG-IW-S,UAMB-125-PG-IW-S (1 BOTTLE WITH CAP X 60 PACK),Medha,Bottles & Carboys,,pack,13027,,,
-UAMB-125-PG-S,UAMB-125-PG-S (24 BOTTLE WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,19484,,,
-UAMB-2000-PG-IW-S,UAMB-2000-PG-IW-S (1 BOTTLE WITH CAP X 20 PACK),Medha,Bottles & Carboys,,pack,19588,,,
-UAMB-2000-PG-S,UAMB-2000-PG-S (6 BOTTLE WITH CAP X 2 PACK),Medha,Bottles & Carboys,,pack,10677,,,
-UAMB-250-PG-IW-S,UAMB-250-PG-IW-S (1 BOTTLE WITH CAP X 54 PACK),Medha,Bottles & Carboys,,pack,16950,,,
-UAMB-250-PG-S,UAMB-250-PG-S (24 BOTTLE WITH CAP X 2 PACK),Medha,Bottles & Carboys,,pack,13140,,,
-UAMB-30-PG-IW-S,UAMB-30-PG-IW-S (1 BOTTLE WITH CAP X 46 PACK),Medha,Bottles & Carboys,,pack,7871,,,
-UAMB-30-PG-S,UAMB-30-PG-S (24 BOTTLE WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,11328,,,
-UAMB-500-PG-IW-S,UAMB-500-PG-IW-S (1 BOTTLE WITH CAP X 70 PACK),Medha,Bottles & Carboys,,pack,29736,,,
-UAMB-500-PG-S,UAMB-500-PG-S (12 BOTTLE WITH CAP X 2 PACK),Medha,Bottles & Carboys,,pack,16992,,,
-UAMB-60-PG-IW-S,UAMB-60-PG-IW-S (1 BOTTLE WITH CAP X 40 PACK),Medha,Bottles & Carboys,,pack,7552,,,
-UAMB-60-PG-S,UAMB-60-PG-S (24 BOTTLE WITH CAP X 4 PACK),Medha,Bottles & Carboys,,pack,14613,,,
+UAMB-1000-PG-IW-S,"Accumax PETG Media Bottle with Cap, Sterile, Individually Wrapped (Volume: 1L) (50Pcs)",Medha,Bottles & Carboys,,pack,28438,,ACCUMAX MEDIA BOTTLES.png,ACCUMAX MEDIA BOTTLES desc.png
+UAMB-1000-PG-S,"Accumax PETG Media Bottle with Cap, Sterile (Volume: 1L) (24Pcs)",Medha,Bottles & Carboys,,pack,12432,,ACCUMAX MEDIA BOTTLES.png,ACCUMAX MEDIA BOTTLES desc.png
+UAMB-125-PG-IW-S,"Accumax PETG Media Bottle with Cap, Sterile, Individually Wrapped (Volume: 125ml) (60Pcs)",Medha,Bottles & Carboys,,pack,13027,,ACCUMAX MEDIA BOTTLES.png,ACCUMAX MEDIA BOTTLES desc.png
+UAMB-125-PG-S,"Accumax PETG Media Bottle with Cap, Sterile (Volume: 125ml) (96Pcs)",Medha,Bottles & Carboys,,pack,19484,,ACCUMAX MEDIA BOTTLES.png,ACCUMAX MEDIA BOTTLES desc.png
+UAMB-2000-PG-IW-S,"Accumax PETG Media Bottle with Cap, Sterile, Individually Wrapped (Volume: 2L) (20Pcs)",Medha,Bottles & Carboys,,pack,19588,,ACCUMAX MEDIA BOTTLES.png,ACCUMAX MEDIA BOTTLES desc.png
+UAMB-2000-PG-S,"Accumax PETG Media Bottle with Cap, Sterile (Volume: 2L) (12Pcs)",Medha,Bottles & Carboys,,pack,10677,,ACCUMAX MEDIA BOTTLES.png,ACCUMAX MEDIA BOTTLES desc.png
+UAMB-250-PG-IW-S,"Accumax PETG Media Bottle with Cap, Sterile, Individually Wrapped (Volume: 250ml) (54Pcs)",Medha,Bottles & Carboys,,pack,16950,,ACCUMAX MEDIA BOTTLES.png,ACCUMAX MEDIA BOTTLES desc.png
+UAMB-250-PG-S,"Accumax PETG Media Bottle with Cap, Sterile (Volume: 250ml) (48Pcs)",Medha,Bottles & Carboys,,pack,13140,,ACCUMAX MEDIA BOTTLES.png,ACCUMAX MEDIA BOTTLES desc.png
+UAMB-30-PG-IW-S,"Accumax PETG Media Bottle with Cap, Sterile, Individually Wrapped (Volume: 30ml) (46Pcs)",Medha,Bottles & Carboys,,pack,7871,,ACCUMAX MEDIA BOTTLES.png,ACCUMAX MEDIA BOTTLES desc.png
+UAMB-30-PG-S,"Accumax PETG Media Bottle with Cap, Sterile (Volume: 30ml) (96Pcs)",Medha,Bottles & Carboys,,pack,11328,,ACCUMAX MEDIA BOTTLES.png,ACCUMAX MEDIA BOTTLES desc.png
+UAMB-500-PG-IW-S,"Accumax PETG Media Bottle with Cap, Sterile, Individually Wrapped (Volume: 500ml) (70Pcs)",Medha,Bottles & Carboys,,pack,29736,,ACCUMAX MEDIA BOTTLES.png,ACCUMAX MEDIA BOTTLES desc.png
+UAMB-500-PG-S,"Accumax PETG Media Bottle with Cap, Sterile (Volume: 500ml) (48Pcs)",Medha,Bottles & Carboys,,pack,16992,,ACCUMAX MEDIA BOTTLES.png,ACCUMAX MEDIA BOTTLES desc.png
+UAMB-60-PG-IW-S,"Accumax PETG Media Bottle with Cap, Sterile, Individually Wrapped (Volume: 60ml) (40Pcs)",Medha,Bottles & Carboys,,pack,7552,,ACCUMAX MEDIA BOTTLES.png,ACCUMAX MEDIA BOTTLES desc.png
+UAMB-60-PG-S,"Accumax PETG Media Bottle with Cap, Sterile (Volume: 60ml) (96Pcs)",Medha,Bottles & Carboys,,pack,14613,,ACCUMAX MEDIA BOTTLES.png,ACCUMAX MEDIA BOTTLES desc.png
 AWB-PP-30-S,"Accumax Wide Mouth Reagent Bottle, Polypropylene, Sterile (Volume: 30ml) (72Pcs)",Medha,Bottles & Carboys,,pack,2506,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
 AWB-PP-60-S,"Accumax Wide Mouth Reagent Bottle, Polypropylene, Sterile (Volume: 60ml) (72Pcs)",Medha,Bottles & Carboys,,pack,3342,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
 AWB-PP-125-S,"Accumax Wide Mouth Reagent Bottle, Polypropylene, Sterile (Volume: 125ml) (72Pcs)",Medha,Bottles & Carboys,,pack,4550,,ACCUMAX WIDE MOUTH REAGENT BOTTLES.png,ACCUMAX REAGENT BOTTLES desc.png
