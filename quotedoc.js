@@ -372,11 +372,18 @@
     </div>`;
 
     const descItems = (opts.items || []).filter(it => it.includeDesc && it.descImage && descURL(it.descImage));
+    // Word-reliable description pages:
+    //  - canonical mso page break to start the section on a fresh page
+    //  - image pinned to a physical width in cm (Word honours CSS cm width far more
+    //    reliably than the px "width" attribute, which it was scaling up to ~full page,
+    //    pushing each image onto its own page)
+    //  - keep-with-next on the heading + note so the title is never orphaned
+    const descFig = (it) => `<table width="100%" cellspacing="0" cellpadding="0" style="page-break-inside:avoid;margin:0 0 16pt;"><tr><td align="center" style="text-align:center;"><img src="${descURL(it.descImage)}" width="454" style="width:12cm;height:auto;border:0.75pt solid ${BD};"/><br/><span style="${serif}font-weight:bold;font-size:11pt;">${esc(it.name)}${it.sku ? ' — ' + esc(it.sku) : ''}</span></td></tr></table>`;
     const descWord = descItems.length ? `
     <div style="page-break-before:always;">
-      <div style="${serif}font-size:16pt;font-weight:bold;color:${RED};border-bottom:2pt solid ${RED};padding-bottom:4pt;">Product Descriptions</div>
-      <p style="${serif}font-size:10pt;font-style:italic;color:${SUB};">The following are the descriptions of the requested products.</p>
-      ${descItems.map(it => `<table width="100%" cellspacing="0" cellpadding="0" style="page-break-inside:avoid;break-inside:avoid;margin:0 0 14pt;"><tr><td align="center" style="text-align:center;"><img src="${descURL(it.descImage)}" width="560" style="border:0.75pt solid ${BD};"/><br/><span style="${serif}font-weight:bold;font-size:11pt;">${esc(it.name)}${it.sku ? ' — ' + esc(it.sku) : ''}</span></td></tr></table>`).join('')}
+      <div style="${serif}font-size:16pt;font-weight:bold;color:${RED};border-bottom:2pt solid ${RED};padding-bottom:4pt;mso-pagination:keep-with-next;">Product Descriptions</div>
+      <p style="${serif}font-size:10pt;font-style:italic;color:${SUB};margin:6pt 0 12pt;mso-pagination:keep-with-next;">The following are the descriptions of the requested products.</p>
+      ${descItems.map(descFig).join('')}
     </div>` : '';
 
     const clientName = c.name || 'Unnamed Client';
