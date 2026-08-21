@@ -379,12 +379,13 @@
     //    pushing each image onto its own page)
     //  - keep-with-next on the heading + note so the title is never orphaned
     const descFig = (it) => `<table width="100%" cellspacing="0" cellpadding="0" style="page-break-inside:avoid;margin:0 0 16pt;"><tr><td align="center" style="text-align:center;"><img src="${descURL(it.descImage)}" width="454" style="width:12cm;height:auto;border:0.75pt solid ${BD};"/><br/><span style="${serif}font-weight:bold;font-size:11pt;">${esc(it.name)}${it.sku ? ' — ' + esc(it.sku) : ''}</span></td></tr></table>`;
+    // page-break-after:avoid = "keep with the next block" (honoured by Word AND browsers,
+    // unlike mso-pagination:keep-with-next). This binds title -> note -> first image so the
+    // title can never be orphaned on its own page.
     const descWord = descItems.length ? `
-    <div style="page-break-before:always;">
-      <div style="${serif}font-size:16pt;font-weight:bold;color:${RED};border-bottom:2pt solid ${RED};padding-bottom:4pt;mso-pagination:keep-with-next;">Product Descriptions</div>
-      <p style="${serif}font-size:10pt;font-style:italic;color:${SUB};margin:6pt 0 12pt;mso-pagination:keep-with-next;">The following are the descriptions of the requested products.</p>
-      ${descItems.map(descFig).join('')}
-    </div>` : '';
+    <div style="${serif}font-size:16pt;font-weight:bold;color:${RED};border-bottom:2pt solid ${RED};padding-bottom:4pt;page-break-before:always;page-break-after:avoid;break-after:avoid;">Product Descriptions</div>
+    <p style="${serif}font-size:10pt;font-style:italic;color:${SUB};margin:6pt 0 12pt;page-break-after:avoid;break-after:avoid;">The following are the descriptions of the requested products.</p>
+    ${descItems.map(descFig).join('')}` : '';
 
     const clientName = c.name || 'Unnamed Client';
     return `<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40">
