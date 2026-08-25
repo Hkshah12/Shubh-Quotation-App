@@ -7,6 +7,7 @@
     settings: 'shubh_settings',
     counter: 'shubh_counter',
     quotes: 'shubh_quotes',
+    customers: 'shubh_customers',
   };
 
   const DEFAULT_SETTINGS = {
@@ -122,6 +123,35 @@
   }
   function getQuotation(id) { return readQuotes().find(q => q.id === id) || null; }
 
+  // ---------- customer directory (per-device) ----------
+  // Repeat clients you can pick from a list instead of retyping their details each time.
+  function custId(name) { return String(name || '').trim().toLowerCase().replace(/\s+/g, ' '); }
+  function readCustomers() { try { return JSON.parse(localStorage.getItem(LS.customers) || '[]'); } catch (e) { return []; } }
+  function writeCustomers(a) { localStorage.setItem(LS.customers, JSON.stringify(a)); }
+  function listCustomers() {
+    return readCustomers().slice().sort((a, b) => (a.name || '').localeCompare(b.name || ''));
+  }
+  function getCustomer(id) { return readCustomers().find(c => c.id === id) || null; }
+  // Save (or update) a customer keyed by their normalized name. Returns {ok, id}.
+  function saveCustomer(cust) {
+    const name = (cust && cust.name || '').trim();
+    if (!name) return { ok: false, error: 'A customer name is required.' };
+    const id = custId(name);
+    const rec = {
+      id, name,
+      contact: (cust.contact || '').trim(), phone: (cust.phone || '').trim(),
+      email: (cust.email || '').trim(), address: (cust.address || '').trim(),
+    };
+    const arr = readCustomers().filter(c => c.id !== id);
+    arr.push(rec);
+    writeCustomers(arr);
+    return { ok: true, id };
+  }
+  function deleteCustomer(id) {
+    writeCustomers(readCustomers().filter(c => c.id !== id));
+    return { ok: true };
+  }
+
   // ---------- assets ----------
   function assetUrl(src) {
     if (!src) return '';
@@ -183,6 +213,7 @@
   window.CDATA = {
     catalog, getSettings, saveSettings, nextQuoteNo,
     saveQuotation, listQuotations, getQuotation,
+    listCustomers, getCustomer, saveCustomer, deleteCustomer,
     assetUrl, descUrl, toDataURI, buildImageMap, downloadBlob,
   };
 })();

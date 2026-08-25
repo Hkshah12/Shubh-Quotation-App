@@ -186,9 +186,21 @@ header.topbar {
 .modal footer .save { background: var(--accent); color:#fff; }
 .modal footer .cancel { background: var(--muted); color: var(--fg); }
 
-.saved-item { display:flex; justify-content:space-between; align-items:center; padding:10px 12px; border:1px solid var(--border); border-radius:8px; }
+.saved-item { display:flex; justify-content:space-between; align-items:center; gap:10px; padding:10px 12px; margin-bottom:8px; border:1px solid var(--border); border-radius:8px; }
 .saved-item:hover { border-color: var(--primary); }
-.saved-item .load { background: var(--primary); color:#fff; border:none; padding:6px 12px; border-radius:7px; font-weight:600; }
+.saved-item .load { background: var(--primary); color:#fff; border:none; padding:6px 12px; border-radius:7px; font-weight:600; cursor:pointer; }
+
+/* ---------- Customer directory ---------- */
+.client-title { display:flex; align-items:center; justify-content:space-between; gap:8px; }
+.client-title-actions { display:flex; gap:6px; }
+.mini-btn { background:#fff; color:var(--primary); border:1.5px solid var(--border-strong); padding:5px 10px; border-radius:8px; font-size:11.5px; font-weight:700; cursor:pointer; letter-spacing:0; text-transform:none; }
+.mini-btn:hover { border-color:var(--primary); background:var(--muted); }
+.cust-search { margin-bottom:12px; }
+.cust-search input { width:100%; padding:9px 11px; border:1px solid var(--border); border-radius:8px; outline:none; background:#fff; }
+.cust-search input:focus { border-color:var(--primary); box-shadow:0 0 0 3px #1e3a5f1a; }
+.cust-btns { display:flex; gap:6px; flex:0 0 auto; }
+.cust-del { background:#fff; color:var(--primary); border:1.5px solid var(--border-strong); padding:6px 12px; border-radius:7px; font-weight:600; cursor:pointer; }
+.cust-del:hover { border-color:var(--primary); background:var(--muted); }
 
 /* ---------- Print document (A4) ---------- */
 #printDoc { display: none; }

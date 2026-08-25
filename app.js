@@ -1,7 +1,7 @@
 /* Shubh Enterprise — Quotation Generator (frontend) */
 'use strict';
 
-const APP_VERSION = 'v13'; // bump on every deploy so you can confirm you're on the latest
+const APP_VERSION = 'v14'; // bump on every deploy so you can confirm you're on the latest
 
 const State = {
   catalog: [],
@@ -274,6 +274,10 @@ function bindUI() {
   $('btnSaveSettings').addEventListener('click', saveSettingsFromModal);
   // Saved quotes modal
   $('btnSaved').addEventListener('click', openSaved);
+  // Customer directory
+  $('btnPickCustomer').addEventListener('click', openCustomers);
+  $('btnSaveCustomer').addEventListener('click', saveCurrentCustomer);
+  $('custSearch').addEventListener('input', e => renderCustomersList(e.target.value));
 
   document.querySelectorAll('[data-close]').forEach(b => b.addEventListener('click', closeModals));
   document.querySelectorAll('.modal-backdrop').forEach(bd => bd.addEventListener('click', e => { if (e.target === bd) closeModals(); }));
@@ -374,6 +378,76 @@ async function loadQuote(id) {
   $('gstEnabled').checked = State.gst.enabled; $('gstPercent').value = State.gst.percent;
   $('showTotals').checked = State.showTotals;
   renderCatalog(); renderCart(); recalc(); closeModals();
+}
+
+/* ---------------- Customer directory ---------------- */
+function currentClient() {
+  return {
+    name: $('clientName').value, contact: $('clientContact').value, phone: $('clientPhone').value,
+    email: $('clientEmail').value, address: $('clientAddress').value,
+  };
+}
+function fillClient(c) {
+  c = c || {};
+  $('clientName').value = c.name || ''; $('clientContact').value = c.contact || '';
+  $('clientPhone').value = c.phone || ''; $('clientEmail').value = c.email || '';
+  $('clientAddress').value = c.address || '';
+}
+
+function openCustomers() {
+  $('custSearch').value = '';
+  $('customersModal').classList.add('open');
+  renderCustomersList('');
+  setTimeout(() => $('custSearch').focus(), 50);
+}
+
+function renderCustomersList(query) {
+  const box = $('customersList');
+  const q = (query || '').toLowerCase().trim();
+  let list = CDATA.listCustomers();
+  if (q) list = list.filter(c => [c.name, c.contact, c.phone, c.email, c.address].join(' ').toLowerCase().includes(q));
+  if (!CDATA.listCustomers().length) {
+    box.innerHTML = `<p style="color:var(--sub)">No saved customers yet. Fill in the client details, then click <b>＋ Save customer</b>.</p>`;
+    return;
+  }
+  if (!list.length) { box.innerHTML = `<p style="color:var(--sub)">No customers match your search.</p>`; return; }
+  box.innerHTML = list.map(c => {
+    const bits = [c.contact, c.phone, c.email, c.address].filter(Boolean).map(esc).join(' · ');
+    return `<div class="saved-item">
+      <div><b>${esc(c.name)}</b><br><span style="color:var(--sub);font-size:12px;">${bits || '—'}</span></div>
+      <div class="cust-btns">
+        <button class="load" data-use="${esc(c.id)}">Use</button>
+        <button class="cust-del" data-delcust="${esc(c.id)}" title="Delete customer">Delete</button>
+      </div>
+    </div>`;
+  }).join('');
+  box.querySelectorAll('[data-use]').forEach(b => b.addEventListener('click', () => useCustomer(b.dataset.use)));
+  box.querySelectorAll('[data-delcust]').forEach(b => b.addEventListener('click', () => deleteCustomerById(b.dataset.delcust)));
+}
+
+function useCustomer(id) {
+  const c = CDATA.getCustomer(id);
+  if (!c) return;
+  fillClient(c);
+  closeModals();
+}
+
+function deleteCustomerById(id) {
+  const c = CDATA.getCustomer(id);
+  if (!c) return;
+  if (!confirm(`Delete saved customer "${c.name}"? This won't affect any saved quotations.`)) return;
+  CDATA.deleteCustomer(id);
+  renderCustomersList($('custSearch').value);
+}
+
+function saveCurrentCustomer() {
+  const c = currentClient();
+  if (!c.name.trim()) return alert('Enter the client / hospital / lab name first, then save the customer.');
+  const existing = CDATA.getCustomer(c.name.trim().toLowerCase().replace(/\s+/g, ' '));
+  if (existing && !confirm(`"${c.name.trim()}" is already saved. Update their details?`)) return;
+  const res = CDATA.saveCustomer(c);
+  if (!res.ok) return alert(res.error || 'Could not save customer.');
+  alert(`Customer "${c.name.trim()}" saved. You can pick them any time from 📇 Customers.`);
 }
 
 /* Build the document options with images fetched + embedded as data URIs (self-contained files) */

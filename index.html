@@ -53,7 +53,13 @@
         <span>Quotation</span>
       </div>
       <div class="quote-scroll">
-        <div class="section-title">Client Details</div>
+        <div class="section-title client-title">
+          <span>Client Details</span>
+          <span class="client-title-actions">
+            <button id="btnPickCustomer" class="mini-btn" title="Choose a saved customer">📇 Customers</button>
+            <button id="btnSaveCustomer" class="mini-btn" title="Save these details for reuse">＋ Save customer</button>
+          </span>
+        </div>
         <div class="client-grid">
           <div class="field"><label>Client / Hospital / Lab name</label><input id="clientName" placeholder="e.g. City Diagnostic Centre"/></div>
           <div class="field"><label>Contact person</label><input id="clientContact" placeholder="Dr. / Mr. / Ms."/></div>
@@ -151,6 +157,17 @@
       <button class="cancel" data-close>Cancel</button>
       <button class="save" id="btnSaveSettings">Save Settings</button>
     </footer>
+  </div>
+</div>
+
+<!-- CUSTOMERS MODAL -->
+<div class="modal-backdrop" id="customersModal">
+  <div class="modal">
+    <header><h2>Saved Customers</h2><button class="close" data-close>&times;</button></header>
+    <div class="content">
+      <div class="cust-search"><input id="custSearch" type="text" placeholder="Search saved customers…"/></div>
+      <div id="customersList"><p style="color:var(--sub)">Loading…</p></div>
+    </div>
   </div>
 </div>
 
