@@ -25,8 +25,8 @@
     table.frame>tbody>tr>td{padding:0 4px;}
     .lh{background:var(--cream);border-bottom:3px solid var(--red);}
     .lh-main{display:flex;align-items:center;padding:10px 4px 6px;}
-    .lh-logo{width:66px;height:66px;border-radius:50%;flex:0 0 auto;display:grid;place-items:center;overflow:hidden;
-      color:var(--red);font-family:'EB Garamond',Georgia,serif;font-weight:800;font-size:20px;}
+    .lh-logo{width:92px;height:92px;border-radius:50%;flex:0 0 auto;display:grid;place-items:center;overflow:hidden;
+      color:var(--red);font-family:'EB Garamond',Georgia,serif;font-weight:800;font-size:26px;}
     .lh-logo img{width:100%;height:100%;object-fit:contain;}
     .lh-spacer{visibility:hidden;}
     .lh-name{flex:1;text-align:center;font-family:'EB Garamond',Georgia,'Cambria',serif;font-weight:700;
@@ -102,7 +102,7 @@
         <div class="lh-addr">${addrBar}</div>
       </div>`;
 
-    const footer = `<div class="pf">${esc(s.company || 'Shubh Enterprise')}${s.tagline ? ' — ' + esc(s.tagline) : ''} &nbsp;·&nbsp; This is a computer-generated quotation.</div>`;
+    const footer = `<div class="pf">${esc(s.company || 'Shubh Enterprise')}${s.tagline ? ' — ' + esc(s.tagline) : ''}</div>`;
 
     const showPhotos = s.showPhotos !== false;
     const rows = (opts.items || []).map((it, idx) => {
@@ -117,7 +117,6 @@
         <td class="c">${esc(it.unit || 'unit')}</td>
         <td class="c">${it.qty}</td>
         <td class="r">${money(it.price)}</td>
-        <td class="c">${it.disc ? it.disc + '%' : '—'}</td>
         <td class="r b">${money(net)}</td>
       </tr>`;
     }).join('');
@@ -153,7 +152,6 @@
             <th class="c" style="width:56px">Pack</th>
             <th class="c" style="width:42px">Qty</th>
             <th class="r" style="width:92px">Rate</th>
-            <th class="c" style="width:48px">Disc.</th>
             <th class="r" style="width:104px">Amount</th>
           </tr></thead>
           <tbody>${rows}</tbody>
@@ -290,7 +288,7 @@
       <tr><td bgcolor="${CREAM}" style="background:${CREAM};background-color:${CREAM};padding:4mm 5mm 2mm;">
         <table width="100%" style="border-collapse:collapse;">
           <tr>
-            <td width="80" valign="top">${(s.logo && imgURL(s.logo)) ? `<img src="${imgURL(s.logo)}" width="66" height="66"/>` : ''}</td>
+            <td width="86" valign="top">${(s.logo && imgURL(s.logo)) ? `<img src="${imgURL(s.logo)}" width="76" style="width:76px;"/>` : ''}</td>
             <td align="center" valign="middle" style="${serif}font-size:19pt;font-weight:bold;color:${RED};">${wm}</td>
             <td width="80"></td>
           </tr>
@@ -318,7 +316,7 @@
     const intro = s.introLine ? `<p style="${serif}font-size:11pt;">${esc(s.introLine)}</p>` : '';
 
     const th = (txt, align, w) => `<td bgcolor="${RED}" align="${align}" style="background:${RED};background-color:${RED};color:#ffffff;font-weight:bold;padding:5pt;border:0.5pt solid ${RED};${w ? 'width:' + w + ';' : ''}">${txt}</td>`;
-    const header = `<tr>${th('Sr.', 'center', '28pt')}${showPhotos ? th('Photo', 'center', '52pt') : ''}${th('Description of Product', 'left')}${th('Pack', 'center', '44pt')}${th('Qty', 'center', '32pt')}${th('Rate', 'right', '68pt')}${th('Disc.', 'center', '38pt')}${th('Amount', 'right', '76pt')}</tr>`;
+    const header = `<tr>${th('Sr.', 'center', '28pt')}${showPhotos ? th('Photo', 'center', '52pt') : ''}${th('Description of Product', 'left')}${th('Pack', 'center', '44pt')}${th('Qty', 'center', '32pt')}${th('Rate', 'right', '68pt')}${th('Amount', 'right', '76pt')}</tr>`;
     const rows = (opts.items || []).map((it, i) => {
       const net = it.price * it.qty * (1 - (it.disc || 0) / 100);
       const bgAttr = (i % 2 === 1) ? ` bgcolor="${CREAMROW}"` : '';                 // Word: alternating rows via bgcolor
@@ -332,7 +330,6 @@
         <td${bgAttr} align="center" style="${cs}">${esc(it.unit || 'unit')}</td>
         <td${bgAttr} align="center" style="${cs}">${it.qty}</td>
         <td${bgAttr} align="right" style="${cs}">${money(it.price)}</td>
-        <td${bgAttr} align="center" style="${cs}">${it.disc ? it.disc + '%' : '—'}</td>
         <td${bgAttr} align="right" style="${cs}"><b>${money(net)}</b></td>
       </tr>`;
     }).join('');
