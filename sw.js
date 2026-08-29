@@ -1,6 +1,6 @@
 /* Service worker: network-first so updates reach users immediately; cache is only a
    fallback for offline. Bump CACHE on any change to force old caches to clear. */
-const CACHE = 'shubh-quote-v15';
+const CACHE = 'shubh-quote-v16';
 const SHELL = ['./', 'index.html', 'styles.css', 'clientdata.js', 'quotedoc.js', 'app.js',
   'manifest.webmanifest', 'icon-192.png', 'icon-512.png'];
 

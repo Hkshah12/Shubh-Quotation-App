@@ -115,8 +115,9 @@ header.topbar {
   transition: background .15s ease;
 }
 .card .add:hover { background: var(--accent-600); }
-.card.in-cart { border-color: var(--accent); box-shadow: 0 0 0 2px #05966922; }
-.badge-qty { background:#05966922; color: var(--accent-600); font-weight:800; border-radius:999px; padding:2px 8px; font-size:11px; }
+.card.in-cart { border-color: var(--accent); box-shadow: 0 0 0 2px #c0000022; }
+/* Sits inside the red "Add" button once an item is in the cart — white text stays readable. */
+.badge-qty { background: rgba(255,255,255,.22); color:#fff; font-weight:800; border-radius:999px; padding:2px 8px; font-size:11px; }
 
 /* ---------- Quotation panel (right) ---------- */
 .quote { display: flex; flex-direction: column; min-height: 0; background: #fff; }
