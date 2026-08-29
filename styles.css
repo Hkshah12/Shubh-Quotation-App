@@ -202,6 +202,53 @@ header.topbar {
 .cust-del { background:#fff; color:var(--primary); border:1.5px solid var(--border-strong); padding:6px 12px; border-radius:7px; font-weight:600; cursor:pointer; }
 .cust-del:hover { border-color:var(--primary); background:var(--muted); }
 
+/* ---------- Quote lifecycle: context bar, status badges, saved manager ---------- */
+.quote-context { display:flex; align-items:center; gap:8px; flex-wrap:wrap; font-size:12.5px; padding:9px 12px; margin-bottom:12px; border:1px solid var(--border); border-radius:8px; background:var(--muted); }
+.quote-context b { font-size:13px; }
+.quote-context .qc-sub { color:var(--sub); }
+.qc-tag { font-size:10px; font-weight:800; text-transform:uppercase; letter-spacing:.05em; padding:2px 8px; border-radius:999px; background:var(--border); color:var(--sub); }
+.qc-tag.qc-new { background:#e8f0fe; color:#1a56b0; }
+.qc-tag.qc-rev { background:#fff3e0; color:#b26a00; }
+.quote-context .qc-status { font-size:10px; font-weight:800; text-transform:uppercase; letter-spacing:.04em; padding:2px 8px; border-radius:999px; }
+
+/* status badges (shared by context bar and saved list) */
+.qc-badge, .qc-status { display:inline-block; }
+.s-pending { background:#fff3e0; color:#b26a00; }
+.s-won { background:#e6f4ea; color:#1e7e34; }
+.s-lost { background:#fdecea; color:#b3261e; }
+.qc-badge { font-size:10px; font-weight:800; text-transform:uppercase; letter-spacing:.04em; padding:2px 8px; border-radius:999px; }
+.qc-due { font-size:11px; font-weight:700; color:#b26a00; }
+
+/* saved-quotes toolbar + filters */
+.saved-toolbar { position:sticky; top:0; background:#fff; padding-bottom:10px; margin-bottom:10px; border-bottom:1px solid var(--border); z-index:1; }
+.saved-summary { font-size:12.5px; color:var(--sub); margin-bottom:8px; }
+.saved-summary b { color:var(--fg); }
+.saved-summary .due-text { color:#b26a00; }
+.saved-filters { display:flex; gap:6px; flex-wrap:wrap; }
+.sf-chip { padding:5px 11px; border-radius:999px; border:1px solid var(--border); background:#fff; color:var(--sub); font-size:12px; font-weight:700; cursor:pointer; }
+.sf-chip:hover { border-color:var(--primary); color:var(--primary); }
+.sf-chip.active { background:var(--primary); color:#fff; border-color:var(--primary); }
+.sf-n { opacity:.85; font-weight:800; }
+
+/* saved-quote cards */
+.quote-card { border:1px solid var(--border); border-radius:10px; padding:12px; margin-bottom:10px; }
+.quote-card:hover { border-color:var(--primary); }
+.qc-idline { display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+.qc-idline b { font-size:14px; }
+.qc-metaline { color:var(--sub); font-size:12px; margin-top:3px; }
+.qc-controls { display:flex; gap:12px; flex-wrap:wrap; margin:10px 0; }
+.qc-field { display:flex; flex-direction:column; gap:3px; font-size:10px; font-weight:800; text-transform:uppercase; letter-spacing:.04em; color:var(--sub); }
+.qc-field select, .qc-field input { padding:6px 8px; border:1px solid var(--border); border-radius:7px; font-size:13px; font-weight:500; text-transform:none; letter-spacing:0; color:var(--fg); background:#fff; }
+.qc-field select:focus, .qc-field input:focus { border-color:var(--primary); box-shadow:0 0 0 3px #1e3a5f1a; outline:none; }
+.qc-field input:disabled { background:var(--muted); color:var(--sub); }
+.qc-actions { display:flex; gap:8px; flex-wrap:wrap; }
+.qc-btn { padding:7px 14px; border-radius:8px; border:1.5px solid var(--border-strong); background:#fff; color:var(--primary); font-weight:700; font-size:12.5px; cursor:pointer; }
+.qc-btn:hover { border-color:var(--primary); background:var(--muted); }
+.qc-btn.primary { background:var(--primary); border-color:var(--primary); color:#fff; }
+.qc-btn.primary:hover { background:var(--primary-600); }
+.qc-btn.danger { color:#b3261e; border-color:#e6c9c5; }
+.qc-btn.danger:hover { background:#fdecea; border-color:#b3261e; }
+
 /* ---------- Print document (A4) ---------- */
 #printDoc { display: none; }
 @media screen { #printDoc { display:none; } }

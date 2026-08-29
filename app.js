@@ -1,7 +1,7 @@
 /* Shubh Enterprise — Quotation Generator (frontend) */
 'use strict';
 
-const APP_VERSION = 'v14'; // bump on every deploy so you can confirm you're on the latest
+const APP_VERSION = 'v15'; // bump on every deploy so you can confirm you're on the latest
 
 const State = {
   catalog: [],
@@ -13,6 +13,9 @@ const State = {
   overall: { value: 0, type: 'percent' },
   gst: { enabled: true, percent: 18 },
   showTotals: true,  // include the totals & GST block on the generated document
+  revisionOf: '',            // base quote number this draft is a revision of (blank = not a revision)
+  quoteCtx: { mode: 'new' }, // what the editor is currently working on (drives the context bar)
+  savedFilter: 'all',        // active filter in the Saved Quotes screen
 };
 
 const $ = (id) => document.getElementById(id);
@@ -28,6 +31,7 @@ async function init() {
   bindUI();
   renderCatalog();
   recalc();
+  renderQuoteContext();
 }
 
 async function loadSettings() {
@@ -272,8 +276,10 @@ function bindUI() {
   // Settings modal
   $('btnSettings').addEventListener('click', openSettings);
   $('btnSaveSettings').addEventListener('click', saveSettingsFromModal);
-  // Saved quotes modal
+  // Saved quotes modal (event-delegated: the list is re-rendered on every change)
   $('btnSaved').addEventListener('click', openSaved);
+  $('savedList').addEventListener('click', onSavedClick);
+  $('savedList').addEventListener('change', onSavedChange);
   // Customer directory
   $('btnPickCustomer').addEventListener('click', openCustomers);
   $('btnSaveCustomer').addEventListener('click', saveCurrentCustomer);
@@ -287,11 +293,12 @@ function bindUI() {
 function newQuote() {
   if (State.cart.length && !confirm('Start a new quotation? Current items will be cleared.')) return;
   State.cart = []; State.overall = { value: 0, type: 'percent' }; State.showTotals = true;
+  State.revisionOf = ''; State.quoteCtx = { mode: 'new' };
   $('printDoc').dataset.quoteNo = '';
   $('showTotals').checked = true;
   $('overallDiscValue').value = 0; $('overallDiscType').value = 'percent';
   ['clientName', 'clientContact', 'clientPhone', 'clientEmail', 'clientAddress'].forEach(id => $(id).value = '');
-  renderCatalog(); renderCart(); recalc();
+  renderCatalog(); renderCart(); recalc(); renderQuoteContext();
 }
 
 /* ---------------- Settings ---------------- */
@@ -330,6 +337,7 @@ function collectQuote(quoteNo) {
   return {
     quoteNo: quoteNo,
     date: new Date().toLocaleDateString('en-IN', { year: 'numeric', month: 'short', day: 'numeric' }),
+    revisionOf: State.revisionOf || '',
     client: {
       name: $('clientName').value, contact: $('clientContact').value, phone: $('clientPhone').value,
       email: $('clientEmail').value, address: $('clientAddress').value,
@@ -342,31 +350,65 @@ function collectQuote(quoteNo) {
 
 async function saveQuote() {
   if (!State.cart.length) return alert('Add at least one item before saving.');
-  const { quoteNo } = await CDATA.nextQuoteNo();
-  const data = collectQuote(quoteNo);
-  CDATA.saveQuotation(data);
-  alert('Quotation saved as ' + quoteNo);
+  let quoteNo = $('printDoc').dataset.quoteNo;
+  const isUpdate = !!(quoteNo && CDATA.getQuotation(idOf(quoteNo)));
+  if (!quoteNo) { quoteNo = (await CDATA.nextQuoteNo()).quoteNo; $('printDoc').dataset.quoteNo = quoteNo; }
+  CDATA.saveQuotation(collectQuote(quoteNo));
+  markSavedContext(quoteNo);
+  alert(isUpdate ? ('Quotation ' + quoteNo + ' updated.') : ('Quotation saved as ' + quoteNo + '.'));
 }
 
-async function openSaved() {
-  $('savedModal').classList.add('open');
-  const list = CDATA.listQuotations();
-  const box = $('savedList');
-  if (!list.length) { box.innerHTML = `<p style="color:var(--sub)">No saved quotations yet.</p>`; return; }
-  box.innerHTML = list.reverse().map(q => `
-    <div class="saved-item">
-      <div><b>${esc(q.quoteNo || q.id)}</b><br><span style="color:var(--sub);font-size:12px;">${esc(q.client || '—')} · ${esc(q.date || '')} · ${fmt(q.total || 0)}</span></div>
-      <button class="load" data-load="${esc(q.id)}">Open</button>
-    </div>`).join('');
-  box.querySelectorAll('[data-load]').forEach(b => b.addEventListener('click', () => loadQuote(b.dataset.load)));
+/* ----- Quote lifecycle: status, follow-ups, open / revise / duplicate ----- */
+function idOf(quoteNo) { return String(quoteNo || '').replace(/[^\w\-]/g, '_'); }
+function baseQuoteNo(no) { return String(no || '').replace(/-R\d+$/i, ''); }
+function statusLabel(s) { return s === 'won' ? 'Won' : s === 'lost' ? 'Lost' : 'Pending'; }
+function todayISO() {
+  const d = new Date();
+  return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+}
+// A quote needs chasing when it is still pending and its follow-up date is today or earlier.
+function isFollowDue(q) { return (q.status || 'pending') === 'pending' && !!q.followUp && q.followUp <= todayISO(); }
+
+// Next revision number for a quote, e.g. SE/2026/0012 -> SE/2026/0012-R1 -> -R2 …
+function nextRevisionNo(originalNo) {
+  const base = baseQuoteNo(originalNo);
+  let max = 0;
+  CDATA.listQuotations().forEach(q => {
+    if (baseQuoteNo(q.quoteNo) === base) {
+      const m = /-R(\d+)$/i.exec(q.quoteNo || '');
+      if (m) max = Math.max(max, parseInt(m[1], 10));
+    }
+  });
+  return base + '-R' + (max + 1);
 }
 
-async function loadQuote(id) {
-  const q = CDATA.getQuotation(id);
-  if (!q) return;
-  $('clientName').value = q.client?.name || ''; $('clientContact').value = q.client?.contact || '';
-  $('clientPhone').value = q.client?.phone || ''; $('clientEmail').value = q.client?.email || '';
-  $('clientAddress').value = q.client?.address || '';
+// The always-visible bar in the editor telling staff exactly which quote they're on.
+function renderQuoteContext() {
+  const el = $('quoteContext'); if (!el) return;
+  const ctx = State.quoteCtx || { mode: 'new' };
+  let html;
+  if (ctx.mode === 'existing') {
+    const st = ctx.status || 'pending';
+    html = `<span class="qc-tag">Editing</span><b>${esc(ctx.quoteNo)}</b><span class="qc-status s-${st}">${statusLabel(st)}</span>`;
+  } else if (ctx.mode === 'revision') {
+    html = `<span class="qc-tag qc-rev">New revision</span><b>${esc(ctx.quoteNo)}</b><span class="qc-sub">revising ${esc(ctx.sourceNo)} — the original stays saved.</span>`;
+  } else if (ctx.mode === 'duplicate') {
+    html = `<span class="qc-tag qc-new">New quote</span><span class="qc-sub">copied from ${esc(ctx.sourceNo)} — a new number is assigned when you save.</span>`;
+  } else {
+    html = `<span class="qc-tag qc-new">New quote</span><span class="qc-sub">A number is assigned when you save, print or export.</span>`;
+  }
+  el.innerHTML = html;
+}
+function markSavedContext(quoteNo) {
+  const q = CDATA.getQuotation(idOf(quoteNo));
+  State.revisionOf = (q && q.revisionOf) || State.revisionOf || '';
+  State.quoteCtx = { mode: 'existing', quoteNo, status: (q && q.status) || 'pending' };
+  renderQuoteContext();
+}
+
+// Load a saved quote's client + items + settings into the editor (shared by open/revise/duplicate).
+function applyQuoteToEditor(q) {
+  fillClient(q.client);
   State.cart = (q.items || []).map(i => {
     const cat = State.catalog.find(c => c.sku === i.sku) || {};
     return { ...cat, ...i };
@@ -377,7 +419,108 @@ async function loadQuote(id) {
   $('overallDiscValue').value = State.overall.value; $('overallDiscType').value = State.overall.type;
   $('gstEnabled').checked = State.gst.enabled; $('gstPercent').value = State.gst.percent;
   $('showTotals').checked = State.showTotals;
-  renderCatalog(); renderCart(); recalc(); closeModals();
+  renderCatalog(); renderCart(); recalc();
+}
+
+function loadQuote(id) {
+  const q = CDATA.getQuotation(id);
+  if (!q) return;
+  applyQuoteToEditor(q);
+  $('printDoc').dataset.quoteNo = q.quoteNo || '';
+  State.revisionOf = q.revisionOf || '';
+  State.quoteCtx = { mode: 'existing', quoteNo: q.quoteNo, status: q.status || 'pending' };
+  renderQuoteContext(); closeModals();
+  $('quotePanel').classList.add('open');
+}
+
+function reviseQuote(id) {
+  const q = CDATA.getQuotation(id);
+  if (!q) return;
+  applyQuoteToEditor(q);
+  const newNo = nextRevisionNo(q.quoteNo);
+  $('printDoc').dataset.quoteNo = newNo;
+  State.revisionOf = baseQuoteNo(q.quoteNo);
+  State.quoteCtx = { mode: 'revision', quoteNo: newNo, sourceNo: q.quoteNo };
+  renderQuoteContext(); closeModals();
+  $('quotePanel').classList.add('open');
+}
+
+function duplicateQuote(id) {
+  const q = CDATA.getQuotation(id);
+  if (!q) return;
+  applyQuoteToEditor(q);
+  $('printDoc').dataset.quoteNo = '';
+  State.revisionOf = '';
+  State.quoteCtx = { mode: 'duplicate', sourceNo: q.quoteNo };
+  renderQuoteContext(); closeModals();
+  $('quotePanel').classList.add('open');
+}
+
+function openSaved() {
+  State.savedFilter = 'all';
+  $('savedModal').classList.add('open');
+  renderSaved();
+}
+
+function renderSaved() {
+  const box = $('savedList');
+  const all = CDATA.listQuotations().slice().sort((a, b) => (b.savedAt || 0) - (a.savedAt || 0));
+  const counts = { all: all.length, pending: 0, won: 0, lost: 0, due: 0 };
+  all.forEach(q => { counts[q.status] = (counts[q.status] || 0) + 1; if (isFollowDue(q)) counts.due++; });
+
+  const f = State.savedFilter || 'all';
+  let list = all;
+  if (f === 'due') list = all.filter(isFollowDue);
+  else if (f !== 'all') list = all.filter(q => q.status === f);
+
+  const chip = (key, label) => `<button class="sf-chip ${f === key ? 'active' : ''}" data-filter="${key}">${label}${key !== 'all' && counts[key] ? ` <span class="sf-n">${counts[key]}</span>` : ''}</button>`;
+  const toolbar = `<div class="saved-toolbar">
+      <div class="saved-summary">${counts.all} saved · <b>${counts.pending}</b> pending${counts.due ? ` · <b class="due-text">${counts.due} follow-up${counts.due > 1 ? 's' : ''} due</b>` : ''}</div>
+      <div class="saved-filters">${chip('all', 'All')}${chip('pending', 'Pending')}${chip('due', 'Follow-ups due')}${chip('won', 'Won')}${chip('lost', 'Lost')}</div>
+    </div>`;
+
+  if (!all.length) { box.innerHTML = toolbar + `<p style="color:var(--sub)">No saved quotations yet.</p>`; return; }
+  if (!list.length) { box.innerHTML = toolbar + `<p style="color:var(--sub)">No quotations match this filter.</p>`; return; }
+
+  box.innerHTML = toolbar + list.map(q => {
+    const st = q.status || 'pending';
+    const opt = (v, l) => `<option value="${v}" ${st === v ? 'selected' : ''}>${l}</option>`;
+    return `<div class="quote-card" data-id="${esc(q.id)}">
+      <div class="qc-top">
+        <div class="qc-idline"><b>${esc(q.quoteNo || q.id)}</b><span class="qc-badge s-${st}">${statusLabel(st)}</span>${isFollowDue(q) ? `<span class="qc-due">⏰ Follow-up due</span>` : ''}</div>
+        <div class="qc-metaline">${esc(q.client || '—')} · ${esc(q.date || '')} · ${fmt(q.total || 0)}</div>
+      </div>
+      <div class="qc-controls">
+        <label class="qc-field">Status<select data-status="${esc(q.id)}">${opt('pending', 'Pending')}${opt('won', 'Won')}${opt('lost', 'Lost')}</select></label>
+        <label class="qc-field">Follow-up date<input type="date" data-follow="${esc(q.id)}" value="${esc(q.followUp || '')}" ${st === 'pending' ? '' : 'disabled title="Follow-up applies to pending quotes only"'}/></label>
+      </div>
+      <div class="qc-actions">
+        <button class="qc-btn primary" data-open="${esc(q.id)}">Open</button>
+        <button class="qc-btn" data-revise="${esc(q.id)}" title="New version for the same client (keeps the original)">Revise</button>
+        <button class="qc-btn" data-duplicate="${esc(q.id)}" title="Copy items into a brand-new quote">Duplicate</button>
+        <button class="qc-btn danger" data-delquote="${esc(q.id)}">Delete</button>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function onSavedClick(e) {
+  const fb = e.target.closest('[data-filter]'); if (fb) { State.savedFilter = fb.dataset.filter; renderSaved(); return; }
+  const op = e.target.closest('[data-open]'); if (op) { loadQuote(op.dataset.open); return; }
+  const rv = e.target.closest('[data-revise]'); if (rv) { reviseQuote(rv.dataset.revise); return; }
+  const du = e.target.closest('[data-duplicate]'); if (du) { duplicateQuote(du.dataset.duplicate); return; }
+  const dl = e.target.closest('[data-delquote]'); if (dl) { deleteSavedQuote(dl.dataset.delquote); return; }
+}
+function onSavedChange(e) {
+  const st = e.target.closest('[data-status]'); if (st) { CDATA.updateQuotationMeta(st.dataset.status, { status: st.value }); renderSaved(); return; }
+  const fo = e.target.closest('[data-follow]'); if (fo) { CDATA.updateQuotationMeta(fo.dataset.follow, { followUp: fo.value }); renderSaved(); return; }
+}
+function deleteSavedQuote(id) {
+  const q = CDATA.getQuotation(id);
+  if (!q) return;
+  if (!confirm(`Delete quotation ${q.quoteNo || id} for ${(q.client && q.client.name) || '—'}? This cannot be undone.`)) return;
+  CDATA.deleteQuotation(id);
+  renderSaved();
 }
 
 /* ---------------- Customer directory ---------------- */
@@ -479,7 +622,7 @@ async function printQuote() {
   if (!quoteNo) { quoteNo = (await CDATA.nextQuoteNo()).quoteNo; $('printDoc').dataset.quoteNo = quoteNo; }
   const { opts } = await buildInlineOpts(quoteNo);
   const standalone = QuoteDoc.buildStandalone(opts);
-  try { CDATA.saveQuotation(collectQuote(quoteNo)); } catch (e) {}
+  try { CDATA.saveQuotation(collectQuote(quoteNo)); markSavedContext(quoteNo); } catch (e) {}
   const blob = new Blob([standalone], { type: 'text/html' });
   const url = URL.createObjectURL(blob);
   const win = window.open(url, '_blank');
@@ -498,7 +641,7 @@ async function saveWord() {
   if (!quoteNo) { quoteNo = (await CDATA.nextQuoteNo()).quoteNo; $('printDoc').dataset.quoteNo = quoteNo; }
   const { opts, clientName } = await buildInlineOpts(quoteNo);
   const html = '﻿' + QuoteDoc.buildWordDoc(opts);
-  try { CDATA.saveQuotation(collectQuote(quoteNo)); } catch (e) {}
+  try { CDATA.saveQuotation(collectQuote(quoteNo)); markSavedContext(quoteNo); } catch (e) {}
   const fname = safeFileBase(quoteNo, clientName) + '.doc';
   CDATA.downloadBlob(html, fname, 'application/msword');
   alert('Editable Word document downloaded:\n\n' + fname + '\n\nOpen it in Microsoft Word to edit before sending.');

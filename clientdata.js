@@ -109,19 +109,49 @@
   }
 
   // ---------- saved quotations (per-device) ----------
+  const QUOTE_STATUSES = ['pending', 'won', 'lost'];
   function readQuotes() { try { return JSON.parse(localStorage.getItem(LS.quotes) || '[]'); } catch (e) { return []; } }
   function writeQuotes(a) { localStorage.setItem(LS.quotes, JSON.stringify(a)); }
   function saveQuotation(data) {
     const id = (data.quoteNo || 'quote').replace(/[^\w\-]/g, '_');
-    const arr = readQuotes().filter(q => q.id !== id);
-    arr.push(Object.assign({ id }, data));
+    const all = readQuotes();
+    const prev = all.find(q => q.id === id);
+    // Merge over any existing record so re-saving (e.g. re-print) never drops lifecycle data.
+    const rec = Object.assign({}, prev || {}, data, { id });
+    rec.status = QUOTE_STATUSES.indexOf(rec.status) >= 0 ? rec.status : 'pending';
+    rec.followUp = rec.followUp || '';
+    rec.revisionOf = data.revisionOf || (prev && prev.revisionOf) || '';
+    rec.savedAt = Date.now();
+    rec.createdAt = (prev && prev.createdAt) || rec.savedAt;
+    const arr = all.filter(q => q.id !== id);
+    arr.push(rec);
     writeQuotes(arr);
     return { ok: true, id };
   }
   function listQuotations() {
-    return readQuotes().map(d => ({ id: d.id, quoteNo: d.quoteNo, client: d.client && d.client.name, date: d.date, total: d.totals && d.totals.grandTotal }));
+    return readQuotes().map(d => ({
+      id: d.id, quoteNo: d.quoteNo, client: d.client && d.client.name,
+      date: d.date, total: d.totals && d.totals.grandTotal,
+      status: QUOTE_STATUSES.indexOf(d.status) >= 0 ? d.status : 'pending',
+      followUp: d.followUp || '', revisionOf: d.revisionOf || '',
+      savedAt: d.savedAt || 0, createdAt: d.createdAt || 0,
+    }));
   }
   function getQuotation(id) { return readQuotes().find(q => q.id === id) || null; }
+  // Update only the lifecycle fields (status / follow-up) of a saved quote, in place.
+  function updateQuotationMeta(id, patch) {
+    const arr = readQuotes();
+    const q = arr.find(x => x.id === id);
+    if (!q) return { ok: false };
+    if (patch.status !== undefined && QUOTE_STATUSES.indexOf(patch.status) >= 0) q.status = patch.status;
+    if (patch.followUp !== undefined) q.followUp = patch.followUp || '';
+    writeQuotes(arr);
+    return { ok: true };
+  }
+  function deleteQuotation(id) {
+    writeQuotes(readQuotes().filter(q => q.id !== id));
+    return { ok: true };
+  }
 
   // ---------- customer directory (per-device) ----------
   // Repeat clients you can pick from a list instead of retyping their details each time.
@@ -212,7 +242,7 @@
 
   window.CDATA = {
     catalog, getSettings, saveSettings, nextQuoteNo,
-    saveQuotation, listQuotations, getQuotation,
+    saveQuotation, listQuotations, getQuotation, updateQuotationMeta, deleteQuotation,
     listCustomers, getCustomer, saveCustomer, deleteCustomer,
     assetUrl, descUrl, toDataURI, buildImageMap, downloadBlob,
   };
