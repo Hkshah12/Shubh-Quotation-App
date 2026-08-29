@@ -154,6 +154,10 @@ DB02-BB,0602-00-0102-0-015_BEAD_BLOCK_AL,Neuation / Accumax,Other,,unit,9491,,,
 BLOCK LIFTER,0601-00-0000-0-034_BLOCK LIFTER,Neuation / Accumax,Other,,unit,261,,,
 DB01-B - SS METAL BEADS,SS 304 METAL BEADS_3.2MM,Neuation / Accumax,Other,,unit,5100,,,
 ITHERM CH25,"iTHERM CH25 NXT Cooling-Heating Incubator (45L, Ambient less 15°C to 60°C)",Neuation / Accumax,Other,,unit,64181,,iTHERM CH25 NXT.png,iTHERM CH25 NXT desc.png
+ITHERM WB26S,iTHERM WB26S (With Stirrer) 26L,Neuation,Other,,unit,88520,,iTHERM WB.png,iTHERM WB desc.png
+ITHERM WB12S,iTHERM WB12S (With Stirrer) 12L,Neuation,Other,,unit,67825,,iTHERM WB.png,iTHERM WB desc.png
+ITHERM WB26,iTHERM WB26 (Without Stirrer) 26L,Neuation,Other,,unit,65100,,iTHERM WB.png,iTHERM WB desc.png
+ITHERM WB12,iTHERM WB12 (Without Stirrer) 12L,Neuation,Other,,unit,50915,,iTHERM WB.png,iTHERM WB desc.png
 IRUPT 24P,"iRUPT 24P Cell / Tissue Homogenizer (1-24 samples, 490-4550 RPM, Programmable)",Neuation / Accumax,Homogenizers,,unit,324508,,iRUPT 24P.png,iRUPT 24P desc.png
 CH01-TA1,2 ML TUBE CARRIAGE KIT (ASS)_0261-00-0500 (CH01 TA1),Neuation / Accumax,Rotors & Buckets,,unit,9909,,,
 CH01-TA3,7 ML ROTOR KIT_0261-00-0600(FOR I RUPT 24P) - (CH01 TA3),Neuation / Accumax,Rotors & Buckets,,unit,12730,,,
@@ -511,31 +515,31 @@ APC-033,Accumax Aluminium Sealing Membrane,Neuation / Accumax,Other,,pack,14084,
 3-218-25-0,"AHN myPlate Filter Plate, 96-Well, 1.0ml, PVDF 0.45µm Filter (AFP-PVDF-0.45)",Neuation / Accumax,PCR & Plates,,pack,47436,,AHN MYTUBE SPIN COLUMN FILTER PLATE.png,AHN MYTUBE SPIN COLUMN FILTER PLATE desc.png
 3-320-20-0,"AHN myTube Spin Column, 0.8ml Filter Tube (GF-F2 Glass Fibre) with 2.0ml Receiver Tube (ASC-GF-0.7)",Neuation / Accumax,Tubes & Vials,,pack,6277,,AHN MYTUBE SPIN COLUMN FILTER PLATE.png,AHN MYTUBE SPIN COLUMN FILTER PLATE desc.png
 3-321-20-0,"AHN myTube Spin Column, 0.8ml Filter Tube (GF-N2 Glass Fibre) with 2.0ml Receiver Tube (ASC-GF-RNA)",Neuation / Accumax,Tubes & Vials,,pack,5852,,AHN MYTUBE SPIN COLUMN FILTER PLATE.png,AHN MYTUBE SPIN COLUMN FILTER PLATE desc.png
-1-716-C10-0,"AHN myPette EL³ 20µL Tip for Low Force Pipettes, Racked",Neuation / Accumax,Pipette Tips,,pack,26293,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
-1-718-C10-0,"AHN myPette EL³ 20µL Tip for Low Force Pipettes, Sterile, Racked (ALF-20-S-R)",Neuation / Accumax,Pipette Tips,,pack,29639,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
-4-718-C10-0,"AHN myPette EL³ 20µL Tip for Low Force Pipettes, Sterile, Low Retention, Racked (ALF-20-S-L-R)",Neuation / Accumax,Pipette Tips,,pack,43158,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
-2-718-C10-0,"AHN myPette EL³ 20µL Tip for Low Force Pipettes, Sterile, Filter, Racked (ALF-20-S-F-R)",Neuation / Accumax,Pipette Tips,,pack,51431,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
-5-718-C10-0,"AHN myPette EL³ 20µL Tip for Low Force Pipettes, Sterile, Low Retention, Filter, Racked (ALF-20-S-L-F-R)",Neuation / Accumax,Pipette Tips,,pack,62568,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
-1-711-C1-R,"AHN myPette EL³ 20µL Tip for Low Force Pipettes, Reloading Stack (ALF-20-K)",Neuation / Accumax,Pipette Tips,,pack,23182,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
-4-711-C1-R,"AHN myPette EL³ 20µL Tip for Low Force Pipettes, Sterile, Low Retention, Reloading Stack (ALF-20-S-L-K)",Neuation / Accumax,Pipette Tips,,pack,27409,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
-2-718-E10-0,"AHN myPette EL³ 20µL Tip for Low Force Pipettes, Sterile, Filter, Racked (AGLF-20-S-F-R)",Neuation / Accumax,Pipette Tips,,pack,37232,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
-1-721-C10-0,"AHN myPette EL³ 200µL Tip for Low Force Pipettes, Racked (ALF-200-R)",Neuation / Accumax,Pipette Tips,,pack,26293,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
-1-722-C10-0,"AHN myPette EL³ 200µL Tip for Low Force Pipettes, Sterile, Racked (ALF-200-S-R)",Neuation / Accumax,Pipette Tips,,pack,29639,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
-4-728-C10-0,"AHN myPette EL³ 200µL Tip for Low Force Pipettes, Sterile, Low Retention, Racked (ALF-200-S-L-R)",Neuation / Accumax,Pipette Tips,,pack,43158,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
-2-728-C10-0,"AHN myPette EL³ 200µL Tip for Low Force Pipettes, Sterile, Filter, Racked (ALF-200-S-F-R)",Neuation / Accumax,Pipette Tips,,pack,51431,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
-5-728-C10-0,"AHN myPette EL³ 200µL Tip for Low Force Pipettes, Sterile, Low Retention, Filter, Racked (ALF-200-S-L-F-R)",Neuation / Accumax,Pipette Tips,,pack,62568,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
-1-721-C1-R,"AHN myPette EL³ 200µL Tip for Low Force Pipettes, Reloading Stack (ALF-200-K)",Neuation / Accumax,Pipette Tips,,pack,23182,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
-4-721-C1-R,"AHN myPette EL³ 200µL Tip for Low Force Pipettes, Sterile, Low Retention, Reloading Stack (ALF-200-S-L-K)",Neuation / Accumax,Pipette Tips,,pack,27409,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
-2-728-E10-0,"AHN myPette EL³ 200µL Tip for Low Force Pipettes, Sterile, Filter, Racked (AGLF-200-S-F-R)",Neuation / Accumax,Pipette Tips,,pack,37232,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
-5-728-E10-0,"AHN myPette EL³ 200µL Tip for Low Force Pipettes, Sterile, Low Retention, Filter, Racked (AGLF-200-S-L-F-R)",Neuation / Accumax,Pipette Tips,,pack,44270,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
-1-802-C10-0,"AHN myPette EL³ 1000µL Tip for Low Force Pipettes, Racked (ALF-1000-R)",Neuation / Accumax,Pipette Tips,,pack,18653,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
-1-803-C10-0,"AHN myPette EL³ 1000µL Tip for Low Force Pipettes, Sterile, Racked (ALF-1000-S-R)",Neuation / Accumax,Pipette Tips,,pack,21668,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
-4-803-C10-0,"AHN myPette EL³ 1000µL Tip for Low Force Pipettes, Sterile, Low Retention, Racked (ALF-1000-S-L-R)",Neuation / Accumax,Pipette Tips,,pack,25688,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
-2-803-C10-0,"AHN myPette EL³ 1000µL Tip for Low Force Pipettes, Sterile, Filter, Racked (ALF-1000-S-F-R)",Neuation / Accumax,Pipette Tips,,pack,36536,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
-5-803-C10-0,"AHN myPette EL³ 1000µL Tip for Low Force Pipettes, Sterile, Low Retention, Filter, Racked (ALF-1000-S-L-F-R)",Neuation / Accumax,Pipette Tips,,pack,45099,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
-4-802-C4-R,"AHN myPette EL³ 1000µL Tip for Low Force Pipettes, Sterile, Low Retention, Reloading Stack (ALF-1000-S-L-K)",Neuation / Accumax,Pipette Tips,,pack,15388,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
-1-802-E10-0,"AHN myPette EL³ 1000µL Tip for Low Force Pipettes, Racked (AGLF-1000-R)",Neuation / Accumax,Pipette Tips,,pack,28843,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
-4-803-E10-0,"AHN myPette EL³ 1000µL Tip for Low Force Pipettes, Sterile, Low Retention, Racked (AGLF-1000-S-L-R)",Neuation / Accumax,Pipette Tips,,pack,32461,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
+1-716-C10-0,"AHN myPette EL³ 20µL Tip for Low Force Pipettes, Racked",Accumax,Pipette Tips,,pack,26293,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
+1-718-C10-0,"AHN myPette EL³ 20µL Tip for Low Force Pipettes, Sterile, Racked (ALF-20-S-R)",Accumax,Pipette Tips,,pack,29639,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
+4-718-C10-0,"AHN myPette EL³ 20µL Tip for Low Force Pipettes, Sterile, Low Retention, Racked (ALF-20-S-L-R)",Accumax,Pipette Tips,,pack,43158,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
+2-718-C10-0,"AHN myPette EL³ 20µL Tip for Low Force Pipettes, Sterile, Filter, Racked (ALF-20-S-F-R)",Accumax,Pipette Tips,,pack,51431,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
+5-718-C10-0,"AHN myPette EL³ 20µL Tip for Low Force Pipettes, Sterile, Low Retention, Filter, Racked (ALF-20-S-L-F-R)",Accumax,Pipette Tips,,pack,62568,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
+1-711-C1-R,"AHN myPette EL³ 20µL Tip for Low Force Pipettes, Reloading Stack (ALF-20-K)",Accumax,Pipette Tips,,pack,23182,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
+4-711-C1-R,"AHN myPette EL³ 20µL Tip for Low Force Pipettes, Sterile, Low Retention, Reloading Stack (ALF-20-S-L-K)",Accumax,Pipette Tips,,pack,27409,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
+2-718-E10-0,"AHN myPette EL³ 20µL Tip for Low Force Pipettes, Sterile, Filter, Racked (AGLF-20-S-F-R)",Accumax,Pipette Tips,,pack,37232,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
+1-721-C10-0,"AHN myPette EL³ 200µL Tip for Low Force Pipettes, Racked (ALF-200-R)",Accumax,Pipette Tips,,pack,26293,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
+1-722-C10-0,"AHN myPette EL³ 200µL Tip for Low Force Pipettes, Sterile, Racked (ALF-200-S-R)",Accumax,Pipette Tips,,pack,29639,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
+4-728-C10-0,"AHN myPette EL³ 200µL Tip for Low Force Pipettes, Sterile, Low Retention, Racked (ALF-200-S-L-R)",Accumax,Pipette Tips,,pack,43158,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
+2-728-C10-0,"AHN myPette EL³ 200µL Tip for Low Force Pipettes, Sterile, Filter, Racked (ALF-200-S-F-R)",Accumax,Pipette Tips,,pack,51431,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
+5-728-C10-0,"AHN myPette EL³ 200µL Tip for Low Force Pipettes, Sterile, Low Retention, Filter, Racked (ALF-200-S-L-F-R)",Accumax,Pipette Tips,,pack,62568,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
+1-721-C1-R,"AHN myPette EL³ 200µL Tip for Low Force Pipettes, Reloading Stack (ALF-200-K)",Accumax,Pipette Tips,,pack,23182,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
+4-721-C1-R,"AHN myPette EL³ 200µL Tip for Low Force Pipettes, Sterile, Low Retention, Reloading Stack (ALF-200-S-L-K)",Accumax,Pipette Tips,,pack,27409,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
+2-728-E10-0,"AHN myPette EL³ 200µL Tip for Low Force Pipettes, Sterile, Filter, Racked (AGLF-200-S-F-R)",Accumax,Pipette Tips,,pack,37232,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
+5-728-E10-0,"AHN myPette EL³ 200µL Tip for Low Force Pipettes, Sterile, Low Retention, Filter, Racked (AGLF-200-S-L-F-R)",Accumax,Pipette Tips,,pack,44270,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
+1-802-C10-0,"AHN myPette EL³ 1000µL Tip for Low Force Pipettes, Racked (ALF-1000-R)",Accumax,Pipette Tips,,pack,18653,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
+1-803-C10-0,"AHN myPette EL³ 1000µL Tip for Low Force Pipettes, Sterile, Racked (ALF-1000-S-R)",Accumax,Pipette Tips,,pack,21668,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
+4-803-C10-0,"AHN myPette EL³ 1000µL Tip for Low Force Pipettes, Sterile, Low Retention, Racked (ALF-1000-S-L-R)",Accumax,Pipette Tips,,pack,25688,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
+2-803-C10-0,"AHN myPette EL³ 1000µL Tip for Low Force Pipettes, Sterile, Filter, Racked (ALF-1000-S-F-R)",Accumax,Pipette Tips,,pack,36536,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
+5-803-C10-0,"AHN myPette EL³ 1000µL Tip for Low Force Pipettes, Sterile, Low Retention, Filter, Racked (ALF-1000-S-L-F-R)",Accumax,Pipette Tips,,pack,45099,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
+4-802-C4-R,"AHN myPette EL³ 1000µL Tip for Low Force Pipettes, Sterile, Low Retention, Reloading Stack (ALF-1000-S-L-K)",Accumax,Pipette Tips,,pack,15388,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
+1-802-E10-0,"AHN myPette EL³ 1000µL Tip for Low Force Pipettes, Racked (AGLF-1000-R)",Accumax,Pipette Tips,,pack,28843,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
+4-803-E10-0,"AHN myPette EL³ 1000µL Tip for Low Force Pipettes, Sterile, Low Retention, Racked (AGLF-1000-S-L-R)",Accumax,Pipette Tips,,pack,32461,,AHN MYPETTE EL3 TIPS.png,AHN MYPETTE EL3 TIPS desc.png
 ADTT-300-R,"Accumax Dynex-type Robotic Sample Tip, 300µl, Blue (4320 Tips)",Neuation / Accumax,Pipette Tips,,pack,35724,,ACCUMAX ROBOTIC TIPS DYNEX.png,ACCUMAX ROBOTIC TIPS DYNEX desc.png
 ADTT-1300-R,"Accumax Dynex-type Robotic Sample Tip, 1300µl, White (4320 Tips)",Neuation / Accumax,Pipette Tips,,pack,39294,,ACCUMAX ROBOTIC TIPS DYNEX.png,ACCUMAX ROBOTIC TIPS DYNEX desc.png
 ADTD-2,"Accumax Dynex-type Deep Well Dilution Strip, 2ml (8-Well) (250 Pcs)",Neuation / Accumax,Other,,pack,5310,,ACCUMAX ROBOTIC TIPS DYNEX.png,ACCUMAX ROBOTIC TIPS DYNEX desc.png
@@ -642,104 +646,104 @@ AM12-010,RPM A 0.5-10 (12) ACCUMAX (AM 12-010),Neuation / Accumax,Pipettes,,unit
 AM12-100,RPM A 10-100 (12) ACCUMAX (AM 12-100),Neuation / Accumax,Pipettes,,unit,23650,,,
 AM12-200,RPM A 20-200 (12) ACCUMAX (AM 12-200),Neuation / Accumax,Pipettes,,unit,23650,,,
 AM12-300,RPM A 30-300 (12) ACCUMAX (AM 12-300),Neuation / Accumax,Pipettes,,unit,23650,,,
-VAP-100,RP Pro Mechanical Pipette 0.5-10 ACCUMAX (VAP-100),Neuation / Accumax,Pipettes,,unit,2145,,Pro mech pipette.png,Pro mech pipette.png
-VAP-125,RP Pro Mechanical Pipette 0.1-2.5 ACCUMAX (VAP-125),Neuation / Accumax,Pipettes,,unit,2145,,Pro mech pipette.png,Pro mech pipette.png
-VAP-200,RP Pro Mechanical Pipette 5-50 ACCUMAX (VAP-200),Neuation / Accumax,Pipettes,,unit,2145,,Pro mech pipette.png,Pro mech pipette.png
-VAP-300,RP Pro Mechanical Pipette 50-200 ACCUMAX (VAP-300),Neuation / Accumax,Pipettes,,unit,2145,,Pro mech pipette.png,Pro mech pipette.png
-VAP-400,RP Pro Mechanical Pipette 200-1000 ACCUMAX (VAP-400),Neuation / Accumax,Pipettes,,unit,2145,,Pro mech pipette.png,Pro mech pipette.png
-VAP-500,RP Pro Mechanical Pipette 10-100 ACCUMAX (VAP-500),Neuation / Accumax,Pipettes,,unit,2145,,Pro mech pipette.png,Pro mech pipette.png
-VAP-600,RP Pro Mechanical Pipette 100-1000 ACCUMAX (VAP-600),Neuation / Accumax,Pipettes,,unit,2145,,Pro mech pipette.png,Pro mech pipette.png
-VAP-700,RP Pro Mechanical Pipette 2-20 ACCUMAX (VAP-700),Neuation / Accumax,Pipettes,,unit,2145,,Pro mech pipette.png,Pro mech pipette.png
-VAP-800,RP Pro Mechanical Pipette 20-200 ACCUMAX (VAP-800),Neuation / Accumax,Pipettes,,unit,2145,,Pro mech pipette.png,Pro mech pipette.png
-VAP-900,RP Pro Mechanical Pipette 1000-5000 ACCUMAX (VAP-900),Neuation / Accumax,Pipettes,,unit,2310,,Pro mech pipette.png,Pro mech pipette.png
-VAP-905,RP Pro Mechanical Pipette 500-5000 ACCUMAX (VAP-905),Neuation / Accumax,Pipettes,,unit,2310,,Pro mech pipette.png,Pro mech pipette.png
-VAP-1000,RP Pro Mechanical Pipette 1000-10000 ACCUMAX (VAP-1000),Neuation / Accumax,Pipettes,,unit,2310,,Pro mech pipette.png,Pro mech pipette.png
-VAP-1005,RP Pro Mechanical Pipette 500-10000 ACCUMAX (VAP-1005),Neuation / Accumax,Pipettes,,unit,2310,,Pro mech pipette.png,Pro mech pipette.png
-FAP-2.5,ACCUMAX PRO Fix Volume Micropipette 2.5  (FAP-205),Neuation / Accumax,Pipettes,,unit,1870,,Pro mech pipette.png,Pro mech pipette.png
-FAP-5,ACCUMAX PRO Fix Volume Micropipette 5  (FAP-5),Neuation / Accumax,Pipettes,,unit,1870,,Pro mech pipette.png,Pro mech pipette.png
-FAP-10,ACCUMAX PRO Fix Volume Micropipette 10  (FAP-10),Neuation / Accumax,Pipettes,,unit,1870,,Pro mech pipette.png,Pro mech pipette.png
-FAP-20,ACCUMAX PRO Fix Volume Micropipette 20  (FAP-20),Neuation / Accumax,Pipettes,,unit,1870,,Pro mech pipette.png,Pro mech pipette.png
-FAP-25,ACCUMAX PRO Fix Volume Micropipette 25  (FAP-25),Neuation / Accumax,Pipettes,,unit,1870,,Pro mech pipette.png,Pro mech pipette.png
-FAP-50,ACCUMAX PRO Fix Volume Micropipette 50  (FAP-50),Neuation / Accumax,Pipettes,,unit,1870,,Pro mech pipette.png,Pro mech pipette.png
-FAP-100,ACCUMAX PRO Fix Volume Micropipette 100  (FAP-100),Neuation / Accumax,Pipettes,,unit,1870,,Pro mech pipette.png,Pro mech pipette.png
-FAP-200,ACCUMAX PRO Fix Volume Micropipette 200  (FAP-200),Neuation / Accumax,Pipettes,,unit,1870,,Pro mech pipette.png,Pro mech pipette.png
-FAP-250,ACCUMAX PRO Fix Volume Micropipette 250 (FAP-250),Neuation / Accumax,Pipettes,,unit,1870,,Pro mech pipette.png,Pro mech pipette.png
-FAP-500,ACCUMAX PRO Fix Volume Micropipette 500 (FAP-500),Neuation / Accumax,Pipettes,,unit,1870,,Pro mech pipette.png,Pro mech pipette.png
-FAP-1000,ACCUMAX PRO Fix Volume Micropipette 1000 (FAP-1000),Neuation / Accumax,Pipettes,,unit,1870,,Pro mech pipette.png,Pro mech pipette.png
-FAP-2000,ACCUMAX PRO Fix Volume Micropipette 2000  (FAP-2000),Neuation / Accumax,Pipettes,,unit,1980,,Pro mech pipette.png,Pro mech pipette.png
-FAP-5000,ACCUMAX PRO Fix Volume Micropipette 5000  (FAP-5000),Neuation / Accumax,Pipettes,,unit,1980,,Pro mech pipette.png,Pro mech pipette.png
-FAP-10000,ACCUMAX PRO Fix Volume Micropipette 10000  (FAP-10000),Neuation / Accumax,Pipettes,,unit,1980,,Pro mech pipette.png,Pro mech pipette.png
-MAP8-010,RPM P 0.5-10 (8) ACCUMAX (MAP 8-010),Neuation / Accumax,Pipettes,,unit,17105,,,
-MAP8-050,RPM P 5-50 (8) ACCUMAX (MAP 8-050),Neuation / Accumax,Pipettes,,unit,17105,,,
-MAP8-100,RPM P 10-100 (8) ACCUMAX (MAP 8-100),Neuation / Accumax,Pipettes,,unit,17105,,,
-MAP8-200,RPM P 20-200 (8) ACCUMAX (MAP 8-200),Neuation / Accumax,Pipettes,,unit,17105,,,
-MAP8-300,RPM P 30-300 (8) ACCUMAX (MAP 8-300),Neuation / Accumax,Pipettes,,unit,17105,,,
-MAP12-010,RPM P 0.5-10 (12) ACCUMAX (MAP 12-010),Neuation / Accumax,Pipettes,,unit,19965,,,
-MAP12-050,RPM P 5-50 (12) ACCUMAX (MAP 12-050),Neuation / Accumax,Pipettes,,unit,19965,,,
-MAP12-100,RPM P 10-100 (12) ACCUMAX (MAP 12-100),Neuation / Accumax,Pipettes,,unit,19965,,,
-MAP12-200,RPM P 20-200 (12) ACCUMAX (MAP 12-200),Neuation / Accumax,Pipettes,,unit,19965,,,
-MAP12-300,RPM P 30-300 (12) ACCUMAX (MAP 12-300),Neuation / Accumax,Pipettes,,unit,19965,,,
-AFV-2.5,Fab PIPETTE DP 0.1-2.5 µL (AFV-2.5),Neuation / Accumax,Pipettes,,unit,12584,,AFV.png,FAB PIPETTE desc.png
-AFV-10,Fab PIPETTE DP 0.5-10 µL (AFV-10),Neuation / Accumax,Pipettes,,unit,12584,,AFV.png,FAB PIPETTE desc.png
-AFV-20,Fab PIPETTE DP 2-20 µL (AFV-20),Neuation / Accumax,Pipettes,,unit,12584,,AFV.png,FAB PIPETTE desc.png
-AFV-50,Fab PIPETTE DP 5-50 µL (AFV-50),Neuation / Accumax,Pipettes,,unit,12584,,AFV.png,FAB PIPETTE desc.png
-AFV-100,Fab PIPETTE DP 10-100 µL (AFV-100),Neuation / Accumax,Pipettes,,unit,12584,,AFV.png,FAB PIPETTE desc.png
-AFV-200,Fab PIPETTE DP 20-200 µL (AFV-200),Neuation / Accumax,Pipettes,,unit,12584,,AFV.png,FAB PIPETTE desc.png
-AFV-1000,Fab PIPETTE DP 100-1000 µL (AFV-1000),Neuation / Accumax,Pipettes,,unit,12584,,AFV.png,FAB PIPETTE desc.png
-AFV-5000,Fab PIPETTE DP 1000-5000 µL (AFV-5000),Neuation / Accumax,Pipettes,,unit,13087,,AFV.png,FAB PIPETTE desc.png
-AFV-10000,Fab PIPETTE DP 1000-10000 µL (AFV-10000),Neuation / Accumax,Pipettes,,unit,13590,,AFV.png,FAB PIPETTE desc.png
-AFF-2.5,DPF 2.5 µL (AFF-250),Neuation / Accumax,Pipettes,,unit,8468,,AFV.png,FAB PIPETTE desc.png
-AFF-250,DPF 250 µL (AFF-250),Neuation / Accumax,Pipettes,,unit,8468,,AFV.png,FAB PIPETTE desc.png
-AFF-5,DPF 5 µL (AFF-5),Neuation / Accumax,Pipettes,,unit,8468,,AFV.png,FAB PIPETTE desc.png
-AFF-10,DPF 10 µL (AFF-10),Neuation / Accumax,Pipettes,,unit,8468,,AFV.png,FAB PIPETTE desc.png
-AFF-20,DPF 20 µL (AFF-20),Neuation / Accumax,Pipettes,,unit,8468,,AFV.png,FAB PIPETTE desc.png
-AFF-25,DPF 25 µL (AFF-25),Neuation / Accumax,Pipettes,,unit,8468,,AFV.png,FAB PIPETTE desc.png
-AFF-50,DPF 50 µL (AFF-50),Neuation / Accumax,Pipettes,,unit,8468,,AFV.png,FAB PIPETTE desc.png
-AFF-100,DPF 100 µL (AFF-100),Neuation / Accumax,Pipettes,,unit,8468,,AFV.png,FAB PIPETTE desc.png
-AFF-200,DPF 200 µL (AFF-200),Neuation / Accumax,Pipettes,,unit,8468,,AFV.png,FAB PIPETTE desc.png
-AFF-500,DPF 500 µL (AFF-500),Neuation / Accumax,Pipettes,,unit,8468,,AFV.png,FAB PIPETTE desc.png
-AFF-1000,DPF 1000 µL (AFF-1000),Neuation / Accumax,Pipettes,,unit,8468,,AFV.png,FAB PIPETTE desc.png
-AFF-2000,DPF 2000 µL (AFF-2000),Neuation / Accumax,Pipettes,,unit,8468,,AFV.png,FAB PIPETTE desc.png
-AFF-5000,DPF 5000 µL (AFF-5000),Neuation / Accumax,Pipettes,,unit,8807,,AFV.png,FAB PIPETTE desc.png
-AFF-10000,DPF 10000 µL (AFF-10000),Neuation / Accumax,Pipettes,,unit,9146,,AFV.png,FAB PIPETTE desc.png
-AFM8-010,Accumax Fab Multichannel Pipette DPM 0.5-10 (8) (AFM8-010),Neuation / Accumax,Pipettes,,unit,30961,,AFV.png,FAB PIPETTE desc.png
-AFM8-020,Accumax Fab Multichannel Pipette DPM 2-20 (8) (AFM8-020),Neuation / Accumax,Pipettes,,unit,30961,,AFV.png,FAB PIPETTE desc.png
-AFM8-050,Accumax Fab Multichannel Pipette DPM 5-50 (8) (AFM8-050),Neuation / Accumax,Pipettes,,unit,30961,,AFV.png,FAB PIPETTE desc.png
-AFM8-100,Accumax Fab Multichannel Pipette DPM 10-100 (8) (AFM8-100),Neuation / Accumax,Pipettes,,unit,30961,,AFV.png,FAB PIPETTE desc.png
-AFM8-200,Accumax Fab Multichannel Pipette DPM 20-200 (8) (AFM8-200),Neuation / Accumax,Pipettes,,unit,30961,,AFV.png,FAB PIPETTE desc.png
-AFM8-300,Accumax Fab Multichannel Pipette DPM 30-300 (8) (AFM8-300),Neuation / Accumax,Pipettes,,unit,30961,,AFV.png,FAB PIPETTE desc.png
-AFM8-1200,Accumax Fab Multichannel Pipette DPM 120-1200 (8) (AFM8-1200),Neuation / Accumax,Pipettes,,unit,33128,,AFV.png,FAB PIPETTE desc.png
-AFM12-010,Accumax Fab Multichannel Pipette DPM 0.5-10 (12) (AFM12-010),Neuation / Accumax,Pipettes,,unit,38854,,AFV.png,FAB PIPETTE desc.png
-AFM12-020,Accumax Fab Multichannel Pipette DPM 2-20 (12) (AFM12-020),Neuation / Accumax,Pipettes,,unit,38854,,AFV.png,FAB PIPETTE desc.png
-AFM12-050,Accumax Fab Multichannel Pipette DPM 5-50 (12) (AFM12-050),Neuation / Accumax,Pipettes,,unit,38854,,AFV.png,FAB PIPETTE desc.png
-AFM12-100,Accumax Fab Multichannel Pipette DPM 10-100 (12) (AFM12-100),Neuation / Accumax,Pipettes,,unit,38854,,AFV.png,FAB PIPETTE desc.png
-AFM12-200,Accumax Fab Multichannel Pipette DPM 20-200 (12) (AFM12-200),Neuation / Accumax,Pipettes,,unit,38854,,AFV.png,FAB PIPETTE desc.png
-AFM12-300,Accumax Fab Multichannel Pipette DPM 30-300 (12) (AFM12-300),Neuation / Accumax,Pipettes,,unit,38854,,AFV.png,FAB PIPETTE desc.png
-AFM12-1200,Accumax Fab Multichannel Pipette DPM 120-1200 (12) (AFM12-1200),Neuation / Accumax,Pipettes,,unit,41574,,AFV.png,FAB PIPETTE desc.png
-AE-10,ACCUMAX Electronic Pipette - Single Channel 0.5-10 (AE-10)(PFE-10),Neuation / Accumax,Pipettes,,unit,36828,,Elec pipette.png,Elec pipette desc.png
-AE-100,ACCUMAX Electronic Pipette - Single Channel 5-100 (AE-100)(PEF-100),Neuation / Accumax,Pipettes,,unit,36828,,Elec pipette.png,Elec pipette desc.png
-AE-200,ACCUMAX Electronic Pipette - Single Channel 10-200 (AE-200)(PFE-200),Neuation / Accumax,Pipettes,,unit,36828,,Elec pipette.png,Elec pipette desc.png
-AE-1000,ACCUMAX Electronic Pipette - Single Channel 50-1000 (AE-1000)(PEF-1000),Neuation / Accumax,Pipettes,,unit,36828,,Elec pipette.png,Elec pipette desc.png
-AE-5000,ACCUMAX Electronic Pipette - Single Channel 250-5000 (AE-5000)(PFE-5000),Neuation / Accumax,Pipettes,,unit,39204,,Elec pipette.png,Elec pipette desc.png
-AE-8-10,ACCUMAX Electronic pipette 0.5-10 (8) (AE-8-10)(PFE-8-10),Neuation / Accumax,Pipettes,,unit,53460,,Elec pipette.png,Elec pipette desc.png
-AE-8-20,ACCUMAX Electronic pipette 2-20 (8) (AE-8-20)(PFE-8-20),Neuation / Accumax,Pipettes,,unit,53460,,Elec pipette.png,Elec pipette desc.png
-AE-8-100,ACCUMAX Electronic pipette 5-100 (8) (AE-8-100)(PFE-8-100),Neuation / Accumax,Pipettes,,unit,53460,,Elec pipette.png,Elec pipette desc.png
-AE-8-200,ACCUMAX Electronic pipette 10-200 (8) (AE-8-200)(PFE-8-200),Neuation / Accumax,Pipettes,,unit,53460,,Elec pipette.png,Elec pipette desc.png
-AE-8-300,ACCUMAX Electronic pipette 15-300 (8) (AE-8-300)(PFE-8-300),Neuation / Accumax,Pipettes,,unit,53460,,Elec pipette.png,Elec pipette desc.png
-AE-8-1200,ACCUMAX Electronic pipette 50-1200 (8) (AE-8-1200)(PFE-8-1200),Neuation / Accumax,Pipettes,,unit,72170,,Elec pipette.png,Elec pipette desc.png
-AE-12-10,ACCUMAX Electronic pipette 0.5-10 (12) (AE-12-10)(PFE-12-10),Neuation / Accumax,Pipettes,,unit,60588,,Elec pipette.png,Elec pipette desc.png
-AE-12-20,ACCUMAX Electronic pipette 2-20 (12) (AE-12-20)(PFE-12-20),Neuation / Accumax,Pipettes,,unit,60588,,Elec pipette.png,Elec pipette desc.png
-AE-12-100,ACCUMAX Electronic pipette 5-100 (12) (AE-12-100)(PFE-12-100),Neuation / Accumax,Pipettes,,unit,60588,,Elec pipette.png,Elec pipette desc.png
-AE-12-200,ACCUMAX Electronic pipette 10-200 (12) (AE-12-200)(PFE-12-200),Neuation / Accumax,Pipettes,,unit,60588,,Elec pipette.png,Elec pipette desc.png
-AE-12-300,ACCUMAX Electronic pipette 15-300 (12) (AE-12-300)(PFE-12-300),Neuation / Accumax,Pipettes,,unit,60588,,Elec pipette.png,Elec pipette desc.png
-AE-12-1200,ACCUMAX Electronic pipette 50-1200 (12) (AE-12-1200)(PFE-12-1200),Neuation / Accumax,Pipettes,,unit,81790,,Elec pipette.png,Elec pipette desc.png
-AJ-5,JR Pipette 5 ACCUMAX (AJ-005),Neuation / Accumax,Pipettes,,unit,715,,JR pipette.png,JR pipette desc.png
-AJ-10,JR Pipette 10 ACCUMAX (AJ-010),Neuation / Accumax,Pipettes,,unit,715,,JR pipette.png,JR pipette desc.png
-AJ-20,JR Pipette 20 ACCUMAX (AJ-020),Neuation / Accumax,Pipettes,,unit,715,,JR pipette.png,JR pipette desc.png
-AJ-25,JR Pipette 25 ACCUMAX (AJ-025),Neuation / Accumax,Pipettes,,unit,715,,JR pipette.png,JR pipette desc.png
-AJ-50,JR Pipette 50 ACCUMAX (AJ-050),Neuation / Accumax,Pipettes,,unit,715,,JR pipette.png,JR pipette desc.png
-AJ-100,JR Pipette 100 ACCUMAX (AJ-100),Neuation / Accumax,Pipettes,,unit,715,,JR pipette.png,JR pipette desc.png
-AJ-200,JR Pipette 200 ACCUMAX (AJ-200),Neuation / Accumax,Pipettes,,unit,935,,JR pipette.png,JR pipette desc.png
+VAP-100,RP Pro Mechanical Pipette 0.5-10 [�],Accumax,Pipettes,,unit,2145,,Pro mech pipette.png,Pro mech pipette.png
+VAP-125,RP Pro Mechanical Pipette 0.1-2.5 [�] ,Accumax,Pipettes,,unit,2145,,Pro mech pipette.png,Pro mech pipette.png
+VAP-200,RP Pro Mechanical Pipette 5-50 [�],Accumax,Pipettes,,unit,2145,,Pro mech pipette.png,Pro mech pipette.png
+VAP-300,RP Pro Mechanical Pipette 50-200 [�],Accumax,Pipettes,,unit,2145,,Pro mech pipette.png,Pro mech pipette.png
+VAP-400,RP Pro Mechanical Pipette 200-1000 [�],Accumax,Pipettes,,unit,2145,,Pro mech pipette.png,Pro mech pipette.png
+VAP-500,RP Pro Mechanical Pipette 10-100 [�],Accumax,Pipettes,,unit,2145,,Pro mech pipette.png,Pro mech pipette.png
+VAP-600,RP Pro Mechanical Pipette 100-1000 [�],Accumax,Pipettes,,unit,2145,,Pro mech pipette.png,Pro mech pipette.png
+VAP-700,RP Pro Mechanical Pipette 2-20 [�],Accumax,Pipettes,,unit,2145,,Pro mech pipette.png,Pro mech pipette.png
+VAP-800,RP Pro Mechanical Pipette 20-200 [�],Accumax,Pipettes,,unit,2145,,Pro mech pipette.png,Pro mech pipette.png
+VAP-900,RP Pro Mechanical Pipette 1000-5000 [�],Accumax,Pipettes,,unit,2310,,Pro mech pipette.png,Pro mech pipette.png
+VAP-905,RP Pro Mechanical Pipette 500-5000 [�],Accumax,Pipettes,,unit,2310,,Pro mech pipette.png,Pro mech pipette.png
+VAP-1000,RP Pro Mechanical Pipette 1000-10000 [�],Accumax,Pipettes,,unit,2310,,Pro mech pipette.png,Pro mech pipette.png
+VAP-1005,RP Pro Mechanical Pipette 500-10000 [�],Accumax,Pipettes,,unit,2310,,Pro mech pipette.png,Pro mech pipette.png
+FAP-2.5,ACCUMAX PRO Fix Volume Micropipette 2.5 [�] ,Accumax,Pipettes,,unit,1870,,Pro mech pipette.png,Pro mech pipette.png
+FAP-5,ACCUMAX PRO Fix Volume Micropipette 5  [�],Accumax,Pipettes,,unit,1870,,Pro mech pipette.png,Pro mech pipette.png
+FAP-10,ACCUMAX PRO Fix Volume Micropipette 10  [�],Accumax,Pipettes,,unit,1870,,Pro mech pipette.png,Pro mech pipette.png
+FAP-20,ACCUMAX PRO Fix Volume Micropipette 20  [�],Accumax,Pipettes,,unit,1870,,Pro mech pipette.png,Pro mech pipette.png
+FAP-25,ACCUMAX PRO Fix Volume Micropipette 25 [�] ,Accumax,Pipettes,,unit,1870,,Pro mech pipette.png,Pro mech pipette.png
+FAP-50,ACCUMAX PRO Fix Volume Micropipette 50  [�],Accumax,Pipettes,,unit,1870,,Pro mech pipette.png,Pro mech pipette.png
+FAP-100,ACCUMAX PRO Fix Volume Micropipette 100 [�] ,Accumax,Pipettes,,unit,1870,,Pro mech pipette.png,Pro mech pipette.png
+FAP-200,ACCUMAX PRO Fix Volume Micropipette 200 [�] ,Accumax,Pipettes,,unit,1870,,Pro mech pipette.png,Pro mech pipette.png
+FAP-250,ACCUMAX PRO Fix Volume Micropipette 250 [�],Accumax,Pipettes,,unit,1870,,Pro mech pipette.png,Pro mech pipette.png
+FAP-500,ACCUMAX PRO Fix Volume Micropipette 500 [�] ,Accumax,Pipettes,,unit,1870,,Pro mech pipette.png,Pro mech pipette.png
+FAP-1000,ACCUMAX PRO Fix Volume Micropipette 1000 [�],Accumax,Pipettes,,unit,1870,,Pro mech pipette.png,Pro mech pipette.png
+FAP-2000,ACCUMAX PRO Fix Volume Micropipette 2000 [�]  ,Accumax,Pipettes,,unit,1980,,Pro mech pipette.png,Pro mech pipette.png
+FAP-5000,ACCUMAX PRO Fix Volume Micropipette 5000  [�],Accumax,Pipettes,,unit,1980,,Pro mech pipette.png,Pro mech pipette.png
+FAP-10000,ACCUMAX PRO Fix Volume Micropipette 10000  [�],Accumax,Pipettes,,unit,1980,,Pro mech pipette.png,Pro mech pipette.png
+MAP8-010,RPM P 0.5-10 [�] (8-Channel) ,Accumax,Pipettes,,unit,17105,,Pro mech pipette.png,Pro mech pipette.png
+MAP8-050,RPM P 5-50 [�] (8-Channel) ,Accumax,Pipettes,,unit,17105,,Pro mech pipette.png,Pro mech pipette.png
+MAP8-100,RPM P 10-100 [�] (8-Channel) ,Accumax,Pipettes,,unit,17105,,Pro mech pipette.png,Pro mech pipette.png
+MAP8-200,RPM P 20-200[�] (8-Channel) ,Accumax,Pipettes,,unit,17105,,Pro mech pipette.png,Pro mech pipette.png
+MAP8-300,RPM P 30-300 [�] (8-Channel) ,Accumax,Pipettes,,unit,17105,,Pro mech pipette.png,Pro mech pipette.png
+MAP12-010,RPM P 0.5-10 [�] (12-Channel) ,Accumax,Pipettes,,unit,19965,,Pro mech pipette.png,Pro mech pipette.png
+MAP12-050,RPM P 5-50 [�] (12-Channel) ,Accumax,Pipettes,,unit,19965,,Pro mech pipette.png,Pro mech pipette.png
+MAP12-100,RPM P 10-100 [�] (12-Channel) ,Accumax,Pipettes,,unit,19965,,Pro mech pipette.png,Pro mech pipette.png
+MAP12-200,RPM P 20-200 [�] (12-Channel) ,Accumax,Pipettes,,unit,19965,,Pro mech pipette.png,Pro mech pipette.png
+MAP12-300,RPM P 30-300 [�] (12-Channel) ,Accumax,Pipettes,,unit,19965,,Pro mech pipette.png,Pro mech pipette.png
+AFV-2.5,Fab PIPETTE DP 0.1-2.5 µL (Variable Volume),Accumax,Pipettes,,unit,12584,,AFV.png,FAB PIPETTE desc.png
+AFV-10,Fab PIPETTE DP 0.5-10 µL (Variable Volume),Accumax,Pipettes,,unit,12584,,AFV.png,FAB PIPETTE desc.png
+AFV-20,Fab PIPETTE DP 2-20 µL (Variable Volume),Accumax,Pipettes,,unit,12584,,AFV.png,FAB PIPETTE desc.png
+AFV-50,Fab PIPETTE DP 5-50 µL (Variable Volume),Accumax,Pipettes,,unit,12584,,AFV.png,FAB PIPETTE desc.png
+AFV-100,Fab PIPETTE DP 10-100 µL (Variable Volume),Accumax,Pipettes,,unit,12584,,AFV.png,FAB PIPETTE desc.png
+AFV-200,Fab PIPETTE DP 20-200 µL (Variable Volume),Accumax,Pipettes,,unit,12584,,AFV.png,FAB PIPETTE desc.png
+AFV-1000,Fab PIPETTE DP 100-1000 µL (Variable Volume),Accumax,Pipettes,,unit,12584,,AFV.png,FAB PIPETTE desc.png
+AFV-5000,Fab PIPETTE DP 1000-5000 µL (Variable Volume),Accumax,Pipettes,,unit,13087,,AFV.png,FAB PIPETTE desc.png
+AFV-10000,Fab PIPETTE DP 1000-10000 µL (Variable Volume),Accumax,Pipettes,,unit,13590,,AFV.png,FAB PIPETTE desc.png
+AFF-2.5,DPF 2.5 µL (Fixed Volume),Accumax,Pipettes,,unit,8468,,AFV.png,FAB PIPETTE desc.png
+AFF-250,DPF 250 µL (Fixed Volume),Accumax,Pipettes,,unit,8468,,AFV.png,FAB PIPETTE desc.png
+AFF-5,DPF 5 µL (Fixed Volume),Accumax,Pipettes,,unit,8468,,AFV.png,FAB PIPETTE desc.png
+AFF-10,DPF 10 µL (Fixed Volume),Accumax,Pipettes,,unit,8468,,AFV.png,FAB PIPETTE desc.png
+AFF-20,DPF 20 µL (Fixed Volume),Accumax,Pipettes,,unit,8468,,AFV.png,FAB PIPETTE desc.png
+AFF-25,DPF 25 µL (Fixed Volume),Accumax,Pipettes,,unit,8468,,AFV.png,FAB PIPETTE desc.png
+AFF-50,DPF 50 µL (Fixed Volume),Accumax,Pipettes,,unit,8468,,AFV.png,FAB PIPETTE desc.png
+AFF-100,DPF 100 µL (Fixed Volume),Accumax,Pipettes,,unit,8468,,AFV.png,FAB PIPETTE desc.png
+AFF-200,DPF 200 µL (Fixed Volume),Accumax,Pipettes,,unit,8468,,AFV.png,FAB PIPETTE desc.png
+AFF-500,DPF 500 µL (Fixed Volume),Accumax,Pipettes,,unit,8468,,AFV.png,FAB PIPETTE desc.png
+AFF-1000,DPF 1000 µL (Fixed Volume),Accumax,Pipettes,,unit,8468,,AFV.png,FAB PIPETTE desc.png
+AFF-2000,DPF 2000 µL (Fixed Volume),Accumax,Pipettes,,unit,8468,,AFV.png,FAB PIPETTE desc.png
+AFF-5000,DPF 5000 µL (Fixed Volume),Accumax,Pipettes,,unit,8807,,AFV.png,FAB PIPETTE desc.png
+AFF-10000,DPF 10000 µL (Fixed Volume),Accumax,Pipettes,,unit,9146,,AFV.png,FAB PIPETTE desc.png
+AFM8-010,Accumax Fab Multichannel Pipette DPM 0.5-10 (8) ,Accumax,Pipettes,,unit,30961,,AFV.png,FAB PIPETTE desc.png
+AFM8-020,Accumax Fab Multichannel Pipette DPM 2-20 (8) ,Accumax,Pipettes,,unit,30961,,AFV.png,FAB PIPETTE desc.png
+AFM8-050,Accumax Fab Multichannel Pipette DPM 5-50 (8) ,Accumax,Pipettes,,unit,30961,,AFV.png,FAB PIPETTE desc.png
+AFM8-100,Accumax Fab Multichannel Pipette DPM 10-100 (8) ,Accumax,Pipettes,,unit,30961,,AFV.png,FAB PIPETTE desc.png
+AFM8-200,Accumax Fab Multichannel Pipette DPM 20-200 (8),Accumax,Pipettes,,unit,30961,,AFV.png,FAB PIPETTE desc.png
+AFM8-300,Accumax Fab Multichannel Pipette DPM 30-300 (8) ,Accumax,Pipettes,,unit,30961,,AFV.png,FAB PIPETTE desc.png
+AFM8-1200,Accumax Fab Multichannel Pipette DPM 120-1200 (8) ,Accumax,Pipettes,,unit,33128,,AFV.png,FAB PIPETTE desc.png
+AFM12-010,Accumax Fab Multichannel Pipette DPM 0.5-10 (12) ,Accumax,Pipettes,,unit,38854,,AFV.png,FAB PIPETTE desc.png
+AFM12-020,Accumax Fab Multichannel Pipette DPM 2-20 (12) ,Accumax,Pipettes,,unit,38854,,AFV.png,FAB PIPETTE desc.png
+AFM12-050,Accumax Fab Multichannel Pipette DPM 5-50 (12) ,Accumax,Pipettes,,unit,38854,,AFV.png,FAB PIPETTE desc.png
+AFM12-100,Accumax Fab Multichannel Pipette DPM 10-100 (12) ,Accumax,Pipettes,,unit,38854,,AFV.png,FAB PIPETTE desc.png
+AFM12-200,Accumax Fab Multichannel Pipette DPM 20-200 (12) ,Accumax,Pipettes,,unit,38854,,AFV.png,FAB PIPETTE desc.png
+AFM12-300,Accumax Fab Multichannel Pipette DPM 30-300 (12) ,Accumax,Pipettes,,unit,38854,,AFV.png,FAB PIPETTE desc.png
+AFM12-1200,Accumax Fab Multichannel Pipette DPM 120-1200 (12) ,Accumax,Pipettes,,unit,41574,,AFV.png,FAB PIPETTE desc.png
+AE-10,ACCUMAX Electronic Pipette - Single Channel 0.5-10 [�],Accumax,Pipettes,,unit,36828,,Elec pipette.png,Elec pipette desc.png
+AE-100,ACCUMAX Electronic Pipette - Single Channel 5-100 [�],Accumax,Pipettes,,unit,36828,,Elec pipette.png,Elec pipette desc.png
+AE-200,ACCUMAX Electronic Pipette - Single Channel 10-200 [�],Accumax,Pipettes,,unit,36828,,Elec pipette.png,Elec pipette desc.png
+AE-1000,ACCUMAX Electronic Pipette - Single Channel 50-1000 [�],Accumax,Pipettes,,unit,36828,,Elec pipette.png,Elec pipette desc.png
+AE-5000,ACCUMAX Electronic Pipette - Single Channel 250-5000 [�],Accumax,Pipettes,,unit,39204,,Elec pipette.png,Elec pipette desc.png
+AE-8-10,ACCUMAX Electronic pipette 0.5-10 [�] (8-Channel) ,Accumax,Pipettes,,unit,53460,,Elec pipette.png,Elec pipette desc.png
+AE-8-20,ACCUMAX Electronic pipette 2-20 [�] (8-Channel),Accumax,Pipettes,,unit,53460,,Elec pipette.png,Elec pipette desc.png
+AE-8-100,ACCUMAX Electronic pipette 5-100 [�] (8-Channel),Accumax,Pipettes,,unit,53460,,Elec pipette.png,Elec pipette desc.png
+AE-8-200,ACCUMAX Electronic pipette 10-200 [�] (8-Channel),Accumax,Pipettes,,unit,53460,,Elec pipette.png,Elec pipette desc.png
+AE-8-300,ACCUMAX Electronic pipette 15-300 [�] (8-Channel),Accumax,Pipettes,,unit,53460,,Elec pipette.png,Elec pipette desc.png
+AE-8-1200,ACCUMAX Electronic pipette 50-1200 [�] (8-Channel),Accumax,Pipettes,,unit,72170,,Elec pipette.png,Elec pipette desc.png
+AE-12-10,ACCUMAX Electronic pipette 0.5-10 [�] (12-Channel),Accumax,Pipettes,,unit,60588,,Elec pipette.png,Elec pipette desc.png
+AE-12-20,ACCUMAX Electronic pipette 2-20 [�] (12-Channel),Accumax,Pipettes,,unit,60588,,Elec pipette.png,Elec pipette desc.png
+AE-12-100,ACCUMAX Electronic pipette 5-100 [�] (12-Channel),Accumax,Pipettes,,unit,60588,,Elec pipette.png,Elec pipette desc.png
+AE-12-200,ACCUMAX Electronic pipette 10-200 [�] (12-Channel),Accumax,Pipettes,,unit,60588,,Elec pipette.png,Elec pipette desc.png
+AE-12-300,ACCUMAX Electronic pipette 15-300 [�] (12-Channel),Accumax,Pipettes,,unit,60588,,Elec pipette.png,Elec pipette desc.png
+AE-12-1200,ACCUMAX Electronic pipette 50-1200 [�] (12-Channel),Accumax,Pipettes,,unit,81790,,Elec pipette.png,Elec pipette desc.png
+AJ-5,JR Pipette 5 [�],Accumax,Pipettes,,unit,715,,JR pipette.png,JR pipette desc.png
+AJ-10,JR Pipette 10 [�],Accumax,Pipettes,,unit,715,,JR pipette.png,JR pipette desc.png
+AJ-20,JR Pipette 20 [�],Accumax,Pipettes,,unit,715,,JR pipette.png,JR pipette desc.png
+AJ-25,JR Pipette 25 [�],Accumax,Pipettes,,unit,715,,JR pipette.png,JR pipette desc.png
+AJ-50,JR Pipette 50 [�],Accumax,Pipettes,,unit,715,,JR pipette.png,JR pipette desc.png
+AJ-100,JR Pipette 100 [�],Accumax,Pipettes,,unit,715,,JR pipette.png,JR pipette desc.png
+AJ-200,JR Pipette 200 [�],Accumax,Pipettes,,unit,935,,JR pipette.png,JR pipette desc.png
 VA-100,VA-FA Mechanical Pipette 0.5-10 ACCUMAX (VA-100),Neuation / Accumax,Pipettes,,unit,1815,,VA-FA Mech pipette.png,VA-FA mech pipette.png
 VA-125,VA-FA Mechanical Pipette 0.1-2.5 ACCUMAX (VA-125),Neuation / Accumax,Pipettes,,unit,1815,,VA-FA Mech pipette.png,VA-FA mech pipette.png
 VA-200,VA-FA Mechanical Pipette 5-50 ACCUMAX (VA-200),Neuation / Accumax,Pipettes,,unit,1815,,VA-FA Mech pipette.png,VA-FA mech pipette.png
