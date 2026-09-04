@@ -1,7 +1,7 @@
 /* Shubh Enterprise — Quotation Generator (frontend) */
 'use strict';
 
-const APP_VERSION = 'v16'; // bump on every deploy so you can confirm you're on the latest
+const APP_VERSION = 'v17'; // bump on every deploy so you can confirm you're on the latest
 
 const State = {
   catalog: [],
@@ -598,7 +598,7 @@ async function buildInlineOpts(quoteNo) {
   const s = State.settings; const t = computeTotals();
   const c = { name: $('clientName').value, contact: $('clientContact').value, phone: $('clientPhone').value, email: $('clientEmail').value, address: $('clientAddress').value };
   const today = new Date().toLocaleDateString('en-IN', { year: 'numeric', month: 'long', day: 'numeric' });
-  const map = await CDATA.buildImageMap(s, State.cart);
+  const { map, dims } = await CDATA.buildImageMap(s, State.cart);
   const imgURLd = (src) => src ? (map[CDATA.assetUrl(src)] || '') : '';
   const descURLd = (src) => src ? (map[CDATA.descUrl(src)] || '') : '';
   const opts = {
@@ -606,6 +606,7 @@ async function buildInlineOpts(quoteNo) {
     overall: State.overall, gst: State.gst, quoteNo, today, validity: s.quoteValidityDays || 15,
     showTotals: State.showTotals !== false,
     imgURL: imgURLd, descURL: descURLd,
+    imgDim: (uri) => (uri && dims[uri]) || null,   // true pixel size, for undistorted Word images
   };
   return { opts, clientName: c.name || 'Unnamed Client' };
 }

@@ -215,7 +215,20 @@
     } catch (e) { inlineCache[url] = ''; return ''; }
   }
 
-  // Fetch+embed every image a quote needs; returns {originalUrl: dataURI}
+  // Natural pixel size of an image (from its data URI). Used so the Word export can
+  // size images with explicit width+height and never distort them. Resolves null on error.
+  function imageDims(dataURI) {
+    return new Promise(resolve => {
+      if (!dataURI) return resolve(null);
+      const im = new Image();
+      im.onload = () => resolve({ w: im.naturalWidth, h: im.naturalHeight });
+      im.onerror = () => resolve(null);
+      im.src = dataURI;
+    });
+  }
+
+  // Fetch+embed every image a quote needs; returns { map:{originalUrl:dataURI},
+  // dims:{dataURI:{w,h}} } so callers get both the inlined image and its true size.
   async function buildImageMap(settings, items) {
     const urls = new Set();
     if (settings.logo) urls.add(assetUrl(settings.logo));
@@ -227,7 +240,11 @@
     const list = [...urls].filter(Boolean);
     const map = {};
     await Promise.all(list.map(async u => { map[u] = await toDataURI(u); }));
-    return map;
+    const dims = {};
+    await Promise.all(Object.values(map).filter(Boolean).map(async uri => {
+      if (dims[uri] === undefined) dims[uri] = await imageDims(uri);
+    }));
+    return { map, dims };
   }
 
   function downloadBlob(content, filename, mime) {

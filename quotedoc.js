@@ -275,6 +275,25 @@
     const overall = opts.overall || { value: 0, type: 'percent' };
     const showPhotos = s.showPhotos !== false;
 
+    // Desktop Word (e.g. Office 2021) distorts images sized with CSS width/height:auto
+    // or cm units — it ignores height:auto and keeps the intrinsic height, wrecking the
+    // aspect ratio, and blows oversized images up until the layout reflows. It DOES honour
+    // the width/height ATTRIBUTES reliably. So we emit explicit pixel width+height scaled
+    // to fit a box while preserving the image's true aspect ratio.
+    const dimOf = opts.imgDim || (() => null);
+    function sizedImg(uri, boxW, boxH, style) {
+      if (!uri) return '';
+      const d = dimOf(uri);
+      let w = boxW, h;
+      if (d && d.w > 0 && d.h > 0) {
+        h = Math.round(boxW * d.h / d.w);
+        if (boxH && h > boxH) { h = boxH; w = Math.round(boxH * d.w / d.h); }
+        return `<img src="${uri}" width="${w}" height="${h}"${style ? ` style="${style}"` : ''}/>`;
+      }
+      // Dimensions unknown: set width only so Word keeps the ratio itself.
+      return `<img src="${uri}" width="${boxW}"${style ? ` style="${style}"` : ''}/>`;
+    }
+
     const wm = esc(s.company || 'Shubh Enterprise').replace(/\b([A-Za-z])/g, '<span style="font-size:22pt;">$1</span>');
     const addrBar = [esc(s.address || ''), s.phone && 'T: ' + esc(s.phone), s.email && 'E: ' + esc(s.email), s.gstin && 'GSTIN: ' + esc(s.gstin)]
       .filter(Boolean).join(' &nbsp;|&nbsp; ');
@@ -288,7 +307,7 @@
       <tr><td bgcolor="${CREAM}" style="background:${CREAM};background-color:${CREAM};padding:4mm 5mm 2mm;">
         <table width="100%" style="border-collapse:collapse;">
           <tr>
-            <td width="86" valign="top">${(s.logo && imgURL(s.logo)) ? `<img src="${imgURL(s.logo)}" width="76" style="width:76px;"/>` : ''}</td>
+            <td width="86" valign="top">${sizedImg(imgURL(s.logo), 76, 76)}</td>
             <td align="center" valign="middle" style="${serif}font-size:19pt;font-weight:bold;color:${RED};">${wm}</td>
             <td width="80"></td>
           </tr>
@@ -322,7 +341,7 @@
       const bgAttr = (i % 2 === 1) ? ` bgcolor="${CREAMROW}"` : '';                 // Word: alternating rows via bgcolor
       const bgCss = (i % 2 === 1) ? `background:${CREAMROW};background-color:${CREAMROW};` : '';
       const cs = `${bgCss}padding:5pt;border:0.5pt solid ${BD};vertical-align:top;`;
-      const photo = showPhotos ? `<td${bgAttr} align="center" style="${cs}">${(it.image && imgURL(it.image)) ? `<img src="${imgURL(it.image)}" width="42"/>` : ''}</td>` : '';
+      const photo = showPhotos ? `<td${bgAttr} align="center" style="${cs}">${sizedImg(imgURL(it.image), 42, 54)}</td>` : '';
       return `<tr>
         <td${bgAttr} align="center" style="${cs}">${i + 1}</td>
         ${photo}
@@ -361,7 +380,7 @@
     <div style="${serif}font-size:11pt;margin-top:22pt;">
       Yours Sincerely,<br/>
       <b>For ${esc(s.company || 'Shubh Enterprise')}</b><br/>
-      ${(s.signature && imgURL(s.signature)) ? `<img src="${imgURL(s.signature)}" height="48"/><br/>` : '<br/><br/>'}
+      ${(s.signature && imgURL(s.signature)) ? sizedImg(imgURL(s.signature), 150, 55) + '<br/>' : '<br/><br/>'}
       <b style="font-size:12pt;">${esc(s.proprietorName || '')}</b><br/>
       <span style="color:${SUB};">${esc(s.proprietorTitle || '')}</span><br/>
       ${s.phone ? `<span style="color:${SUB};font-size:10pt;">T: ${esc(s.phone)}</span><br/>` : ''}
@@ -375,7 +394,7 @@
     //    reliably than the px "width" attribute, which it was scaling up to ~full page,
     //    pushing each image onto its own page)
     //  - keep-with-next on the heading + note so the title is never orphaned
-    const descFig = (it) => `<table width="100%" cellspacing="0" cellpadding="0" style="page-break-inside:avoid;margin:0 0 16pt;"><tr><td align="center" style="text-align:center;"><img src="${descURL(it.descImage)}" width="454" style="width:12cm;height:auto;border:0.75pt solid ${BD};"/><br/><span style="${serif}font-weight:bold;font-size:11pt;">${esc(it.name)}${it.sku ? ' — ' + esc(it.sku) : ''}</span></td></tr></table>`;
+    const descFig = (it) => `<table width="100%" cellspacing="0" cellpadding="0" style="page-break-inside:avoid;margin:0 0 16pt;"><tr><td align="center" style="text-align:center;">${sizedImg(descURL(it.descImage), 470, 900, 'border:0.75pt solid ' + BD + ';')}<br/><span style="${serif}font-weight:bold;font-size:11pt;">${esc(it.name)}${it.sku ? ' — ' + esc(it.sku) : ''}</span></td></tr></table>`;
     // page-break-after:avoid = "keep with the next block" (honoured by Word AND browsers,
     // unlike mso-pagination:keep-with-next). This binds title -> note -> first image so the
     // title can never be orphaned on its own page.
