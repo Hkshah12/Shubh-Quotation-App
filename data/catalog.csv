@@ -71,7 +71,7 @@ UC-147,ROTOR (ASS)_4X50 ML FIX ANGLE ROTOR_0134-00-0147_UC02_MACHINING(UC-147),N
 UC-149,ROTOR (ASS)_24X15 ML FIX ANGLE ROTOR_0134-00-0149_UC02_MACHINING(UC-149),Neuation / Accumax,Rotors & Buckets,,unit,26462,,,
 UC-148,ROTOR (ASS)_6X50 ML FIX ANGLE ROTOR_0134-00-0148_UC02_MACHINING(UC-148),Neuation / Accumax,Rotors & Buckets,,unit,27237,,,
 UC-156,ROTOR (ASS)_4X100 ML SWING OUT ROTOR_0134-00-0156_UC02 (UC-156),Neuation / Accumax,Rotors & Buckets,,unit,31761,,,
-IFUGE L1000,IFUGE L1000,Neuation / Accumax,Centrifuges,,unit,118582,,,
+IFUGE L1000,IFUGE L1000,Neuation / Accumax,Centrifuges,,unit,118582,,iFUGE L1000.png,iFUGE L1000 desc.png
 LC02-L1000-140,ROTOR (ASS)_32X6 ML SWING OUT ROTOR_0140-00-0140_(L1000-140),Neuation / Accumax,Rotors & Buckets,,unit,27124,,,
 LC02-L1000-147,ROTOR (ASS)_4X50 ML FIX ANGLE COMMAN ROTOR_0140-00-0147_(L1000-147),Neuation / Accumax,Rotors & Buckets,,unit,8456,,,
 LC02-L1000-146,ROTOR (ASS)_4X100 ML FIX ANGLE COMMAN ROTOR_0140-00-0146_(L1000-146),Neuation / Accumax,Rotors & Buckets,,unit,17714,,,
@@ -440,21 +440,21 @@ ARV-50-S-W,"Accumax Reservoir, 50ml, Individually Wrapped Sterile",Accumax,PCR &
 ARV-100-B,"Accumax Reservoir, 100ml, Bulk",Accumax,PCR & Plates,,100 x 5,8365,,ACCUMAX RESERVOIRS.png,ACCUMAX RESERVOIRS desc.png
 ARV-100-S,"Accumax Reservoir, 100ml, Sterile",Accumax,PCR & Plates,,40 x 5,3847,,ACCUMAX RESERVOIRS.png,ACCUMAX RESERVOIRS desc.png
 ARV-100-S-W,"Accumax Reservoir, 100ml, Individually Wrapped Sterile",Accumax,PCR & Plates,,1 x 50,1298,,ACCUMAX RESERVOIRS.png,ACCUMAX RESERVOIRS desc.png
-ACT-005-B,Micro Centrifuge Tubes ACT-005-B (1000 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,7446,,Microcentrifuge tube.png,Microcentrifuge tube desc.png
+ACT-005-B,Micro Centrifuge Tubes ACT-005-B (1000 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,1000 Pcs,745,,Microcentrifuge tube.png,Microcentrifuge tube desc.png
 ACT-005-B-S,Micro Centrifuge Tubes ACT-005-B-S (1000 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,11163,,Microcentrifuge tube.png,Microcentrifuge tube desc.png
 ACT-005-L-B-S,Micro Centrifuge Tubes ACT-005-L-B-S (1000 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,29736,,Microcentrifuge tube.png,Microcentrifuge tube desc.png
 ACT-005-B-C,Micro Centrifuge Tubes ACT-005-B-C (500 TUBES X 20 PACKS),Neuation / Accumax,Tubes & Vials,,pack,13629,,Microcentrifuge tube.png,Microcentrifuge tube desc.png
 ACT-005-B-S-C,Micro Centrifuge Tubes ACT-005-B-S-C (1000 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,17346,,Microcentrifuge tube.png,Microcentrifuge tube desc.png
 ACT-005-B-A,Micro Centrifuge Tubes ACT-005-B-A (1000 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,11510,,Microcentrifuge tube.png,Microcentrifuge tube desc.png
 ACT-005-B-S-A,Micro Centrifuge Tubes ACT-005-B-S-A (1000 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,14868,,Microcentrifuge tube.png,Microcentrifuge tube desc.png
-ACT-017-B,Micro Centrifuge Tubes ACT-017-B (1000 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,9837,,Microcentrifuge tube.png,Microcentrifuge tube desc.png
+ACT-017-B,Micro Centrifuge Tubes ACT-017-B (1000 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,1000 Pcs,984,,Microcentrifuge tube.png,Microcentrifuge tube desc.png
 ACT-017-B-S,Micro Centrifuge Tubes ACT-017-B-S (1000 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,13171,,Microcentrifuge tube.png,Microcentrifuge tube desc.png
 ACT-017-L-B-S,Micro Centrifuge Tubes ACT-017-L-B-S (1000 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,35931,,Microcentrifuge tube.png,Microcentrifuge tube desc.png
 ACT-017-B-C,Micro Centrifuge Tubes ACT-017-B-C(1000 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,14633,,Microcentrifuge tube.png,Microcentrifuge tube desc.png
 ACT-017-B-S-C,Micro Centrifuge Tubes ACT-017-B-S-C (1000 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,18585,,Microcentrifuge tube.png,Microcentrifuge tube desc.png
 ACT-017-B-A,Micro Centrifuge Tubes ACT-017-B-A (1000 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,16615,,Microcentrifuge tube.png,Microcentrifuge tube desc.png
 ACT-017-B-S-A,Micro Centrifuge Tubes ACT-017-B-S-A (1000 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,18585,,Microcentrifuge tube.png,Microcentrifuge tube desc.png
-ACT-020-B,Micro Centrifuge Tubes ACT-020-B (500 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,5588,,Microcentrifuge tube.png,Microcentrifuge tube desc.png
+ACT-020-B,Micro Centrifuge Tubes ACT-020-B (500 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,1000 Pcs,559,,Microcentrifuge tube.png,Microcentrifuge tube desc.png
 ACT-020-B-S,Micro Centrifuge Tubes ACT-020-B-S (500 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,7706,,Microcentrifuge tube.png,Microcentrifuge tube desc.png
 ACT-020-L-B-S,Micro Centrifuge Tubes ACT-020-L-B-S (500 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,21558,,Microcentrifuge tube.png,Microcentrifuge tube desc.png
 ACT-020-B-C,Micro Centrifuge Tubes ACT-020-B-C (500 TUBES X 10 PACKS),Neuation / Accumax,Tubes & Vials,,pack,10618,,Microcentrifuge tube.png,Microcentrifuge tube desc.png
@@ -935,7 +935,7 @@ A-050,0140-00-0161-0-010_50ML ADAPTOR,Neuation / Accumax,Other,,unit,605,,,
 A-250,0140-00-0161-0-015_250ML_SLEEVE,Neuation / Accumax,Other,,unit,1320,,,
 LC02-L1000-161 + A-250,ROTOR (ASS)_4X250 ML SWING OUT ROTOR_0140-00-0161_(L1000-161+A-250),Neuation / Accumax,Rotors & Buckets,,unit,51650,,,
 LC02-L1000-161 + A-050,ROTOR (ASS)_4X250 ML SWING OUT ROTOR_0140-00-0161_(L1000-161+A-050),Neuation / Accumax,Rotors & Buckets,,unit,53291,,,
-LC02-L1000-161 + A-006,ROTOR (ASS)_4X250 ML SWING OUT ROTOR_0140-00-0161_(L1000-161+A-006),Neuation / Accumax,Rotors & Buckets,,unit,54231,,,
+LC02-L1000-161 + A-006,ROTOR (ASS)_64X6 ML SWING OUT ROTOR_0140-00-0161_(L1000-161+A-006),Neuation / Accumax,Rotors & Buckets,,unit,54231,,,
 LC02-L1000-161 + A-010,ROTOR (ASS)_4X250 ML SWING OUT ROTOR_0140-00-0161_(L1000-161+A-010),Neuation / Accumax,Rotors & Buckets,,unit,52723,,,
 LC02-L1000-124,ROTOR (ASS)_2X MICEOPLATE SWING ROTOR_0140-00-0124_(L1000-124),Neuation / Accumax,Rotors & Buckets,,pack,39513,,,
 LC02-L1000-150,ROTOR (ASS)_16X15 ML FIX ANGLE COMMAN ROTOR_0140-00-0150_(L1000-150),Neuation / Accumax,Rotors & Buckets,,unit,13567,,,
