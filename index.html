@@ -28,6 +28,7 @@
     </div>
     <div class="spacer"></div>
     <span class="app-ver" id="appVer" title="App version — tells you if you're on the latest"></span>
+    <button id="btnSync" class="sync-btn" style="display:none" title="Cloud sync across devices">☁ Sync</button>
     <button id="btnSaved" title="Load a saved quotation">Saved Quotes</button>
     <button id="btnSettings" title="Company details, GST, terms">Settings</button>
     <button id="btnNew" class="primary" title="Start a fresh quotation">+ New Quote</button>
@@ -161,6 +162,14 @@
   </div>
 </div>
 
+<!-- CLOUD SYNC MODAL -->
+<div class="modal-backdrop" id="syncModal">
+  <div class="modal">
+    <header><h2>Cloud Sync</h2><button class="close" data-close>&times;</button></header>
+    <div class="content" id="syncBody"></div>
+  </div>
+</div>
+
 <!-- CUSTOMERS MODAL -->
 <div class="modal-backdrop" id="customersModal">
   <div class="modal">
@@ -183,8 +192,10 @@
 <!-- PRINTABLE DOCUMENT -->
 <div id="printDoc"></div>
 
+<script src="firebase-config.js"></script>
 <script src="clientdata.js"></script>
 <script src="quotedoc.js"></script>
+<script src="cloud.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

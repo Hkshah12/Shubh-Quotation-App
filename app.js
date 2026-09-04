@@ -1,7 +1,7 @@
 /* Shubh Enterprise — Quotation Generator (frontend) */
 'use strict';
 
-const APP_VERSION = 'v18'; // bump on every deploy so you can confirm you're on the latest
+const APP_VERSION = 'v19'; // bump on every deploy so you can confirm you're on the latest
 
 const State = {
   catalog: [],
@@ -32,6 +32,16 @@ async function init() {
   renderCatalog();
   recalc();
   renderQuoteContext();
+
+  // Cloud sync: refresh open lists when remote data streams in; keep the header status current.
+  if (window.Cloud) {
+    Cloud.onAuth(() => { updateSyncUI(); if ($('syncModal').classList.contains('open')) renderSyncBody(); });
+    Cloud.onData(() => {
+      if ($('customersModal').classList.contains('open')) renderCustomersList($('custSearch').value);
+      if ($('savedModal').classList.contains('open')) renderSaved();
+    });
+  }
+  updateSyncUI();
 }
 
 async function loadSettings() {
@@ -288,6 +298,8 @@ function bindUI() {
   $('btnSaved').addEventListener('click', openSaved);
   $('savedList').addEventListener('click', onSavedClick);
   $('savedList').addEventListener('change', onSavedChange);
+  // Cloud sync
+  $('btnSync').addEventListener('click', openSync);
   // Customer directory
   $('btnPickCustomer').addEventListener('click', openCustomers);
   $('btnSaveCustomer').addEventListener('click', saveCurrentCustomer);
@@ -599,6 +611,73 @@ function saveCurrentCustomer() {
   const res = CDATA.saveCustomer(c);
   if (!res.ok) return alert(res.error || 'Could not save customer.');
   alert(`Customer "${c.name.trim()}" saved. You can pick them any time from 📇 Customers.`);
+}
+
+/* ---------------- Cloud sync UI ---------------- */
+function updateSyncUI() {
+  const b = $('btnSync');
+  if (!b || !window.Cloud || !Cloud.configured()) { if (b) b.style.display = 'none'; return; }
+  b.style.display = '';
+  if (Cloud.user) {
+    const online = navigator.onLine;
+    b.textContent = online ? '☁ Synced' : '☁ Offline';
+    b.title = 'Signed in as ' + Cloud.user.email + (online ? ' · synced across devices' : ' · offline — will sync when back online') + '. Click to manage.';
+    b.classList.add('synced');
+  } else {
+    b.textContent = '☁ Sign in';
+    b.title = 'Sign in to sync customers & quotes across your devices';
+    b.classList.remove('synced');
+  }
+}
+
+function openSync() { renderSyncBody(); $('syncModal').classList.add('open'); }
+
+function friendlyAuthError(e) {
+  const code = (e && e.code) || '';
+  if (/wrong-password|invalid-credential|invalid-login/.test(code)) return 'Wrong email or password.';
+  if (/user-not-found/.test(code)) return 'No account with that email.';
+  if (/user-disabled/.test(code)) return 'This account has been disabled.';
+  if (/invalid-email/.test(code)) return 'That email address looks invalid.';
+  if (/too-many-requests/.test(code)) return 'Too many attempts — please wait a minute and try again.';
+  if (/configuration-not-found|operation-not-allowed/.test(code)) return 'Email sign-in isn\'t enabled in Firebase yet (finish the console setup).';
+  if (/unauthorized-domain/.test(code)) return 'This web address isn\'t authorised in Firebase yet (add it under Auth → Settings → Authorized domains).';
+  if (/network/.test(code)) return 'Network problem — check your internet and try again.';
+  return 'Could not sign in. Please try again.';
+}
+
+function renderSyncBody() {
+  const box = $('syncBody');
+  if (!box) return;
+  if (!window.Cloud || !Cloud.configured()) { box.innerHTML = '<p style="color:var(--sub)">Cloud sync is not configured.</p>'; return; }
+  if (Cloud.user) {
+    box.innerHTML = `
+      <p>Signed in as <b>${esc(Cloud.user.email)}</b>.</p>
+      <p style="color:var(--sub);font-size:13px;">Your customers and saved quotes sync automatically across every signed-in device. Changes made offline upload as soon as you're back online.</p>
+      <button class="qc-btn" id="btnSignOut">Sign out of this device</button>`;
+    $('btnSignOut').addEventListener('click', async () => {
+      if (!confirm('Sign out on this device? Your data stays safe in the cloud and on your other devices.')) return;
+      try { await Cloud.signOut(); } catch (e) {}
+      renderSyncBody(); updateSyncUI();
+    });
+  } else {
+    box.innerHTML = `
+      <p style="color:var(--sub);font-size:13px;">Sign in to keep your customers and quotes synced across all your devices.</p>
+      <div class="field"><label>Email</label><input id="syncEmail" type="email" autocomplete="username" placeholder="you@business.com"/></div>
+      <div class="field"><label>Password</label><input id="syncPass" type="password" autocomplete="current-password" placeholder="Password"/></div>
+      <div id="syncErr" style="color:var(--primary);font-size:13px;min-height:18px;margin:4px 0;"></div>
+      <button class="qc-btn primary" id="btnDoSignIn">Sign in</button>`;
+    $('btnDoSignIn').addEventListener('click', doSignIn);
+    $('syncPass').addEventListener('keydown', e => { if (e.key === 'Enter') doSignIn(); });
+    setTimeout(() => { const el = $('syncEmail'); if (el) el.focus(); }, 50);
+  }
+}
+
+async function doSignIn() {
+  const email = $('syncEmail').value, pass = $('syncPass').value;
+  if (!email.trim() || !pass) { $('syncErr').textContent = 'Enter your email and password.'; return; }
+  $('syncErr').textContent = 'Signing in…';
+  try { await Cloud.signIn(email, pass); renderSyncBody(); updateSyncUI(); }
+  catch (e) { $('syncErr').textContent = friendlyAuthError(e); }
 }
 
 /* Build the document options with images fetched + embedded as data URIs (self-contained files) */

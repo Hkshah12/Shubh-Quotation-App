@@ -50,6 +50,8 @@ header.topbar {
 .brand p { font-size: 11px; margin: 2px 0 0; color: var(--sub); font-weight:500; }
 .topbar .spacer { flex: 1; }
 .app-ver { font-size: 11px; color: var(--sub); font-weight: 700; letter-spacing: .02em; opacity: .85; }
+.sync-btn.synced { border-color: #1e7e34 !important; color: #1e7e34 !important; }
+.sync-btn.synced:hover { background: #e6f4ea !important; }
 .totals-toggle { font-size: 12px; color: var(--sub); display: inline-flex; align-items: center; gap: 6px; cursor: pointer; margin: 8px 0 2px; }
 .totals-toggle input { accent-color: var(--primary); }
 .totals.no-totals .trow { opacity: .38; }

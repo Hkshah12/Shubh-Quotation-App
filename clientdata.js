@@ -10,6 +10,14 @@
     customers: 'shubh_customers',
   };
 
+  // ---------- cloud-sync bridge ----------
+  // cloud.js registers a single hook here; every local mutation notifies it so the change
+  // can be mirrored up to the cloud. Remote changes come back via applyRemote* (which write
+  // straight to localStorage WITHOUT firing the hook, so there is no echo loop).
+  let changeHook = null;
+  function onLocalChange(fn) { changeHook = fn; }
+  function notify(collection, op, id, data) { try { changeHook && changeHook(collection, op, id, data); } catch (e) {} }
+
   const DEFAULT_SETTINGS = {
     company: 'Shubh Enterprise',
     tagline: 'Medical Lab Instruments & Equipment',
@@ -126,6 +134,7 @@
     const arr = all.filter(q => q.id !== id);
     arr.push(rec);
     writeQuotes(arr);
+    notify('quotes', 'put', id, rec);
     return { ok: true, id };
   }
   function listQuotations() {
@@ -146,10 +155,12 @@
     if (patch.status !== undefined && QUOTE_STATUSES.indexOf(patch.status) >= 0) q.status = patch.status;
     if (patch.followUp !== undefined) q.followUp = patch.followUp || '';
     writeQuotes(arr);
+    notify('quotes', 'put', id, q);
     return { ok: true };
   }
   function deleteQuotation(id) {
     writeQuotes(readQuotes().filter(q => q.id !== id));
+    notify('quotes', 'del', id);
     return { ok: true };
   }
 
@@ -175,11 +186,33 @@
     const arr = readCustomers().filter(c => c.id !== id);
     arr.push(rec);
     writeCustomers(arr);
+    notify('customers', 'put', id, rec);
     return { ok: true, id };
   }
   function deleteCustomer(id) {
     writeCustomers(readCustomers().filter(c => c.id !== id));
+    notify('customers', 'del', id);
     return { ok: true };
+  }
+
+  // ---------- apply remote (cloud) changes into the local store ----------
+  // Called by cloud.js when a change streams down from Firestore. Writes directly to
+  // localStorage and does NOT fire the change hook (so it never bounces back to the cloud).
+  function applyRemote(collection, id, data) {
+    if (!id) return;
+    if (collection === 'customers') {
+      const arr = readCustomers().filter(c => c.id !== id);
+      arr.push(Object.assign({}, data, { id }));
+      writeCustomers(arr);
+    } else if (collection === 'quotes') {
+      const arr = readQuotes().filter(q => q.id !== id);
+      arr.push(Object.assign({}, data, { id }));
+      writeQuotes(arr);
+    }
+  }
+  function applyRemoteDelete(collection, id) {
+    if (collection === 'customers') writeCustomers(readCustomers().filter(c => c.id !== id));
+    else if (collection === 'quotes') writeQuotes(readQuotes().filter(q => q.id !== id));
   }
 
   // ---------- assets ----------
@@ -261,6 +294,7 @@
     catalog, getSettings, saveSettings, nextQuoteNo,
     saveQuotation, listQuotations, getQuotation, updateQuotationMeta, deleteQuotation,
     listCustomers, getCustomer, saveCustomer, deleteCustomer,
+    onLocalChange, applyRemote, applyRemoteDelete,
     assetUrl, descUrl, toDataURI, buildImageMap, downloadBlob,
   };
 })();
