@@ -1,7 +1,7 @@
 /* Shubh Enterprise — Quotation Generator (frontend) */
 'use strict';
 
-const APP_VERSION = 'v17'; // bump on every deploy so you can confirm you're on the latest
+const APP_VERSION = 'v18'; // bump on every deploy so you can confirm you're on the latest
 
 const State = {
   catalog: [],
@@ -267,7 +267,15 @@ function bindUI() {
   $('mobileCartBar').addEventListener('click', () => $('quotePanel').classList.add('open'));
   $('quoteClose').addEventListener('click', () => $('quotePanel').classList.remove('open'));
 
-  $('btnClear').addEventListener('click', () => { if (State.cart.length && confirm('Clear all items from this quotation?')) { State.cart = []; renderCatalog(); renderCart(); recalc(); } });
+  $('btnClear').addEventListener('click', () => {
+    const clientIds = ['clientName', 'clientContact', 'clientPhone', 'clientEmail', 'clientAddress'];
+    const hasData = State.cart.length || clientIds.some(id => $(id).value.trim());
+    if (!hasData) return;
+    if (!confirm('Clear all items and client details from this quotation?')) return;
+    State.cart = [];
+    clientIds.forEach(id => $(id).value = '');
+    renderCatalog(); renderCart(); recalc();
+  });
   $('btnNew').addEventListener('click', newQuote);
   $('btnPrint').addEventListener('click', printQuote);
   $('btnWord').addEventListener('click', saveWord);
