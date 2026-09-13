@@ -1,7 +1,7 @@
 /* Shubh Enterprise — Quotation Generator (frontend) */
 'use strict';
 
-const APP_VERSION = 'v19'; // bump on every deploy so you can confirm you're on the latest
+const APP_VERSION = 'v20'; // bump on every deploy so you can confirm you're on the latest
 
 const State = {
   catalog: [],
@@ -39,6 +39,8 @@ async function init() {
     Cloud.onData(() => {
       if ($('customersModal').classList.contains('open')) renderCustomersList($('custSearch').value);
       if ($('savedModal').classList.contains('open')) renderSaved();
+      if ($('inventoryModal').classList.contains('open')) renderInventory($('invSearch').value);
+      renderCatalog(); // reflect synced stock levels on the catalog badges
     });
   }
   updateSyncUI();
@@ -112,11 +114,17 @@ function renderCatalog() {
   }
   const items = all.slice(0, CATALOG_CAP);
   const capped = all.length > CATALOG_CAP;
+  const inv = CDATA.inventoryMap();
   grid.innerHTML = items.map(i => {
     const inCart = State.cart.find(c => c.sku === i.sku);
     const thumb = i.image
       ? `<img src="${imgURL(i.image)}" alt="${esc(i.name)}" loading="lazy" onerror="imgFail(this)"/>`
       : NOIMG;
+    const tracked = i.sku in inv;
+    const q = inv[i.sku] || 0;
+    const stockBadge = tracked
+      ? `<div class="card-stock ${q === 0 ? 'out' : q <= 5 ? 'low' : 'ok'}">${q === 0 ? 'Out of stock' : q + ' in stock'}</div>`
+      : '';
     return `
     <div class="card ${inCart ? 'in-cart' : ''}" data-sku="${esc(i.sku)}">
       <div class="thumb">${thumb}</div>
@@ -124,6 +132,7 @@ function renderCatalog() {
         <div class="name">${esc(i.name)}</div>
         <div class="meta">${esc(i.brand || i.category)}</div>
         <div class="sku">${esc(i.sku)}</div>
+        ${stockBadge}
       </div>
       <div class="foot">
         <span class="price">${fmt(i.price)}</span>
@@ -298,6 +307,11 @@ function bindUI() {
   $('btnSaved').addEventListener('click', openSaved);
   $('savedList').addEventListener('click', onSavedClick);
   $('savedList').addEventListener('change', onSavedChange);
+  // Inventory
+  $('btnInventory').addEventListener('click', openInventory);
+  $('inventoryList').addEventListener('click', onInventoryClick);
+  $('inventoryList').addEventListener('change', onInventoryChange);
+  $('invSearch').addEventListener('input', e => renderInventory(e.target.value));
   // Cloud sync
   $('btnSync').addEventListener('click', openSync);
   // Customer directory
@@ -612,6 +626,76 @@ function saveCurrentCustomer() {
   if (!res.ok) return alert(res.error || 'Could not save customer.');
   alert(`Customer "${c.name.trim()}" saved. You can pick them any time from 📇 Customers.`);
 }
+
+/* ---------------- Inventory ---------------- */
+function openInventory() {
+  $('invSearch').value = '';
+  $('inventoryModal').classList.add('open');
+  renderInventory('');
+  setTimeout(() => { const el = $('invSearch'); if (el) el.focus(); }, 50);
+}
+
+function invRow(item, qty, tracked, showRemove) {
+  const q = Number(qty) || 0;
+  const cls = !tracked ? 'untracked' : q === 0 ? 'out' : q <= 5 ? 'low' : 'ok';
+  const label = tracked ? (q === 0 ? 'Out of stock' : q + ' in stock') : 'Not tracked';
+  return `<div class="inv-row" data-sku="${esc(item.sku)}">
+    <div class="inv-info">
+      <div class="inv-name">${esc(item.name || item.sku)}</div>
+      <div class="inv-sku">${esc(item.sku)}${item.brand ? ' · ' + esc(item.brand) : ''}</div>
+    </div>
+    <div class="inv-stock">
+      <span class="inv-badge ${cls}">${label}</span>
+      <div class="stepper">
+        <button data-dec="${esc(item.sku)}" title="Decrease">−</button>
+        <input type="number" min="0" value="${q}" data-qty="${esc(item.sku)}"/>
+        <button data-inc="${esc(item.sku)}" title="Increase">+</button>
+      </div>
+      ${showRemove ? `<button class="inv-remove" data-untrack="${esc(item.sku)}" title="Remove from inventory list">Remove</button>` : ''}
+    </div>
+  </div>`;
+}
+
+function renderInventory(query) {
+  const box = $('inventoryList');
+  if (!box) return;
+  const q = (query || '').toLowerCase().trim();
+  const invMap = CDATA.inventoryMap();
+  const tracked = CDATA.listInventory();
+
+  let out = 0, low = 0;
+  tracked.forEach(r => { const n = Number(r.qty) || 0; if (n === 0) out++; else if (n <= 5) low++; });
+  const summary = `<div class="inv-summary">${tracked.length} item${tracked.length !== 1 ? 's' : ''} tracked${out ? ` · <b class="inv-out">${out} out of stock</b>` : ''}${low ? ` · <b class="inv-low">${low} low</b>` : ''}</div>`;
+
+  if (q) {
+    const matches = State.catalog.filter(i => [i.name, i.sku, i.brand, i.category].join(' ').toLowerCase().includes(q)).slice(0, 60);
+    if (!matches.length) { box.innerHTML = summary + `<p style="color:var(--sub)">No products match your search.</p>`; return; }
+    box.innerHTML = summary + `<div class="inv-hint">Set a quantity to add an item to your inventory list.</div>` +
+      matches.map(i => invRow(i, invMap[i.sku], (i.sku in invMap))).join('');
+  } else {
+    if (!tracked.length) {
+      box.innerHTML = summary + `<p style="color:var(--sub)">No stock recorded yet. Search a product above and set its quantity to start your inventory list.</p>`;
+      return;
+    }
+    box.innerHTML = summary + tracked.map(r => {
+      const it = State.catalog.find(c => c.sku === r.sku) || { name: r.sku, sku: r.sku, brand: '' };
+      return invRow(it, r.qty, true, true);
+    }).join('');
+  }
+}
+
+function onInventoryClick(e) {
+  const inc = e.target.closest('[data-inc]'); if (inc) { CDATA.adjustStock(inc.dataset.inc, 1); afterInventoryChange(); return; }
+  const dec = e.target.closest('[data-dec]'); if (dec) { CDATA.adjustStock(dec.dataset.dec, -1); afterInventoryChange(); return; }
+  const rm = e.target.closest('[data-untrack]'); if (rm) {
+    if (confirm('Remove this item from the inventory list?')) { CDATA.untrackStock(rm.dataset.untrack); afterInventoryChange(); }
+    return;
+  }
+}
+function onInventoryChange(e) {
+  const qt = e.target.closest('[data-qty]'); if (qt) { CDATA.setStock(qt.dataset.qty, qt.value); afterInventoryChange(); }
+}
+function afterInventoryChange() { renderInventory($('invSearch').value); renderCatalog(); }
 
 /* ---------------- Cloud sync UI ---------------- */
 function updateSyncUI() {

@@ -30,6 +30,7 @@
     <span class="app-ver" id="appVer" title="App version — tells you if you're on the latest"></span>
     <button id="btnSync" class="sync-btn" style="display:none" title="Cloud sync across devices">☁ Sync</button>
     <button id="btnSaved" title="Load a saved quotation">Saved Quotes</button>
+    <button id="btnInventory" title="Stock / inventory list">Inventory</button>
     <button id="btnSettings" title="Company details, GST, terms">Settings</button>
     <button id="btnNew" class="primary" title="Start a fresh quotation">+ New Quote</button>
   </header>
@@ -159,6 +160,17 @@
       <button class="cancel" data-close>Cancel</button>
       <button class="save" id="btnSaveSettings">Save Settings</button>
     </footer>
+  </div>
+</div>
+
+<!-- INVENTORY MODAL -->
+<div class="modal-backdrop" id="inventoryModal">
+  <div class="modal">
+    <header><h2>Inventory</h2><button class="close" data-close>&times;</button></header>
+    <div class="content">
+      <div class="inv-search"><input id="invSearch" type="text" placeholder="Search a product to add or adjust its stock…"/></div>
+      <div id="inventoryList"></div>
+    </div>
   </div>
 </div>
 

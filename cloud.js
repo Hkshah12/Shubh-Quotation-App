@@ -14,7 +14,7 @@
 
   const CFG = window.FIREBASE_CONFIG;
   const SDK = 'https://www.gstatic.com/firebasejs/10.12.5';
-  const COLLECTIONS = ['customers', 'quotes'];
+  const COLLECTIONS = ['customers', 'quotes', 'inventory'];
 
   // Public surface — always exists so app.js can call it safely.
   const Cloud = {
@@ -41,7 +41,7 @@
   let db = null, auth = null;
   let hooked = false;
   const unsub = {};                                  // per-collection snapshot unsubscribers
-  const remoteIds = { customers: new Set(), quotes: new Set() };
+  const remoteIds = {}; COLLECTIONS.forEach(c => remoteIds[c] = new Set());
   const uploaded = {};                               // collections already migrated up once
 
   // Firestore doc ids can't contain / . # $ [ ] — the real id is always stored in data.id.
@@ -124,11 +124,14 @@
     if (uploaded[collection] || !Cloud.user) return;
     uploaded[collection] = true;
     try {
-      const list = collection === 'customers' ? CDATA.listCustomers() : CDATA.listQuotations();
-      list.forEach(item => {
-        if (remoteIds[collection].has(item.id)) return;
-        const full = collection === 'customers' ? CDATA.getCustomer(item.id) : CDATA.getQuotation(item.id);
-        if (full) pushChange(collection, 'put', item.id, full);
+      let list;
+      if (collection === 'customers') list = CDATA.listCustomers().map(i => CDATA.getCustomer(i.id));
+      else if (collection === 'quotes') list = CDATA.listQuotations().map(i => CDATA.getQuotation(i.id));
+      else if (collection === 'inventory') list = CDATA.listInventory();
+      else list = [];
+      (list || []).forEach(rec => {
+        if (!rec || !rec.id || remoteIds[collection].has(rec.id)) return;
+        pushChange(collection, 'put', rec.id, rec);
       });
     } catch (e) {}
   }

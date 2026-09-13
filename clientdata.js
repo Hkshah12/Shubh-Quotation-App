@@ -8,6 +8,7 @@
     counter: 'shubh_counter',
     quotes: 'shubh_quotes',
     customers: 'shubh_customers',
+    inventory: 'shubh_inventory',
   };
 
   // ---------- cloud-sync bridge ----------
@@ -195,6 +196,32 @@
     return { ok: true };
   }
 
+  // ---------- inventory (stock levels, per-device + cloud-synced) ----------
+  // Simple stock list: one record per SKU. Storing a record = "this item is tracked".
+  function readInventory() { try { return JSON.parse(localStorage.getItem(LS.inventory) || '[]'); } catch (e) { return []; } }
+  function writeInventory(a) { localStorage.setItem(LS.inventory, JSON.stringify(a)); }
+  function inventoryMap() { const m = {}; readInventory().forEach(r => { m[r.sku] = Number(r.qty) || 0; }); return m; }
+  function getStock(sku) { const r = readInventory().find(x => x.id === sku); return r ? (Number(r.qty) || 0) : 0; }
+  function hasStock(sku) { return readInventory().some(x => x.id === sku); }
+  function listInventory() { return readInventory().slice().sort((a, b) => (a.sku || '').localeCompare(b.sku || '')); }
+  function setStock(sku, qty) {
+    if (!sku) return { ok: false };
+    const id = sku;
+    const q = Math.max(0, Math.floor(Number(qty) || 0));
+    const rec = { id, sku, qty: q, updatedAt: Date.now() };
+    const arr = readInventory().filter(x => x.id !== id);
+    arr.push(rec);
+    writeInventory(arr);
+    notify('inventory', 'put', id, rec);
+    return { ok: true, id, qty: q };
+  }
+  function adjustStock(sku, delta) { return setStock(sku, getStock(sku) + (Number(delta) || 0)); }
+  function untrackStock(sku) {
+    writeInventory(readInventory().filter(x => x.id !== sku));
+    notify('inventory', 'del', sku);
+    return { ok: true };
+  }
+
   // ---------- apply remote (cloud) changes into the local store ----------
   // Called by cloud.js when a change streams down from Firestore. Writes directly to
   // localStorage and does NOT fire the change hook (so it never bounces back to the cloud).
@@ -208,11 +235,16 @@
       const arr = readQuotes().filter(q => q.id !== id);
       arr.push(Object.assign({}, data, { id }));
       writeQuotes(arr);
+    } else if (collection === 'inventory') {
+      const arr = readInventory().filter(x => x.id !== id);
+      arr.push(Object.assign({}, data, { id }));
+      writeInventory(arr);
     }
   }
   function applyRemoteDelete(collection, id) {
     if (collection === 'customers') writeCustomers(readCustomers().filter(c => c.id !== id));
     else if (collection === 'quotes') writeQuotes(readQuotes().filter(q => q.id !== id));
+    else if (collection === 'inventory') writeInventory(readInventory().filter(x => x.id !== id));
   }
 
   // ---------- assets ----------
@@ -294,6 +326,7 @@
     catalog, getSettings, saveSettings, nextQuoteNo,
     saveQuotation, listQuotations, getQuotation, updateQuotationMeta, deleteQuotation,
     listCustomers, getCustomer, saveCustomer, deleteCustomer,
+    getStock, hasStock, setStock, adjustStock, untrackStock, listInventory, inventoryMap,
     onLocalChange, applyRemote, applyRemoteDelete,
     assetUrl, descUrl, toDataURI, buildImageMap, downloadBlob,
   };

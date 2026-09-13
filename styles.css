@@ -252,6 +252,32 @@ header.topbar {
 .qc-btn.danger { color:#b3261e; border-color:#e6c9c5; }
 .qc-btn.danger:hover { background:#fdecea; border-color:#b3261e; }
 
+/* ---------- Inventory ---------- */
+.card-stock { font-size:10.5px; font-weight:800; padding:1px 7px; border-radius:5px; display:inline-block; margin-top:4px; }
+.card-stock.ok { background:#e6f4ea; color:#1e7e34; }
+.card-stock.low { background:#fff3e0; color:#b26a00; }
+.card-stock.out { background:#fdecea; color:#b3261e; }
+.inv-search { margin-bottom:12px; }
+.inv-search input { width:100%; padding:9px 11px; border:1px solid var(--border); border-radius:8px; outline:none; background:#fff; }
+.inv-search input:focus { border-color:var(--primary); box-shadow:0 0 0 3px #1e3a5f1a; }
+.inv-summary { font-size:12.5px; color:var(--sub); margin-bottom:10px; }
+.inv-summary .inv-out { color:#b3261e; }
+.inv-summary .inv-low { color:#b26a00; }
+.inv-hint { font-size:11.5px; color:var(--sub); font-style:italic; margin-bottom:8px; }
+.inv-row { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:9px 4px; border-bottom:1px dashed var(--border); }
+.inv-info { min-width:0; }
+.inv-name { font-weight:700; font-size:13.5px; }
+.inv-sku { font-size:10.5px; color:var(--sub); font-family:ui-monospace,monospace; }
+.inv-stock { display:flex; align-items:center; gap:8px; flex:0 0 auto; }
+.inv-badge { font-size:10px; font-weight:800; text-transform:uppercase; letter-spacing:.03em; padding:2px 8px; border-radius:999px; white-space:nowrap; }
+.inv-badge.ok { background:#e6f4ea; color:#1e7e34; }
+.inv-badge.low { background:#fff3e0; color:#b26a00; }
+.inv-badge.out { background:#fdecea; color:#b3261e; }
+.inv-badge.untracked { background:var(--muted); color:var(--sub); }
+.inv-stock .stepper input { width:54px; }
+.inv-remove { background:#fff; color:#b3261e; border:1.5px solid #e6c9c5; padding:6px 10px; border-radius:7px; font-weight:600; font-size:12px; cursor:pointer; }
+.inv-remove:hover { background:#fdecea; border-color:#b3261e; }
+
 /* ---------- Print document (A4) ---------- */
 #printDoc { display: none; }
 @media screen { #printDoc { display:none; } }
