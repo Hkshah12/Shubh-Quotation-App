@@ -14,3 +14,8 @@ desktop.ini
 
 # Node (this project has zero dependencies, but just in case)
 node_modules/
+
+# Shubh Pulse analytics lives here but belongs to its own PRIVATE repo —
+# it holds real order data (revenue, costs, margins, client contacts) and this
+# repo is PUBLIC. Never track any of it here.
+/analytics/
