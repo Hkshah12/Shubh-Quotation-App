@@ -1,4 +1,4 @@
-sku,name,brand,category,description,unit,price,hsn,image,descimage
+sku,name,brand,category,description,pack size,price,hsn,image,descimage
 IFUGE M08,IFUGE M08 MAGNETIC ROTOR,Neuation,Rotors & Buckets,,unit,11636,,iFUGE M08-M08VT.png,iFUGE M08-M08VT desc.png
 IFUGE M08VT,IFUGE M08VT MAGNETIC ROTOR,Neuation,Rotors & Buckets,,unit,14999,,iFUGE M08-M08VT.png,iFUGE M08-M08VT desc.png
 IFUGE M5K COMBI,IFUGE M5K COMBI,Neuation,Centrifuges,,unit,18079,,iFUGE M5K COMBI.png,iFUGE M5K COMBI desc.png
@@ -111,15 +111,15 @@ IROLL PR35,"iROLL PR35 Digital Plate Tube Rotator (10-80 RPM, supplied with one 
 P1-50,50 ML TUBE TRAY (ASS)_0245-00-04 (PR01 P1),Neuation / Accumax,Rotors & Buckets,,unit,7260,,,
 P2-15,15 ML TUBE TRAY (ASS)_0245-00-03 (PR01 P2),Neuation / Accumax,Rotors & Buckets,,unit,6538,,,
 P3-05,2_5 ML TUBE TRAY (ASS)_0245-00-05 (PR01 P3),Neuation / Accumax,Rotors & Buckets,,unit,7260,,,
-ISTIR UNO,"iStir UNO Motorless Ultra-Slim Magnetic Stirrer, Single Position (1x800ml, 1500 RPM)",Neuation / Accumax,Other,,unit,14170,,iSTIR UNO.png,iSTIR UNO desc.png
-ISTIR QUATTRO,"iStir Quattro Motorless Ultra-Slim Magnetic Stirrer, 4-Position (4x400ml, 1200 RPM)",Neuation / Accumax,Other,,unit,30000,,iSTIR QUATTRO.png,iSTIR UNO desc.png
-ISTIR 50L,"iStir 50L High Capacity Magnetic Stirrer (50 Liters, 100-1000 RPM)",Neuation / Accumax,Other,,unit,38736,,iStir 50L.png,iStir 50L desc.png
-ISTIR 100L,"iStir 100L High Capacity Magnetic Stirrer (100 Liters, 100-800 RPM)",Neuation / Accumax,Other,,unit,39158,,iStir 50L.png,iStir 50L desc.png
-ISTIR 200L,"iStir 200L High Capacity Magnetic Stirrer (200 Liters, 100-600 RPM)",Neuation / Accumax,Other,,unit,41531,,iStir 50L.png,iStir 50L desc.png
-ISTIR MS10,"iStir MS10 Magnetic Stirrer (10 Liters, 200-2200 RPM)",Neuation / Accumax,Other,,unit,13838,,iSTIR MS10.png,iSTIR MS10 desc.png
-ISTIR MS10A,"iStir MS10A Magnetic Stirrer (10 Liters, 250-2200 RPM, Analog Knob)",Neuation / Accumax,Other,,unit,11534,,iSTIR MS10A.png,iSTIR MS10A desc.png
-ISTIR HP320,"iStir HP320 Hot Plate Magnetic Stirrer (10 Liters, 200-2200 RPM, Ambient to 320°C, with PT-1000 Probe & Stand)",Neuation / Accumax,Other,,unit,28554,,iSTIR HP320.png,iSTIR HP320 desc.png
-ISTIR HP320A,"iStir HP320A Hot Plate Magnetic Stirrer (10 Liters, 300-2200 RPM, Ambient to 320°C, Double Knob Analog)",Neuation / Accumax,Other,,unit,20948,,iSTIR HP320A.png,iSTIR HP320A desc.png
+ISTIR UNO,"iStir UNO Motorless Ultra-Slim Magnetic Stirrer, Single Position (1x800ml, 1500 RPM)",Neuation,Other,,unit,14170,,iSTIR UNO.png,iSTIR UNO desc.png
+ISTIR QUATTRO,"iStir Quattro Motorless Ultra-Slim Magnetic Stirrer, 4-Position (4x400ml, 1200 RPM)",Neuation,Other,,unit,30000,,iSTIR QUATTRO.png,iSTIR UNO desc.png
+ISTIR 50L,"iStir 50L High Capacity Magnetic Stirrer (50 Liters, 100-1000 RPM)",Neuation,Other,,unit,38736,,iStir 50L.png,iStir 50L desc.png
+ISTIR 100L,"iStir 100L High Capacity Magnetic Stirrer (100 Liters, 100-800 RPM)",Neuation,Other,,unit,39158,,iStir 50L.png,iStir 50L desc.png
+ISTIR 200L,"iStir 200L High Capacity Magnetic Stirrer (200 Liters, 100-600 RPM)",Neuation,Other,,unit,41531,,iStir 50L.png,iStir 50L desc.png
+ISTIR MS10,"iStir MS10 Magnetic Stirrer (10 Liters, 200-2200 RPM)",Neuation,Other,,unit,13838,,iSTIR MS10.png,iSTIR MS10 desc.png
+ISTIR MS10A,"iStir MS10A Magnetic Stirrer (10 Liters, 250-2200 RPM, Analog Knob)",Neuation,Other,,unit,11534,,iSTIR MS10A.png,iSTIR MS10A desc.png
+ISTIR HP320,"iStir HP320 Hot Plate Magnetic Stirrer (10 Liters, 200-2200 RPM, Ambient to 320°C, with PT-1000 Probe & Stand)",Neuation,Other,,unit,28554,,iSTIR HP320.png,iSTIR HP320 desc.png
+ISTIR HP320A,"iStir HP320A Hot Plate Magnetic Stirrer (10 Liters, 300-2200 RPM, Ambient to 320°C, Double Knob Analog)",Neuation,Other,,unit,20948,,iSTIR HP320A.png,iSTIR HP320A desc.png
 S1 (FOR HP 550)/PRIME S2 (FOR HP 320),PT 1000 (STAND ASS)_HPS 350/550 (HS10/20 S1),Neuation / Accumax,Rotors & Buckets,,unit,1079,,,
 T1 (FOR HP 550)/PRIME T2 (FOR HP 320),0311-00-0201-0-051_PT1000 SENSOR (HS10/20 T1+T2),Neuation / Accumax,Other,,unit,2432,,,
 QP,0341-00-0000-0-010_CARRYING_PLATE (HS10/20 QP),Neuation / Accumax,Other,,pack,5226,,,
@@ -134,15 +134,15 @@ RB250,0341-00-0000-0-007_250ML_REACTION_BLOCK (HS10/20 RB250),Neuation / Accumax
 RB500,0341-00-0000-0-006_500ML _REACTION_BLOCK (HS10/20 RB500),Neuation / Accumax,Other,,unit,7393,,,
 HP380A,"iStir HP380A Hot Plate Magnetic Stirrer (20 Liters, 200-2200 RPM, Ambient to 380°C)",Neuation / Accumax,Other,,unit,31150,,iSTIR HP380A.png,iSTIR HP380A desc.png
 HP450A,ISTIR HP 450A,Neuation / Accumax,Other,,unit,47429,,,
-ISTIR HP550 PRIME,"iStir HP 550 Prime Hot Plate Magnetic Stirrer (20 Liters, 200-2200 RPM, Ambient to 550°C, with PT-1000 Probe & Stand)",Neuation / Accumax,Other,,unit,47429,,iSTIR HP550 PRIME.png,iSTIR HP550 PRIME desc.png
-ISTIR HP 350 PRIME,ISTIR HP 350 PRIME,Neuation / Accumax,Other,,unit,47429,,,
-ISTIR HP 5M,"iStir HP 5M 5-Station Heated Magnetic Stirrer (5x400ml, 300-1500 RPM, Ambient to 120°C)",Neuation / Accumax,Other,,unit,53737,,iSTIR HP 5M.png,iSTIR HP 5M desc.png
-ISTIR HP 10M,"iStir HP 10M 10-Station Heated Magnetic Stirrer (10x400ml, 300-1500 RPM, Ambient to 120°C)",Neuation / Accumax,Other,,unit,75604,,iSTIR HP 10M.png,iSTIR HP 5M desc.png
-ISTIR HP 15M,"iStir HP 15M 15-Station Heated Magnetic Stirrer (15x400ml, 300-1500 RPM, Ambient to 120°C)",Neuation / Accumax,Other,,unit,107054,,iSTIR HP 15M.png,iSTIR HP 5M desc.png
-ISTIR OH 20 PRIME,"iStir OH 20 Prime Overhead Stirrer (25L, 50-2000 RPM, 20 Ncm, 10000 mPas)",Neuation / Accumax,Other,,unit,43036,,iSTIR OH PRIME.png,iSTIR OH PRIME desc.png
-ISTIR OH 40 PRIME,"iStir OH 40 Prime Overhead Stirrer (40L, 50-1000 RPM, 40 Ncm, 30000 mPas)",Neuation / Accumax,Other,,unit,45013,,iSTIR OH PRIME.png,iSTIR OH PRIME desc.png
-ISTIR OH 75 ELITE,"iStir OH 75 Elite Overhead Stirrer (70L, 60-2000 RPM, 75 Ncm, 50000 mPas)",Neuation / Accumax,Other,,unit,74272,,iSTIR OH 75 ELITE.png,iSTIR OH 75 ELITE desc.png
-ISTIR OH 15 PRIME,ISTIR OH 15P,Neuation / Accumax,Other,,unit,29051,,,
+ISTIR HP550 PRIME,"iStir HP 550 Prime Hot Plate Magnetic Stirrer (20 Liters, 200-2200 RPM, Ambient to 550°C, with PT-1000 Probe & Stand)",Neuation,Other,,unit,47429,,iSTIR HP550 PRIME.png,iSTIR HP550 PRIME desc.png
+ISTIR HP 350 PRIME,ISTIR HP 350 PRIME,Neuation,Other,,unit,47429,,,
+ISTIR HP 5M,"iStir HP 5M 5-Station Heated Magnetic Stirrer (5x400ml, 300-1500 RPM, Ambient to 120°C)",Neuation,Other,,unit,53737,,iSTIR HP 5M.png,iSTIR HP 5M desc.png
+ISTIR HP 10M,"iStir HP 10M 10-Station Heated Magnetic Stirrer (10x400ml, 300-1500 RPM, Ambient to 120°C)",Neuation,Other,,unit,75604,,iSTIR HP 10M.png,iSTIR HP 5M desc.png
+ISTIR HP 15M,"iStir HP 15M 15-Station Heated Magnetic Stirrer (15x400ml, 300-1500 RPM, Ambient to 120°C)",Neuation,Other,,unit,107054,,iSTIR HP 15M.png,iSTIR HP 5M desc.png
+ISTIR OH 20 PRIME,"iStir OH 20 Prime Overhead Stirrer (25L, 50-2000 RPM, 20 Ncm, 10000 mPas)",Neuation,Other,,unit,43036,,iSTIR OH PRIME.png,iSTIR OH PRIME desc.png
+ISTIR OH 40 PRIME,"iStir OH 40 Prime Overhead Stirrer (40L, 50-1000 RPM, 40 Ncm, 30000 mPas)",Neuation,Other,,unit,45013,,iSTIR OH PRIME.png,iSTIR OH PRIME desc.png
+ISTIR OH 75 ELITE,"iStir OH 75 Elite Overhead Stirrer (70L, 60-2000 RPM, 75 Ncm, 50000 mPas)",Neuation,Other,,unit,74272,,iSTIR OH 75 ELITE.png,iSTIR OH 75 ELITE desc.png
+ISTIR OH 15 PRIME,ISTIR OH 15P,Neuation,Other,,unit,29051,,,
 ITHERM D150-1,"iTHERM D150-1 Thermal Dry Bath, Single Block (Ambient +5°C to 120°C)",Neuation / Accumax,Other,,unit,15660,,iTHERM D150-1.png,iTHERM D150 desc.png
 ITHERM D150-4,"iTHERM D150-4 Thermal Dry Bath, Four Block, Programmable (Ambient +5°C to 120°C)",Neuation / Accumax,Other,,unit,55200,,iTHERM D150-4.png,iTHERM D150 desc.png
 DB02-B1,0601-00-0104-0-021_HEATING_BLOCK (DB01 B1),Neuation / Accumax,Other,,unit,9491,,,
@@ -171,10 +171,10 @@ CH01-A06,0261-00-0400-0-065_1.4-1.7 MM YTZP(94%) BEADS (CH01 A06),Neuation / Acc
 CH01-A07,0261-00-0400-0-066_2.6-3.3 MM YTZP(94%) BEADS (CH01 A07),Neuation / Accumax,Other,,unit,13674,,,
 CH01-A08,0261-00-0400-0-068_2MM SS BEADS (CH01 A08),Neuation / Accumax,Other,,unit,13674,,,
 CH01-A09,0261-00-0400-0-067_3 MM SS BEADS (CH01 A09),Neuation / Accumax,Other,,unit,54696,,,
-ISHAK BL UNO VT,"iShak BL Uno VT Personal Microplate Shaker (1 plate, 300-1800 RPM, 2mm Orbital)",Neuation / Accumax,Other,,unit,17425,,iSHAK BL UNO VT.png,iSHAK BL UNO VT desc.png
-ISHAK QUATTRO NXT,"iShak Quattro NXT 4-Plate Microplate Shaker (4 plates, 200-1200 RPM, 3mm Orbital)",Neuation / Accumax,Other,,unit,37050,,iSHAK QUATTRO NXT.png,iSHAK BL UNO VT desc.png
-ISHAK TS4 NXT,"iShak TS4 NXT 4-Plate Incubated Microplate Shaker (4 plates, 200-1200 RPM, Ambient +3°C to 70°C)",Neuation / Accumax,Other,,unit,91400,,iSHAK TS4 NXT.png,iSHAK TS4 NXT desc.png
-ISHAK 3D-5 NXT,"iShak 3D-5 NXT Digital 3D Shaker (5kg, 10-120 RPM, Tumbling 7°, Programmable)",Neuation / Accumax,Other,,unit,49000,,iSHAK 3D-5 NXT.png,iSHAK 3D-5 NXT desc.png
+ISHAK BL UNO VT,"iShak BL Uno VT Personal Microplate Shaker (1 plate, 300-1800 RPM, 2mm Orbital)",Neuation,Other,,unit,17425,,iSHAK BL UNO VT.png,iSHAK BL UNO VT desc.png
+ISHAK QUATTRO NXT,"iShak Quattro NXT 4-Plate Microplate Shaker (4 plates, 200-1200 RPM, 3mm Orbital)",Neuation,Other,,unit,37050,,iSHAK QUATTRO NXT.png,iSHAK BL UNO VT desc.png
+ISHAK TS4 NXT,"iShak TS4 NXT 4-Plate Incubated Microplate Shaker (4 plates, 200-1200 RPM, Ambient +3°C to 70°C)",Neuation,Other,,unit,91400,,iSHAK TS4 NXT.png,iSHAK TS4 NXT desc.png
+ISHAK 3D-5 NXT,"iShak 3D-5 NXT Digital 3D Shaker (5kg, 10-120 RPM, Tumbling 7°, Programmable)",Neuation,Other,,unit,49000,,iSHAK 3D-5 NXT.png,iSHAK 3D-5 NXT desc.png
 STICKY PAD MAT,0225-00-0102-0-060_SILICON STICKY MAT ( SH03 M3-2),Neuation / Accumax,Other,,unit,1673,,,
 ISHAK PS 10 NXT,"iShak PS 10 NXT Multipurpose Platform Shaker (up to 7.5kg, 50-500 RPM, 10mm Orbital/Linear)",Neuation / Accumax,Other,,unit,80550,,iSHAK PS NXT.png,iSHAK PS NXT desc.png
 DA-01,ATTECHMENT(ASS)7.5_DISK ATTECHMENT (SH01 DA-01),Neuation / Accumax,Rotors & Buckets,,unit,6974,,,
@@ -481,19 +481,19 @@ ADW-2.2 U-S-W,"Accumax Deepwell Plate, 2.2ml Zybio-type U-Bottom Square Top, Ste
 ADW-SM-CC,"Accumax Silicon Mat, All-Fit for Square Top, Cross Cut",Accumax,Other,,50 Pcs/Case,12095,,ACCUMAX DEEPWELL PLATE.png,ACCUMAX DEEPWELL PLATE desc.png
 ADW-SM-1-RP,"Accumax Silicon Mat, Round 1.0ml Pierceable",Accumax,Other,,50 Pcs/Case,12095,,ACCUMAX DEEPWELL PLATE.png,ACCUMAX DEEPWELL PLATE desc.png
 ADW-SM-2-RP,"Accumax Silicon Mat, Round 2.0ml Pierceable",Accumax,Other,,50 Pcs/Case,12095,,ACCUMAX DEEPWELL PLATE.png,ACCUMAX DEEPWELL PLATE desc.png
-ACV01,"Accumax 1ml Hepta Foot Cryovial with Cap, Nonsterile",Neuation / Accumax,Other,,pack,7168,,ACCUMAX CRYOVIAL.png,ACCUMAX CRYOVIAL desc.png
-ACV01-S,"Accumax 1ml Hepta Foot Cryovial with Cap, Sterile",Neuation / Accumax,Other,,pack,7965,,ACCUMAX CRYOVIAL.png,ACCUMAX CRYOVIAL desc.png
-ACV18,"Accumax 1.8ml Hepta Foot Cryovial with Cap, Nonsterile",Neuation / Accumax,Other,,pack,7747,,ACCUMAX CRYOVIAL.png,ACCUMAX CRYOVIAL desc.png
-ACV18-S,"Accumax 1.8ml Hepta Foot Cryovial with Cap, Sterile",Neuation / Accumax,Other,,pack,8609,,ACCUMAX CRYOVIAL.png,ACCUMAX CRYOVIAL desc.png
-ACV35,"Accumax 3.5ml Hepta Foot Cryovial with Cap, Nonsterile",Neuation / Accumax,Other,,pack,13085,,ACCUMAX CRYOVIAL.png,ACCUMAX CRYOVIAL desc.png
-ACV35-S,"Accumax 3.5ml Hepta Foot Cryovial with Cap, Sterile",Neuation / Accumax,Other,,pack,11776,,ACCUMAX CRYOVIAL.png,ACCUMAX CRYOVIAL desc.png
-ACV45,"Accumax 4.5ml Hepta Foot Cryovial with Cap, Nonsterile",Neuation / Accumax,Other,,pack,6200,,ACCUMAX CRYOVIAL.png,ACCUMAX CRYOVIAL desc.png
-ACV45-S,"Accumax 4.5ml Hepta Foot Cryovial with Cap, Sterile",Neuation / Accumax,Other,,pack,6890,,ACCUMAX CRYOVIAL.png,ACCUMAX CRYOVIAL desc.png
-ACI-R,"Accumax Cryo Coder Colored Cap Insert, Red",Neuation / Accumax,Other,,unit,885,,,
-ACI-B,"Accumax Cryo Coder Colored Cap Insert, Blue",Neuation / Accumax,Other,,unit,885,,,
-ACI-Y,"Accumax Cryo Coder Colored Cap Insert, Yellow",Neuation / Accumax,Other,,unit,885,,,
-ACI-G,"Accumax Cryo Coder Colored Cap Insert, Green",Neuation / Accumax,Other,,unit,885,,,
-ACI-W,"Accumax Cryo Coder Colored Cap Insert, White",Neuation / Accumax,Other,,unit,885,,,
+ACV01,"Accumax 1ml Hepta Foot Cryovial with Cap, Nonsterile",Accumax,Other,,pack,7168,,ACCUMAX CRYOVIAL.png,ACCUMAX CRYOVIAL desc.png
+ACV01-S,"Accumax 1ml Hepta Foot Cryovial with Cap, Sterile",Accumax,Other,,pack,7965,,ACCUMAX CRYOVIAL.png,ACCUMAX CRYOVIAL desc.png
+ACV18,"Accumax 1.8ml Hepta Foot Cryovial with Cap, Nonsterile",Accumax,Other,,pack,7747,,ACCUMAX CRYOVIAL.png,ACCUMAX CRYOVIAL desc.png
+ACV18-S,"Accumax 1.8ml Hepta Foot Cryovial with Cap, Sterile",Accumax,Other,,pack,8609,,ACCUMAX CRYOVIAL.png,ACCUMAX CRYOVIAL desc.png
+ACV35,"Accumax 3.5ml Hepta Foot Cryovial with Cap, Nonsterile",Accumax,Other,,pack,13085,,ACCUMAX CRYOVIAL.png,ACCUMAX CRYOVIAL desc.png
+ACV35-S,"Accumax 3.5ml Hepta Foot Cryovial with Cap, Sterile",Accumax,Other,,pack,11776,,ACCUMAX CRYOVIAL.png,ACCUMAX CRYOVIAL desc.png
+ACV45,"Accumax 4.5ml Hepta Foot Cryovial with Cap, Nonsterile",Accumax,Other,,pack,6200,,ACCUMAX CRYOVIAL.png,ACCUMAX CRYOVIAL desc.png
+ACV45-S,"Accumax 4.5ml Hepta Foot Cryovial with Cap, Sterile",Accumax,Other,,pack,6890,,ACCUMAX CRYOVIAL.png,ACCUMAX CRYOVIAL desc.png
+ACI-R,"Accumax Cryo Coder Colored Cap Insert, Red",Accumax,Other,,unit,885,,,
+ACI-B,"Accumax Cryo Coder Colored Cap Insert, Blue",Accumax,Other,,unit,885,,,
+ACI-Y,"Accumax Cryo Coder Colored Cap Insert, Yellow",Accumax,Other,,unit,885,,,
+ACI-G,"Accumax Cryo Coder Colored Cap Insert, Green",Accumax,Other,,unit,885,,,
+ACI-W,"Accumax Cryo Coder Colored Cap Insert, White",Accumax,Other,,unit,885,,,
 APC-001,"Accumax PCR Tube, 0.2ml Flat Cap, Clear",Neuation / Accumax,Tubes & Vials,,pack,6355,,ACCUMAX PCR CONSUMABLES.png,ACCUMAX PCR CONSUMABLES desc.png
 APC-011,"Accumax PCR 8-Strip Tube, 0.2ml with Attached Flat Cap",Neuation / Accumax,Other,,pack,5734,,ACCUMAX PCR CONSUMABLES.png,ACCUMAX PCR CONSUMABLES desc.png
 APC-012,"Accumax PCR 8-Strip Tube, 0.2ml with Separate Flat Cap",Neuation / Accumax,Other,,pack,4561,,ACCUMAX PCR CONSUMABLES.png,ACCUMAX PCR CONSUMABLES desc.png
@@ -1081,11 +1081,11 @@ ACT-50-K-B,ACT-50-K-B (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,pack,7978,,ACT.
 ACT-50-K-B-S,ACT-50-K-B-S (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,pack,9847,,ACT.png,ACT desc.png
 ACT-50-K-B-S-T,HEAVY METAL FREE CENTRIFUGE TUBES-50-K-B-S-T (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,pack,9588,,Heavy ACT.png,Heavy ACT desc.png
 ACT-50-K-B-T,HEAVY METAL FREE CENTRIFUGE TUBES-50-K-B-T (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,pack,7762,,Heavy ACT.png,Heavy ACT desc.png
-ACT-50-K-S-W,ACT-50-K-S-W (25 TUBES x 20 PACKS),Medha,Tubes & Vials,,Individually Wrapped,11656,,ACT.png,ACT desc.png
-ACT-50-K-S-W-T,HEAVY METAL FREE CENTRIFUGE TUBES-50-K-S-W-T (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,pack,11026,,Heavy ACT.png,Heavy ACT desc.png
-ACT-50-R,ACT-50-R (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,pack,9589,,ACT.png,ACT desc.png
-ACT-50-R-S,ACT-50-R-S (25 TUBES X 20 PACKS),Medha,Tubes & Vials,,pack,11313,,ACT.png,ACT desc.png
-ACT-50-S-W,ACT-50-S-W (25 TUBES x 20 PACKS),Medha,Tubes & Vials,,Individually Wrapped,12824,,ACT.png,ACT desc.png
+ACT-50-K-S-W,ACT-50-K-S-W (25 TUBES x 20 PACKS),Medha,Tubes & Vials,,Individually Wrapped (25 IW TUBES x 20 PACKS),11656,,ACT.png,ACT desc.png
+ACT-50-K-S-W-T,"HEAVY METAL FREE CENTRIFUGE TUBES 50ml Self Standing Centrifuge Tube with heavy metal free flat cap, Sterile",Medha,Tubes & Vials,,25 Tubes X 20 Packs,11026,,Heavy ACT.png,Heavy ACT desc.png
+ACT-50-R,Centrifuge Tube 50 ML with Flat Cap ,Medha,Tubes & Vials,,25 Tubes X 20 Packs,9589,,ACT.png,ACT desc.png
+ACT-50-R-S,"Centrifuge Tube 50 ML with Flat Cap, Sterile ",Medha,Tubes & Vials,,25 Tubes X 20 Packs,11313,,ACT.png,ACT desc.png
+ACT-50-S-W,"Centrifuge Tube 50 ML with Flat Cap, Sterile ",Medha,Tubes & Vials,,Individually Wrapped (25 TUBES x 20 PACKS),12824,,ACT.png,ACT desc.png
 ADV-05-PG-S,"Accumax PETG Diagnostic Vial with Grey Cap, Sterile (Volume: 5ml) (100Pcs)",Medha,Tubes & Vials,,pack,3296,,ACCUMAX DIAGNOSTIC VIALS.png,ACCUMAX DIAGNOSTIC VIALS desc.png
 ADV-10-PG-S,"Accumax PETG Diagnostic Vial with Grey Cap, Sterile (Volume: 10ml) (100Pcs)",Medha,Tubes & Vials,,pack,3532,,ACCUMAX DIAGNOSTIC VIALS.png,ACCUMAX DIAGNOSTIC VIALS desc.png
 ADV-20-PG-S,"Accumax PETG Diagnostic Vial with Grey Cap, Sterile (Volume: 20ml) (100Pcs)",Medha,Tubes & Vials,,pack,4003,,ACCUMAX DIAGNOSTIC VIALS.png,ACCUMAX DIAGNOSTIC VIALS desc.png

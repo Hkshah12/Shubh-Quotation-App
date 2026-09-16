@@ -69,7 +69,7 @@
         description: get('description', 'desc', 'details') || '',
         category: get('category', 'type', 'group') || 'General',
         brand: get('brand', 'make', 'manufacturer') || '',
-        unit: get('unit', 'uom') || 'unit',
+        unit: get('unit', 'uom', 'pack size', 'pack_size', 'packsize', 'pack') || 'unit',
         price: parseFloat(String(get('price', 'unit_price', 'unit price', 'rate', 'mrp', 'amount')).replace(/[^0-9.\-]/g, '')) || 0,
         image: get('image', 'image_path', 'image path', 'img', 'photo', 'picture') || '',
         descImage: get('descimage', 'desc_image', 'description_image', 'description image', 'descphoto', 'desc photo', 'desc image') || '',
