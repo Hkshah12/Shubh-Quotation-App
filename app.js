@@ -1,7 +1,7 @@
 /* Shubh Enterprise — Quotation Generator (frontend) */
 'use strict';
 
-const APP_VERSION = 'v20'; // bump on every deploy so you can confirm you're on the latest
+const APP_VERSION = 'v21'; // bump on every deploy so you can confirm you're on the latest
 
 const State = {
   catalog: [],
@@ -312,6 +312,10 @@ function bindUI() {
   $('inventoryList').addEventListener('click', onInventoryClick);
   $('inventoryList').addEventListener('change', onInventoryChange);
   $('invSearch').addEventListener('input', e => renderInventory(e.target.value));
+  // Record purchase (delegated: the body is re-rendered each time it opens)
+  $('btnSavePurchase').addEventListener('click', savePurchaseFromModal);
+  $('purchaseBody').addEventListener('input', updatePurchaseTotal);
+  $('purchaseBody').addEventListener('change', updatePurchaseTotal);
   // Cloud sync
   $('btnSync').addEventListener('click', openSync);
   // Customer directory
@@ -395,7 +399,7 @@ async function saveQuote() {
 /* ----- Quote lifecycle: status, follow-ups, open / revise / duplicate ----- */
 function idOf(quoteNo) { return String(quoteNo || '').replace(/[^\w\-]/g, '_'); }
 function baseQuoteNo(no) { return String(no || '').replace(/-R\d+$/i, ''); }
-function statusLabel(s) { return s === 'won' ? 'Won' : s === 'lost' ? 'Lost' : 'Pending'; }
+function statusLabel(s) { return s === 'won' ? 'Won' : s === 'lost' ? 'Lost' : s === 'partial' ? 'Part bought' : 'Pending'; }
 function todayISO() {
   const d = new Date();
   return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
@@ -525,11 +529,12 @@ function renderSaved() {
         <div class="qc-metaline">${esc(q.client || '—')} · ${esc(q.date || '')} · ${fmt(q.total || 0)}</div>
       </div>
       <div class="qc-controls">
-        <label class="qc-field">Status<select data-status="${esc(q.id)}">${opt('pending', 'Pending')}${opt('won', 'Won')}${opt('lost', 'Lost')}</select></label>
+        <label class="qc-field">Status<select data-status="${esc(q.id)}">${opt('pending', 'Pending')}${opt('partial', 'Part bought')}${opt('won', 'Won')}${opt('lost', 'Lost')}</select></label>
         <label class="qc-field">Follow-up date<input type="date" data-follow="${esc(q.id)}" value="${esc(q.followUp || '')}" ${st === 'pending' ? '' : 'disabled title="Follow-up applies to pending quotes only"'}/></label>
       </div>
       <div class="qc-actions">
         <button class="qc-btn primary" data-open="${esc(q.id)}">Open</button>
+        <button class="qc-btn buy" data-purchase="${esc(q.id)}" title="Tick the items the customer actually bought">Record purchase</button>
         <button class="qc-btn" data-revise="${esc(q.id)}" title="New version for the same client (keeps the original)">Revise</button>
         <button class="qc-btn" data-duplicate="${esc(q.id)}" title="Copy items into a brand-new quote">Duplicate</button>
         <button class="qc-btn danger" data-delquote="${esc(q.id)}">Delete</button>
@@ -541,6 +546,7 @@ function renderSaved() {
 function onSavedClick(e) {
   const fb = e.target.closest('[data-filter]'); if (fb) { State.savedFilter = fb.dataset.filter; renderSaved(); return; }
   const op = e.target.closest('[data-open]'); if (op) { loadQuote(op.dataset.open); return; }
+  const pu = e.target.closest('[data-purchase]'); if (pu) { openPurchase(pu.dataset.purchase); return; }
   const rv = e.target.closest('[data-revise]'); if (rv) { reviseQuote(rv.dataset.revise); return; }
   const du = e.target.closest('[data-duplicate]'); if (du) { duplicateQuote(du.dataset.duplicate); return; }
   const dl = e.target.closest('[data-delquote]'); if (dl) { deleteSavedQuote(dl.dataset.delquote); return; }
@@ -549,6 +555,102 @@ function onSavedChange(e) {
   const st = e.target.closest('[data-status]'); if (st) { CDATA.updateQuotationMeta(st.dataset.status, { status: st.value }); renderSaved(); return; }
   const fo = e.target.closest('[data-follow]'); if (fo) { CDATA.updateQuotationMeta(fo.dataset.follow, { followUp: fo.value }); renderSaved(); return; }
 }
+/* ----- Record purchase: which quoted lines did the customer actually buy? ----- */
+function openPurchase(quoteId) {
+  const q = CDATA.getQuotation(quoteId);
+  if (!q) return alert('That quotation could not be found.');
+  State.purchaseQuoteId = quoteId;
+  closeModals();               // step out of the saved-quotes list rather than stacking on it
+  renderPurchase();
+  $('purchaseModal').classList.add('open');
+}
+
+function renderPurchase() {
+  const q = CDATA.getQuotation(State.purchaseQuoteId);
+  if (!q) return;
+  const already = CDATA.purchasedQtyByLine(q.id);
+  const items = q.items || [];
+  const gstPct = (q.gst && q.gst.enabled) ? (Number(q.gst.percent) || 0) : 0;
+
+  const rows = items.map((it, i) => {
+    const bought = already[i] || 0;
+    const quoted = Number(it.qty) || 0;
+    const remaining = Math.max(quoted - bought, 0);
+    const done = remaining <= 0;
+    return `<tr class="${done ? 'pl-done' : ''}">
+      <td><input type="checkbox" data-pick="${i}" ${done ? 'disabled' : ''}/></td>
+      <td>
+        <div class="pl-name">${esc(it.name || '')}</div>
+        <div class="pl-sku">${esc(it.sku || '')} · ${fmt(Number(it.price) || 0)}${(Number(it.disc) || 0) ? ` · ${it.disc}% off` : ''}</div>
+      </td>
+      <td class="pl-qty">
+        ${done
+          ? '<span class="pl-tag">All recorded</span>'
+          : `<input type="number" min="1" max="${remaining}" value="${remaining}" data-qty="${i}"/>
+             <span class="pl-of">of ${quoted}${bought ? ` (${bought} done)` : ''}</span>`}
+      </td>
+      <td><input type="number" min="0" step="0.01" placeholder="cost" data-cost="${i}" ${done ? 'disabled' : ''}/></td>
+    </tr>`;
+  }).join('');
+
+  $('purchaseBody').innerHTML = `
+    <div class="pl-head">
+      <div><b>${esc(q.quoteNo || q.id)}</b> · ${esc((q.client && q.client.name) || '—')}</div>
+      <div class="pl-sub">Tick what was bought. Prices come from this quotation, so a later
+        catalogue change can never alter this sale.${gstPct ? ` GST ${gstPct}%.` : ' No GST on this quote.'}</div>
+    </div>
+    <div class="pl-tablewrap">
+      <table class="pl-table">
+        <thead><tr><th></th><th>Item</th><th>Quantity bought</th><th>Unit cost <span class="pl-opt">optional</span></th></tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>
+    <div class="pl-extras">
+      <label class="pl-field">Shipping / freight<input type="number" min="0" step="0.01" id="plShipping" value="0"/></label>
+      <label class="pl-field">Fulfilment hub<input type="text" id="plHub" placeholder="e.g. Ahmedabad HQ"/></label>
+    </div>
+    <div class="pl-total" id="plTotal"></div>`;
+
+  updatePurchaseTotal();
+}
+
+function collectPurchaseSelections() {
+  const out = [];
+  document.querySelectorAll('#purchaseBody [data-pick]').forEach(cb => {
+    if (!cb.checked || cb.disabled) return;
+    const i = cb.dataset.pick;
+    const qty = Number((document.querySelector(`#purchaseBody [data-qty="${i}"]`) || {}).value) || 0;
+    const cost = (document.querySelector(`#purchaseBody [data-cost="${i}"]`) || {}).value;
+    out.push({ line: Number(i), qty, cost });
+  });
+  return out;
+}
+
+function updatePurchaseTotal() {
+  // Ask the data layer, so the preview can never disagree with what gets saved.
+  const p = CDATA.previewPurchase(State.purchaseQuoteId, collectPurchaseSelections(), {
+    shipping: Number(($('plShipping') || {}).value) || 0,
+  });
+  if (!p) return;
+  $('plTotal').innerHTML = p.count
+    ? `<span>${p.count} line${p.count > 1 ? 's' : ''} selected</span><b>${fmt(p.total)}</b>`
+    : `<span class="pl-empty">Nothing selected yet</span>`;
+}
+
+async function savePurchaseFromModal() {
+  const picks = collectPurchaseSelections();
+  if (!picks.length) return alert('Tick at least one item first.');
+  const res = await CDATA.recordPurchase(State.purchaseQuoteId, picks, {
+    shipping: Number(($('plShipping') || {}).value) || 0,
+    hub: (($('plHub') || {}).value || '').trim(),
+    by: (window.Cloud && Cloud.user && Cloud.user.email) || '',
+  });
+  if (!res.ok) return alert(res.error || 'Could not record that purchase.');
+  $('purchaseModal').classList.remove('open');
+  renderSaved();
+  alert(`Purchase ${res.purchaseNo} recorded — ${res.lines} line${res.lines > 1 ? 's' : ''}, ${fmt(res.total)}.`);
+}
+
 function deleteSavedQuote(id) {
   const q = CDATA.getQuotation(id);
   if (!q) return;

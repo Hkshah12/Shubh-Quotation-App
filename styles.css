@@ -219,6 +219,7 @@ header.topbar {
 .s-pending { background:#fff3e0; color:#b26a00; }
 .s-won { background:#e6f4ea; color:#1e7e34; }
 .s-lost { background:#fdecea; color:#b3261e; }
+.s-partial { background:#fbf4e4; color:var(--gold); }
 .qc-badge { font-size:10px; font-weight:800; text-transform:uppercase; letter-spacing:.04em; padding:2px 8px; border-radius:999px; }
 .qc-due { font-size:11px; font-weight:700; color:#b26a00; }
 
@@ -251,6 +252,36 @@ header.topbar {
 .qc-btn.primary:hover { background:var(--primary-600); }
 .qc-btn.danger { color:#b3261e; border-color:#e6c9c5; }
 .qc-btn.danger:hover { background:#fdecea; border-color:#b3261e; }
+.qc-btn.buy { color:#1e7e34; border-color:#bfe0cd; }
+.qc-btn.buy:hover { background:#e6f4ea; border-color:#1e7e34; }
+
+/* ---------- Record purchase ---------- */
+.pl-head { margin-bottom:12px; }
+.pl-head b { color:var(--primary); }
+.pl-sub { font-size:12px; color:var(--sub); margin-top:3px; line-height:1.5; }
+.pl-tablewrap { overflow-x:auto; border:1px solid var(--border); border-radius:var(--radius); }
+.pl-table { width:100%; border-collapse:collapse; font-size:13px; min-width:460px; }
+.pl-table th { text-align:left; font-size:10.5px; text-transform:uppercase; letter-spacing:.05em;
+  color:var(--sub); font-weight:700; padding:9px 10px; border-bottom:1px solid var(--border); background:var(--cream); }
+.pl-table td { padding:9px 10px; border-bottom:1px solid var(--border); vertical-align:middle; }
+.pl-table tr:last-child td { border-bottom:none; }
+.pl-table tr.pl-done { opacity:.55; }
+.pl-table input[type="checkbox"] { width:17px; height:17px; accent-color:var(--primary); cursor:pointer; }
+.pl-table input[type="number"], .pl-table input[type="text"] {
+  width:82px; padding:6px 8px; border:1px solid var(--border); border-radius:6px; text-align:right; }
+.pl-name { font-weight:700; line-height:1.3; }
+.pl-sku { font-size:11px; color:var(--sub); font-family:ui-monospace,monospace; margin-top:2px; }
+.pl-qty { white-space:nowrap; }
+.pl-of { font-size:11px; color:var(--sub); margin-left:6px; }
+.pl-tag { font-size:11px; font-weight:700; color:#1e7e34; }
+.pl-opt { font-weight:500; text-transform:none; letter-spacing:0; opacity:.75; }
+.pl-extras { display:flex; gap:12px; flex-wrap:wrap; margin-top:14px; }
+.pl-field { display:flex; flex-direction:column; gap:4px; font-size:12px; color:var(--sub); font-weight:600; }
+.pl-field input { padding:8px 10px; border:1px solid var(--border); border-radius:8px; width:170px; }
+.pl-total { display:flex; align-items:center; justify-content:space-between; margin-top:16px;
+  padding:12px 14px; background:var(--cream); border:1px solid var(--border-strong); border-radius:var(--radius); }
+.pl-total b { font-size:18px; color:var(--primary); font-family:var(--serif); }
+.pl-total .pl-empty { color:var(--sub); font-size:13px; }
 
 /* ---------- Inventory ---------- */
 .card-stock { font-size:10.5px; font-weight:800; padding:1px 7px; border-radius:5px; display:inline-block; margin-top:4px; }

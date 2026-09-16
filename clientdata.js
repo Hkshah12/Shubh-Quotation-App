@@ -9,6 +9,8 @@
     quotes: 'shubh_quotes',
     customers: 'shubh_customers',
     inventory: 'shubh_inventory',
+    purchases: 'shubh_purchases',
+    purchaseCounter: 'shubh_purchase_counter',
   };
 
   // ---------- cloud-sync bridge ----------
@@ -118,7 +120,8 @@
   }
 
   // ---------- saved quotations (per-device) ----------
-  const QUOTE_STATUSES = ['pending', 'won', 'lost'];
+  // 'partial' is set automatically when only some lines of a quote are bought.
+  const QUOTE_STATUSES = ['pending', 'won', 'lost', 'partial'];
   function readQuotes() { try { return JSON.parse(localStorage.getItem(LS.quotes) || '[]'); } catch (e) { return []; } }
   function writeQuotes(a) { localStorage.setItem(LS.quotes, JSON.stringify(a)); }
   function saveQuotation(data) {
@@ -163,6 +166,172 @@
     writeQuotes(readQuotes().filter(q => q.id !== id));
     notify('quotes', 'del', id);
     return { ok: true };
+  }
+
+  // ---------- purchases: the order log ----------
+  // A purchase records which lines of a quotation the customer actually bought.
+  // Prices are COPIED off the quotation line, never looked up again, so a later
+  // catalogue edit can never rewrite the value of a completed sale.
+  const PURCHASE_STATUSES = ['confirmed', 'delivered', 'cancelled'];
+  function readPurchases() { try { return JSON.parse(localStorage.getItem(LS.purchases) || '[]'); } catch (e) { return []; } }
+  function writePurchases(a) { localStorage.setItem(LS.purchases, JSON.stringify(a)); }
+
+  async function nextPurchaseNo() {
+    let n = parseInt(localStorage.getItem(LS.purchaseCounter) || '', 10);
+    if (!n || isNaN(n)) n = 1;
+    const num = `PO/${new Date().getFullYear()}/${String(n).padStart(4, '0')}`;
+    localStorage.setItem(LS.purchaseCounter, String(n + 1));
+    return { purchaseNo: num };
+  }
+
+  function savePurchase(data) {
+    const id = (data.purchaseNo || 'purchase').replace(/[^\w\-]/g, '_');
+    const all = readPurchases();
+    const prev = all.find(p => p.id === id);
+    const rec = Object.assign({}, prev || {}, data, { id });
+    rec.status = PURCHASE_STATUSES.indexOf(rec.status) >= 0 ? rec.status : 'confirmed';
+    rec.savedAt = Date.now();
+    rec.createdAt = (prev && prev.createdAt) || rec.savedAt;
+    writePurchases(all.filter(p => p.id !== id).concat([rec]));
+    notify('purchases', 'put', id, rec);
+    return { ok: true, id };
+  }
+
+  function listPurchases() {
+    return readPurchases().slice().sort((a, b) => (b.savedAt || 0) - (a.savedAt || 0));
+  }
+  function getPurchase(id) { return readPurchases().find(p => p.id === id) || null; }
+  function purchasesForQuote(quoteId) { return readPurchases().filter(p => p.quoteId === quoteId); }
+  function deletePurchase(id) {
+    writePurchases(readPurchases().filter(p => p.id !== id));
+    notify('purchases', 'del', id);
+    return { ok: true };
+  }
+
+  // How much of each quotation line has already been recorded as bought.
+  function purchasedQtyByLine(quoteId) {
+    const tally = {};
+    purchasesForQuote(quoteId).forEach(p => {
+      if (p.status === 'cancelled') return;
+      (p.items || []).forEach(l => { tally[l.line] = (tally[l.line] || 0) + (Number(l.qty) || 0); });
+    });
+    return tally;
+  }
+
+  // Build the purchase lines for a selection. Shared by the live preview in the
+  // modal and by the actual save, so the figure shown is the figure recorded.
+  // selections: [{ line: <index into quote.items>, qty, cost }]
+  function buildPurchaseLines(q, selections, already) {
+    const items = q.items || [];
+    // The overall discount was calculated across the whole quote, so a partial
+    // purchase has to inherit a fair share of it rather than all or none.
+    let quoteAfterItem = 0;
+    items.forEach(it => {
+      quoteAfterItem += (Number(it.price) || 0) * (Number(it.qty) || 0) * (1 - (Number(it.disc) || 0) / 100);
+    });
+    const overall = q.overall || { type: 'percent', value: 0 };
+    const gstPct = (q.gst && q.gst.enabled) ? (Number(q.gst.percent) || 0) : 0;
+
+    const lines = [];
+    (selections || []).filter(s => (Number(s.qty) || 0) > 0).forEach(sel => {
+      const idx = Number(sel.line);
+      const it = items[idx];
+      if (!it) return;
+      const remaining = (Number(it.qty) || 0) - ((already && already[idx]) || 0);
+      const qty = Math.min(Number(sel.qty) || 0, Math.max(remaining, 0));
+      if (qty <= 0) return;
+
+      const price = Number(it.price) || 0;
+      const disc = Number(it.disc) || 0;
+      const lineNet = price * qty * (1 - disc / 100);
+      let overallCut = 0;
+      if (overall.type === 'percent') {
+        overallCut = lineNet * ((Number(overall.value) || 0) / 100);
+      } else if (quoteAfterItem > 0) {
+        const pot = Math.min(quoteAfterItem, Number(overall.value) || 0);
+        overallCut = pot * (lineNet / quoteAfterItem);
+      }
+      const net = Math.max(0, lineNet - overallCut);
+      const cost = (sel.cost === '' || sel.cost === null || sel.cost === undefined) ? null : Number(sel.cost);
+
+      lines.push({
+        line: idx,
+        sku: it.sku || '', name: it.name || '', hsn: it.hsn || '',
+        qty,
+        unit_price: price,            // the quoted price of record
+        disc,
+        unit_price_net: qty ? net / qty : 0,  // after item + share of overall discount
+        gst_percent: gstPct,
+        unit_cost: (cost === null || isNaN(cost)) ? null : cost,
+      });
+    });
+    return { lines, gstPct };
+  }
+
+  // Totals for a selection without saving anything — what the modal displays.
+  function previewPurchase(quoteId, selections, extra) {
+    const q = getQuotation(quoteId);
+    if (!q) return null;
+    const { lines, gstPct } = buildPurchaseLines(q, selections, purchasedQtyByLine(quoteId));
+    const net = lines.reduce((s, l) => s + l.unit_price_net * l.qty, 0);
+    const gst = net * (gstPct / 100);
+    const shipping = Number(extra && extra.shipping) || 0;
+    return { lines, count: lines.length, net, gst, shipping, total: net + gst + shipping };
+  }
+
+  async function recordPurchase(quoteId, selections, extra) {
+    const q = getQuotation(quoteId);
+    if (!q) return { ok: false, error: 'That quotation could not be found.' };
+    if (!(selections || []).some(s => (Number(s.qty) || 0) > 0)) {
+      return { ok: false, error: 'Tick at least one item, with a quantity above zero.' };
+    }
+
+    const { lines, gstPct } = buildPurchaseLines(q, selections, purchasedQtyByLine(quoteId));
+    if (!lines.length) return { ok: false, error: 'Those lines have already been fully recorded.' };
+
+    const netTotal = lines.reduce((s, l) => s + l.unit_price_net * l.qty, 0);
+    const gstTotal = netTotal * (gstPct / 100);
+    const shipping = Number(extra && extra.shipping) || 0;
+    const { purchaseNo } = await nextPurchaseNo();
+    const today = new Date();
+
+    const rec = {
+      purchaseNo,
+      quoteId, quoteNo: q.quoteNo || '',
+      date_iso: `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`,
+      date_display: today.toLocaleDateString('en-IN', { year: 'numeric', month: 'short', day: 'numeric' }),
+      customer: Object.assign({}, q.client || {}),
+      customerId: ((q.client && q.client.name) || '').trim().toLowerCase().replace(/\s+/g, ' '),
+      items: lines,
+      gst_percent: gstPct,
+      shipping_cost: shipping,
+      fulfilment_hub: (extra && extra.hub) || '',
+      net_total: netTotal,
+      gst_total: gstTotal,
+      total_amount: netTotal + gstTotal + shipping,
+      status: 'confirmed',
+      recordedBy: (extra && extra.by) || '',
+    };
+    savePurchase(rec);
+
+    // Mirror the result back onto the quotation so its status stays truthful.
+    const tally = purchasedQtyByLine(quoteId);
+    const arr = readQuotes();
+    const quote = arr.find(x => x.id === quoteId);
+    if (quote) {
+      let anyOpen = false, anyBought = false;
+      (quote.items || []).forEach((it, i) => {
+        const bought = tally[i] || 0;
+        it.purchasedQty = bought;
+        if (bought > 0) anyBought = true;
+        if (bought < (Number(it.qty) || 0)) anyOpen = true;
+      });
+      quote.status = anyBought ? (anyOpen ? 'partial' : 'won') : quote.status;
+      writeQuotes(arr);
+      notify('quotes', 'put', quoteId, quote);
+    }
+
+    return { ok: true, id: rec.id, purchaseNo, total: rec.total_amount, lines: lines.length };
   }
 
   // ---------- customer directory (per-device) ----------
@@ -239,12 +408,17 @@
       const arr = readInventory().filter(x => x.id !== id);
       arr.push(Object.assign({}, data, { id }));
       writeInventory(arr);
+    } else if (collection === 'purchases') {
+      const arr = readPurchases().filter(p => p.id !== id);
+      arr.push(Object.assign({}, data, { id }));
+      writePurchases(arr);
     }
   }
   function applyRemoteDelete(collection, id) {
     if (collection === 'customers') writeCustomers(readCustomers().filter(c => c.id !== id));
     else if (collection === 'quotes') writeQuotes(readQuotes().filter(q => q.id !== id));
     else if (collection === 'inventory') writeInventory(readInventory().filter(x => x.id !== id));
+    else if (collection === 'purchases') writePurchases(readPurchases().filter(p => p.id !== id));
   }
 
   // ---------- assets ----------
@@ -325,6 +499,8 @@
   window.CDATA = {
     catalog, getSettings, saveSettings, nextQuoteNo,
     saveQuotation, listQuotations, getQuotation, updateQuotationMeta, deleteQuotation,
+    recordPurchase, previewPurchase, listPurchases, getPurchase, savePurchase, deletePurchase,
+    purchasesForQuote, purchasedQtyByLine, nextPurchaseNo,
     listCustomers, getCustomer, saveCustomer, deleteCustomer,
     getStock, hasStock, setStock, adjustStock, untrackStock, listInventory, inventoryMap,
     onLocalChange, applyRemote, applyRemoteDelete,

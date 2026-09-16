@@ -14,7 +14,7 @@
 
   const CFG = window.FIREBASE_CONFIG;
   const SDK = 'https://www.gstatic.com/firebasejs/10.12.5';
-  const COLLECTIONS = ['customers', 'quotes', 'inventory'];
+  const COLLECTIONS = ['customers', 'quotes', 'inventory', 'purchases'];
 
   // Public surface — always exists so app.js can call it safely.
   const Cloud = {
@@ -128,6 +128,7 @@
       if (collection === 'customers') list = CDATA.listCustomers().map(i => CDATA.getCustomer(i.id));
       else if (collection === 'quotes') list = CDATA.listQuotations().map(i => CDATA.getQuotation(i.id));
       else if (collection === 'inventory') list = CDATA.listInventory();
+      else if (collection === 'purchases') list = CDATA.listPurchases();
       else list = [];
       (list || []).forEach(rec => {
         if (!rec || !rec.id || remoteIds[collection].has(rec.id)) return;
