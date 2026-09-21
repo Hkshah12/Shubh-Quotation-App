@@ -76,6 +76,18 @@
         hsn: get('hsn', 'hsn_code', 'hsn code') || '',
       };
     });
+
+    // SKUs are NOT unique in the catalogue — every face mask is "Face Mask",
+    // every glove is "Gloves", and so on. The app needs one stable handle per
+    // product line, or picking one variant would act on all of them. The first
+    // occurrence keeps the bare SKU so anything already stored against it
+    // (inventory, saved quotes) still lines up.
+    const seenSku = Object.create(null);
+    items.forEach(it => {
+      const base = it.sku || 'item';
+      seenSku[base] = (seenSku[base] || 0) + 1;
+      it.uid = seenSku[base] === 1 ? base : base + '~' + seenSku[base];
+    });
     return { headers, items };
   }
 
@@ -119,6 +131,35 @@
     return { quoteNo: num };
   }
 
+  // ---------- dates ----------
+  // Quotes carry both a display date ("16 Sep 2026", what prints on the
+  // document) and an ISO one ("2026-09-16", what sorts and compares). The ISO
+  // field is the source of truth; the display string is derived from it.
+  function pad(n) { return String(n).padStart(2, '0'); }
+  function toISO(d) { return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`; }
+  function isoToday() { return toISO(new Date()); }
+  function isoFrom(value, fallbackMs) {
+    if (value) {
+      const d = new Date(value);
+      if (!isNaN(d.getTime())) return toISO(d);
+    }
+    if (fallbackMs) {
+      const d = new Date(fallbackMs);
+      if (!isNaN(d.getTime())) return toISO(d);
+    }
+    return '';
+  }
+  // Built from explicit Y/M/D so a plain "YYYY-MM-DD" is never pulled a day
+  // backwards by being parsed as UTC.
+  function displayDate(iso, style) {
+    if (!iso) return '';
+    const parts = String(iso).split('-').map(Number);
+    if (parts.length !== 3 || parts.some(isNaN)) return String(iso);
+    return new Date(parts[0], parts[1] - 1, parts[2]).toLocaleDateString('en-IN', {
+      year: 'numeric', month: style === 'long' ? 'long' : 'short', day: 'numeric',
+    });
+  }
+
   // ---------- saved quotations (per-device) ----------
   // 'partial' is set automatically when only some lines of a quote are bought.
   const QUOTE_STATUSES = ['pending', 'won', 'lost', 'partial'];
@@ -135,6 +176,10 @@
     rec.revisionOf = data.revisionOf || (prev && prev.revisionOf) || '';
     rec.savedAt = Date.now();
     rec.createdAt = (prev && prev.createdAt) || rec.savedAt;
+    // An edited date must survive a re-save, so an explicit one always wins;
+    // otherwise keep what the quote already had rather than stamping today.
+    rec.dateISO = data.dateISO || (prev && prev.dateISO) || isoFrom(data.date, rec.createdAt) || isoToday();
+    rec.date = displayDate(rec.dateISO) || rec.date || '';
     const arr = all.filter(q => q.id !== id);
     arr.push(rec);
     writeQuotes(arr);
@@ -145,6 +190,9 @@
     return readQuotes().map(d => ({
       id: d.id, quoteNo: d.quoteNo, client: d.client && d.client.name,
       date: d.date, total: d.totals && d.totals.grandTotal,
+      // Older quotes predate dateISO — derive it on read so they sort and
+      // filter correctly without needing a migration.
+      dateISO: d.dateISO || isoFrom(d.date, d.createdAt || d.savedAt),
       status: QUOTE_STATUSES.indexOf(d.status) >= 0 ? d.status : 'pending',
       followUp: d.followUp || '', revisionOf: d.revisionOf || '',
       savedAt: d.savedAt || 0, createdAt: d.createdAt || 0,
@@ -158,6 +206,10 @@
     if (!q) return { ok: false };
     if (patch.status !== undefined && QUOTE_STATUSES.indexOf(patch.status) >= 0) q.status = patch.status;
     if (patch.followUp !== undefined) q.followUp = patch.followUp || '';
+    if (patch.dateISO) {
+      q.dateISO = patch.dateISO;
+      q.date = displayDate(patch.dateISO) || q.date;   // keep the printed date in step
+    }
     writeQuotes(arr);
     notify('quotes', 'put', id, q);
     return { ok: true };
@@ -504,6 +556,7 @@
     listCustomers, getCustomer, saveCustomer, deleteCustomer,
     getStock, hasStock, setStock, adjustStock, untrackStock, listInventory, inventoryMap,
     onLocalChange, applyRemote, applyRemoteDelete,
+    isoToday, isoFrom, displayDate,
     assetUrl, descUrl, toDataURI, buildImageMap, downloadBlob,
   };
 })();

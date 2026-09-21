@@ -1,7 +1,7 @@
 /* Shubh Enterprise — Quotation Generator (frontend) */
 'use strict';
 
-const APP_VERSION = 'v22'; // bump on every deploy so you can confirm you're on the latest
+const APP_VERSION = 'v23'; // bump on every deploy so you can confirm you're on the latest
 
 const State = {
   catalog: [],
@@ -15,6 +15,7 @@ const State = {
   showTotals: true,  // include the totals & GST block on the generated document
   revisionOf: '',            // base quote number this draft is a revision of (blank = not a revision)
   quoteCtx: { mode: 'new' }, // what the editor is currently working on (drives the context bar)
+  quoteDateISO: '',          // the quotation's own date; blank means "today"
   savedFilter: 'all',        // active filter in the Saved Quotes screen
 };
 
@@ -116,7 +117,7 @@ function renderCatalog() {
   const capped = all.length > CATALOG_CAP;
   const inv = CDATA.inventoryMap();
   grid.innerHTML = items.map(i => {
-    const inCart = State.cart.find(c => c.sku === i.sku);
+    const inCart = State.cart.find(c => c.uid === i.uid);
     const thumb = i.image
       ? `<img src="${imgURL(i.image)}" alt="${esc(i.name)}" loading="lazy" onerror="imgFail(this)"/>`
       : NOIMG;
@@ -126,7 +127,7 @@ function renderCatalog() {
       ? `<div class="card-stock ${q === 0 ? 'out' : q <= 5 ? 'low' : 'ok'}">${q === 0 ? 'Out of stock' : q + ' in stock'}</div>`
       : '';
     return `
-    <div class="card ${inCart ? 'in-cart' : ''}" data-sku="${esc(i.sku)}">
+    <div class="card ${inCart ? 'in-cart' : ''}" data-uid="${esc(i.uid)}">
       <div class="thumb">${thumb}</div>
       <div class="body">
         <div class="name">${esc(i.name)}</div>
@@ -136,7 +137,7 @@ function renderCatalog() {
       </div>
       <div class="foot">
         <span class="price">${fmt(i.price)}</span>
-        <button class="add" data-add="${esc(i.sku)}">
+        <button class="add" data-add="${esc(i.uid)}">
           ${inCart ? `<span class="badge-qty">${inCart.qty} added</span>` : `+ Add`}
         </button>
       </div>
@@ -147,31 +148,33 @@ function renderCatalog() {
 }
 
 /* ---------------- Cart ---------------- */
-function addToCart(sku) {
-  const item = State.catalog.find(i => i.sku === sku);
+// Cart lines are identified by uid, never by sku — several products can share
+// a sku, and keying on it made one click select every sibling variant.
+function addToCart(uid) {
+  const item = State.catalog.find(i => i.uid === uid);
   if (!item) return;
-  const existing = State.cart.find(c => c.sku === sku);
+  const existing = State.cart.find(c => c.uid === uid);
   if (existing) existing.qty += 1;
   else State.cart.push({ ...item, qty: 1, disc: 0 });
   renderCatalog();
   renderCart();
   recalc();
 }
-function setQty(sku, qty) {
-  const c = State.cart.find(x => x.sku === sku);
+function setQty(uid, qty) {
+  const c = State.cart.find(x => x.uid === uid);
   if (!c) return;
   c.qty = Math.max(0, Math.floor(qty || 0));
-  if (c.qty === 0) State.cart = State.cart.filter(x => x.sku !== sku);
+  if (c.qty === 0) State.cart = State.cart.filter(x => x.uid !== uid);
   renderCatalog(); renderCart(); recalc();
 }
-function setLineDisc(sku, disc) {
-  const c = State.cart.find(x => x.sku === sku);
+function setLineDisc(uid, disc) {
+  const c = State.cart.find(x => x.uid === uid);
   if (!c) return;
   c.disc = Math.min(100, Math.max(0, Number(disc) || 0));
   recalc();
 }
-function removeLine(sku) {
-  State.cart = State.cart.filter(x => x.sku !== sku);
+function removeLine(uid) {
+  State.cart = State.cart.filter(x => x.uid !== uid);
   renderCatalog(); renderCart(); recalc();
 }
 
@@ -188,22 +191,22 @@ function renderCart() {
     const gross = c.price * c.qty;
     const net = gross * (1 - c.disc / 100);
     return `
-    <div class="line" data-sku="${esc(c.sku)}">
+    <div class="line" data-uid="${esc(c.uid)}">
       <div class="info">
         <div class="lname">${esc(c.name)}</div>
         <div class="lsku">${esc(c.sku)}${c.brand ? ' · ' + esc(c.brand) : ''}</div>
         <div class="lprice">${fmt(c.price)} / ${esc(c.unit || 'unit')}</div>
       </div>
-      <button class="remove" data-remove="${esc(c.sku)}" title="Remove">&times;</button>
+      <button class="remove" data-remove="${esc(c.uid)}" title="Remove">&times;</button>
       <div class="line-controls">
         <div class="stepper">
-          <button data-dec="${esc(c.sku)}">−</button>
-          <input type="number" min="0" value="${c.qty}" data-qty="${esc(c.sku)}"/>
-          <button data-inc="${esc(c.sku)}">+</button>
+          <button data-dec="${esc(c.uid)}">−</button>
+          <input type="number" min="0" value="${c.qty}" data-qty="${esc(c.uid)}"/>
+          <button data-inc="${esc(c.uid)}">+</button>
         </div>
-        <span class="disc-inline">Disc <input type="number" min="0" max="100" value="${c.disc}" data-disc="${esc(c.sku)}"/> %</span>
+        <span class="disc-inline">Disc <input type="number" min="0" max="100" value="${c.disc}" data-disc="${esc(c.uid)}"/> %</span>
         <label class="desc-check" title="${c.descImage ? 'Append this product\'s description photo on a fresh page' : 'No description photo linked for this item (add its filename in the catalog\'s descimage column)'}">
-          <input type="checkbox" data-desc="${esc(c.sku)}" ${c.includeDesc ? 'checked' : ''} ${c.descImage ? '' : 'disabled'}/> Desc
+          <input type="checkbox" data-desc="${esc(c.uid)}" ${c.includeDesc ? 'checked' : ''} ${c.descImage ? '' : 'disabled'}/> Desc
         </label>
         <span class="ltotal">${fmt(net)}</span>
       </div>
@@ -262,8 +265,8 @@ function bindUI() {
 
   $('quoteLines').addEventListener('click', e => {
     const inc = e.target.closest('[data-inc]'); const dec = e.target.closest('[data-dec]'); const rm = e.target.closest('[data-remove]');
-    if (inc) { const c = State.cart.find(x => x.sku === inc.dataset.inc); setQty(inc.dataset.inc, c.qty + 1); }
-    if (dec) { const c = State.cart.find(x => x.sku === dec.dataset.dec); setQty(dec.dataset.dec, c.qty - 1); }
+    if (inc) { const c = State.cart.find(x => x.uid === inc.dataset.inc); if (c) setQty(inc.dataset.inc, c.qty + 1); }
+    if (dec) { const c = State.cart.find(x => x.uid === dec.dataset.dec); if (c) setQty(dec.dataset.dec, c.qty - 1); }
     if (rm) removeLine(rm.dataset.remove);
   });
   $('quoteLines').addEventListener('input', e => {
@@ -273,7 +276,7 @@ function bindUI() {
   });
   $('quoteLines').addEventListener('change', e => {
     const dc = e.target.closest('[data-desc]');
-    if (dc) { const c = State.cart.find(x => x.sku === dc.dataset.desc); if (c) c.includeDesc = dc.checked; }
+    if (dc) { const c = State.cart.find(x => x.uid === dc.dataset.desc); if (c) c.includeDesc = dc.checked; }
   });
 
   $('overallDiscValue').addEventListener('input', e => { State.overall.value = Number(e.target.value) || 0; recalc(); });
@@ -331,7 +334,7 @@ function bindUI() {
 function newQuote() {
   if (State.cart.length && !confirm('Start a new quotation? Current items will be cleared.')) return;
   State.cart = []; State.overall = { value: 0, type: 'percent' }; State.showTotals = true;
-  State.revisionOf = ''; State.quoteCtx = { mode: 'new' };
+  State.revisionOf = ''; State.quoteCtx = { mode: 'new' }; State.quoteDateISO = '';
   $('printDoc').dataset.quoteNo = '';
   $('showTotals').checked = true;
   $('overallDiscValue').value = 0; $('overallDiscType').value = 'percent';
@@ -372,15 +375,18 @@ function closeModals() { document.querySelectorAll('.modal-backdrop').forEach(m 
 /* ---------------- Save / Load quotes ---------------- */
 function collectQuote(quoteNo) {
   const t = computeTotals();
+  // Editing a saved quote keeps its original date; a fresh one is dated today.
+  const dateISO = State.quoteDateISO || CDATA.isoToday();
   return {
     quoteNo: quoteNo,
-    date: new Date().toLocaleDateString('en-IN', { year: 'numeric', month: 'short', day: 'numeric' }),
+    dateISO,
+    date: CDATA.displayDate(dateISO),
     revisionOf: State.revisionOf || '',
     client: {
       name: $('clientName').value, contact: $('clientContact').value, phone: $('clientPhone').value,
       email: $('clientEmail').value, address: $('clientAddress').value,
     },
-    items: State.cart.map(c => ({ sku: c.sku, name: c.name, brand: c.brand, hsn: c.hsn, unit: c.unit, price: c.price, qty: c.qty, disc: c.disc, description: c.description, descImage: c.descImage, includeDesc: c.includeDesc })),
+    items: State.cart.map(c => ({ sku: c.sku, uid: c.uid, name: c.name, brand: c.brand, hsn: c.hsn, unit: c.unit, price: c.price, qty: c.qty, disc: c.disc, description: c.description, descImage: c.descImage, includeDesc: c.includeDesc })),
     overall: State.overall, gst: State.gst, showTotals: State.showTotals !== false,
     totals: { subtotal: t.subtotal, itemDisc: t.itemDisc, overallDisc: t.overallDisc, taxable: t.taxable, gstAmt: t.gstAmt, grandTotal: t.grandTotal },
   };
@@ -447,10 +453,22 @@ function markSavedContext(quoteNo) {
 // Load a saved quote's client + items + settings into the editor (shared by open/revise/duplicate).
 function applyQuoteToEditor(q) {
   fillClient(q.client);
-  State.cart = (q.items || []).map(i => {
-    const cat = State.catalog.find(c => c.sku === i.sku) || {};
-    return { ...cat, ...i };
+  // Re-attach each saved line to its catalogue entry. Matching on sku alone is
+  // ambiguous when variants share one (all the gloves do), so prefer the saved
+  // uid, then sku+name, and guarantee the restored lines end up with distinct
+  // uids — otherwise reopening a quote would merge them back together.
+  const usedUids = Object.create(null);
+  State.cart = (q.items || []).map((i, idx) => {
+    const cat = (i.uid && State.catalog.find(c => c.uid === i.uid))
+      || State.catalog.find(c => c.sku === i.sku && c.name === i.name)
+      || State.catalog.find(c => c.sku === i.sku)
+      || {};
+    let uid = i.uid || cat.uid || (i.sku || 'item');
+    if (usedUids[uid]) uid = uid + '#' + idx;
+    usedUids[uid] = true;
+    return { ...cat, ...i, uid };
   });
+  State.quoteDateISO = q.dateISO || CDATA.isoFrom(q.date, q.createdAt || q.savedAt) || '';
   State.overall = q.overall || { value: 0, type: 'percent' };
   State.gst = q.gst || State.gst;
   State.showTotals = q.showTotals !== false;
@@ -477,6 +495,7 @@ function reviseQuote(id) {
   applyQuoteToEditor(q);
   const newNo = nextRevisionNo(q.quoteNo);
   $('printDoc').dataset.quoteNo = newNo;
+  State.quoteDateISO = '';        // a revision is issued today, not on the original's date
   State.revisionOf = baseQuoteNo(q.quoteNo);
   State.quoteCtx = { mode: 'revision', quoteNo: newNo, sourceNo: q.quoteNo };
   renderQuoteContext(); closeModals();
@@ -488,6 +507,7 @@ function duplicateQuote(id) {
   if (!q) return;
   applyQuoteToEditor(q);
   $('printDoc').dataset.quoteNo = '';
+  State.quoteDateISO = '';        // a duplicate is a fresh quotation, dated today
   State.revisionOf = '';
   State.quoteCtx = { mode: 'duplicate', sourceNo: q.quoteNo };
   renderQuoteContext(); closeModals();
@@ -502,7 +522,10 @@ function openSaved() {
 
 function renderSaved() {
   const box = $('savedList');
-  const all = CDATA.listQuotations().slice().sort((a, b) => (b.savedAt || 0) - (a.savedAt || 0));
+  // Ordered by the quotation's own date, so the list reads as a history of when
+  // quotes were issued rather than when they were last touched.
+  const all = CDATA.listQuotations().slice().sort((a, b) =>
+    String(b.dateISO || '').localeCompare(String(a.dateISO || '')) || (b.savedAt || 0) - (a.savedAt || 0));
   const counts = { all: all.length, pending: 0, won: 0, lost: 0, due: 0 };
   all.forEach(q => { counts[q.status] = (counts[q.status] || 0) + 1; if (isFollowDue(q)) counts.due++; });
 
@@ -529,6 +552,7 @@ function renderSaved() {
         <div class="qc-metaline">${esc(q.client || '—')} · ${esc(q.date || '')} · ${fmt(q.total || 0)}</div>
       </div>
       <div class="qc-controls">
+        <label class="qc-field">Quotation date<input type="date" data-qdate="${esc(q.id)}" value="${esc(q.dateISO || '')}" title="The date printed on the document. Change it to match when the quotation was actually issued."/></label>
         <label class="qc-field">Status<select data-status="${esc(q.id)}">${opt('pending', 'Pending')}${opt('partial', 'Part bought')}${opt('won', 'Won')}${opt('lost', 'Lost')}</select></label>
         <label class="qc-field">Follow-up date<input type="date" data-follow="${esc(q.id)}" value="${esc(q.followUp || '')}" ${st === 'pending' ? '' : 'disabled title="Follow-up applies to pending quotes only"'}/></label>
       </div>
@@ -554,6 +578,16 @@ function onSavedClick(e) {
 function onSavedChange(e) {
   const st = e.target.closest('[data-status]'); if (st) { CDATA.updateQuotationMeta(st.dataset.status, { status: st.value }); renderSaved(); return; }
   const fo = e.target.closest('[data-follow]'); if (fo) { CDATA.updateQuotationMeta(fo.dataset.follow, { followUp: fo.value }); renderSaved(); return; }
+  const qd = e.target.closest('[data-qdate]');
+  if (qd) {
+    if (!qd.value) { renderSaved(); return; }   // a cleared box means no change, not "no date"
+    CDATA.updateQuotationMeta(qd.dataset.qdate, { dateISO: qd.value });
+    // If this quote is the one open in the editor, keep the document in step.
+    const open = CDATA.getQuotation(qd.dataset.qdate);
+    if (open && State.quoteCtx && State.quoteCtx.quoteNo === open.quoteNo) State.quoteDateISO = qd.value;
+    renderSaved();
+    return;
+  }
 }
 /* ----- Record purchase: which quoted lines did the customer actually buy? ----- */
 function openPurchase(quoteId) {
@@ -870,7 +904,8 @@ async function doSignIn() {
 async function buildInlineOpts(quoteNo) {
   const s = State.settings; const t = computeTotals();
   const c = { name: $('clientName').value, contact: $('clientContact').value, phone: $('clientPhone').value, email: $('clientEmail').value, address: $('clientAddress').value };
-  const today = new Date().toLocaleDateString('en-IN', { year: 'numeric', month: 'long', day: 'numeric' });
+  // Print the quotation's own date, not the day it happens to be reprinted.
+  const today = CDATA.displayDate(State.quoteDateISO || CDATA.isoToday(), 'long');
   const { map, dims } = await CDATA.buildImageMap(s, State.cart);
   const imgURLd = (src) => src ? (map[CDATA.assetUrl(src)] || '') : '';
   const descURLd = (src) => src ? (map[CDATA.descUrl(src)] || '') : '';
