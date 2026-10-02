@@ -28,7 +28,7 @@
     phone: '+91 99791 49048', email: 'kinnarmshah@gmail.com', gstin: '',
     logo: 'logo.png', signature: 'signature.png', proprietorName: 'Kinnar Shah', proprietorTitle: 'Proprietor',
     currency: '₹', gstPercent: 18, gstEnabled: true, gstExclusiveNote: true,
-    showGrandTotal: false, showPhotos: true, quoteValidityDays: 15,
+    showGrandTotal: false, showPhotos: true, quoteValidityDays: '',   // blank = no validity line on the document
     introLine: 'We are pleased to submit our quotation for the following items for your kind consideration:',
     termsText: '1. Prices are exclusive of GST unless stated otherwise.\n2. Delivery within 2-3 weeks of confirmed order.\n3. Payment: 50% advance, balance before dispatch.\n4. Warranty as per manufacturer terms.',
     quoteCounter: 1,

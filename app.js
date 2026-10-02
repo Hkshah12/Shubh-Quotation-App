@@ -1,7 +1,7 @@
 /* Shubh Enterprise — Quotation Generator (frontend) */
 'use strict';
 
-const APP_VERSION = 'v24'; // bump on every deploy so you can confirm you're on the latest
+const APP_VERSION = 'v25'; // bump on every deploy so you can confirm you're on the latest
 
 const State = {
   catalog: [],
@@ -353,7 +353,10 @@ function openSettings() {
   $('setSignature').value = s.signature || ''; $('setIntro').value = s.introLine || '';
   $('setShowGrand').checked = s.showGrandTotal === true;
   $('setShowPhotos').checked = s.showPhotos !== false;
-  $('setValidity').value = s.quoteValidityDays || 15; $('setTerms').value = s.termsText || '';
+  // Blank is a real choice (no validity line on the document), so show it as
+  // blank rather than falling back to a default.
+  $('setValidity').value = (s.quoteValidityDays === '' || s.quoteValidityDays == null) ? '' : s.quoteValidityDays;
+  $('setTerms').value = s.termsText || '';
   $('settingsModal').classList.add('open');
 }
 async function saveSettingsFromModal() {
@@ -364,7 +367,8 @@ async function saveSettingsFromModal() {
     proprietorName: $('setProprietor').value, proprietorTitle: $('setProprietorTitle').value,
     signature: $('setSignature').value, introLine: $('setIntro').value,
     showGrandTotal: $('setShowGrand').checked, showPhotos: $('setShowPhotos').checked,
-    quoteValidityDays: Number($('setValidity').value) || 15, termsText: $('setTerms').value,
+    quoteValidityDays: String($('setValidity').value).trim() === '' ? '' : (Number($('setValidity').value) || ''),
+    termsText: $('setTerms').value,
   };
   State.settings = await CDATA.saveSettings(payload);
   State.gst.percent = State.settings.gstPercent; $('gstPercent').value = State.gst.percent;
@@ -911,7 +915,7 @@ async function buildInlineOpts(quoteNo) {
   const descURLd = (src) => src ? (map[CDATA.descUrl(src)] || '') : '';
   const opts = {
     settings: s, items: State.cart, client: c, totals: t,
-    overall: State.overall, gst: State.gst, quoteNo, today, validity: s.quoteValidityDays || 15,
+    overall: State.overall, gst: State.gst, quoteNo, today, validity: s.quoteValidityDays,
     showTotals: State.showTotals !== false,
     imgURL: imgURLd, descURL: descURLd,
     imgDim: (uri) => (uri && dims[uri]) || null,   // true pixel size, for undistorted Word images

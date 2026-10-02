@@ -131,7 +131,7 @@
       <div class="doc-body">
         <div class="meta">
           <div class="qno"><span>Quotation No.</span><b>${esc(opts.quoteNo)}</b></div>
-          <div class="qdate"><span>Date</span><b>${esc(opts.today)}</b><em>Valid for ${esc(opts.validity)} days</em></div>
+          <div class="qdate"><span>Date</span><b>${esc(opts.today)}</b>${opts.validity ? '<em>Valid for ' + esc(opts.validity) + ' days</em>' : ''}</div>
         </div>
 
         <div class="to">
@@ -320,7 +320,7 @@
     const metaTable = `
     <table width="100%" style="margin-top:10pt;${serif}font-size:10pt;"><tr>
       <td valign="top"><span style="font-size:7.5pt;color:${SUB};letter-spacing:1pt;">QUOTATION NO.</span><br/><b style="font-size:12pt;color:${RED};">${esc(opts.quoteNo)}</b></td>
-      <td align="right" valign="top"><span style="font-size:7.5pt;color:${SUB};letter-spacing:1pt;">DATE</span><br/><b style="font-size:12pt;color:${RED};">${esc(opts.today)}</b><br/><i style="font-size:8pt;color:${SUB};">Valid for ${esc(opts.validity)} days</i></td>
+      <td align="right" valign="top"><span style="font-size:7.5pt;color:${SUB};letter-spacing:1pt;">DATE</span><br/><b style="font-size:12pt;color:${RED};">${esc(opts.today)}</b>${opts.validity ? '<br/><i style="font-size:8pt;color:' + SUB + ';">Valid for ' + esc(opts.validity) + ' days</i>' : ''}</td>
     </tr></table>`;
 
     const toBlock = `
