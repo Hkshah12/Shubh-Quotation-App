@@ -1,7 +1,7 @@
 /* Shubh Enterprise — Quotation Generator (frontend) */
 'use strict';
 
-const APP_VERSION = 'v26'; // bump on every deploy so you can confirm you're on the latest
+const APP_VERSION = 'v27'; // bump on every deploy so you can confirm you're on the latest
 
 const State = {
   catalog: [],
