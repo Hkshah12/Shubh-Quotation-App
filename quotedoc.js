@@ -149,9 +149,9 @@
             <th class="c" style="width:34px">Sr.</th>
             ${showPhotos ? '<th class="c" style="width:56px">Photo</th>' : ''}
             <th style="text-align:left">Description of Product</th>
-            <th class="c" style="width:56px">Pack</th>
+            <th class="c" style="width:72px">Pack Size</th>
             <th class="c" style="width:42px">Qty</th>
-            <th class="r" style="width:92px">Rate</th>
+            <th class="r" style="width:104px">Rate/Pack Size</th>
             <th class="r" style="width:104px">Amount</th>
           </tr></thead>
           <tbody>${rows}</tbody>
@@ -335,7 +335,7 @@
     const intro = s.introLine ? `<p style="${serif}font-size:11pt;">${esc(s.introLine)}</p>` : '';
 
     const th = (txt, align, w) => `<td bgcolor="${RED}" align="${align}" style="background:${RED};background-color:${RED};color:#ffffff;font-weight:bold;padding:5pt;border:0.5pt solid ${RED};${w ? 'width:' + w + ';' : ''}">${txt}</td>`;
-    const header = `<tr>${th('Sr.', 'center', '28pt')}${showPhotos ? th('Photo', 'center', '52pt') : ''}${th('Description of Product', 'left')}${th('Pack', 'center', '44pt')}${th('Qty', 'center', '32pt')}${th('Rate', 'right', '68pt')}${th('Amount', 'right', '76pt')}</tr>`;
+    const header = `<tr>${th('Sr.', 'center', '28pt')}${showPhotos ? th('Photo', 'center', '52pt') : ''}${th('Description of Product', 'left')}${th('Pack Size', 'center', '58pt')}${th('Qty', 'center', '32pt')}${th('Rate/Pack Size', 'right', '82pt')}${th('Amount', 'right', '76pt')}</tr>`;
     const rows = (opts.items || []).map((it, i) => {
       const net = it.price * it.qty * (1 - (it.disc || 0) / 100);
       const bgAttr = (i % 2 === 1) ? ` bgcolor="${CREAMROW}"` : '';                 // Word: alternating rows via bgcolor
