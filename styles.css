@@ -106,7 +106,15 @@ header.topbar {
     repeating-linear-gradient(45deg,#faf5ea,#faf5ea 10px,#f3ecdd 10px,#f3ecdd 20px);
 }
 .card .body { padding: 10px 11px; display:flex; flex-direction:column; gap: 3px; flex:1; }
-.card .name { font-weight: 700; font-size: 13.5px; line-height: 1.3; }
+/* Catalogue names run to 181 characters and contain underscore-joined part
+   numbers, which give CSS no break opportunity. Clamp to three lines so every
+   card is the same height, break anywhere so nothing escapes the card, and
+   app.js puts the full name in a title tooltip. */
+.card .name {
+  font-weight: 700; font-size: 13.5px; line-height: 1.3;
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3;
+  overflow: hidden; overflow-wrap: anywhere;
+}
 .card .meta { font-size: 11px; color: var(--sub); }
 .card .sku { font-size: 10.5px; color: var(--sub); font-family: ui-monospace,monospace; }
 .card .foot { display:flex; align-items:center; justify-content: space-between; padding: 0 11px 11px; }

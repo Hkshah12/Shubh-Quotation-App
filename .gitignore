@@ -19,3 +19,6 @@ node_modules/
 # it holds real order data (revenue, costs, margins, client contacts) and this
 # repo is PUBLIC. Never track any of it here.
 /analytics/
+
+# Dev-only UI stress harness (break-ui skill). Never ships.
+/break-ui.html

@@ -136,7 +136,7 @@
 
         <div class="to">
           <div class="to-lbl">To,</div>
-          <div class="to-name">${esc(c.name || '—')}</div>
+          ${c.name ? `<div class="to-name">${esc(c.name)}</div>` : ''}
           ${c.contact ? `<div>${esc(c.contact)}</div>` : ''}
           ${c.address ? `<div>${esc(c.address)}</div>` : ''}
           ${(c.phone || c.email) ? `<div class="to-cx">${[c.phone && 'T: ' + esc(c.phone), c.email && 'E: ' + esc(c.email)].filter(Boolean).join('&nbsp;&nbsp;|&nbsp;&nbsp;')}</div>` : ''}
@@ -149,7 +149,7 @@
             <th class="c" style="width:34px">Sr.</th>
             ${showPhotos ? '<th class="c" style="width:56px">Photo</th>' : ''}
             <th style="text-align:left">Description of Product</th>
-            <th class="c" style="width:72px">Pack Size</th>
+            <th class="c" style="width:96px">Pack Size</th>
             <th class="c" style="width:42px">Qty</th>
             <th class="r" style="width:104px">Rate/Pack Size</th>
             <th class="r" style="width:104px">Amount</th>
@@ -326,7 +326,7 @@
     const toBlock = `
     <div style="${serif}font-size:11pt;margin-top:8pt;">
       <b>To,</b><br/>
-      <b style="font-size:12.5pt;">${esc(c.name || '—')}</b><br/>
+      ${c.name ? `<b style="font-size:12.5pt;">${esc(c.name)}</b><br/>` : ''}
       ${c.contact ? esc(c.contact) + '<br/>' : ''}
       ${c.address ? esc(c.address) + '<br/>' : ''}
       ${(c.phone || c.email) ? `<span style="color:${SUB};">${[c.phone && 'T: ' + esc(c.phone), c.email && 'E: ' + esc(c.email)].filter(Boolean).join(' &nbsp;|&nbsp; ')}</span>` : ''}
@@ -335,7 +335,7 @@
     const intro = s.introLine ? `<p style="${serif}font-size:11pt;">${esc(s.introLine)}</p>` : '';
 
     const th = (txt, align, w) => `<td bgcolor="${RED}" align="${align}" style="background:${RED};background-color:${RED};color:#ffffff;font-weight:bold;padding:5pt;border:0.5pt solid ${RED};${w ? 'width:' + w + ';' : ''}">${txt}</td>`;
-    const header = `<tr>${th('Sr.', 'center', '28pt')}${showPhotos ? th('Photo', 'center', '52pt') : ''}${th('Description of Product', 'left')}${th('Pack Size', 'center', '58pt')}${th('Qty', 'center', '32pt')}${th('Rate/Pack Size', 'right', '82pt')}${th('Amount', 'right', '76pt')}</tr>`;
+    const header = `<tr>${th('Sr.', 'center', '28pt')}${showPhotos ? th('Photo', 'center', '52pt') : ''}${th('Description of Product', 'left')}${th('Pack Size', 'center', '76pt')}${th('Qty', 'center', '32pt')}${th('Rate/Pack Size', 'right', '82pt')}${th('Amount', 'right', '76pt')}</tr>`;
     const rows = (opts.items || []).map((it, i) => {
       const net = it.price * it.qty * (1 - (it.disc || 0) / 100);
       const bgAttr = (i % 2 === 1) ? ` bgcolor="${CREAMROW}"` : '';                 // Word: alternating rows via bgcolor

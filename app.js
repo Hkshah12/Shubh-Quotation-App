@@ -1,7 +1,7 @@
 /* Shubh Enterprise — Quotation Generator (frontend) */
 'use strict';
 
-const APP_VERSION = 'v27'; // bump on every deploy so you can confirm you're on the latest
+const APP_VERSION = 'v28'; // bump on every deploy so you can confirm you're on the latest
 
 const State = {
   catalog: [],
@@ -101,6 +101,7 @@ function filteredCatalog() {
 }
 
 const CATALOG_CAP = 300; // keep the grid snappy for very large result sets
+const CART_CAP = 250;    // past this the quote panel re-renders too slowly to type in
 const NOIMG = `<div class="noimg"></div>`;
 // Replace a failed <img> with the placeholder (used via onerror — avoids quoting issues)
 window.imgFail = function (el) { if (el && el.parentNode) el.parentNode.innerHTML = NOIMG; };
@@ -130,7 +131,7 @@ function renderCatalog() {
     <div class="card ${inCart ? 'in-cart' : ''}" data-uid="${esc(i.uid)}">
       <div class="thumb">${thumb}</div>
       <div class="body">
-        <div class="name">${esc(i.name)}</div>
+        <div class="name" title="${esc(i.name)}">${esc(i.name)}</div>
         <div class="meta">${esc(i.brand || i.category)}</div>
         <div class="sku">${esc(i.sku)}</div>
         ${stockBadge}
@@ -154,6 +155,11 @@ function addToCart(uid) {
   const item = State.catalog.find(i => i.uid === uid);
   if (!item) return;
   const existing = State.cart.find(c => c.uid === uid);
+  // Every line re-renders the whole panel, so an unbounded cart eventually
+  // freezes the page. Quantities on existing lines are always allowed.
+  if (!existing && State.cart.length >= CART_CAP) {
+    return alert('This quotation already has ' + CART_CAP + ' items, which is as many as one document can hold comfortably.\n\nRaise the quantity on an existing line, or split the rest into a second quotation.');
+  }
   if (existing) existing.qty += 1;
   else State.cart.push({ ...item, qty: 1, disc: 0 });
   renderCatalog();
@@ -922,6 +928,17 @@ async function buildInlineOpts(quoteNo) {
   };
   return { opts, clientName: c.name || 'Unnamed Client' };
 }
+/* A quotation with no client name prints "To," and nothing under it, so block
+   the two customer-facing exports. Save stays permissive — unnamed drafts are
+   legitimate work in progress. */
+function requireClientName(verb) {
+  const el = $('clientName');
+  if ((el.value || '').trim()) return true;
+  alert('Enter the client / hospital / lab name before ' + verb + ' — it is printed at the top of the quotation.');
+  el.focus();
+  return false;
+}
+
 function safeFileBase(quoteNo, clientName) {
   const q = String(quoteNo || 'Quotation').replace(/[^\w\-]/g, '_');
   const cn = String(clientName || '').replace(/[^\w\- ]/g, '').trim().slice(0, 40);
@@ -931,6 +948,7 @@ function safeFileBase(quoteNo, clientName) {
 /* ---------------- Print / PDF (opens a printable copy in a new tab) ---------------- */
 async function printQuote() {
   if (!State.cart.length) return alert('Add at least one item before printing.');
+  if (!requireClientName('printing')) return;
   let quoteNo = $('printDoc').dataset.quoteNo;
   if (!quoteNo) { quoteNo = (await CDATA.nextQuoteNo()).quoteNo; $('printDoc').dataset.quoteNo = quoteNo; }
   const { opts } = await buildInlineOpts(quoteNo);
@@ -950,6 +968,7 @@ async function printQuote() {
 /* ---------------- Word (.doc) export (downloads an editable file) ---------------- */
 async function saveWord() {
   if (!State.cart.length) return alert('Add at least one item before exporting.');
+  if (!requireClientName('exporting')) return;
   let quoteNo = $('printDoc').dataset.quoteNo;
   if (!quoteNo) { quoteNo = (await CDATA.nextQuoteNo()).quoteNo; $('printDoc').dataset.quoteNo = quoteNo; }
   const { opts, clientName } = await buildInlineOpts(quoteNo);
