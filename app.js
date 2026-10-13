@@ -1,7 +1,7 @@
 /* Shubh Enterprise — Quotation Generator (frontend) */
 'use strict';
 
-const APP_VERSION = 'v28'; // bump on every deploy so you can confirm you're on the latest
+const APP_VERSION = 'v29'; // bump on every deploy so you can confirm you're on the latest
 
 const State = {
   catalog: [],
@@ -616,16 +616,21 @@ function renderPurchase() {
   const items = q.items || [];
   const gstPct = (q.gst && q.gst.enabled) ? (Number(q.gst.percent) || 0) : 0;
 
+  // Prefill the selling price from the quotation via the data layer, so the
+  // number offered here is exactly the one that would be saved if untouched.
+  const netUnits = CDATA.quotedNetUnits(q);
+
   const rows = items.map((it, i) => {
     const bought = already[i] || 0;
     const quoted = Number(it.qty) || 0;
     const remaining = Math.max(quoted - bought, 0);
     const done = remaining <= 0;
+    const quotedNet = netUnits[i] || 0;
     return `<tr class="${done ? 'pl-done' : ''}">
       <td><input type="checkbox" data-pick="${i}" ${done ? 'disabled' : ''}/></td>
       <td>
         <div class="pl-name">${esc(it.name || '')}</div>
-        <div class="pl-sku">${esc(it.sku || '')} · ${fmt(Number(it.price) || 0)}${(Number(it.disc) || 0) ? ` · ${it.disc}% off` : ''}</div>
+        <div class="pl-sku">List ${fmt(Number(it.price) || 0)}${(Number(it.disc) || 0) ? ` · ${it.disc}% off` : ''} · quoted ${fmt(quotedNet)}/unit</div>
       </td>
       <td class="pl-qty">
         ${done
@@ -633,19 +638,26 @@ function renderPurchase() {
           : `<input type="number" min="1" max="${remaining}" value="${remaining}" data-qty="${i}"/>
              <span class="pl-of">of ${quoted}${bought ? ` (${bought} done)` : ''}</span>`}
       </td>
-      <td><input type="number" min="0" step="0.01" placeholder="cost" data-cost="${i}" ${done ? 'disabled' : ''}/></td>
+      <td><input type="number" min="0" step="0.01" placeholder="what we paid" data-cost="${i}" ${done ? 'disabled' : ''}/></td>
+      <td><input type="number" min="0" step="0.01" value="${quotedNet ? quotedNet.toFixed(2) : ''}" data-sell="${i}" ${done ? 'disabled' : ''}/></td>
     </tr>`;
   }).join('');
 
   $('purchaseBody').innerHTML = `
     <div class="pl-head">
       <div><b>${esc(q.quoteNo || q.id)}</b> · ${esc((q.client && q.client.name) || '—')}</div>
-      <div class="pl-sub">Tick what was bought. Prices come from this quotation, so a later
-        catalogue change can never alter this sale.${gstPct ? ` GST ${gstPct}%.` : ' No GST on this quote.'}</div>
+      <div class="pl-sub">Tick what was bought, then enter <b>both</b> prices per unit, <b>excluding
+        GST</b>. Cost is what the supplier charged us; selling price is prefilled from this
+        quotation — change it if the final deal differed. Shubh Pulse reads these two figures to
+        work out margin, so the catalogue price never decides it.${gstPct ? ` GST ${gstPct}% on the sale.` : ' No GST on this quote.'}</div>
     </div>
     <div class="pl-tablewrap">
       <table class="pl-table">
-        <thead><tr><th></th><th>Item</th><th>Quantity bought</th><th>Unit cost <span class="pl-opt">optional</span></th></tr></thead>
+        <thead><tr>
+          <th></th><th>Item</th><th>Quantity bought</th>
+          <th>Cost / unit <span class="pl-opt">ex-GST</span></th>
+          <th>Selling / unit <span class="pl-opt">ex-GST</span></th>
+        </tr></thead>
         <tbody>${rows}</tbody>
       </table>
     </div>
@@ -665,7 +677,8 @@ function collectPurchaseSelections() {
     const i = cb.dataset.pick;
     const qty = Number((document.querySelector(`#purchaseBody [data-qty="${i}"]`) || {}).value) || 0;
     const cost = (document.querySelector(`#purchaseBody [data-cost="${i}"]`) || {}).value;
-    out.push({ line: Number(i), qty, cost });
+    const sell = (document.querySelector(`#purchaseBody [data-sell="${i}"]`) || {}).value;
+    out.push({ line: Number(i), qty, cost, sell });
   });
   return out;
 }
@@ -676,9 +689,19 @@ function updatePurchaseTotal() {
     shipping: Number(($('plShipping') || {}).value) || 0,
   });
   if (!p) return;
-  $('plTotal').innerHTML = p.count
-    ? `<span>${p.count} line${p.count > 1 ? 's' : ''} selected</span><b>${fmt(p.total)}</b>`
-    : `<span class="pl-empty">Nothing selected yet</span>`;
+  if (!p.count) {
+    $('plTotal').innerHTML = `<span class="pl-empty">Nothing selected yet</span>`;
+    return;
+  }
+  // Show the margin these two typed figures imply, so a mistyped cost is
+  // obvious here rather than three weeks later on the dashboard.
+  const margin = p.noCost === p.count
+    ? `<span class="pl-warn">No cost entered — margin unknown</span>`
+    : `<span class="pl-margin">Margin ${p.marginPct === null ? '—' : p.marginPct.toFixed(1) + '%'}
+         <small>${fmt(p.grossProfit)} on ${fmt(p.pricedNet)}</small></span>`
+      + (p.noCost ? `<span class="pl-warn">${p.noCost} line${p.noCost > 1 ? 's' : ''} without a cost, left out of that</span>` : '');
+  $('plTotal').innerHTML =
+    `<span>${p.count} line${p.count > 1 ? 's' : ''} selected</span>${margin}<b>${fmt(p.total)}</b>`;
 }
 
 async function savePurchaseFromModal() {

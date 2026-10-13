@@ -187,6 +187,8 @@ header.topbar {
 .modal-backdrop { position: fixed; inset:0; background: rgba(15,23,42,.5); display:none; place-items:center; z-index: 100; padding: 20px; }
 .modal-backdrop.open { display:grid; }
 .modal { background:#fff; border-radius: 14px; width: min(640px, 100%); max-height: 88vh; overflow-y:auto; box-shadow: var(--shadow-lg); }
+/* Five columns of entry, two of them money: the settings-form width is too tight. */
+#purchaseModal .modal { width: min(820px, 100%); }
 .modal header { display:flex; align-items:center; justify-content: space-between; padding: 16px 20px; border-bottom:1px solid var(--border); position: sticky; top:0; background:#fff; }
 .modal header h2 { margin:0; font-size: 17px; }
 .modal .content { padding: 18px 20px; display:flex; flex-direction: column; gap: 12px; }
@@ -268,7 +270,7 @@ header.topbar {
 .pl-head b { color:var(--primary); }
 .pl-sub { font-size:12px; color:var(--sub); margin-top:3px; line-height:1.5; }
 .pl-tablewrap { overflow-x:auto; border:1px solid var(--border); border-radius:var(--radius); }
-.pl-table { width:100%; border-collapse:collapse; font-size:13px; min-width:460px; }
+.pl-table { width:100%; border-collapse:collapse; font-size:13px; min-width:520px; }
 .pl-table th { text-align:left; font-size:10.5px; text-transform:uppercase; letter-spacing:.05em;
   color:var(--sub); font-weight:700; padding:9px 10px; border-bottom:1px solid var(--border); background:var(--cream); }
 .pl-table td { padding:9px 10px; border-bottom:1px solid var(--border); vertical-align:middle; }
@@ -276,7 +278,13 @@ header.topbar {
 .pl-table tr.pl-done { opacity:.55; }
 .pl-table input[type="checkbox"] { width:17px; height:17px; accent-color:var(--primary); cursor:pointer; }
 .pl-table input[type="number"], .pl-table input[type="text"] {
-  width:82px; padding:6px 8px; border:1px solid var(--border); border-radius:6px; text-align:right; }
+  width:76px; padding:6px 8px; border:1px solid var(--border); border-radius:6px; text-align:right; }
+/* The item name is the only column that can afford to give up space. */
+.pl-table td:nth-child(2) { min-width:130px; }
+/* Lakh-rupee unit prices need more room than a quantity does. */
+.pl-table td:nth-child(4) input, .pl-table td:nth-child(5) input { width:98px; }
+.pl-table th:nth-child(4), .pl-table th:nth-child(5),
+.pl-table td:nth-child(4), .pl-table td:nth-child(5) { white-space:nowrap; }
 .pl-name { font-weight:700; line-height:1.3; }
 .pl-sku { font-size:11px; color:var(--sub); font-family:ui-monospace,monospace; margin-top:2px; }
 .pl-qty { white-space:nowrap; }
@@ -286,7 +294,11 @@ header.topbar {
 .pl-extras { display:flex; gap:12px; flex-wrap:wrap; margin-top:14px; }
 .pl-field { display:flex; flex-direction:column; gap:4px; font-size:12px; color:var(--sub); font-weight:600; }
 .pl-field input { padding:8px 10px; border:1px solid var(--border); border-radius:8px; width:170px; }
-.pl-total { display:flex; align-items:center; justify-content:space-between; margin-top:16px;
+.pl-margin { font-size:12.5px; font-weight:700; color:var(--fg); }
+.pl-margin small { display:block; font-weight:500; color:var(--sub); font-size:11px; }
+.pl-warn { font-size:12px; font-weight:600; color:#b26a00; background:#fff3e0;
+  padding:3px 9px; border-radius:6px; }
+.pl-total { display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-top:16px;
   padding:12px 14px; background:var(--cream); border:1px solid var(--border-strong); border-radius:var(--radius); }
 .pl-total b { font-size:18px; color:var(--primary); font-family:var(--serif); }
 .pl-total .pl-empty { color:var(--sub); font-size:13px; }

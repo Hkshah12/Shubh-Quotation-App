@@ -270,18 +270,52 @@
     return tally;
   }
 
+  // A money field the operator may legitimately leave empty. Blank means "not
+  // known", which is different from zero, so it must not collapse to 0.
+  function moneyOrNull(v) {
+    if (v === '' || v === null || v === undefined) return null;
+    const n = Number(v);
+    return (isNaN(n) || n < 0) ? null : n;
+  }
+
+  // Net unit price for every line of a quote: list price less the line discount
+  // and that line's fair share of the overall discount, ex-GST. The purchase
+  // modal prefills the selling price from this and a recorded line falls back
+  // to it, so the preview can never drift from what gets saved.
+  //
+  // Per unit this is independent of how many units a partial purchase takes:
+  // both the line value and its share of the overall discount scale with qty.
+  function quotedNetUnits(q) {
+    const items = (q && q.items) || [];
+    let afterItem = 0;
+    items.forEach(it => {
+      afterItem += (Number(it.price) || 0) * (Number(it.qty) || 0) * (1 - (Number(it.disc) || 0) / 100);
+    });
+    const overall = (q && q.overall) || { type: 'percent', value: 0 };
+    return items.map(it => {
+      const unit = (Number(it.price) || 0) * (1 - (Number(it.disc) || 0) / 100);
+      let cut = 0;
+      if (overall.type === 'percent') {
+        cut = unit * ((Number(overall.value) || 0) / 100);
+      } else if (afterItem > 0) {
+        const pot = Math.min(afterItem, Number(overall.value) || 0);
+        cut = pot * (unit / afterItem);
+      }
+      return Math.max(0, unit - cut);
+    });
+  }
+
   // Build the purchase lines for a selection. Shared by the live preview in the
   // modal and by the actual save, so the figure shown is the figure recorded.
-  // selections: [{ line: <index into quote.items>, qty, cost }]
+  //
+  // Cost and selling price are both typed per line, ex-GST. The catalogue price
+  // is only ever the list price we quote from -- it is neither what we paid the
+  // supplier nor necessarily what the customer finally paid, so Shubh Pulse
+  // reads the two typed figures and never the catalogue.
+  // selections: [{ line: <index into quote.items>, qty, cost, sell }]
   function buildPurchaseLines(q, selections, already) {
     const items = q.items || [];
-    // The overall discount was calculated across the whole quote, so a partial
-    // purchase has to inherit a fair share of it rather than all or none.
-    let quoteAfterItem = 0;
-    items.forEach(it => {
-      quoteAfterItem += (Number(it.price) || 0) * (Number(it.qty) || 0) * (1 - (Number(it.disc) || 0) / 100);
-    });
-    const overall = q.overall || { type: 'percent', value: 0 };
+    const netUnits = quotedNetUnits(q);
     const gstPct = (q.gst && q.gst.enabled) ? (Number(q.gst.percent) || 0) : 0;
 
     const lines = [];
@@ -293,28 +327,22 @@
       const qty = Math.min(Number(sel.qty) || 0, Math.max(remaining, 0));
       if (qty <= 0) return;
 
-      const price = Number(it.price) || 0;
-      const disc = Number(it.disc) || 0;
-      const lineNet = price * qty * (1 - disc / 100);
-      let overallCut = 0;
-      if (overall.type === 'percent') {
-        overallCut = lineNet * ((Number(overall.value) || 0) / 100);
-      } else if (quoteAfterItem > 0) {
-        const pot = Math.min(quoteAfterItem, Number(overall.value) || 0);
-        overallCut = pot * (lineNet / quoteAfterItem);
-      }
-      const net = Math.max(0, lineNet - overallCut);
-      const cost = (sel.cost === '' || sel.cost === null || sel.cost === undefined) ? null : Number(sel.cost);
+      const quotedNet = netUnits[idx] || 0;
+      const sell = moneyOrNull(sel.sell);
+      const unitSell = sell === null ? quotedNet : sell;
+      const cost = moneyOrNull(sel.cost);
 
       lines.push({
         line: idx,
         sku: it.sku || '', name: it.name || '', hsn: it.hsn || '',
         qty,
-        unit_price: price,            // the quoted price of record
-        disc,
-        unit_price_net: qty ? net / qty : 0,  // after item + share of overall discount
+        unit_price: Number(it.price) || 0,      // catalogue list price of record
+        disc: Number(it.disc) || 0,
+        unit_price_quoted_net: quotedNet,       // what the quotation worked out to
+        unit_price_net: unitSell,               // what it actually sold for, ex-GST
+        price_overridden: Math.abs(unitSell - quotedNet) > 0.005,
         gst_percent: gstPct,
-        unit_cost: (cost === null || isNaN(cost)) ? null : cost,
+        unit_cost: cost,                        // what we paid the supplier, ex-GST
       });
     });
     return { lines, gstPct };
@@ -328,7 +356,19 @@
     const net = lines.reduce((s, l) => s + l.unit_price_net * l.qty, 0);
     const gst = net * (gstPct / 100);
     const shipping = Number(extra && extra.shipping) || 0;
-    return { lines, count: lines.length, net, gst, shipping, total: net + gst + shipping };
+    // Margin on the same ex-GST basis Shubh Pulse uses. Lines with no cost yet
+    // are counted separately rather than as zero cost, which would read as pure
+    // profit and overstate the margin.
+    const priced = lines.filter(l => l.unit_cost !== null);
+    const noCost = lines.length - priced.length;
+    const cogs = priced.reduce((s, l) => s + l.unit_cost * l.qty, 0);
+    const pricedNet = priced.reduce((s, l) => s + l.unit_price_net * l.qty, 0);
+    const grossProfit = pricedNet - cogs;
+    const marginPct = pricedNet > 0 ? (grossProfit / pricedNet) * 100 : null;
+    return {
+      lines, count: lines.length, net, gst, shipping, total: net + gst + shipping,
+      cogs, grossProfit, marginPct, noCost, pricedNet,
+    };
   }
 
   async function recordPurchase(quoteId, selections, extra) {
@@ -552,7 +592,7 @@
     catalog, getSettings, saveSettings, nextQuoteNo,
     saveQuotation, listQuotations, getQuotation, updateQuotationMeta, deleteQuotation,
     recordPurchase, previewPurchase, listPurchases, getPurchase, savePurchase, deletePurchase,
-    purchasesForQuote, purchasedQtyByLine, nextPurchaseNo,
+    purchasesForQuote, purchasedQtyByLine, nextPurchaseNo, quotedNetUnits,
     listCustomers, getCustomer, saveCustomer, deleteCustomer,
     getStock, hasStock, setStock, adjustStock, untrackStock, listInventory, inventoryMap,
     onLocalChange, applyRemote, applyRemoteDelete,
