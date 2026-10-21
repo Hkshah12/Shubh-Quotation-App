@@ -1,0 +1,45 @@
+{
+  "name": "shubh-quotation-desktop",
+  "productName": "Shubh Quotation",
+  "version": "31.0.0",
+  "description": "Shubh Enterprise quotation generator, packaged for Windows.",
+  "main": "main.js",
+  "private": true,
+  "author": "Shubh Enterprise",
+  "scripts": {
+    "sync": "node sync-app.js",
+    "start": "npm run sync && electron .",
+    "dist": "npm run sync && electron-builder --win",
+    "pack": "npm run sync && electron-builder --win --dir"
+  },
+  "devDependencies": {
+    "electron": "33.2.1",
+    "electron-builder": "25.1.8"
+  },
+  "build": {
+    "appId": "in.shubhenterprise.quotation",
+    "productName": "Shubh Quotation",
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "files": [
+      "main.js",
+      "app/**/*"
+    ],
+    "win": {
+      "target": [
+        { "target": "nsis", "arch": ["x64"] }
+      ],
+      "icon": "build/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Shubh Quotation"
+    },
+    "compression": "maximum"
+  }
+}
