@@ -28,6 +28,7 @@
     onAuth(fn) { if (typeof fn === 'function') { this._authCbs.push(fn); if (this._booted) safe(fn, this.user); } },
     async signIn() { throw new Error('Cloud not configured'); },
     async signOut() {},
+    async sendPasswordReset() { throw new Error('Cloud not configured'); },
   };
   window.Cloud = Cloud;
 
@@ -69,6 +70,10 @@
 
       Cloud.signIn = (email, password) => fb.signInWithEmailAndPassword(auth, String(email || '').trim(), password);
       Cloud.signOut = () => fb.signOut(auth);
+      // Firebase decides how long the emailed link lives (one hour by default,
+      // under Authentication -> Templates). Nothing here needs admin rights.
+      Cloud.sendPasswordReset = (email) =>
+        fb.sendPasswordResetEmail(auth, String(email || '').trim());
 
       fb.onAuthStateChanged(auth, (u) => {
         Cloud.user = u ? { email: u.email, uid: u.uid } : null;

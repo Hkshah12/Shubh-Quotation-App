@@ -1,7 +1,7 @@
 /* Shubh Enterprise — Quotation Generator (frontend) */
 'use strict';
 
-const APP_VERSION = 'v29'; // bump on every deploy so you can confirm you're on the latest
+const APP_VERSION = 'v30'; // bump on every deploy so you can confirm you're on the latest
 
 const State = {
   catalog: [],
@@ -887,8 +887,10 @@ function openSync() { renderSyncBody(); $('syncModal').classList.add('open'); }
 
 function friendlyAuthError(e) {
   const code = (e && e.code) || '';
-  if (/wrong-password|invalid-credential|invalid-login/.test(code)) return 'Wrong email or password.';
-  if (/user-not-found/.test(code)) return 'No account with that email.';
+  // user-not-found is folded in deliberately: telling the difference between
+  // "wrong password" and "no such account" lets anyone test whether an address
+  // is registered here.
+  if (/wrong-password|invalid-credential|invalid-login|user-not-found/.test(code)) return 'Wrong email or password.';
   if (/user-disabled/.test(code)) return 'This account has been disabled.';
   if (/invalid-email/.test(code)) return 'That email address looks invalid.';
   if (/too-many-requests/.test(code)) return 'Too many attempts — please wait a minute and try again.';
@@ -918,8 +920,10 @@ function renderSyncBody() {
       <div class="field"><label>Email</label><input id="syncEmail" type="email" autocomplete="username" placeholder="you@business.com"/></div>
       <div class="field"><label>Password</label><input id="syncPass" type="password" autocomplete="current-password" placeholder="Password"/></div>
       <div id="syncErr" style="color:var(--primary);font-size:13px;min-height:18px;margin:4px 0;"></div>
-      <button class="qc-btn primary" id="btnDoSignIn">Sign in</button>`;
+      <button class="qc-btn primary" id="btnDoSignIn">Sign in</button>
+      <button class="link-btn" id="btnForgotPass">Forgot password?</button>`;
     $('btnDoSignIn').addEventListener('click', doSignIn);
+    $('btnForgotPass').addEventListener('click', doPasswordReset);
     $('syncPass').addEventListener('keydown', e => { if (e.key === 'Enter') doSignIn(); });
     setTimeout(() => { const el = $('syncEmail'); if (el) el.focus(); }, 50);
   }
@@ -927,10 +931,43 @@ function renderSyncBody() {
 
 async function doSignIn() {
   const email = $('syncEmail').value, pass = $('syncPass').value;
-  if (!email.trim() || !pass) { $('syncErr').textContent = 'Enter your email and password.'; return; }
-  $('syncErr').textContent = 'Signing in…';
+  const err = $('syncErr');
+  err.style.color = 'var(--primary)';   // may have been recoloured by a reset notice
+  if (!email.trim() || !pass) { err.textContent = 'Enter your email and password.'; return; }
+  err.textContent = 'Signing in…';
   try { await Cloud.signIn(email, pass); renderSyncBody(); updateSyncUI(); }
   catch (e) { $('syncErr').textContent = friendlyAuthError(e); }
+}
+
+/* Email a reset link. Deliberately says the same thing whether or not the
+   address has an account: anything else turns this box into a way of finding
+   out who is registered. Firebase owns the link's lifetime. */
+let resetsSent = 0;
+const MAX_RESETS = 3;
+
+async function doPasswordReset() {
+  const email = ($('syncEmail').value || '').trim();
+  const err = $('syncErr');
+  if (!email) { err.textContent = 'Enter your email address first.'; $('syncEmail').focus(); return; }
+  if (resetsSent >= MAX_RESETS) {
+    err.textContent = 'Too many reset emails requested. Reload the page to try again.';
+    return;
+  }
+  resetsSent++;
+  err.textContent = 'Sending…';
+  try {
+    await Cloud.sendPasswordReset(email);
+  } catch (e) {
+    const code = (e && e.code) || '';
+    // An unknown or malformed address must look exactly like a real one.
+    if (!/user-not-found|invalid-email/.test(code)) {
+      err.textContent = friendlyAuthError(e);
+      return;
+    }
+  }
+  err.style.color = 'var(--sub)';
+  err.textContent = 'If ' + email + ' has an account, a reset link is on its way. '
+    + 'It expires, so use it soon — and check your spam folder.';
 }
 
 /* Build the document options with images fetched + embedded as data URIs (self-contained files) */
