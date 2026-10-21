@@ -22,3 +22,6 @@ node_modules/
 
 # Dev-only UI stress harness (break-ui skill). Never ships.
 /break-ui.html
+
+# Cloudflare Pages build output (build-site.js stages it; Pages rebuilds it).
+/_site/

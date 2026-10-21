@@ -14,32 +14,12 @@ const path = require('path');
 const SRC = path.resolve(__dirname, '..');
 const DEST = path.join(__dirname, 'app');
 
-const FILES = [
-  'index.html',
-  'styles.css',
-  'app.js',
-  'clientdata.js',
-  'cloud.js',
-  'quotedoc.js',
-  'firebase-config.js',
-  'sw.js',
-  'manifest.webmanifest',
-  'icon-192.png',
-  'icon-512.png',
-  'apple-touch-icon.png',
-];
-
-// Whole directories, copied as-is.
-const DIRS = ['fonts', 'images'];
-
-// data/ is NOT copied wholesale. It holds dated backup catalogues that the app
-// never reads, and an installer has no business shipping a stale price list.
-// Only the two files clientdata.js actually fetches go in.
-const DATA_FILES = ['data/catalog.csv', 'data/settings.json'];
-
-// Runtime output and scratch files that must never be baked into an installer.
-const SKIP_DIR = new Set(['quotations']);
-const SKIP_EXT = new Set(['.log', '.tmp']);
+// One shared list with the Cloudflare deploy, so a new file cannot reach one
+// build and quietly miss the other.
+const shared = require('../web-files');
+const { FILES, DIRS, DATA_FILES } = shared;
+const SKIP_DIR = new Set(shared.SKIP_DIR);
+const SKIP_EXT = new Set(shared.SKIP_EXT);
 
 function copyDir(from, to) {
   fs.mkdirSync(to, { recursive: true });

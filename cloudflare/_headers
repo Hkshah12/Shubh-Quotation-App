@@ -1,0 +1,51 @@
+# Cloudflare Pages response headers. build-site.js copies this to the deploy
+# root; Cloudflare reads it from there.
+#
+# The Content-Security-Policy below is deliberately not stricter than the app
+# can actually run under. Three allowances are load-bearing:
+#
+#   'unsafe-inline' in script-src  - app.js renders onerror="imgFail(this)" on
+#       every catalogue thumbnail, and CSP treats an inline handler as inline
+#       script. Removing it needs those handlers rewritten as listeners first.
+#   'unsafe-inline' in style-src   - the generated quotation documents carry
+#       inline style attributes throughout.
+#   blob: in frame-src             - the app opens generated quotations as blob
+#       URLs. Today that is a top-level window.open, which frame-src does not
+#       govern, so this is precautionary: the cost of allowing a same-origin
+#       blob frame is negligible, and the cost of getting it wrong is a PDF
+#       that silently fails to open for a customer.
+#
+# Tightening any of them without changing the app first produces a page that
+# loads but silently stops working, which is worse than the honest policy here.
+# Verified against the running app: catalogue, fonts, Firebase SDK, images and
+# document generation all pass with zero securitypolicyviolation events.
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://www.gstatic.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' https://*.googleapis.com https://*.firebaseio.com wss://*.firebaseio.com https://*.cloudfunctions.net; frame-src 'self' blob:; frame-ancestors 'self'; base-uri 'self'; form-action 'self'; object-src 'none'
+
+# The service worker decides when every other file is refreshed, so it must
+# never be served stale itself. Without this a browser can sit on an old sw.js
+# and the app stops receiving updates entirely.
+/sw.js
+  Cache-Control: no-cache, no-store, must-revalidate
+
+# Same reasoning: the shell must be revalidated so a new deploy is picked up.
+/index.html
+  Cache-Control: no-cache
+
+# The catalogue changes whenever prices do, and it is small. Always revalidate.
+/data/catalog.csv
+  Cache-Control: no-cache
+/data/settings.json
+  Cache-Control: no-cache
+
+# Content-addressed by name and effectively immutable: a font or a product
+# photo only changes by being replaced with a differently named file.
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+/images/*
+  Cache-Control: public, max-age=604800
